@@ -1,0 +1,11 @@
+# Large model checkpoints downloaded from WandB (see CLAUDE.md for how to re-fetch)
+models/
+
+# Clones of the paper's code library (separate git repos, not ours)
+param-decomp/
+param-decomp-vpd/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
