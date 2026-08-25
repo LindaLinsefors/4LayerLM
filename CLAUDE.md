@@ -99,7 +99,8 @@ Use `load.py` at the project root — **standalone, runs on the user's default P
 
 ## Project state
 
-- **2026-08-24:** Project started. Located and downloaded the target models and VPD decompositions from WandB (see above); cloned param-decomp repo; built standalone 3.11 loading (`load.py`, `model_def.py`) and residual-stream geometry tooling (`circles.py`). Not yet a git repository. Next steps / specific research questions TBD with the user.
+- **2026-08-24:** Project started. Located and downloaded the target models and VPD decompositions from WandB (see above); cloned param-decomp repo; built standalone 3.11 loading (`load.py`, `model_def.py`) and residual-stream geometry tooling (`circles.py`). Next steps / specific research questions TBD with the user.
+- **2026-08-25:** Made the project a git repository (branch `main`). `.gitignore` excludes `models/` (3.1 GB checkpoints, re-fetchable from WandB), `param-decomp/` + `param-decomp-vpd/` (clones of the paper repo with their own git history), and `__pycache__`. No GitHub remote yet; `gh` CLI is not installed.
 
 ## Environment
 
