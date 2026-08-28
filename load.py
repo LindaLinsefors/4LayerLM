@@ -1,6 +1,6 @@
 """Load the target models and their VPD decompositions (standalone, Python 3.11 OK).
 
-Reads everything directly from the local models/ folder; no param_decomp import
+Reads everything directly from the local prev_paper/models/ folder; no param_decomp import
 needed. (The param-decomp-vpd library + its 3.13 venv are only required for the
 decomposition *machinery* — masked forward passes, the causal-importance
 function — not for loading.)
@@ -23,6 +23,7 @@ return rows of each model's training set as 1-D token-id tensors.
 #run load.py
 
 import json
+import sys
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
@@ -32,9 +33,10 @@ import torch
 import yaml
 from safetensors.torch import load_file
 
+sys.path.insert(0, str(Path(__file__).parent / "prev_paper"))
 from model_def import LlamaSimpleMLP, LlamaSimpleMLPConfig
 
-MODELS_DIR = Path(__file__).parent / "models"
+MODELS_DIR = Path(__file__).parent / "prev_paper" / "models"
 
 PILE_4L = MODELS_DIR / "pile_4layer"
 SIMPLE_2L = MODELS_DIR / "simplestories_2layer"

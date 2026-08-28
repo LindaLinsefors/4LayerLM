@@ -1,0 +1,291 @@
+[
+ {
+  "id": "wrong_moderate_60_33",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "pos"],
+  "failure_needs": "world_knowledge",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "wrong_moderate_386_346",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "code",
+  "note": "True token completes an arbitrary camera/device identifier (tvpip_familyroom_switch); essentially an arbitrary proper name, true_rank 498."
+ },
+ {
+  "id": "wrong_moderate_96_486",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "wrong_moderate_249_401",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "world_knowledge",
+  "domain": "non_english",
+  "note": "Danish text. The model's top-1 ('den', a common determiner) is a reasonable generic Danish function word even though it misses the specific continuation - notable that a Pile-trained, English-dominant model produces grammatical-ish Danish at all."
+ },
+ {
+  "id": "wrong_moderate_164_329",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific",
+  "note": "Astronomy citation volume number. Top-1 ('6') missed badly, but the rest of top5 (435, 437, 432, 436) clusters tightly around the true value 441 - the model learned the right magnitude/range for this journal's volume numbers even without knowing the exact digit."
+ },
+ {
+  "id": "confident_correct_198_437",
+  "why_right": "copy_from_context",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "confident_correct_388_237",
+  "why_right": "formulaic_ngram",
+  "domain": "code"
+ },
+ {
+  "id": "catastrophic_136_46",
+  "plausibility": "plausible",
+  "aspects_right": [],
+  "failure_needs": "syntax",
+  "domain": "web_or_forum",
+  "note": "Context is garbled SEO-spun spam text ('best writing companies... ones educator'); the source text's own incoherence makes it hard to say the true continuation was strongly cued for a competent writer either."
+ },
+ {
+  "id": "catastrophic_296_262",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "pos", "topic"],
+  "failure_needs": "copying_missed",
+  "domain": "web_or_forum",
+  "note": "True token 'dos' was literally stated ~25 tokens earlier ('batch-files (dos)'); the model needed to copy it back rather than free-generate a plausible-sounding tech noun (SQL/Windows)."
+ },
+ {
+  "id": "near_miss_343_491",
+  "plausibility": "equally_good",
+  "aspects_right": ["topic"],
+  "failure_needs": "syntax",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "catastrophic_312_294",
+  "plausibility": "plausible",
+  "aspects_right": [],
+  "failure_needs": "world_knowledge",
+  "domain": "web_or_forum",
+  "note": "Requires a specific fact about HttpWebRequest (cookies received during a redirect aren't auto-absorbed); ending the sentence with a period is a safe, generic fallback that loses the specific gotcha."
+ },
+ {
+  "id": "wrong_moderate_247_61",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "long_range_context",
+  "domain": "legal_boilerplate",
+  "note": "True token echoes 'additional evidence', a phrase used one sentence earlier - typical legal-opinion repetition of a specific noun phrase."
+ },
+ {
+  "id": "catastrophic_351_219",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "code"
+ },
+ {
+  "id": "wrong_moderate_240_176",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "code",
+  "note": "The code sequentially checks JSON-Schema keywords (minLength, maxLength, ...); recognizing 'pattern' as the next keyword requires knowing the JSON Schema spec, not just local code style."
+ },
+ {
+  "id": "wrong_moderate_206_256",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "wrong_moderate_265_355",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "format_structure",
+  "domain": "legal_boilerplate",
+  "note": "'compound of the general formula' is fixed patent boilerplate phrasing; the model missed the fixed legal-template phrase in favor of an odd capitalized token."
+ },
+ {
+  "id": "hesitant_correct_66_76",
+  "why_right": "formulaic_ngram",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_314_188",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos"],
+  "failure_needs": "local_context",
+  "domain": "web_or_forum",
+  "note": "Surrounding sentences are in a hypothetical/conditional mood ('he'd have to be really sure...'); true 'would' continues that mood while top-1 'is' switches to indicative - a subtle mood-tracking miss."
+ },
+ {
+  "id": "confident_correct_297_489",
+  "why_right": "formulaic_ngram",
+  "domain": "technical_scientific",
+  "note": "Completing 'Gl'->'n' spells 'Gln', the classic PII-protein name (GlnK/GlnB) central to the nitrogen-regulation pathway already being discussed - essentially a fixed jargon spelling in this literature, hence the 99.6% confidence."
+ },
+ {
+  "id": "wrong_moderate_11_34",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "near_miss_164_53",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_37_426",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "wrong_moderate_214_372",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "wrong_moderate_140_68",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "copying_missed",
+  "domain": "code",
+  "note": "The object 'a1' that the true continuation references is defined a few lines earlier in the visible R code."
+ },
+ {
+  "id": "hesitant_correct_133_385",
+  "why_right": "format_structure",
+  "domain": "code"
+ },
+ {
+  "id": "hesitant_correct_300_131",
+  "why_right": "formulaic_ngram",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "hesitant_correct_227_468",
+  "why_right": "format_structure",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "hesitant_correct_358_158",
+  "why_right": "syntax_forced",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "confident_correct_281_255",
+  "why_right": "syntax_forced",
+  "domain": "code"
+ },
+ {
+  "id": "near_miss_36_386",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "near_miss_259_62",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_333_285",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing"],
+  "failure_needs": "long_range_context",
+  "domain": "legal_boilerplate",
+  "note": "Top-1 'ST' predicts repeating the acronym 'STEP' (from 'the STEP Act' mentioned at the very start of context) - arguably as legitimate a continuation as the true anaphoric 'act'."
+ },
+ {
+  "id": "hesitant_correct_315_164",
+  "why_right": "semantic_inference",
+  "domain": "prose_fiction",
+  "note": "Requires tracking a concessive structure ('although many are... painful, I am not [entirely unaffected]') across the sentence, not just local word statistics."
+ },
+ {
+  "id": "hesitant_correct_132_148",
+  "why_right": "format_structure",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "wrong_moderate_292_248",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "confident_correct_318_269",
+  "why_right": "copy_from_context",
+  "domain": "code",
+  "note": "The list already contains three 'OES_'-prefixed WebGL extension names; continuing with another 'O' is a strong local copy pattern."
+ },
+ {
+  "id": "wrong_moderate_344_205",
+  "plausibility": "plausible",
+  "aspects_right": [],
+  "failure_needs": "local_context",
+  "domain": "prose_fiction",
+  "note": "Passage builds toward a terse dramatic revelation ('I am that daughter... I have never married.'); ending on a period matches the surrounding short-declarative-sentence style, even though top-1 ('a') was still wrong."
+ },
+ {
+  "id": "hesitant_correct_76_425",
+  "why_right": "semantic_inference",
+  "domain": "web_or_forum",
+  "note": "Requires anaphoric resolution to 'the one [interpretation]' under discussion - a genuine discourse-tracking task, not a surface pattern."
+ },
+ {
+  "id": "catastrophic_322_63",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific",
+  "note": "Model puts 71.5% on 'of' (the far more common collocation 'preservation of'), crowding true 'from' down to rank 73 - strong statistical prior overriding a valid but less common alternative preposition."
+ },
+ {
+  "id": "catastrophic_305_211",
+  "plausibility": "broken",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "local_context",
+  "domain": "legal_boilerplate",
+  "note": "Model pattern-matches four preceding 'NAME, Individually;' list entries and predicts 'Individually' again right after 'INCORPORATED' - a corporation cannot be sued 'individually', so the immediately preceding word should have blocked this continuation. Clear case of surface repetition beating local semantic control."
+ },
+ {
+  "id": "wrong_moderate_174_239",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "legal_boilerplate",
+  "note": "'form order' is a specific bankruptcy-court term (a standardized template order); the generic 'of' misses this fixed two-word legal term."
+ },
+ {
+  "id": "near_miss_8_415",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "copying_missed",
+  "domain": "math_or_formula",
+  "note": "The exact substructure {\\mathbb{C}}'(\\chi){\\varepsilon}(...) already appears once in the visible equation; the true token continues that literal repetition, which the model nearly caught (34.8% on 'varepsilon') but ranked behind '\\right' (61.8%)."
+ }
+]

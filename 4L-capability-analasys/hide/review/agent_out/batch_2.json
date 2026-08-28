@@ -1,0 +1,311 @@
+[
+ {
+  "id": "near_miss_398_253",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "prose_nonfiction",
+  "note": "For a business named '606 Records', 'record label' (top-1) is arguably as likely a priori as 'record store' (true) — genuinely underdetermined from this context alone."
+ },
+ {
+  "id": "wrong_moderate_259_55",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "hesitant_correct_397_232",
+  "why_right": "syntax_forced",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "catastrophic_235_475",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "pos"],
+  "failure_needs": "world_knowledge",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "catastrophic_350_404",
+  "plausibility": "broken",
+  "aspects_right": ["spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum",
+  "note": "Context itself is word-salad (reads like a scraped/SEO page or concatenated download-listing titles, e.g. 'download Bau und Berechnung ... for the Internal Medicine'); the true continuation is nearly as arbitrary as the passage itself, so the huge loss here partly reflects an incoherent source document rather than a pure model failure."
+ },
+ {
+  "id": "near_miss_254_334",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "local_context",
+  "domain": "news"
+ },
+ {
+  "id": "wrong_moderate_6_133",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos"],
+  "failure_needs": "world_knowledge",
+  "domain": "prose_nonfiction",
+  "note": "Requires the hairdressing-jargon sense of 'do' (do someone's hair). Also notable: rank-3 guess ' ble' is a broken non-word subtoken, a sign the model was scraping the bottom of its distribution here."
+ },
+ {
+  "id": "wrong_moderate_293_146",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "long_range_context",
+  "domain": "prose_fiction",
+  "note": "An earlier euphemism, 'I met a man--in there--' (~40 tokens back), telegraphs 'prison'; the model didn't connect it and fell back to the bare article 'the'."
+ },
+ {
+  "id": "catastrophic_79_35",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific",
+  "note": "'dVenus' at the start of the caption is a strong hint (Arc-dVenus reporter mice are a standard neuroscience tool), but connecting it to 'Arc' needs specific technical knowledge. 'virtually no overlap' is nonetheless an extremely natural generic caption phrase in its own right."
+ },
+ {
+  "id": "wrong_moderate_366_466",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "format_structure",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "wrong_moderate_84_164",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "table_or_list",
+  "note": "Top-1 ' School' actually reconstructs the school's full proper name verbatim from earlier in the same context ('Cape Henry Collegiate School') — arguably a better completion of ordinary English than the true, table-abbreviated 'in'."
+ },
+ {
+  "id": "near_miss_268_190",
+  "plausibility": "plausible",
+  "aspects_right": ["pos", "semantic_field", "topic", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "code"
+ },
+ {
+  "id": "confident_correct_8_368",
+  "why_right": "syntax_forced",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "wrong_moderate_376_449",
+  "plausibility": "broken",
+  "aspects_right": [],
+  "failure_needs": "copying_missed",
+  "domain": "technical_scientific",
+  "note": "The exact pattern '^13^C' already occurred verbatim earlier in the same context ('labeled ... with ^13^C'); the model failed to copy it forward and instead started a new capitalized word ('In'), breaking the isotope-label notation entirely."
+ },
+ {
+  "id": "hesitant_correct_319_493",
+  "why_right": "syntax_forced",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "wrong_moderate_231_220",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "local_context",
+  "domain": "prose_nonfiction",
+  "note": "The model's own rank 2-5 guesses (presented/used/published/written) are all better semantic fits for this sentence than its rank-1 pick 'a' — the top-1 choice is weaker than its own runners-up."
+ },
+ {
+  "id": "confident_correct_196_314",
+  "why_right": "format_structure",
+  "domain": "code"
+ },
+ {
+  "id": "catastrophic_384_57",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_370_259",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "legal_boilerplate",
+  "note": "This is verbatim, famous GPLv2 preamble text ('...we stand ready to extend this provision to those domains...'). All top-5 guesses (license/protection/policy/practice) are reasonable synonyms for the gist, showing fuzzy semantic recall of the passage without exact verbatim memorization."
+ },
+ {
+  "id": "catastrophic_367_215",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific",
+  "note": "Very high-confidence (0.75) wrong answer 'roller' looks like a recency-anchored distractor from 'roller-like member' ~15 tokens earlier; the true term 'photosensitive' (drum) is standard copier/patent vocabulary for a different component entirely."
+ },
+ {
+  "id": "confident_correct_283_160",
+  "why_right": "syntax_forced",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "catastrophic_273_294",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "world_knowledge",
+  "domain": "web_or_forum",
+  "note": "Rank-2 guess 'paying' calls back neatly to \"you're not really paying for content\" earlier in the context — a better long-range connection than the top-1 'buying', which mostly just echoes 'buy their newspaper' a few words before it."
+ },
+ {
+  "id": "hesitant_correct_197_187",
+  "why_right": "formulaic_ngram",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_384_489",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "copying_missed",
+  "domain": "technical_scientific",
+  "note": "True token repeats 'cytotoxicity', already used earlier in the very same sentence ('cytotoxicity of several compounds')."
+ },
+ {
+  "id": "wrong_moderate_356_137",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum",
+  "note": "The model's single period is arguably more standard English than the true multi-dot trail-off '....'; this looks like a stylistic-register miss (casual review punctuation) rather than a comprehension failure."
+ },
+ {
+  "id": "wrong_moderate_376_340",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_21_443",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific",
+  "note": "The model nails the format (a single lowercase subfigure letter after 'Fig. [2') across its whole top-5 (a/b/c/d) even though the specific letter is unknowable from context."
+ },
+ {
+  "id": "wrong_moderate_200_126",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field"],
+  "failure_needs": "local_context",
+  "domain": "prose_fiction"
+ },
+ {
+  "id": "wrong_moderate_142_264",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum",
+  "note": "True token 'Nice' is capitalized mid-clause, reflecting the informal/unpunctuated register of casual blog comments; the model's lowercase 'but' instead follows standard grammatical convention — a register mismatch rather than a comprehension gap."
+ },
+ {
+  "id": "confident_correct_147_219",
+  "why_right": "formulaic_ngram",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "wrong_moderate_50_387",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["pos", "semantic_field", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "table_or_list",
+  "note": "Rank-2 guess 'isco' would complete to 'Francisco', a male name that breaks the all-female pattern established by every row's 'F' column — the model isn't robustly tracking that tabular constraint, even though its actual top-1 doesn't have this problem."
+ },
+ {
+  "id": "near_miss_160_432",
+  "plausibility": "grammatical_only",
+  "aspects_right": [],
+  "failure_needs": "local_context",
+  "domain": "web_or_forum",
+  "note": "Model is very confident (0.815) in a comma here, apparently pattern-matching a generic 'will be,' bigram rather than parsing the sentence's own explicit parallel structure ('can... and always will be able to...')."
+ },
+ {
+  "id": "wrong_moderate_368_222",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic", "format"],
+  "failure_needs": "copying_missed",
+  "domain": "technical_scientific",
+  "note": "True token mirrors 'pro-survival and metastatic signals' stated earlier in the same passage (order swapped). The model's own rank-1 guess 'mel'(anoma) reflects genuine domain knowledge — MCSP is a melanoma marker — even though it isn't the expected word."
+ },
+ {
+  "id": "wrong_moderate_349_251",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "copying_missed",
+  "domain": "technical_scientific",
+  "note": "'detection' is the paper's own stated topic ('interaction-free detection of absorptive samples'), just two sentences earlier — a missed literal callback, not new information."
+ },
+ {
+  "id": "wrong_moderate_22_478",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "syntax",
+  "domain": "prose_nonfiction",
+  "note": "Both readings of 'that' are grammatical (subject-relative 'that is/can/has...' vs. the rarer object-relative 'that the farmer already...'); the model strongly favors the far more common subject-relative pattern."
+ },
+ {
+  "id": "catastrophic_56_472",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "format_structure",
+  "domain": "web_or_forum",
+  "note": "Classic Stack Exchange acronym-definition idiom ('X is short for Y') fits an implied 'what does BPO stand for' question; the model missed the genre-specific pattern in favor of generic 'BPO is a...'."
+ },
+ {
+  "id": "wrong_moderate_248_220",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "code",
+  "note": "The whole top-5 (Report/Test/Get/Write, plus true 'Per'[form]) are capitalized imperative verbs fitting Doxygen-comment convention — good format-level generalization despite missing the exact word."
+ },
+ {
+  "id": "near_miss_303_336",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "local_context",
+  "domain": "web_or_forum",
+  "note": "'a single entity' stated just before should signal a closing paren rather than a list-continuing comma; the cue is only about 4 tokens back."
+ },
+ {
+  "id": "confident_correct_284_438",
+  "why_right": "format_structure",
+  "domain": "code"
+ },
+ {
+  "id": "wrong_moderate_347_502",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "syntax",
+  "domain": "non_english",
+  "note": "Dutch-language example (rare in Pile); the model's guess is still grammatically valid Dutch, just a relative-clause continuation rather than the actual passive construction with 'wordt'."
+ },
+ {
+  "id": "hesitant_correct_130_491",
+  "why_right": "syntax_forced",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "catastrophic_363_474",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum",
+  "note": "True token 'x' is odd/ambiguous even to a human reader (possibly IRC shorthand, e.g. an X/X11 reference in a software-versions chat); top-1 'it' is a fully natural, arguably better generic completion."
+ },
+ {
+  "id": "wrong_moderate_287_176",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "long_range_context",
+  "domain": "math_or_formula",
+  "note": "True continuation ties back to the interval I defined a clause earlier ('otherwise I=[pi/(2H), pi/H)'); the model instead defaults to the far more common generic construction 'Let R be the/a ...'."
+ }
+]

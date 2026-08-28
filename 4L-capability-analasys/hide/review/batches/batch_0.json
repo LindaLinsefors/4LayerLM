@@ -1,0 +1,1335 @@
+[
+ {
+  "id": "wrong_moderate_178_303",
+  "stratum": "wrong_moderate",
+  "context": "zeese gebieden waar legerbases van EU-lidstaten gevestigd zijn. Ik wil op een zo'n geval concreet ingaan. Er zijn gebieden in Cyprus die als sovereign military bases worden aangemerkt. Ze horen",
+  "true_token": " wel",
+  "top5": [
+   {
+    "token": " de",
+    "p": 0.122
+   },
+   {
+    "token": " een",
+    "p": 0.068
+   },
+   {
+    "token": " het",
+    "p": 0.055
+   },
+   {
+    "token": " dat",
+    "p": 0.047
+   },
+   {
+    "token": " zijn",
+    "p": 0.039
+   }
+  ],
+  "loss_nats": 7.15,
+  "true_rank": 131,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_51_101",
+  "stratum": "near_miss",
+  "context": " from one SQL table to another using .Net Core console app and EF Core. The program inserts records in 100 batches, and (this is important!) it creates a new instance of DbContext for each insert.\n1) Create SQL Server database, and the \"Froms\" and \"Tos",
+  "true_token": "\"",
+  "top5": [
+   {
+    "token": "hib",
+    "p": 0.286
+   },
+   {
+    "token": "\"",
+    "p": 0.174
+   },
+   {
+    "token": " of",
+    "p": 0.033
+   },
+   {
+    "token": "\",",
+    "p": 0.024
+   },
+   {
+    "token": ".",
+    "p": 0.021
+   }
+  ],
+  "loss_nats": 1.75,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_58_414",
+  "stratum": "catastrophic",
+  "context": " says she had not been talking with any human. They make her dress up so they can go to mass. Muyak felt bad that Mila had to lie for her, but she says she did not lie, for Muyak is not human. Muyak explains that seeing her would",
+  "true_token": " fright",
+  "top5": [
+   {
+    "token": " be",
+    "p": 0.343
+   },
+   {
+    "token": " not",
+    "p": 0.098
+   },
+   {
+    "token": " make",
+    "p": 0.095
+   },
+   {
+    "token": " have",
+    "p": 0.04
+   },
+   {
+    "token": " help",
+    "p": 0.033
+   }
+  ],
+  "loss_nats": 8.84,
+  "true_rank": 280,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_391_90",
+  "stratum": "wrong_moderate",
+  "context": " and cost to minimum.\nMany semiconductor production support tools are capable of working and supporting new critical dimension production tools, such as lithography tools with or without modifications. New production tools have tighter vibration frequency requirements, which are equipped with designed specific vibration isolated tool pedestal and pads. However, new critical",
+  "true_token": " tools",
+  "top5": [
+   {
+    "token": " dimension",
+    "p": 0.768
+   },
+   {
+    "token": " dimensions",
+    "p": 0.199
+   },
+   {
+    "token": " dimensional",
+    "p": 0.01
+   },
+   {
+    "token": " tool",
+    "p": 0.002
+   },
+   {
+    "token": " height",
+    "p": 0.002
+   }
+  ],
+  "loss_nats": 7.26,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_121_502",
+  "stratum": "near_miss",
+  "context": " Karp, from 1942 to 1977.  His daughter Barbara Karp took over her father's duties during his final illness.  James DeBlasis then served as interim artistic director after the resignation of Barbara Karp.  In 1983, Tito Capobianco became Pittsburgh Opera's general director",
+  "true_token": ",",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.545
+   },
+   {
+    "token": ",",
+    "p": 0.131
+   },
+   {
+    "token": " and",
+    "p": 0.108
+   },
+   {
+    "token": " of",
+    "p": 0.086
+   },
+   {
+    "token": " for",
+    "p": 0.027
+   }
+  ],
+  "loss_nats": 2.03,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_386_158",
+  "stratum": "wrong_moderate",
+  "context": " and pasted the first link I could find so you know which ones I am talking about.\n\nSamsung TV\n\n(OPiZero)Orange Pi Zero\nI am using Orange Pi zero since it’s more lightweight than the bigger Raspberry Pi. It also has an",
+  "true_token": " ether",
+  "top5": [
+   {
+    "token": " LED",
+    "p": 0.029
+   },
+   {
+    "token": " extra",
+    "p": 0.026
+   },
+   {
+    "token": " integrated",
+    "p": 0.02
+   },
+   {
+    "token": " optional",
+    "p": 0.019
+   },
+   {
+    "token": " amazing",
+    "p": 0.019
+   }
+  ],
+  "loss_nats": 6.24,
+  "true_rank": 103,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_363_416",
+  "stratum": "near_miss",
+  "context": "if you really like pplaying with plasmoids then I'd wait till it's out\n<mason> Are there sites like kde-look with more 4.2 stuff?\n<DaSkreech>  a lot of the current in the wild plasmoids are 4.1\n<",
+  "true_token": "Da",
+  "top5": [
+   {
+    "token": "m",
+    "p": 0.612
+   },
+   {
+    "token": "Da",
+    "p": 0.326
+   },
+   {
+    "token": "alm",
+    "p": 0.003
+   },
+   {
+    "token": "kal",
+    "p": 0.002
+   },
+   {
+    "token": "da",
+    "p": 0.002
+   }
+  ],
+  "loss_nats": 1.12,
+  "true_rank": 2,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "near_miss_30_353",
+  "stratum": "near_miss",
+  "context": " adequate as a screening device to measure PERC exposures of workers in the dry-cleaning industry. Earnest et al. \\[[@B10]\\] carried out a study to determine the concentrations of perchloroethylene in commercial dry cleaners at Teasdale Fenton Cleaners Cincinnati, Ohio,",
+  "true_token": " using",
+  "top5": [
+   {
+    "token": " USA",
+    "p": 0.3
+   },
+   {
+    "token": " and",
+    "p": 0.113
+   },
+   {
+    "token": " in",
+    "p": 0.068
+   },
+   {
+    "token": " which",
+    "p": 0.063
+   },
+   {
+    "token": " using",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 3.14,
+  "true_rank": 5,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_73_468",
+  "stratum": "wrong_moderate",
+  "context": " prefer fashion and newness over bargains, which has made its clearance sales less enticing. The November figure was the first decline since September 2009 when it had a 2.4 percent drop.\n\nMacy's revenue at stores open at least a year fell 0.7 percent in November,",
+  "true_token": " compared",
+  "top5": [
+   {
+    "token": " but",
+    "p": 0.073
+   },
+   {
+    "token": " according",
+    "p": 0.059
+   },
+   {
+    "token": " with",
+    "p": 0.049
+   },
+   {
+    "token": " and",
+    "p": 0.044
+   },
+   {
+    "token": " which",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 4.16,
+  "true_rank": 10,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_68_168",
+  "stratum": "confident_correct",
+  "context": " cells. The inhibitor of NF-κB, while not ERK1/2 or Akt, abolished DEHP induced up regulation of IL-6 and invasion of NSCLC cells. DEHP treatment can increase the phosphorylation, nuclear localization, and transcriptional activities of p65, one of the major parts of NF-",
+  "true_token": "κB",
+  "top5": [
+   {
+    "token": "κB",
+    "p": 0.991
+   },
+   {
+    "token": "kB",
+    "p": 0.006
+   },
+   {
+    "token": "kappa",
+    "p": 0.001
+   },
+   {
+    "token": "κ",
+    "p": 0.001
+   },
+   {
+    "token": "KB",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.01,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_43_54",
+  "stratum": "wrong_moderate",
+  "context": " These observations reveal that the binding sequences of the HAP complex and its target genes have been conserved during the evolution of aerobic fermentation. In addition, the HAP complex members have been functionally conserved between *S. cerevisiae* and respiratory yeast *K. lactis* ([@ev",
+  "true_token": "t",
+  "top5": [
+   {
+    "token": "v",
+    "p": 0.347
+   },
+   {
+    "token": "w",
+    "p": 0.161
+   },
+   {
+    "token": "y",
+    "p": 0.136
+   },
+   {
+    "token": "z",
+    "p": 0.096
+   },
+   {
+    "token": "u",
+    "p": 0.069
+   }
+  ],
+  "loss_nats": 4.06,
+  "true_rank": 8,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_112_363",
+  "stratum": "wrong_moderate",
+  "context": " fiscal year's end is correct, the number would indicate 27 percent fewer permits issued during 2008 than 2007.\n\n\"We are a regulatory and permitting agency, and as such the BLM doesn't speculate about the reasons behind the numbers,\" Papich said on behalf of Assistant Field Manager Minerals,",
+  "true_token": " David",
+  "top5": [
+   {
+    "token": " who",
+    "p": 0.093
+   },
+   {
+    "token": " which",
+    "p": 0.08
+   },
+   {
+    "token": " a",
+    "p": 0.046
+   },
+   {
+    "token": " the",
+    "p": 0.039
+   },
+   {
+    "token": " \"",
+    "p": 0.032
+   }
+  ],
+  "loss_nats": 6.28,
+  "true_rank": 60,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_324_496",
+  "stratum": "wrong_moderate",
+  "context": " Università della Calabria, Cubo 30B, 87036\\\nArcavacata di Rende, Cosenza (Italy)\\\n*E-mail address:* `polizzi@mat.unical.it`\\\n\\\nAntonio Rapagnetta",
+  "true_token": ",\\",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.475
+   },
+   {
+    "token": "\\",
+    "p": 0.135
+   },
+   {
+    "token": ",",
+    "p": 0.126
+   },
+   {
+    "token": ".\\",
+    "p": 0.052
+   },
+   {
+    "token": "[^",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 3.93,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_393_505",
+  "stratum": "confident_correct",
+  "context": " High or Moderate               3 (15.0%)         12 (52.2%)   15 (34.9%)\n   Low/No/Asset                   17 (85.0%)        11 (47.8%)   28 (65.1%)\n  Attitudes                        ",
+  "true_token": "                        ",
+  "top5": [
+   {
+    "token": "                        ",
+    "p": 0.985
+   },
+   {
+    "token": "                       ",
+    "p": 0.01
+   },
+   {
+    "token": "                      ",
+    "p": 0.003
+   },
+   {
+    "token": "                     ",
+    "p": 0.001
+   },
+   {
+    "token": "                    ",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.02,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "near_miss_338_437",
+  "stratum": "near_miss",
+  "context": " got, a kangaroo came and put her in her pouch, it was a warm place for this little baby to be, and the kangaroo actually took them for a ride out in this beautiful park and Victoria couldn’t fit all the way in and she hung her legs out",
+  "true_token": " and",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.208
+   },
+   {
+    "token": " of",
+    "p": 0.131
+   },
+   {
+    "token": ".",
+    "p": 0.113
+   },
+   {
+    "token": " and",
+    "p": 0.093
+   },
+   {
+    "token": " to",
+    "p": 0.065
+   }
+  ],
+  "loss_nats": 2.38,
+  "true_rank": 4,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_37_305",
+  "stratum": "wrong_moderate",
+  "context": " than the target's (or the target's level, if it doesn't have a\n  challenge rating).\n\nThere is, as far as I can tell, no other restrictions. It must be a beast, and it must be CR lower than or equal to the character's level. You",
+  "true_token": " need",
+  "top5": [
+   {
+    "token": " can",
+    "p": 0.527
+   },
+   {
+    "token": " cannot",
+    "p": 0.054
+   },
+   {
+    "token": " have",
+    "p": 0.052
+   },
+   {
+    "token": " could",
+    "p": 0.046
+   },
+   {
+    "token": " may",
+    "p": 0.038
+   }
+  ],
+  "loss_nats": 3.99,
+  "true_rank": 9,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_0_153",
+  "stratum": "confident_correct",
+  "context": " network activated by DNA repair or whether it is the result of the loss of DNA structures that elicit the checkpoint. Here we show that checkpoint recovery can be uncoupled from bulk chromosome DNA repair if single-stranded (ss) DNA persists. This situation occurs in cells that are deficient in the Srs",
+  "true_token": "2",
+  "top5": [
+   {
+    "token": "2",
+    "p": 0.848
+   },
+   {
+    "token": "1",
+    "p": 0.064
+   },
+   {
+    "token": "3",
+    "p": 0.016
+   },
+   {
+    "token": " protein",
+    "p": 0.008
+   },
+   {
+    "token": " proteins",
+    "p": 0.006
+   }
+  ],
+  "loss_nats": 0.17,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "near_miss_291_339",
+  "stratum": "near_miss",
+  "context": " or edit by client using compiler tools?\n\nis there any way to protect the source code of asp.net or c# being view by client when they try to use re-edit it by using compiler tools? \ni have check on .net reflector but only can use for 14",
+  "true_token": " days",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.212
+   },
+   {
+    "token": " days",
+    "p": 0.098
+   },
+   {
+    "token": "-",
+    "p": 0.023
+   },
+   {
+    "token": "40",
+    "p": 0.023
+   },
+   {
+    "token": " or",
+    "p": 0.021
+   }
+  ],
+  "loss_nats": 2.32,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_264_392",
+  "stratum": "wrong_moderate",
+  "context": ", are you serious here? US moles inside Sweden’s SD party would be akin to the Vatican sending emissaries spying on Kaczynski’s party. Corollary question: What is the probability that all-out self-confessed servants of the Zionazis would be",
+  "true_token": " more",
+  "top5": [
+   {
+    "token": " able",
+    "p": 0.055
+   },
+   {
+    "token": " in",
+    "p": 0.035
+   },
+   {
+    "token": " killed",
+    "p": 0.029
+   },
+   {
+    "token": " willing",
+    "p": 0.022
+   },
+   {
+    "token": " the",
+    "p": 0.015
+   }
+  ],
+  "loss_nats": 5.11,
+  "true_rank": 14,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_395_102",
+  "stratum": "confident_correct",
+  "context": " wide_int_bitmask &operator |= (wide_int_bitmask);\n  inline wide_int_bitmask operator ~ () const;\n  inline wide_int_bitmask operator & (wide_int_bitmask) const;\n  inline wide_int_bit",
+  "true_token": "mask",
+  "top5": [
+   {
+    "token": "mask",
+    "p": 0.972
+   },
+   {
+    "token": "_",
+    "p": 0.004
+   },
+   {
+    "token": "field",
+    "p": 0.004
+   },
+   {
+    "token": " mask",
+    "p": 0.004
+   },
+   {
+    "token": "map",
+    "p": 0.001
+   }
+  ],
+  "loss_nats": 0.03,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_28_453",
+  "stratum": "catastrophic",
+  "context": " the original 17th and 18th century barns and weavers' cottages survive today as listed buildings.\n\nTogether with neighbouring Delph, Dobcross is, geographically, \"considered as the centre of Saddleworth\", although is not its largest village centre by some margin.",
+  "true_token": " Industrial",
+  "top5": [
+   {
+    "token": "\n",
+    "p": 0.292
+   },
+   {
+    "token": " The",
+    "p": 0.153
+   },
+   {
+    "token": " It",
+    "p": 0.091
+   },
+   {
+    "token": " In",
+    "p": 0.042
+   },
+   {
+    "token": "  ",
+    "p": 0.041
+   }
+  ],
+  "loss_nats": 9.99,
+  "true_rank": 588,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_205_68",
+  "stratum": "wrong_moderate",
+  "context": "assu (1990)\nGeorgootti C/o Georgootti (1991)\nThalasthaanam (1992)\nJohnnie Walker (1992)\nThiruthalvaadi (1992)\nCongratulations Miss Anitha Menon (1992)\nOot",
+  "true_token": "ty",
+  "top5": [
+   {
+    "token": "y",
+    "p": 0.029
+   },
+   {
+    "token": "ari",
+    "p": 0.022
+   },
+   {
+    "token": "ar",
+    "p": 0.017
+   },
+   {
+    "token": "u",
+    "p": 0.012
+   },
+   {
+    "token": "am",
+    "p": 0.012
+   }
+  ],
+  "loss_nats": 5.32,
+  "true_rank": 30,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_211_341",
+  "stratum": "near_miss",
+  "context": " on November 1, 1935.\n We can find nothing in the city charter nor in the retirement ordinances that require the ten years of continuous service to immediately precede the retirement. As, on the record before us, it appears that Kennedy was eligible for retirement and that intervener as his successor in",
+  "true_token": " interest",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.162
+   },
+   {
+    "token": " interest",
+    "p": 0.125
+   },
+   {
+    "token": " office",
+    "p": 0.117
+   },
+   {
+    "token": " this",
+    "p": 0.046
+   },
+   {
+    "token": " law",
+    "p": 0.038
+   }
+  ],
+  "loss_nats": 2.08,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_117_480",
+  "stratum": "confident_correct",
+  "context": "0.015)      −0.04 (0.654)\n   Hypertensive subjects   0.28 (0.042)   0.12 (0.382)       −0.09 (0.523)   0.20 (0.151)      −",
+  "true_token": "0",
+  "top5": [
+   {
+    "token": "0",
+    "p": 0.991
+   },
+   {
+    "token": "1",
+    "p": 0.007
+   },
+   {
+    "token": "−",
+    "p": 0.001
+   },
+   {
+    "token": "2",
+    "p": 0.001
+   },
+   {
+    "token": "3",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.01,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_330_228",
+  "stratum": "wrong_moderate",
+  "context": " eye.\n\n1. Commerce's Evolving Test for Use of Multiple Cost-Averaging Periods\n\nWhen the underlying administrative review began, Commerce's then well-established test for the use of multiple cost-averaging periods in cases involving ordinary industrial products (such as the rebar",
+  "true_token": " at",
+  "top5": [
+   {
+    "token": " and",
+    "p": 0.142
+   },
+   {
+    "token": ",",
+    "p": 0.14
+   },
+   {
+    "token": ")",
+    "p": 0.086
+   },
+   {
+    "token": " or",
+    "p": 0.053
+   },
+   {
+    "token": "),",
+    "p": 0.044
+   }
+  ],
+  "loss_nats": 6.0,
+  "true_rank": 33,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_318_433",
+  "stratum": "confident_correct",
+  "context": "WEBGL_draw_buffers',\n  'WEBGL_lose_context',\n  'MOZ_WEBGL_lose_context',\n  'MOZ_WEBGL_compressed_texture_s3tc',\n  'MOZ",
+  "true_token": "_",
+  "top5": [
+   {
+    "token": "_",
+    "p": 0.997
+   },
+   {
+    "token": "WE",
+    "p": 0.001
+   },
+   {
+    "token": "W",
+    "p": 0.0
+   },
+   {
+    "token": "M",
+    "p": 0.0
+   },
+   {
+    "token": "2",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.0,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_354_395",
+  "stratum": "wrong_moderate",
+  "context": " Ising-type fixed-point (marked with ‘I’ in the figure), while its critical behavior for $ D < 0 $ is determined by an XY-type fixed-point. These are two radically different phases (and universality classes), and correspond to disparate ground-states. This indicates",
+  "true_token": " also",
+  "top5": [
+   {
+    "token": " that",
+    "p": 0.708
+   },
+   {
+    "token": " the",
+    "p": 0.091
+   },
+   {
+    "token": " a",
+    "p": 0.084
+   },
+   {
+    "token": ",",
+    "p": 0.016
+   },
+   {
+    "token": " an",
+    "p": 0.014
+   }
+  ],
+  "loss_nats": 7.7,
+  "true_rank": 40,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_205_56",
+  "stratum": "catastrophic",
+  "context": " (1990)\nBrahmarakshassu (1990)\nGeorgootti C/o Georgootti (1991)\nThalasthaanam (1992)\nJohnnie Walker (1992)\nThiruthalvaadi (1992)\nCongratulations",
+  "true_token": " Miss",
+  "top5": [
+   {
+    "token": " to",
+    "p": 0.352
+   },
+   {
+    "token": " (",
+    "p": 0.086
+   },
+   {
+    "token": ",",
+    "p": 0.06
+   },
+   {
+    "token": "!",
+    "p": 0.049
+   },
+   {
+    "token": "\n",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 9.1,
+  "true_rank": 437,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_150_240",
+  "stratum": "wrong_moderate",
+  "context": " chromosome-sized DNA molecules, are elongated and fixed in a rapid, controlled and reproducible manner which allows for the nucleic acid molecules to retain their biological function and, further, makes rapid analysis of the molecules possible. In one embodiment of such a procedure, the molecules are elongated in a flow of a molten",
+  "true_token": " or",
+  "top5": [
+   {
+    "token": " salt",
+    "p": 0.06
+   },
+   {
+    "token": " pool",
+    "p": 0.042
+   },
+   {
+    "token": " liquid",
+    "p": 0.039
+   },
+   {
+    "token": " metal",
+    "p": 0.039
+   },
+   {
+    "token": " solution",
+    "p": 0.038
+   }
+  ],
+  "loss_nats": 4.26,
+  "true_rank": 19,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_355_61",
+  "stratum": "wrong_moderate",
+  "context": "\">\n    <!-- a space separated list of Uniform Resource Identifiers -->\n\n<!ENTITY % Datetime \"CDATA\">\n    <!-- date and time information. ISO date format -->\n\n<!ENTITY % Script \"CDATA\">\n    <!-- script expression -->\n\n<!ENTITY % Style",
+  "true_token": "Sheet",
+  "top5": [
+   {
+    "token": " \"",
+    "p": 0.742
+   },
+   {
+    "token": " \"%",
+    "p": 0.033
+   },
+   {
+    "token": "  ",
+    "p": 0.013
+   },
+   {
+    "token": "\n",
+    "p": 0.01
+   },
+   {
+    "token": " %",
+    "p": 0.008
+   }
+  ],
+  "loss_nats": 6.72,
+  "true_rank": 27,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_283_151",
+  "stratum": "wrong_moderate",
+  "context": " and the state of the system at $t_2$ is a convex mixture of $\\ketbra{0}{0}$ and $\\ketbra{1}{1}$ for all possible experimental interventions at $t_1$; there are thus no coherences in the state of the system at any",
+  "true_token": " of",
+  "top5": [
+   {
+    "token": " time",
+    "p": 0.179
+   },
+   {
+    "token": " $",
+    "p": 0.114
+   },
+   {
+    "token": " given",
+    "p": 0.112
+   },
+   {
+    "token": " other",
+    "p": 0.09
+   },
+   {
+    "token": " point",
+    "p": 0.088
+   }
+  ],
+  "loss_nats": 2.78,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_195_233",
+  "stratum": "catastrophic",
+  "context": " l'Assemblée fédérale suisse conduite par son président, M. Marcel Sandoz, qui a pris place dans la tribune officielle.\n\nLes membres de la délégation sont en visite à Strasbourg pour rencontrer leurs",
+  "true_token": " interloc",
+  "top5": [
+   {
+    "token": " dro",
+    "p": 0.033
+   },
+   {
+    "token": " dé",
+    "p": 0.031
+   },
+   {
+    "token": " prop",
+    "p": 0.025
+   },
+   {
+    "token": " activ",
+    "p": 0.021
+   },
+   {
+    "token": " ré",
+    "p": 0.016
+   }
+  ],
+  "loss_nats": 9.35,
+  "true_rank": 1015,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_2_301",
+  "stratum": "near_miss",
+  "context": " and travel history for exposure to infectious risks using geographic, seasonal, environmental, sociocultural, and epidemiological data are needed. Along with clinical examination and elementary first-line investigations, the history should guide second-line exams, which will provide the etiology and optimal treatment in approximately 75 % of cases.",
+  "true_token": " The",
+  "top5": [
+   {
+    "token": "<|endoftext|>",
+    "p": 0.364
+   },
+   {
+    "token": " The",
+    "p": 0.111
+   },
+   {
+    "token": " In",
+    "p": 0.035
+   },
+   {
+    "token": " A",
+    "p": 0.03
+   },
+   {
+    "token": " This",
+    "p": 0.017
+   }
+  ],
+  "loss_nats": 2.2,
+  "true_rank": 2,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "hesitant_correct_289_317",
+  "stratum": "hesitant_correct",
+  "context": ".S. 870, 100 S.Ct. 146, 62 L.Ed.2d 95 (1979).\nTo determine whether the Negotiated Settlement is fair, adequate and reasonable, the Court has been instructed to consider several factors:\n(1) the reasonableness of the Settlement in",
+  "true_token": " light",
+  "top5": [
+   {
+    "token": " light",
+    "p": 0.211
+   },
+   {
+    "token": " the",
+    "p": 0.143
+   },
+   {
+    "token": " determining",
+    "p": 0.065
+   },
+   {
+    "token": " relation",
+    "p": 0.046
+   },
+   {
+    "token": " its",
+    "p": 0.04
+   }
+  ],
+  "loss_nats": 1.56,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_125_407",
+  "stratum": "wrong_moderate",
+  "context": " that $({\\mathcal{E}}, \\nabla)$ does not have unmarked spikes. [ $\\Box$ ]{}\n\nBeukers’ proof of Lemma \\[ordlem1\\] (i) is a concrete version of [@Honda], Lemma 1, page 174. The proof uses the recursion for the",
+  "true_token": " coefficients",
+  "top5": [
+   {
+    "token": " local",
+    "p": 0.159
+   },
+   {
+    "token": " $",
+    "p": 0.029
+   },
+   {
+    "token": " roots",
+    "p": 0.019
+   },
+   {
+    "token": " linear",
+    "p": 0.015
+   },
+   {
+    "token": " function",
+    "p": 0.012
+   }
+  ],
+  "loss_nats": 4.54,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_396_221",
+  "stratum": "wrong_moderate",
+  "context": "up. We calculated the costs per survivor, costs per life year gained, and costs per QALY gained. A sensitivity analysis was conducted to model the impact of changes in utility (life years gained and health status index \\[HSI\\]) on the development of cost-outcome indices.\n\n",
+  "true_token": "Materials",
+  "top5": [
+   {
+    "token": "Results",
+    "p": 0.27
+   },
+   {
+    "token": "Methods",
+    "p": 0.117
+   },
+   {
+    "token": "2",
+    "p": 0.086
+   },
+   {
+    "token": "Statistical",
+    "p": 0.05
+   },
+   {
+    "token": "Patients",
+    "p": 0.04
+   }
+  ],
+  "loss_nats": 4.19,
+  "true_rank": 12,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_33_148",
+  "stratum": "near_miss",
+  "context": " usually histopathologically defined as a hyperplasia of conjunctival tissue, elastoid degeneration of subepithelieum and fragmentation of Bowman's membrane. Our histopathological findings in 73 eyes are following: conjunctiva with neovascularisation, leukocyte margination and subepithelial basophilic degeneration, proliferation of conjunctival",
+  "true_token": " tissue",
+  "top5": [
+   {
+    "token": " cells",
+    "p": 0.126
+   },
+   {
+    "token": " epithelium",
+    "p": 0.087
+   },
+   {
+    "token": " tissue",
+    "p": 0.081
+   },
+   {
+    "token": " epithelial",
+    "p": 0.055
+   },
+   {
+    "token": " and",
+    "p": 0.039
+   }
+  ],
+  "loss_nats": 2.51,
+  "true_rank": 3,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_160_299",
+  "stratum": "catastrophic",
+  "context": " were the case, then Boeing would keep its aircraft plants in the Pacific Northwest - they were originally located there for the cheap hydroelectric power. But higher wages seem to have outbalanced that equation.\n\nMoreover, coal is a commodity quite easily and cheaply shipped - just ask China, as they",
+  "true_token": " source",
+  "top5": [
+   {
+    "token": " are",
+    "p": 0.223
+   },
+   {
+    "token": " say",
+    "p": 0.105
+   },
+   {
+    "token": " have",
+    "p": 0.09
+   },
+   {
+    "token": " do",
+    "p": 0.053
+   },
+   {
+    "token": " will",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 9.54,
+  "true_rank": 526,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_16_455",
+  "stratum": "wrong_moderate",
+  "context": " psi -1700 psi. Typically, the determining factor as to\nthe operating pressure is the ability of the fluid inflatable containers\n140 to withstand the internal pressure generated by mechanical\ncompression of the containers by the plunger 124 over the unsupported\nradius of the fluid inflatable container",
+  "true_token": " at",
+  "top5": [
+   {
+    "token": " 140",
+    "p": 0.72
+   },
+   {
+    "token": ".",
+    "p": 0.152
+   },
+   {
+    "token": ",",
+    "p": 0.014
+   },
+   {
+    "token": " 130",
+    "p": 0.007
+   },
+   {
+    "token": " 142",
+    "p": 0.005
+   }
+  ],
+  "loss_nats": 7.3,
+  "true_rank": 34,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_47_506",
+  "stratum": "wrong_moderate",
+  "context": "\nLaunch interactive ssh from nodejs\n\nI have a text blob that contains ip, port, user and passord and would like to write a small utility script where I can:\n\npaste the text in stdin\nextract the connection details using regex or any other means\nuse node to",
+  "true_token": " launch",
+  "top5": [
+   {
+    "token": " create",
+    "p": 0.052
+   },
+   {
+    "token": " connect",
+    "p": 0.034
+   },
+   {
+    "token": " run",
+    "p": 0.029
+   },
+   {
+    "token": " execute",
+    "p": 0.029
+   },
+   {
+    "token": " make",
+    "p": 0.026
+   }
+  ],
+  "loss_nats": 4.75,
+  "true_rank": 24,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_381_81",
+  "stratum": "wrong_moderate",
+  "context": " Also: Roy Hodgson has warned his England players there will have to be a significant improvement against Germany tomorrow night or they could risk another demoralising defeat in their penultimate game before he has to pick his World Cup squad.\n\nDAILY STAR: Roy Hodgson has",
+  "true_token": " urged",
+  "top5": [
+   {
+    "token": " been",
+    "p": 0.134
+   },
+   {
+    "token": " warned",
+    "p": 0.114
+   },
+   {
+    "token": " said",
+    "p": 0.051
+   },
+   {
+    "token": " told",
+    "p": 0.03
+   },
+   {
+    "token": " not",
+    "p": 0.029
+   }
+  ],
+  "loss_nats": 6.06,
+  "true_rank": 65,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_147_118",
+  "stratum": "wrong_moderate",
+  "context": " the heat spreader 20.\nIn such an electronic device, the gap between the die 14 and the PCB 101 is too narrow, however, to dissipate the generated heat from the die 14. Accordingly, low power chips are typically disposed on the lower surface of the substrate, thus hindering circuit",
+  "true_token": " design",
+  "top5": [
+   {
+    "token": " performance",
+    "p": 0.128
+   },
+   {
+    "token": " operation",
+    "p": 0.103
+   },
+   {
+    "token": " efficiency",
+    "p": 0.033
+   },
+   {
+    "token": " components",
+    "p": 0.025
+   },
+   {
+    "token": " elements",
+    "p": 0.021
+   }
+  ],
+  "loss_nats": 5.89,
+  "true_rank": 58,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_75_360",
+  "stratum": "catastrophic",
+  "context": ", however, is rather large. The $P_y^p$ was further shown to be a sensitive observable to investigate the mechanisms related to the short lifetime of the $\\Delta$ resonance in the medium. Indeed, the latter reflect themselves in imaginary parts entering the $\\Delta$ selfenergy and produce",
+  "true_token": " size",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.382
+   },
+   {
+    "token": " the",
+    "p": 0.155
+   },
+   {
+    "token": " an",
+    "p": 0.098
+   },
+   {
+    "token": " $\\",
+    "p": 0.008
+   },
+   {
+    "token": " more",
+    "p": 0.006
+   }
+  ],
+  "loss_nats": 13.14,
+  "true_rank": 3589,
+  "bigram_seen_in_context": false
+ }
+]

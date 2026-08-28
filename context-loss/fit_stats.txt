@@ -1,0 +1,6 @@
+pile_4l: overall mean loss 2.7073 nats (3.906 bits) | fit vs abs position: L_inf=2.293+-0.010, A=3.817+-0.033, alpha=0.448+-0.006
+simple_2l: overall mean loss 2.2260 nats (3.211 bits) | fit vs abs position: L_inf=2.152+-0.003, A=2.475+-0.042, alpha=0.760+-0.013
+pile_4l: fit truncated-context curve: L_inf=2.203+-0.014, A=4.357+-0.053, alpha=0.454+-0.008
+pile_4l: first-token-of-doc loss (d=0): 5.813 nats (n=1416) | unigram entropy of corpus sample: 7.840 nats
+simple_2l: fit truncated-context curve: L_inf=2.123+-0.009, A=3.115+-0.088, alpha=0.782+-0.023
+simple_2l: first-token-of-doc loss (d=0): 5.705 nats (n=5994) | unigram entropy of corpus sample: 5.906 nats

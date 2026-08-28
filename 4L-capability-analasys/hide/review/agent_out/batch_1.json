@@ -1,0 +1,298 @@
+[
+ {
+  "id": "catastrophic_234_417",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific",
+  "note": "true_token ' cases' reads like a spelling/scanno error for 'gases' in the source essay; the model's top-1 ' gases' (77%) is arguably the more correct word than the corpus ground truth."
+ },
+ {
+  "id": "hesitant_correct_245_295",
+  "why_right": "formulaic_ngram",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "hesitant_correct_309_240",
+  "why_right": "formulaic_ngram",
+  "domain": "code"
+ },
+ {
+  "id": "catastrophic_31_439",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "long_range_context",
+  "domain": "prose_nonfiction",
+  "note": "true continuation 'politically' echoes the section heading 'g) Political Persecuted' ~40 tokens back; the model's guess 'a' shows no sign of tracking that link."
+ },
+ {
+  "id": "confident_correct_116_411",
+  "why_right": "copy_from_context",
+  "domain": "code"
+ },
+ {
+  "id": "wrong_moderate_87_270",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "local_context",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "catastrophic_365_41",
+  "plausibility": "grammatical_only",
+  "aspects_right": [],
+  "failure_needs": "world_knowledge",
+  "domain": "other",
+  "note": "Model glues 'age' onto 'Mass' with no leading space, producing 'Massage' instead of the new word 'Gainer' (product is a 'Hard Mass Gainer' supplement) — a spacing/segmentation failure that also derails the meaning entirely."
+ },
+ {
+  "id": "wrong_moderate_261_158",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["format"],
+  "failure_needs": "arithmetic_or_counting",
+  "domain": "table_or_list"
+ },
+ {
+  "id": "wrong_moderate_119_192",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "format_structure",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "wrong_moderate_79_98",
+  "plausibility": "broken",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "copying_missed",
+  "domain": "technical_scientific",
+  "note": "Sentence explicitly reads 'the lateral extrastirate (VIS...' but the model completes the earlier abbreviation 'VISm' (medial) instead of matching the word 'lateral' sitting immediately before it — a direct local contradiction."
+ },
+ {
+  "id": "confident_correct_341_113",
+  "why_right": "formulaic_ngram",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "hesitant_correct_243_354",
+  "why_right": "syntax_forced",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "wrong_moderate_46_394",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "syntax",
+  "domain": "technical_scientific",
+  "note": "Model's top-1 'between' is likely a lexical-priming artifact (the word 'between' appears repeatedly in the surrounding sentences) rather than recognizing that 'observed' closes the subject noun phrase and a main verb is due."
+ },
+ {
+  "id": "confident_correct_15_442",
+  "why_right": "copy_from_context",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "catastrophic_241_176",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific",
+  "note": "True completion is 'delitto perfetto', a named yeast homologous-recombination technique (Italian for 'perfect crime'); true_rank 4036 shows it's essentially invisible to the model, which defaults to the generic English word 'delayed'."
+ },
+ {
+  "id": "wrong_moderate_156_488",
+  "plausibility": "plausible",
+  "aspects_right": [],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific",
+  "note": "Model's top-1 is the literal <|endoftext|> token (47.5%) — it reads the concluding sentence as the end of the document, but a new paragraph actually follows."
+ },
+ {
+  "id": "wrong_moderate_305_91",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "format_structure",
+  "domain": "legal_boilerplate",
+  "note": "Top5 are all single capital letters, matching the 'middle initial' pattern from earlier names in the caption (e.g. 'MANUEL E. SKINNER'); the true continuation ' FOR' instead jumps into the court-title header ('...FOR THE FIFTH CIRCUIT'), likely a document-layout artifact from the source scrape."
+ },
+ {
+  "id": "wrong_moderate_6_75",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "local_context",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "hesitant_correct_398_494",
+  "why_right": "syntax_forced",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "near_miss_291_277",
+  "plausibility": "broken",
+  "aspects_right": ["spacing"],
+  "failure_needs": "syntax",
+  "domain": "web_or_forum",
+  "note": "Source text itself is garbled/non-native English (forum title running into body); the model's top-1 'file can I be' doesn't parse, unlike the true 'file can be'."
+ },
+ {
+  "id": "wrong_moderate_53_300",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "semantic_field", "topic"],
+  "failure_needs": "local_context",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_375_37",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "local_context",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "wrong_moderate_50_124",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "table_or_list",
+  "note": "Looks like an alphabetical name-frequency list; model's guess pushes toward 'Ursula' while the true token spells 'Ula' — both are equally plausible specific names."
+ },
+ {
+  "id": "wrong_moderate_133_356",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "world_knowledge",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "catastrophic_390_43",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "news",
+  "note": "Misses even the format cue that 'Yankees-' conventionally introduces an opposing team's capitalized name in sports-broadcast naming; guesses a lowercase adjective 'inspired' instead."
+ },
+ {
+  "id": "near_miss_6_377",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "local_context",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "hesitant_correct_289_205",
+  "why_right": "formulaic_ngram",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "wrong_moderate_320_393",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos"],
+  "failure_needs": "local_context",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "near_miss_337_358",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "semantic_field", "topic"],
+  "failure_needs": "local_context",
+  "domain": "technical_scientific",
+  "note": "Model's top-1 ' i' carries 79% probability and is transparently an attempt to re-copy the paper's own abbreviation 'iPSC-Heps' from earlier context — strong entity-copying behavior that happens to lose out to the generic 'the'."
+ },
+ {
+  "id": "wrong_moderate_291_88",
+  "plausibility": "grammatical_only",
+  "aspects_right": [],
+  "failure_needs": "local_context",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "hesitant_correct_144_254",
+  "why_right": "formulaic_ngram",
+  "domain": "table_or_list"
+ },
+ {
+  "id": "near_miss_274_428",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "long_range_context",
+  "domain": "math_or_formula",
+  "note": "Model defaults to the generic physics index pair mu-nu (extremely common tensor notation), missing that this paper's same-sign dimuon process ($\\mu^\\pm\\mu^\\pm$, stated ~30 tokens earlier) calls for the repeated index mu-mu."
+ },
+ {
+  "id": "catastrophic_87_108",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "local_context",
+  "domain": "code",
+  "note": "The described program logic ('menu will be closed... save the cookie') strongly suggests the cookie name should finish as 'hidden'/'closed'; the model instead just closes the string quote after 5 characters, an arbitrary truncation."
+ },
+ {
+  "id": "confident_correct_42_105",
+  "why_right": "format_structure",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "confident_correct_392_339",
+  "why_right": "format_structure",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "catastrophic_391_288",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "world_knowledge",
+  "domain": "legal_boilerplate",
+  "note": "True token starts 'AHUs' (air handling units), a specific HVAC term continuing a list of specific equipment (pumps, compressors, chillers); true_rank 9980 shows it's essentially unreachable for this model."
+ },
+ {
+  "id": "wrong_moderate_171_208",
+  "plausibility": "equally_good",
+  "aspects_right": ["format"],
+  "failure_needs": "format_structure",
+  "domain": "math_or_formula",
+  "note": "Newline vs. inline continuation is largely a LaTeX-source style choice (one-sentence-per-line is common), not really a content failure."
+ },
+ {
+  "id": "wrong_moderate_109_269",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "world_knowledge",
+  "domain": "news"
+ },
+ {
+  "id": "catastrophic_275_223",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos"],
+  "failure_needs": "local_context",
+  "domain": "technical_scientific",
+  "note": "'might be [responsible]' is arguably as natural as the true 'might somehow' — both hedges are consistent with the paper's own statement that the mechanism 'is still unclear'."
+ },
+ {
+  "id": "catastrophic_265_119",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos"],
+  "failure_needs": "world_knowledge",
+  "domain": "legal_boilerplate",
+  "note": "Ingredient list (fatty alcohols, waxes, stick form) is a classic antiperspirant-stick formulation; connecting that to the specific word 'antiperspirant' requires cosmetic-chemistry domain knowledge the model lacks."
+ },
+ {
+  "id": "near_miss_0_415",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos"],
+  "failure_needs": "local_context",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "confident_correct_158_339",
+  "why_right": "format_structure",
+  "domain": "code"
+ },
+ {
+  "id": "wrong_moderate_378_193",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "copying_missed",
+  "domain": "code",
+  "note": "Looks like a hex dump with a literal repeating quad '4609' a few tokens back (possibly ARM Thumb NOP padding, 0x4609 = 'mov r1,r1'); a clean induction-head/copy test — the model's top-1 '60' catches the first digit of the repeat but cuts it short of the full copy '609'."
+ }
+]

@@ -1,0 +1,1335 @@
+[
+ {
+  "id": "wrong_moderate_103_107",
+  "stratum": "wrong_moderate",
+  "context": " based on nuclear magnetic resonance (NMR) imaging data, a large cephalic gland reservoir of males of a solitary digger wasp, the European beewolf, Philanthus triangulum. Several lines of evidence suggest that this reservoir is a postpharyngeal gland. The gland reservoir originates from the",
+  "true_token": " posterior",
+  "top5": [
+   {
+    "token": " mouth",
+    "p": 0.021
+   },
+   {
+    "token": " anterior",
+    "p": 0.021
+   },
+   {
+    "token": " stomach",
+    "p": 0.014
+   },
+   {
+    "token": " head",
+    "p": 0.014
+   },
+   {
+    "token": " gland",
+    "p": 0.013
+   }
+  ],
+  "loss_nats": 4.38,
+  "true_rank": 7,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_17_117",
+  "stratum": "near_miss",
+  "context": " PTB compared with those with elevated concentrations than those with \\[[@CR20]\\]. Therefore it is valuable to measure folate as well as its metabolites including homocysteine when investing folate and PTB. It is worth to be mentioned that, not only folate, or homocysteine level but also",
+  "true_token": " the",
+  "top5": [
+   {
+    "token": " fol",
+    "p": 0.17
+   },
+   {
+    "token": " hom",
+    "p": 0.123
+   },
+   {
+    "token": " the",
+    "p": 0.102
+   },
+   {
+    "token": " other",
+    "p": 0.083
+   },
+   {
+    "token": " its",
+    "p": 0.082
+   }
+  ],
+  "loss_nats": 2.28,
+  "true_rank": 3,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_162_479",
+  "stratum": "catastrophic",
+  "context": " is no data available for the levels of exposure in cities. \"The difficulty is that all the pollutants, whether it is a petrol engine or a diesel engine, are all mixed together and that is why the data upon which this was based had to be the more specialized sort of high-level exposure of",
+  "true_token": " various",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.385
+   },
+   {
+    "token": " diesel",
+    "p": 0.076
+   },
+   {
+    "token": " people",
+    "p": 0.059
+   },
+   {
+    "token": " our",
+    "p": 0.044
+   },
+   {
+    "token": " a",
+    "p": 0.026
+   }
+  ],
+  "loss_nats": 8.25,
+  "true_rank": 192,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_37_65",
+  "stratum": "catastrophic",
+  "context": " the U.S. and Japan. Though the U.S. warned its citizens to stay at least 50 miles away from the plant, the Japanese government has only advised a 12-mile safety zone.<|endoftext|>Q:\n\nHow can I delete/remove a top level folder from vscode",
+  "true_token": " Explorer",
+  "top5": [
+   {
+    "token": "?",
+    "p": 0.342
+   },
+   {
+    "token": "\n",
+    "p": 0.092
+   },
+   {
+    "token": ".",
+    "p": 0.064
+   },
+   {
+    "token": " folder",
+    "p": 0.041
+   },
+   {
+    "token": "/",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 9.85,
+  "true_rank": 657,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_210_422",
+  "stratum": "wrong_moderate",
+  "context": " image‐segmentation classifier was trained on balanced labels for each pressure (6, 8, 10, and 12 cmH~2~O) and for each mouse (*N* = 8) as the single mouse held out for cross‐validation. Thus, a total of 32 distinct",
+  "true_token": " classification",
+  "top5": [
+   {
+    "token": " images",
+    "p": 0.174
+   },
+   {
+    "token": " regions",
+    "p": 0.14
+   },
+   {
+    "token": " image",
+    "p": 0.081
+   },
+   {
+    "token": " lung",
+    "p": 0.043
+   },
+   {
+    "token": " segmentation",
+    "p": 0.03
+   }
+  ],
+  "loss_nats": 6.53,
+  "true_rank": 69,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_246_47",
+  "stratum": "wrong_moderate",
+  "context": " of interactions exist between vitellogenesis and aging of the flies, we will attempt to alter the effects via ovarian transplantations and hormonal applications.<|endoftext|>Deborah C M Henry\n\nStewart, Mittleman, Heggie &",
+  "true_token": " Henry",
+  "top5": [
+   {
+    "token": " Co",
+    "p": 0.019
+   },
+   {
+    "token": " De",
+    "p": 0.017
+   },
+   {
+    "token": " J",
+    "p": 0.016
+   },
+   {
+    "token": " D",
+    "p": 0.015
+   },
+   {
+    "token": " M",
+    "p": 0.014
+   }
+  ],
+  "loss_nats": 5.13,
+  "true_rank": 19,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_241_185",
+  "stratum": "confident_correct",
+  "context": "Kim2]. To generate, the PHO5 promoter variant strains, a 161-bp sequence containing nucleosome -2 in the native PHO5pr was either deleted or replaced with a target GC% sequence following a two-step homologous recombination protocol Delitto perfetto [@pone.0063072",
+  "true_token": "-",
+  "top5": [
+   {
+    "token": "-",
+    "p": 1.0
+   },
+   {
+    "token": ".",
+    "p": 0.0
+   },
+   {
+    "token": "_",
+    "p": 0.0
+   },
+   {
+    "token": "‐",
+    "p": 0.0
+   },
+   {
+    "token": "C",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.0,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "confident_correct_227_455",
+  "stratum": "confident_correct",
+  "context": ";\\; 2 \\;\\; 3 \\;\\; 4 \\;\\; 5 \\;\\; 6 \\;\\; 7 \\;\\; 8 \\;\\; 9 \\;\\; 10 \\; \\right], \\\\\n\\texttt{ColInd} &=& \\left[\\; 0 \\;\\; 3 \\;\\; 1 \\;\\; 4 \\;\\; 2 \\;\\; 4 \\",
+  "true_token": ";\\;",
+  "top5": [
+   {
+    "token": ";\\;",
+    "p": 0.993
+   },
+   {
+    "token": ";\\;\\",
+    "p": 0.004
+   },
+   {
+    "token": ";\\",
+    "p": 0.001
+   },
+   {
+    "token": ";",
+    "p": 0.0
+   },
+   {
+    "token": " \\;",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.01,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_189_506",
+  "stratum": "wrong_moderate",
+  "context": " como puedo omitir que me acepte:\nRESINA%20REDU.QVW.Shared \nRESINA%20REDU%20MALO.QVW.Shared \n\nes decir que solo acepte .qvw en minusculas",
+  "true_token": "\n",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.11
+   },
+   {
+    "token": ".",
+    "p": 0.099
+   },
+   {
+    "token": " .",
+    "p": 0.057
+   },
+   {
+    "token": " de",
+    "p": 0.047
+   },
+   {
+    "token": ":",
+    "p": 0.038
+   }
+  ],
+  "loss_nats": 3.62,
+  "true_rank": 9,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_163_229",
+  "stratum": "wrong_moderate",
+  "context": " questions:\n\nWhich way is locked? Vertical or horizontal?\nWhich way locks? Clockwise or counter-clockwise?\n\nI've seen doorknobs have all sorts of configurations of this, so it never feels natural to lock or unlock someone else's door. The best thing",
+  "true_token": " for",
+  "top5": [
+   {
+    "token": " to",
+    "p": 0.234
+   },
+   {
+    "token": " I",
+    "p": 0.188
+   },
+   {
+    "token": " is",
+    "p": 0.157
+   },
+   {
+    "token": " about",
+    "p": 0.129
+   },
+   {
+    "token": " that",
+    "p": 0.104
+   }
+  ],
+  "loss_nats": 3.56,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_198_445",
+  "stratum": "wrong_moderate",
+  "context": "I) and his colleagues for fruitful discussion. Dr. Koseki and Dr. Furukawa for providing mice.\n\n**Author Contributions** K.U., T.I., H.K. and Y.B. performed experiments. K.U. and M.N. performed",
+  "true_token": " bio",
+  "top5": [
+   {
+    "token": " experiments",
+    "p": 0.345
+   },
+   {
+    "token": " the",
+    "p": 0.071
+   },
+   {
+    "token": " data",
+    "p": 0.043
+   },
+   {
+    "token": " ChIP",
+    "p": 0.019
+   },
+   {
+    "token": " analyses",
+    "p": 0.016
+   }
+  ],
+  "loss_nats": 6.19,
+  "true_rank": 51,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_91_498",
+  "stratum": "wrong_moderate",
+  "context": "113/142 (80%)             141/213 (66%)\n\nData are n/N (%), unless otherwise stated. MTB=*Mycobacterium tuberculosis*. RIF=rifampicin. MDR=multidrug resistant. ZN=light microscopy after Ziehl Neelsen staining",
+  "true_token": " of",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.776
+   },
+   {
+    "token": ",",
+    "p": 0.033
+   },
+   {
+    "token": "\n",
+    "p": 0.028
+   },
+   {
+    "token": ";",
+    "p": 0.016
+   },
+   {
+    "token": " for",
+    "p": 0.013
+   }
+  ],
+  "loss_nats": 4.38,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_218_185",
+  "stratum": "near_miss",
+  "context": "IS A. WALK,                             :\n                                            :\n                          Appellant         :     No. 686 WDA 2015\n\n                  Appeal from the PCRA Order March 26, 2015\n                 In the Court of Common Pleas of Blair County\n               Criminal Division No(s).",
+  "true_token": ":",
+  "top5": [
+   {
+    "token": "\n\n",
+    "p": 0.646
+   },
+   {
+    "token": ":",
+    "p": 0.077
+   },
+   {
+    "token": "\n",
+    "p": 0.064
+   },
+   {
+    "token": "-",
+    "p": 0.038
+   },
+   {
+    "token": " No",
+    "p": 0.035
+   }
+  ],
+  "loss_nats": 2.56,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_171_475",
+  "stratum": "near_miss",
+  "context": "infty}$, conditions (C6)-(C8) do hold in view of the property $\\lambda \\in [0,\\lambda^*]$. Theorem 2.4 in [@BDT] then applies and gives the following.\n\n\\[ggh\\] Assume $u^*$ a classical solution of $(S)_{\\",
+  "true_token": "lambda",
+  "top5": [
+   {
+    "token": "bar",
+    "p": 0.346
+   },
+   {
+    "token": "lambda",
+    "p": 0.177
+   },
+   {
+    "token": "infty",
+    "p": 0.061
+   },
+   {
+    "token": "alpha",
+    "p": 0.03
+   },
+   {
+    "token": "rho",
+    "p": 0.021
+   }
+  ],
+  "loss_nats": 1.73,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_372_315",
+  "stratum": "near_miss",
+  "context": " anti-tumor activity of CPT-11[@b6]. All four herbs of PHY906 were required to maximally enhance the therapeutic activity of CPT-11 *in vivo*[@b6]. PHY906 was shown to reduce CPT-11-induced intestinal inflammation by inhibiting the",
+  "true_token": " NF",
+  "top5": [
+   {
+    "token": " expression",
+    "p": 0.184
+   },
+   {
+    "token": " production",
+    "p": 0.052
+   },
+   {
+    "token": " inflammatory",
+    "p": 0.032
+   },
+   {
+    "token": " activation",
+    "p": 0.032
+   },
+   {
+    "token": " NF",
+    "p": 0.03
+   }
+  ],
+  "loss_nats": 3.51,
+  "true_rank": 5,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_288_93",
+  "stratum": "catastrophic",
+  "context": ".S. at 493, 100 S.Ct. at 1264. For these reasons, I find that plaintiff was constitutionally entitled to due process. I do not rest on these points alone, however.\nThere is an additional factor that leads me to conclude that due process was violated here. In",
+  "true_token": " Hew",
+  "top5": [
+   {
+    "token": " fact",
+    "p": 0.091
+   },
+   {
+    "token": " the",
+    "p": 0.088
+   },
+   {
+    "token": " addition",
+    "p": 0.083
+   },
+   {
+    "token": " my",
+    "p": 0.037
+   },
+   {
+    "token": " light",
+    "p": 0.034
+   }
+  ],
+  "loss_nats": 11.35,
+  "true_rank": 3109,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_5_351",
+  "stratum": "wrong_moderate",
+  "context": "oz bottles (like the smaller fragrance set at the main store). The other is a rollerball set (mini samples, get a rollerball). That set is $22 and I liked the choices better than the similar one in Sephora. That's on my Thursday shopping list -- it has Y",
+  "true_token": "SL",
+  "top5": [
+   {
+    "token": "UM",
+    "p": 0.088
+   },
+   {
+    "token": "A",
+    "p": 0.034
+   },
+   {
+    "token": "ummy",
+    "p": 0.03
+   },
+   {
+    "token": "O",
+    "p": 0.03
+   },
+   {
+    "token": "elp",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 6.52,
+  "true_rank": 107,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_337_289",
+  "stratum": "confident_correct",
+  "context": " hepatoma cell lines (HepaRG, HuH-7, HepG2, and HepG2/C3A). Furthermore, genes associated with hepatotoxicity, drug-metabolizing enzymes, transporters, and nuclear receptors were extracted for more detailed comparisons. Our results showed that iPSC-H",
+  "true_token": "eps",
+  "top5": [
+   {
+    "token": "eps",
+    "p": 0.97
+   },
+   {
+    "token": "ep",
+    "p": 0.011
+   },
+   {
+    "token": "es",
+    "p": 0.002
+   },
+   {
+    "token": "6",
+    "p": 0.001
+   },
+   {
+    "token": ".",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.03,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "near_miss_108_411",
+  "stratum": "near_miss",
+  "context": "isting sharp bone edges without any tendency to remodel) and radiologically (e.g. persisting alveolar sockets) to identify a compromised wound healing that might be associated with a higher BP-ONJ risk.\n\nThe use of bone markers is discussed controversially in the literature, and no",
+  "true_token": " clear",
+  "top5": [
+   {
+    "token": " consensus",
+    "p": 0.078
+   },
+   {
+    "token": " specific",
+    "p": 0.064
+   },
+   {
+    "token": " clear",
+    "p": 0.047
+   },
+   {
+    "token": " studies",
+    "p": 0.037
+   },
+   {
+    "token": " guidelines",
+    "p": 0.031
+   }
+  ],
+  "loss_nats": 3.05,
+  "true_rank": 3,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_215_266",
+  "stratum": "confident_correct",
+  "context": " ) )\ng <- ggplot(data = df, aes(x = Month.Name, y = An) ) +\n     geom_line(aes(group = Fiscal.Year, colour = factor(Fiscal.Year))) +    \n     scale_",
+  "true_token": "x",
+  "top5": [
+   {
+    "token": "x",
+    "p": 0.818
+   },
+   {
+    "token": "y",
+    "p": 0.168
+   },
+   {
+    "token": "xy",
+    "p": 0.001
+   },
+   {
+    "token": "ym",
+    "p": 0.001
+   },
+   {
+    "token": "fill",
+    "p": 0.001
+   }
+  ],
+  "loss_nats": 0.2,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "confident_correct_77_436",
+  "stratum": "confident_correct",
+  "context": " 0.001, post hoc Holm Sidak method p \\< 0.001 for layers I-II and V-VI, p \\< 0.001 for layer III-IV). At P28 the number of GAD67 positive neurons was not significantly different between SC and",
+  "true_token": " IE",
+  "top5": [
+   {
+    "token": " IE",
+    "p": 0.923
+   },
+   {
+    "token": " I",
+    "p": 0.014
+   },
+   {
+    "token": " P",
+    "p": 0.005
+   },
+   {
+    "token": " the",
+    "p": 0.003
+   },
+   {
+    "token": " non",
+    "p": 0.002
+   }
+  ],
+  "loss_nats": 0.08,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_369_270",
+  "stratum": "wrong_moderate",
+  "context": "Task extends AsyncTask<Data1, Integer, String>{\n        protected String doInBackground(Data1... data1s){\n            Object obj1 = ServerUtilities.sendDataForStep1(data1s[0]);\n\n            Data2 data2;\n            // Process",
+  "true_token": " Object",
+  "top5": [
+   {
+    "token": " data",
+    "p": 0.152
+   },
+   {
+    "token": " the",
+    "p": 0.124
+   },
+   {
+    "token": "Data",
+    "p": 0.031
+   },
+   {
+    "token": " result",
+    "p": 0.028
+   },
+   {
+    "token": " each",
+    "p": 0.027
+   }
+  ],
+  "loss_nats": 7.43,
+  "true_rank": 172,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_56_460",
+  "stratum": "wrong_moderate",
+  "context": " initiate an audit or develop other methods to evaluate the pharmacovigilance processes at the potential contractor.\n\nThe Russian term is аутсорсинговая организация (outsourcing organization). \n\nA:\n\nThe third-party companies are",
+  "true_token": " referred",
+  "top5": [
+   {
+    "token": " not",
+    "p": 0.081
+   },
+   {
+    "token": " the",
+    "p": 0.067
+   },
+   {
+    "token": " outs",
+    "p": 0.056
+   },
+   {
+    "token": ":",
+    "p": 0.022
+   },
+   {
+    "token": " O",
+    "p": 0.016
+   }
+  ],
+  "loss_nats": 4.85,
+  "true_rank": 11,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_210_146",
+  "stratum": "hesitant_correct",
+  "context": " this is an applied viewing mode where the color intensity does not necessarily correspond to any clinical quantity. In this viewing mode, it is clear that the image texture is visually distinct across the lung boundary that is indicated as a white curve. The feature modes described in the Methods section each at least partially capture different",
+  "true_token": " aspects",
+  "top5": [
+   {
+    "token": " aspects",
+    "p": 0.133
+   },
+   {
+    "token": " features",
+    "p": 0.043
+   },
+   {
+    "token": " texture",
+    "p": 0.043
+   },
+   {
+    "token": " colors",
+    "p": 0.039
+   },
+   {
+    "token": " regions",
+    "p": 0.036
+   }
+  ],
+  "loss_nats": 2.02,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_358_131",
+  "stratum": "wrong_moderate",
+  "context": " who have traditionally held power.\n\nYes, like the Chinese Government, right? Of whom, Bono had just a few paragraphs earlier, been pointing out were able to use new technology to police dissent.\n\nTaking the Fight to Rotavirus\n\nYeah, you'd have to give him",
+  "true_token": " this",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.274
+   },
+   {
+    "token": " the",
+    "p": 0.179
+   },
+   {
+    "token": " some",
+    "p": 0.076
+   },
+   {
+    "token": " credit",
+    "p": 0.041
+   },
+   {
+    "token": " an",
+    "p": 0.03
+   }
+  ],
+  "loss_nats": 4.95,
+  "true_rank": 16,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_124_462",
+  "stratum": "near_miss",
+  "context": " and $u'$ in order to train an SVM and use it as a prediction engine. This inner product between patterns $u$ and $u'$ is a particular case of what is called a *kernel* and denoted $K(u,u') = u^\\top u'$, to emphasize the",
+  "true_token": " fact",
+  "top5": [
+   {
+    "token": " importance",
+    "p": 0.138
+   },
+   {
+    "token": " fact",
+    "p": 0.065
+   },
+   {
+    "token": " inner",
+    "p": 0.035
+   },
+   {
+    "token": " kernel",
+    "p": 0.029
+   },
+   {
+    "token": " difference",
+    "p": 0.021
+   }
+  ],
+  "loss_nats": 2.74,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_302_146",
+  "stratum": "wrong_moderate",
+  "context": "/3\nEvaluate (2*(-2)/40)/(604/1510).\n-1/4\nCalculate 5/(1800/(-192))*(-125)/60.\n10/9\nWhat is the value of -5*14/70*6*-5?\n30\nEvaluate ((",
+  "true_token": "205",
+  "top5": [
+   {
+    "token": "(-",
+    "p": 0.248
+   },
+   {
+    "token": "2",
+    "p": 0.051
+   },
+   {
+    "token": "3",
+    "p": 0.038
+   },
+   {
+    "token": "0",
+    "p": 0.037
+   },
+   {
+    "token": "1",
+    "p": 0.036
+   }
+  ],
+  "loss_nats": 7.7,
+  "true_rank": 174,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_103_189",
+  "stratum": "near_miss",
+  "context": " portion of the head capsule. Its wall is composed of a unicellular epithelium that is lined by a cuticle. The gland contains a blend of hydrocarbons and compounds with functional groups, and we show that the hydrocarbon fraction of the pheromone is congruent with the hydrocarbons on the cuticle.",
+  "true_token": " We",
+  "top5": [
+   {
+    "token": " The",
+    "p": 0.27
+   },
+   {
+    "token": "<|endoftext|>",
+    "p": 0.196
+   },
+   {
+    "token": " We",
+    "p": 0.069
+   },
+   {
+    "token": " This",
+    "p": 0.052
+   },
+   {
+    "token": " In",
+    "p": 0.034
+   }
+  ],
+  "loss_nats": 2.67,
+  "true_rank": 3,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_357_426",
+  "stratum": "wrong_moderate",
+  "context": " is these historical studies that are especially controversial. In the past, they were often conducted poorly. Common problems included inconsistent diagnostic procedures and interpretation, uneven rates of hospitalization across groups, and difficulty in blinding data collection. For example, if patients in the past were diagnosed 3 less quickly, then superior outcomes today",
+  "true_token": " might",
+  "top5": [
+   {
+    "token": " were",
+    "p": 0.181
+   },
+   {
+    "token": " would",
+    "p": 0.147
+   },
+   {
+    "token": " are",
+    "p": 0.136
+   },
+   {
+    "token": " may",
+    "p": 0.083
+   },
+   {
+    "token": " could",
+    "p": 0.066
+   }
+  ],
+  "loss_nats": 3.06,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_382_188",
+  "stratum": "catastrophic",
+  "context": " representations (i.e., microscopic images) irrespective of their shape. Geometric models of commonly encountered bacterial morphotypes were used to verify the algorithm and to compare its performance with previously described approaches. The algorithm is embedded in a freely available computer program that is able to process both raw (8-bit",
+  "true_token": " gr",
+  "top5": [
+   {
+    "token": ")",
+    "p": 0.875
+   },
+   {
+    "token": " and",
+    "p": 0.012
+   },
+   {
+    "token": ",",
+    "p": 0.009
+   },
+   {
+    "token": "-",
+    "p": 0.007
+   },
+   {
+    "token": "/",
+    "p": 0.006
+   }
+  ],
+  "loss_nats": 9.76,
+  "true_rank": 214,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_223_481",
+  "stratum": "wrong_moderate",
+  "context": ", val in attr.items():\n                #print \"setting\", self.__name__, name, val\n                setattr(self, name, val)\n        for name, importspec in importspec.items():\n            if isinstance(importspec, dict):\n                subname =",
+  "true_token": " '%",
+  "top5": [
+   {
+    "token": " name",
+    "p": 0.221
+   },
+   {
+    "token": " import",
+    "p": 0.138
+   },
+   {
+    "token": " self",
+    "p": 0.077
+   },
+   {
+    "token": " '",
+    "p": 0.054
+   },
+   {
+    "token": " None",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 5.11,
+  "true_rank": 16,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_268_210",
+  "stratum": "near_miss",
+  "context": "class S>\nvoid\ntest(const S& s, const S& str, typename S::size_type pos, typename S::size_type x)\n{\n    assert(s.find_last_of(str, pos) == x);\n    if (x",
+  "true_token": " !=",
+  "top5": [
+   {
+    "token": " ==",
+    "p": 0.338
+   },
+   {
+    "token": " <",
+    "p": 0.135
+   },
+   {
+    "token": ")",
+    "p": 0.131
+   },
+   {
+    "token": " !=",
+    "p": 0.123
+   },
+   {
+    "token": ".",
+    "p": 0.05
+   }
+  ],
+  "loss_nats": 2.1,
+  "true_rank": 4,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_114_327",
+  "stratum": "catastrophic",
+  "context": " self-report measure).\n\nMaterials and Methods---Study 1\n===============================\n\nParticipants were screened for health status using an anamnestic questionnaire. Exclusion criteria were any history of any axis 1 disorders, in particular anxiety disorders or depression according to the Diagnostic and Statistical Manual of Mental Disorders",
+  "true_token": " as",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.371
+   },
+   {
+    "token": " (",
+    "p": 0.337
+   },
+   {
+    "token": "-",
+    "p": 0.043
+   },
+   {
+    "token": " and",
+    "p": 0.037
+   },
+   {
+    "token": " IV",
+    "p": 0.017
+   }
+  ],
+  "loss_nats": 8.87,
+  "true_rank": 123,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_156_473",
+  "stratum": "near_miss",
+  "context": " not. Earlier stage at presentation of contralateral tumors was associated in a multivariate model with more recent year of contralateral tumor diagnosis and earlier stage at presentation of the initial tumor; contralateral tumor size was associated with the size of the initial tumor. More recently diagnosed contralateral breast cancers are presenting with earlier stages of disease.",
+  "true_token": " The",
+  "top5": [
+   {
+    "token": "<|endoftext|>",
+    "p": 0.293
+   },
+   {
+    "token": " The",
+    "p": 0.05
+   },
+   {
+    "token": " This",
+    "p": 0.049
+   },
+   {
+    "token": " Cont",
+    "p": 0.045
+   },
+   {
+    "token": " These",
+    "p": 0.042
+   }
+  ],
+  "loss_nats": 3.0,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_199_251",
+  "stratum": "wrong_moderate",
+  "context": " lazy, shiftless, not wanting to work and just out for whatever they could get.\n\n\"Now, I see them as people who are struggling to make ends meet and to put a life together,\" Brown said. \"Some of them have certainly made terrible decisions in their lives. But everyone",
+  "true_token": " deserves",
+  "top5": [
+   {
+    "token": " is",
+    "p": 0.138
+   },
+   {
+    "token": " has",
+    "p": 0.132
+   },
+   {
+    "token": " else",
+    "p": 0.111
+   },
+   {
+    "token": " who",
+    "p": 0.087
+   },
+   {
+    "token": " in",
+    "p": 0.045
+   }
+  ],
+  "loss_nats": 5.71,
+  "true_rank": 36,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_134_66",
+  "stratum": "catastrophic",
+  "context": "/fl^;Tie2-Cre^+^* embryos.\n\nFinally, it will be important to determine if the increased ECM proteolysis and vascular rupture seen in *Chd4^fl/fl^;Tie2-Cre^+^* embryos are recapitulated in postnatal mice with induced vascular",
+  "true_token": " *",
+  "top5": [
+   {
+    "token": " injury",
+    "p": 0.271
+   },
+   {
+    "token": " rupture",
+    "p": 0.27
+   },
+   {
+    "token": " damage",
+    "p": 0.036
+   },
+   {
+    "token": " inflammation",
+    "p": 0.019
+   },
+   {
+    "token": " cell",
+    "p": 0.013
+   }
+  ],
+  "loss_nats": 8.54,
+  "true_rank": 225,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_390_98",
+  "stratum": "hesitant_correct",
+  "context": " broadcast of a Yankees-Minnesota Twins game. Of course, these numbers don’t include the scores of ads during half-inning breaks.\n\nNobody begrudges a Major League Baseball (MLB) team, or their radio partner, from making money off a radio broadcast",
+  "true_token": ".",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.271
+   },
+   {
+    "token": " of",
+    "p": 0.183
+   },
+   {
+    "token": ",",
+    "p": 0.061
+   },
+   {
+    "token": " that",
+    "p": 0.055
+   },
+   {
+    "token": " in",
+    "p": 0.045
+   }
+  ],
+  "loss_nats": 1.31,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_203_371",
+  "stratum": "wrong_moderate",
+  "context": "atk/index.php>\n\nKyoto Encyclopedia of Genes and Genomes, KEGG, <http://www.genome.jp/kegg/>\n\nMutationTaster: <http://www.mutationtaster.org/ELAND>, alignment algorithm, Illumina.",
+  "true_token": "com",
+  "top5": [
+   {
+    "token": "\n",
+    "p": 0.712
+   },
+   {
+    "token": " <",
+    "p": 0.111
+   },
+   {
+    "token": " The",
+    "p": 0.009
+   },
+   {
+    "token": " A",
+    "p": 0.004
+   },
+   {
+    "token": " All",
+    "p": 0.003
+   }
+  ],
+  "loss_nats": 7.2,
+  "true_rank": 42,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_28_93",
+  "stratum": "wrong_moderate",
+  "context": " to know, especially since excitement might take over and you’ll want to try and reward every little task you can think of. However, since the point of gamification is to add value and engagement to activities, you need to be highly selective of the types of tasks you choose to reward. Having",
+  "true_token": " too",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.294
+   },
+   {
+    "token": " said",
+    "p": 0.102
+   },
+   {
+    "token": " the",
+    "p": 0.092
+   },
+   {
+    "token": " an",
+    "p": 0.057
+   },
+   {
+    "token": " these",
+    "p": 0.026
+   }
+  ],
+  "loss_nats": 6.38,
+  "true_rank": 41,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_320_309",
+  "stratum": "near_miss",
+  "context": "z> Sweet5hark, hey, was the release of 5.0.3 postponed?\n<Sweet5hark> ricotz: http://nabble.documentfoundation.org/minutes-of-ESC-call-td4164709.html\n<",
+  "true_token": "ric",
+  "top5": [
+   {
+    "token": "seb",
+    "p": 0.275
+   },
+   {
+    "token": "ric",
+    "p": 0.261
+   },
+   {
+    "token": "Sweet",
+    "p": 0.183
+   },
+   {
+    "token": "l",
+    "p": 0.031
+   },
+   {
+    "token": "ubottu",
+    "p": 0.023
+   }
+  ],
+  "loss_nats": 1.34,
+  "true_rank": 2,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_60_37",
+  "stratum": "wrong_moderate",
+  "context": " does anyone have any advice???\n\nHeat up the bicep, but make the shoulder is cool/cold:\n\n(Hot Water in the cup from the microwave - 3 minutes",
+  "true_token": " on",
+  "top5": [
+   {
+    "token": ")",
+    "p": 0.239
+   },
+   {
+    "token": " before",
+    "p": 0.07
+   },
+   {
+    "token": ",",
+    "p": 0.061
+   },
+   {
+    "token": ").",
+    "p": 0.055
+   },
+   {
+    "token": " to",
+    "p": 0.046
+   }
+  ],
+  "loss_nats": 4.56,
+  "true_rank": 20,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_357_231",
+  "stratum": "wrong_moderate",
+  "context": " causes better outcomes, there is plenty of common ground. Everyone agrees the ideal situation is to compare the effects of a treatment to the effects of the alternative, all else equal. The problem, of course, is that usually many things affect an outcome besides the treatment itself: the patient‟s age,",
+  "true_token": " general",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.252
+   },
+   {
+    "token": " sex",
+    "p": 0.104
+   },
+   {
+    "token": " gender",
+    "p": 0.053
+   },
+   {
+    "token": " health",
+    "p": 0.038
+   },
+   {
+    "token": " whether",
+    "p": 0.022
+   }
+  ],
+  "loss_nats": 5.78,
+  "true_rank": 38,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_71_367",
+  "stratum": "hesitant_correct",
+  "context": " patients who were treated by oncologists were significantly more likely to receive systemic therapy (*P* \\< 0.0001) or radiation (*P* \\< 0.0001), whilst those treated by dermatologists were more likely to receive surgery (*P* = 0.002). Finally, patients with comprehensive medical insurance",
+  "true_token": " were",
+  "top5": [
+   {
+    "token": " were",
+    "p": 0.29
+   },
+   {
+    "token": " received",
+    "p": 0.076
+   },
+   {
+    "token": " had",
+    "p": 0.067
+   },
+   {
+    "token": ",",
+    "p": 0.055
+   },
+   {
+    "token": " (",
+    "p": 0.054
+   }
+  ],
+  "loss_nats": 1.24,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ }
+]

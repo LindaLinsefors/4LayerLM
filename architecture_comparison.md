@@ -15,8 +15,8 @@ $d_{\text{mlp}} = 4\,d_{\text{model}}$). Configs: `models/*/target_model_*/model
 | Context | 512 | 512 |
 | Vocab | 50,277 (GPT-NeoX) | 4,019 (SimpleStories GPT-2) |
 | VPD subcomponents (total $C$) | 38,912 | 7,104 |
-| Alive subcomponents | ~9,800 (paper: 9,972) | ~6,500 |
-| Alive fraction | 25% | 91% |
+| Alive subcomponents | 9,973 (paper: 9,972) | ~6,500 |
+| Alive fraction | 26% | 91% |
 
 ## VPD subcomponent counts per matrix
 
@@ -27,23 +27,29 @@ Dictionary sizes $C$ are the same for every layer (from each decomposition's `fi
 distribution. Since CI values are $O(1)$ when a component fires, this is equivalent to
 "non-negligible CI ($\gtrsim 0.01$) on at least one token per $\sim 10^6$ tokens" — verified
 empirically: counts with $\max_x \mathrm{CI}_c(x) > 0.01$ agree with the mean-based counts almost
-exactly. Alive counts computed here (`ComponentModel` CI function, `lower_leaky`, over 100 training
-sequences ≈ 51k Pile / 27k SimpleStories tokens); they reproduce the paper's per-layer Pile table
-(3709/848/1943/3472, total 9,972) to within ~1.5% (undercounting slightly, since components rarer
-than the sample size are missed), and the paper's layer-1 attention counts Q/K/V/O = 15/48/226/97
-vs 14/49/223/97 here.
+exactly.
+
+Provenance differs between the two tables. The **Pile** counts are exact: mean CI per component
+from the paper's harvest database (`models/pile_4layer/additional-component-data/harvest.db`,
+computed over the full harvest of 20,000 batches × 32 sequences). They match the paper's
+per-layer table (3709/848/1943/3472, total 9,972) except for one extra layer-0 component, and
+reproduce the paper's layer-1 attention counts Q/K/V/O = 15/48/226/97 exactly. The
+**SimpleStories** counts are local estimates (`ComponentModel` CI function, `lower_leaky`, over
+100 training sequences ≈ 27k tokens), which undercount slightly since components rarer than the
+sample size are missed — the same 100-sequence method on Pile gave 9,837 (−1.4%), and the
+SimpleStories harvest DB's `mean_ci` gives 6,782 alive in total vs 6,499 here.
 
 **Pile 4L** (decomposition `s-55ea3f9b`):
 
 | Matrix | Shape $(d_{\text{in}} \times d_{\text{out}})$ | $C$ | $C/\text{rank}$ | Alive L0 | L1 | L2 | L3 | Alive total |
 |---|---|---|---|---|---|---|---|---|
-| `attn.q_proj` | $768 \times 768$ | 512 | 0.67 | 84 | 14 | 92 | 36 | 226 |
-| `attn.k_proj` | $768 \times 768$ | 512 | 0.67 | 121 | 49 | 167 | 60 | 397 |
-| `attn.v_proj` | $768 \times 768$ | 1024 | 1.33 | 468 | 223 | 503 | 249 | 1,443 |
-| `attn.o_proj` | $768 \times 768$ | 1024 | 1.33 | 428 | 97 | 525 | 246 | 1,296 |
-| `mlp.c_fc` | $768 \times 3072$ | 3072 | 4.0 | 1,371 | 248 | 289 | 1,031 | 2,939 |
-| `mlp.down_proj` | $3072 \times 768$ | 3584 | 4.67 | 1,124 | 210 | 353 | 1,849 | 3,536 |
-| **Sum** | | **9,728** ($\times 4$ layers $= 38{,}912$) | | **3,596** | **841** | **1,929** | **3,471** | **9,837** |
+| `attn.q_proj` | $768 \times 768$ | 512 | 0.67 | 111 | 15 | 92 | 36 | 254 |
+| `attn.k_proj` | $768 \times 768$ | 512 | 0.67 | 126 | 48 | 167 | 60 | 401 |
+| `attn.v_proj` | $768 \times 768$ | 1024 | 1.33 | 514 | 226 | 508 | 249 | 1,497 |
+| `attn.o_proj` | $768 \times 768$ | 1024 | 1.33 | 446 | 97 | 525 | 246 | 1,314 |
+| `mlp.c_fc` | $768 \times 3072$ | 3072 | 4.0 | 1,380 | 251 | 292 | 1,031 | 2,954 |
+| `mlp.down_proj` | $3072 \times 768$ | 3584 | 4.67 | 1,133 | 211 | 359 | 1,850 | 3,553 |
+| **Sum** | | **9,728** ($\times 4$ layers $= 38{,}912$) | | **3,710** | **848** | **1,943** | **3,472** | **9,973** |
 
 **SimpleStories 2L** (decomposition `s-eab2ace8`):
 

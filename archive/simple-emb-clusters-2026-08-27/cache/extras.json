@@ -1,0 +1,55 @@
+{
+ "n_tokens_counted": 438506,
+ "n_zero_freq": 324,
+ "kmeans_k2": {
+  "cluster 0": {
+   "n": 1227,
+   "mean_norm": 0.6965445280075073,
+   "median_freq": 86.0,
+   "zero_freq_frac": 0.0016299918500407497,
+   "suffix_frac": 0.021189894050529748,
+   "examples_frequent": [
+    ".",
+    ",",
+    "the",
+    "a",
+    "\"",
+    "and",
+    "to",
+    "he",
+    "she",
+    "they"
+   ]
+  },
+  "cluster 1": {
+   "n": 2792,
+   "mean_norm": 0.8587228655815125,
+   "median_freq": 11.0,
+   "zero_freq_frac": 0.11532951289398281,
+   "suffix_frac": 0.27650429799426934,
+   "examples_frequent": [
+    "##ly",
+    "raced",
+    "understood",
+    "##es",
+    "gasped",
+    "exclaimed",
+    "stronger",
+    "chest",
+    "racing",
+    "glowed"
+   ]
+  }
+ },
+ "norms": {
+  "rare_mean": 1.218931794166565,
+  "seen_mean": 0.7732828855514526,
+  "rare_p90": 1.5995509624481201
+ },
+ "mean_pairwise_cos": {
+  "all": 0.285341739654541,
+  "rare": 0.7551836967468262,
+  "seen": 0.26213309168815613
+ },
+ "corr_logfreq_norm": -0.5588177829309715
+}

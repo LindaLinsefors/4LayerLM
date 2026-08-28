@@ -1,0 +1,1335 @@
+[
+ {
+  "id": "catastrophic_234_417",
+  "stratum": "catastrophic",
+  "context": ", mostly because of fossil fuel burning which emits CO2 and CH4, the amount of greenhouse gases in the atmosphere is increasing which is causing the temperature to gradually increase. The emitted CO2 and CH4 are also absorbed by land and the ocean, which is called uptake. But the absorbed greenhouse",
+  "true_token": " cases",
+  "top5": [
+   {
+    "token": " gases",
+    "p": 0.77
+   },
+   {
+    "token": " gas",
+    "p": 0.214
+   },
+   {
+    "token": " CO",
+    "p": 0.003
+   },
+   {
+    "token": " emissions",
+    "p": 0.002
+   },
+   {
+    "token": "-",
+    "p": 0.001
+   }
+  ],
+  "loss_nats": 15.56,
+  "true_rank": 1833,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_245_295",
+  "stratum": "hesitant_correct",
+  "context": ".xe2x80x9d A related characteristic, xe2x80x9ctorqueability,xe2x80x9d refers to the ability to rotate the catheter distal end by rotating its proximal end. Torqueability is useful, for example, in using a helical fixation member",
+  "true_token": " to",
+  "top5": [
+   {
+    "token": " to",
+    "p": 0.2
+   },
+   {
+    "token": ",",
+    "p": 0.108
+   },
+   {
+    "token": ".",
+    "p": 0.084
+   },
+   {
+    "token": " in",
+    "p": 0.083
+   },
+   {
+    "token": " for",
+    "p": 0.082
+   }
+  ],
+  "loss_nats": 1.61,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_309_240",
+  "stratum": "hesitant_correct",
+  "context": " vector containing lines for which descriptors must be computed\n    @param descriptors\n    @param returnFloatDescr flag (when set to true, original non-binary descriptors are returned)\n     */\n  CV_WRAP void compute( const Mat& image, CV_OUT CV_IN",
+  "true_token": "_",
+  "top5": [
+   {
+    "token": "_",
+    "p": 0.217
+   },
+   {
+    "token": "CV",
+    "p": 0.171
+   },
+   {
+    "token": ",",
+    "p": 0.104
+   },
+   {
+    "token": " std",
+    "p": 0.06
+   },
+   {
+    "token": " const",
+    "p": 0.05
+   }
+  ],
+  "loss_nats": 1.53,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_31_439",
+  "stratum": "catastrophic",
+  "context": ". g) Political Persecuted: In Islam, Sadir al-Sayrafi states that the Mahdi (i.e., the Messiah) will be deprived of and denied his rights, moving among them but no one will recognize him. In other words, the Messiah will be",
+  "true_token": " politically",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.118
+   },
+   {
+    "token": " deprived",
+    "p": 0.069
+   },
+   {
+    "token": " the",
+    "p": 0.037
+   },
+   {
+    "token": " denied",
+    "p": 0.033
+   },
+   {
+    "token": " “",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 8.84,
+  "true_rank": 723,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_116_411",
+  "stratum": "confident_correct",
+  "context": "prop][\"product\"][1],\n      newobj[\"price\"] = Number(oldobj[prop][\"product\"][3]),\n      newobj[\"image\"] = \"url\" + oldobj[prop][\"product\"][0] + \".jpg\",\n      ",
+  "true_token": "ne",
+  "top5": [
+   {
+    "token": "ne",
+    "p": 0.911
+   },
+   {
+    "token": "new",
+    "p": 0.012
+   },
+   {
+    "token": "old",
+    "p": 0.006
+   },
+   {
+    "token": "object",
+    "p": 0.004
+   },
+   {
+    "token": "obj",
+    "p": 0.003
+   }
+  ],
+  "loss_nats": 0.09,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_87_270",
+  "stratum": "wrong_moderate",
+  "context": " as The Power, or The Power of Love, is the twelfth studio album by Gloria Gaynor, released in 1986, which is composed mostly of cover versions of other popular songs from the 1970s and 1980s, and is her only album to be released on Stylus Records. It was",
+  "true_token": " originally",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.198
+   },
+   {
+    "token": " released",
+    "p": 0.163
+   },
+   {
+    "token": " also",
+    "p": 0.084
+   },
+   {
+    "token": " produced",
+    "p": 0.054
+   },
+   {
+    "token": " a",
+    "p": 0.032
+   }
+  ],
+  "loss_nats": 3.88,
+  "true_rank": 10,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_365_41",
+  "stratum": "catastrophic",
+  "context": ", peanut, tree nut, crustaceans, shellfish and wheat products. Do not use this product if you are lactose intolerant or have a milk protein allergy.\n\nDirections For Hard Mass",
+  "true_token": " G",
+  "top5": [
+   {
+    "token": "age",
+    "p": 0.56
+   },
+   {
+    "token": "ages",
+    "p": 0.296
+   },
+   {
+    "token": "aging",
+    "p": 0.052
+   },
+   {
+    "token": "aged",
+    "p": 0.009
+   },
+   {
+    "token": "ive",
+    "p": 0.009
+   }
+  ],
+  "loss_nats": 9.32,
+  "true_rank": 106,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_261_158",
+  "stratum": "wrong_moderate",
+  "context": "055,0.059,0.062,0.066,0.069,0.073,0.076,0.08,0.083,0.087,0.09,0.094,0.097,0.1,0.104,0.",
+  "true_token": "107",
+  "top5": [
+   {
+    "token": "1",
+    "p": 0.053
+   },
+   {
+    "token": "11",
+    "p": 0.046
+   },
+   {
+    "token": "097",
+    "p": 0.042
+   },
+   {
+    "token": "105",
+    "p": 0.041
+   },
+   {
+    "token": "110",
+    "p": 0.027
+   }
+  ],
+  "loss_nats": 4.85,
+  "true_rank": 33,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_119_192",
+  "stratum": "wrong_moderate",
+  "context": "_{i}}^{-1}{t_{i+1}}^{-1}\\,.\n\\end{alignedat}$$ Thanks to these identities, all sixteen terms of the difference of triple products of the ${{y_{i}}}$ cancel pairwise, but four: $$\\begin{aligned}\n{{y_{i}}}(u",
+  "true_token": "){",
+  "top5": [
+   {
+    "token": ")",
+    "p": 0.296
+   },
+   {
+    "token": ",",
+    "p": 0.152
+   },
+   {
+    "token": "_{",
+    "p": 0.113
+   },
+   {
+    "token": ")=",
+    "p": 0.082
+   },
+   {
+    "token": "_",
+    "p": 0.08
+   }
+  ],
+  "loss_nats": 4.97,
+  "true_rank": 15,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_79_98",
+  "stratum": "wrong_moderate",
+  "context": "Venus is present in the visual cortex at the end of 60-hour light deprivation period. Right panel: 6 hours after visual stimulation Arc::dVenus is present largely in the medial extrastiate visual cortex (VISm) and to lesser extent in the lateral extrastirate (VIS",
+  "true_token": "lat",
+  "top5": [
+   {
+    "token": "m",
+    "p": 0.452
+   },
+   {
+    "token": "l",
+    "p": 0.047
+   },
+   {
+    "token": "r",
+    "p": 0.036
+   },
+   {
+    "token": "n",
+    "p": 0.03
+   },
+   {
+    "token": "s",
+    "p": 0.017
+   }
+  ],
+  "loss_nats": 6.16,
+  "true_rank": 37,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_341_113",
+  "stratum": "confident_correct",
+  "context": " object of the present invention to provide a method of making such a fuse structure.\nA further object of the invention is to provide a method of utilizing a fuse structure in which there is no physical disruption to the fuse.\nStill other objects and advantages of the invention will in part be obvious and will",
+  "true_token": " in",
+  "top5": [
+   {
+    "token": " in",
+    "p": 0.873
+   },
+   {
+    "token": " not",
+    "p": 0.031
+   },
+   {
+    "token": " be",
+    "p": 0.026
+   },
+   {
+    "token": " become",
+    "p": 0.02
+   },
+   {
+    "token": ",",
+    "p": 0.018
+   }
+  ],
+  "loss_nats": 0.14,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "hesitant_correct_243_354",
+  "stratum": "hesitant_correct",
+  "context": "abelian-central-quotient\\]). The *derived subgroup* $[G,G]$ is generated by all the commutators and it turns to be a normal subgroup of $G$. It is even the smallest normal subgroup such that the quotient group of $G$ by this subgroup is abelian.Thus",
+  "true_token": " the",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.299
+   },
+   {
+    "token": ",",
+    "p": 0.19
+   },
+   {
+    "token": " $",
+    "p": 0.068
+   },
+   {
+    "token": " it",
+    "p": 0.064
+   },
+   {
+    "token": " a",
+    "p": 0.044
+   }
+  ],
+  "loss_nats": 1.21,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_46_394",
+  "stratum": "wrong_moderate",
+  "context": " system and anger (with respect to a category that includes anger but not other human emotions) may be similar to the case for homology between the cat hind limb and the human forelimb (with respect to a category that includes human forelimbs but not human hind limbs). The similarities so far observed",
+  "true_token": " do",
+  "top5": [
+   {
+    "token": " between",
+    "p": 0.471
+   },
+   {
+    "token": " in",
+    "p": 0.194
+   },
+   {
+    "token": " among",
+    "p": 0.049
+   },
+   {
+    "token": " for",
+    "p": 0.044
+   },
+   {
+    "token": " are",
+    "p": 0.042
+   }
+  ],
+  "loss_nats": 6.13,
+  "true_rank": 23,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_15_442",
+  "stratum": "confident_correct",
+  "context": " Divoll and Philip R. Hochberg, Washington, D. C., were on the brief, for Major League Baseball, et al., petitioners in No. 80-2284 and intervenors in Nos. 80-2273, 80-2281, 80-2290 and 80-",
+  "true_token": "22",
+  "top5": [
+   {
+    "token": "22",
+    "p": 0.984
+   },
+   {
+    "token": "2",
+    "p": 0.003
+   },
+   {
+    "token": "23",
+    "p": 0.003
+   },
+   {
+    "token": "2222",
+    "p": 0.002
+   },
+   {
+    "token": "220",
+    "p": 0.001
+   }
+  ],
+  "loss_nats": 0.02,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_241_176",
+  "stratum": "catastrophic",
+  "context": " previously published [@pone.0063072-Kim2]. To generate, the PHO5 promoter variant strains, a 161-bp sequence containing nucleosome -2 in the native PHO5pr was either deleted or replaced with a target GC% sequence following a two-step homologous recombination protocol Del",
+  "true_token": "itto",
+  "top5": [
+   {
+    "token": "ayed",
+    "p": 0.086
+   },
+   {
+    "token": "a",
+    "p": 0.064
+   },
+   {
+    "token": "A",
+    "p": 0.05
+   },
+   {
+    "token": "phi",
+    "p": 0.034
+   },
+   {
+    "token": "ft",
+    "p": 0.033
+   }
+  ],
+  "loss_nats": 12.12,
+  "true_rank": 4036,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_156_488",
+  "stratum": "wrong_moderate",
+  "context": " with more recent year of contralateral tumor diagnosis and earlier stage at presentation of the initial tumor; contralateral tumor size was associated with the size of the initial tumor. More recently diagnosed contralateral breast cancers are presenting with earlier stages of disease. The stages of initial tumors in these patients have not undergone such an improvement.",
+  "true_token": " Initial",
+  "top5": [
+   {
+    "token": "<|endoftext|>",
+    "p": 0.475
+   },
+   {
+    "token": " The",
+    "p": 0.055
+   },
+   {
+    "token": " This",
+    "p": 0.035
+   },
+   {
+    "token": " In",
+    "p": 0.026
+   },
+   {
+    "token": " These",
+    "p": 0.02
+   }
+  ],
+  "loss_nats": 5.94,
+  "true_rank": 28,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_305_91",
+  "stratum": "wrong_moderate",
+  "context": " MANUEL E. SKINNER, JR.,                                Clerk\n\n                                         Plaintiffs-Appellants\nv.\n\nJOHN BORDAGES, JR., Individually; CRAIG SHOWS, Individually; JOHN\nHAWKINS, Individually; MARY",
+  "true_token": " FOR",
+  "top5": [
+   {
+    "token": " L",
+    "p": 0.079
+   },
+   {
+    "token": " H",
+    "p": 0.063
+   },
+   {
+    "token": " G",
+    "p": 0.051
+   },
+   {
+    "token": " R",
+    "p": 0.05
+   },
+   {
+    "token": " M",
+    "p": 0.048
+   }
+  ],
+  "loss_nats": 6.02,
+  "true_rank": 48,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_6_75",
+  "stratum": "wrong_moderate",
+  "context": " bleach [first], and then [putting] something over it to warm it up or tone it down, depending on how it comes out.”\n\nWho can bleach their brows?\n\nShort answer: most people. \"It can go across the board,” says Evans. \"For",
+  "true_token": " somebody",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.105
+   },
+   {
+    "token": " me",
+    "p": 0.09
+   },
+   {
+    "token": " example",
+    "p": 0.084
+   },
+   {
+    "token": " the",
+    "p": 0.073
+   },
+   {
+    "token": " some",
+    "p": 0.051
+   }
+  ],
+  "loss_nats": 6.74,
+  "true_rank": 66,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_398_494",
+  "stratum": "hesitant_correct",
+  "context": " of green, mixed with the peace and tranquillity of the lake and the steady rhythm of the paddling, was sometimes hypnotic and provided many daydreams. But it was not all fun and games. The “portage” – from the French word porter meaning to carry – was",
+  "true_token": " a",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.142
+   },
+   {
+    "token": " the",
+    "p": 0.063
+   },
+   {
+    "token": " not",
+    "p": 0.042
+   },
+   {
+    "token": " also",
+    "p": 0.034
+   },
+   {
+    "token": " all",
+    "p": 0.027
+   }
+  ],
+  "loss_nats": 1.95,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_291_277",
+  "stratum": "near_miss",
+  "context": "ans - engineer, strings\nJason Powers - engineer, mixing\nCarl Saff - mastering\nAdam Selzer - mixing\n\nReferences\n\nCategory:2013 albums\nCategory:Scout Niblett albums<|endoftext|>Q:\n\nHow to protect asp.net or c# source file can",
+  "true_token": " be",
+  "top5": [
+   {
+    "token": " I",
+    "p": 0.169
+   },
+   {
+    "token": "'t",
+    "p": 0.158
+   },
+   {
+    "token": " be",
+    "p": 0.139
+   },
+   {
+    "token": " i",
+    "p": 0.078
+   },
+   {
+    "token": " you",
+    "p": 0.057
+   }
+  ],
+  "loss_nats": 1.97,
+  "true_rank": 3,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_53_300",
+  "stratum": "wrong_moderate",
+  "context": "24.ref020],[@pbio.2004624.ref023]\\]. The discrepancies between these studies warrant further consideration. Lanning and colleagues measured ATP in many cells concurrently, and ATP was normalized to total DNA content. This method would be susceptible to artifacts caused by differences in cell size (altering the",
+  "true_token": " absolute",
+  "top5": [
+   {
+    "token": " number",
+    "p": 0.085
+   },
+   {
+    "token": " amount",
+    "p": 0.071
+   },
+   {
+    "token": " size",
+    "p": 0.042
+   },
+   {
+    "token": " length",
+    "p": 0.04
+   },
+   {
+    "token": " cell",
+    "p": 0.037
+   }
+  ],
+  "loss_nats": 6.8,
+  "true_rank": 125,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_375_37",
+  "stratum": "wrong_moderate",
+  "context": "o+\\] we may write $\\indic_{-\\eta_2\\widetilde\\Omega^+}=\\sum_\\ell\\indic_{-\\eta_2\\widetilde\\Omega^+_\\ell}b",
+  "true_token": "_+",
+  "top5": [
+   {
+    "token": "_\\",
+    "p": 0.417
+   },
+   {
+    "token": "_",
+    "p": 0.142
+   },
+   {
+    "token": "_{\\",
+    "p": 0.124
+   },
+   {
+    "token": "_{",
+    "p": 0.088
+   },
+   {
+    "token": "^\\",
+    "p": 0.068
+   }
+  ],
+  "loss_nats": 5.88,
+  "true_rank": 17,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_50_124",
+  "stratum": "wrong_moderate",
+  "context": "Rosaline,F,11\r\nRosebud,F,11\r\nSigrid,F,11\r\nSofia,F,11\r\nSylvester,F,11\r\nTheda,F,11\r\nTrinidad,F,11\r\nU",
+  "true_token": "la",
+  "top5": [
+   {
+    "token": "rs",
+    "p": 0.107
+   },
+   {
+    "token": ".",
+    "p": 0.072
+   },
+   {
+    "token": "g",
+    "p": 0.029
+   },
+   {
+    "token": "na",
+    "p": 0.026
+   },
+   {
+    "token": "ng",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 6.05,
+  "true_rank": 75,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_133_356",
+  "stratum": "wrong_moderate",
+  "context": " the shape of a tower that is also unfinished. This is no accident, it is designed to be a representation of the uncompleted Tower of Babel.&nbsp;The European Union are certainly not shy about associating themselves with the symbolism of the Tower of Babel. In 2004 there was a",
+  "true_token": " project",
+  "top5": [
+   {
+    "token": " new",
+    "p": 0.019
+   },
+   {
+    "token": " dispute",
+    "p": 0.017
+   },
+   {
+    "token": " great",
+    "p": 0.016
+   },
+   {
+    "token": " huge",
+    "p": 0.016
+   },
+   {
+    "token": " time",
+    "p": 0.013
+   }
+  ],
+  "loss_nats": 6.22,
+  "true_rank": 87,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_390_43",
+  "stratum": "catastrophic",
+  "context": "in ads, according to research done for consumer advocate Ralph Nader. On July 4, 2013, the New York Times found “more than 60” drop-in ads during a Yankees radio network broadcast of a Yankees-",
+  "true_token": "Minn",
+  "top5": [
+   {
+    "token": "inspired",
+    "p": 0.061
+   },
+   {
+    "token": "owned",
+    "p": 0.059
+   },
+   {
+    "token": "only",
+    "p": 0.049
+   },
+   {
+    "token": "and",
+    "p": 0.037
+   },
+   {
+    "token": "style",
+    "p": 0.032
+   }
+  ],
+  "loss_nats": 9.04,
+  "true_rank": 649,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_6_377",
+  "stratum": "near_miss",
+  "context": " recommend lightening for anyone with sensitive skin.\n\nRosdiana Ciaravolo\n\nChoosing the right color\n\nIn order to decide on the perfect color, Evans starts by looking at the tone of the hair. “Brows tend to look better about the same color or a",
+  "true_token": " shade",
+  "top5": [
+   {
+    "token": " different",
+    "p": 0.3
+   },
+   {
+    "token": " darker",
+    "p": 0.107
+   },
+   {
+    "token": " little",
+    "p": 0.068
+   },
+   {
+    "token": " shade",
+    "p": 0.056
+   },
+   {
+    "token": " lighter",
+    "p": 0.046
+   }
+  ],
+  "loss_nats": 2.88,
+  "true_rank": 4,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "hesitant_correct_289_205",
+  "stratum": "hesitant_correct",
+  "context": " reasonable, before finally approving it. Halderman v. Pennhurst State School and Hospital, 610 F.Supp. 1221, 1230 (E.D.Penn. 1986). Grunin, 513 F.2d at 123. The parties seeking the Court's approval have the",
+  "true_token": " burden",
+  "top5": [
+   {
+    "token": " burden",
+    "p": 0.237
+   },
+   {
+    "token": " same",
+    "p": 0.135
+   },
+   {
+    "token": " benefit",
+    "p": 0.062
+   },
+   {
+    "token": " opportunity",
+    "p": 0.034
+   },
+   {
+    "token": " right",
+    "p": 0.034
+   }
+  ],
+  "loss_nats": 1.44,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_320_393",
+  "stratum": "wrong_moderate",
+  "context": "> ricotz: the one about boost?\n<ricotz> Sweet5hark, while the mentioned commits breaks building with older boost versions\n<ricotz> so the interal orcus is broken\n<Sweet5hark> ricotz: just revert the commit",
+  "true_token": " on",
+  "top5": [
+   {
+    "token": " to",
+    "p": 0.089
+   },
+   {
+    "token": " and",
+    "p": 0.072
+   },
+   {
+    "token": "\n",
+    "p": 0.066
+   },
+   {
+    "token": ",",
+    "p": 0.063
+   },
+   {
+    "token": " if",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 4.54,
+  "true_rank": 14,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_337_358",
+  "stratum": "near_miss",
+  "context": "oma cell lines, suggesting that iPSC-Heps had a relatively mature hepatic phenotype that more closely resembles that of adult hepatocytes. HepaRG was the sole exception but nonetheless suffers from lack of donor diversity and poor prediction of hepatotoxicity. The effects of sex differences and DMSO treatment on gene expression of",
+  "true_token": " the",
+  "top5": [
+   {
+    "token": " i",
+    "p": 0.79
+   },
+   {
+    "token": " hepat",
+    "p": 0.021
+   },
+   {
+    "token": " the",
+    "p": 0.019
+   },
+   {
+    "token": " liver",
+    "p": 0.016
+   },
+   {
+    "token": " these",
+    "p": 0.01
+   }
+  ],
+  "loss_nats": 3.95,
+  "true_rank": 3,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_291_88",
+  "stratum": "wrong_moderate",
+  "context": " \"Don’t be fooled by the picture on the cover of Scout Niblett’s new album, a photo-booth shot of a couple in full make-out mode. The heart of It’s Up to Emma is not a romantic one. These nine brooding, deeply",
+  "true_token": " scar",
+  "top5": [
+   {
+    "token": "-",
+    "p": 0.095
+   },
+   {
+    "token": " emotional",
+    "p": 0.083
+   },
+   {
+    "token": " personal",
+    "p": 0.025
+   },
+   {
+    "token": " embedded",
+    "p": 0.024
+   },
+   {
+    "token": " eng",
+    "p": 0.023
+   }
+  ],
+  "loss_nats": 7.59,
+  "true_rank": 263,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_144_254",
+  "stratum": "hesitant_correct",
+  "context": "or by Mark Lawrence\n\nPrincess of Blood, Book Two of The God Fragments by Tom Lloyd\n\nA War in Crimson Embers, Book Three of the Crimson Empire by Alex Marshall\n\nScourge, A Darkhurst Novel by Gail Z. Martin\n\n",
+  "true_token": "The",
+  "top5": [
+   {
+    "token": "The",
+    "p": 0.197
+   },
+   {
+    "token": "A",
+    "p": 0.078
+   },
+   {
+    "token": "Sc",
+    "p": 0.047
+   },
+   {
+    "token": "S",
+    "p": 0.019
+   },
+   {
+    "token": "P",
+    "p": 0.012
+   }
+  ],
+  "loss_nats": 1.62,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "near_miss_274_428",
+  "stratum": "near_miss",
+  "context": "^\\pm\\to\\pi^\\mp\\mu^\\pm\\mu^\\pm$ violating lepton number by two units can proceed via a neutrino exchange if the neutrino is a Majorana particle, consequently the experimental limits on this decay provide constraints on the effective Majorana neutrino mass $\\langle m_{\\mu\\",
+  "true_token": "mu",
+  "top5": [
+   {
+    "token": "nu",
+    "p": 0.535
+   },
+   {
+    "token": "tau",
+    "p": 0.289
+   },
+   {
+    "token": "bar",
+    "p": 0.04
+   },
+   {
+    "token": "mu",
+    "p": 0.033
+   },
+   {
+    "token": "to",
+    "p": 0.011
+   }
+  ],
+  "loss_nats": 3.41,
+  "true_rank": 4,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_87_108",
+  "stratum": "catastrophic",
+  "context": " to try to do  is when user first visit the page he will see the left   navigation menu,so if he press the icon which has a class .clearfix.with-menu.with-shortcuts the menu will be closed and then i save the cookie with the name \"menuh",
+  "true_token": "idden",
+  "top5": [
+   {
+    "token": "\"",
+    "p": 0.133
+   },
+   {
+    "token": "\".",
+    "p": 0.045
+   },
+   {
+    "token": "-",
+    "p": 0.04
+   },
+   {
+    "token": "ome",
+    "p": 0.034
+   },
+   {
+    "token": "ide",
+    "p": 0.029
+   }
+  ],
+  "loss_nats": 8.7,
+  "true_rank": 467,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_42_105",
+  "stratum": "confident_correct",
+  "context": "}\n-----------------\n\nOur study included a cohort of 117,960 members free of diabetes on as of July 2010, with 71% in the NG group and 29% in the IFG group. Baseline characteristics of the cohort are shown in [Table 1](#T1){ref-type=\"table",
+  "true_token": "\"}.",
+  "top5": [
+   {
+    "token": "\"}.",
+    "p": 0.917
+   },
+   {
+    "token": "\"}",
+    "p": 0.055
+   },
+   {
+    "token": "\"},",
+    "p": 0.024
+   },
+   {
+    "token": "\"};",
+    "p": 0.003
+   },
+   {
+    "token": "\"}:",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.09,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_392_339",
+  "stratum": "confident_correct",
+  "context": ".\n-36\n45 - ((44 - 24) + 32) - (-68 + 1)\n60\nWhat is the value of 95 + -71 + (-66 - -1)?\n-41\nEvaluate 107 + (-31 - (-20 + 21 + -5)).\n80",
+  "true_token": "\n",
+  "top5": [
+   {
+    "token": "\n",
+    "p": 1.0
+   },
+   {
+    "token": "<|endoftext|>",
+    "p": 0.0
+   },
+   {
+    "token": "/",
+    "p": 0.0
+   },
+   {
+    "token": " -",
+    "p": 0.0
+   },
+   {
+    "token": " +",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.0,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_391_288",
+  "stratum": "catastrophic",
+  "context": " reducing low frequency vibrations which affect production tools such as lithograph tools by lowering production yield rate in semiconductor fabrication.\nThere is a further need for a method and system for reducing or preventing the effects of vibration sources, such as foot traffic over raised floor system, pumps, compressors, chillers and",
+  "true_token": " AH",
+  "top5": [
+   {
+    "token": " other",
+    "p": 0.162
+   },
+   {
+    "token": " the",
+    "p": 0.064
+   },
+   {
+    "token": " so",
+    "p": 0.032
+   },
+   {
+    "token": " more",
+    "p": 0.017
+   },
+   {
+    "token": " air",
+    "p": 0.017
+   }
+  ],
+  "loss_nats": 13.69,
+  "true_rank": 9980,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_171_208",
+  "stratum": "wrong_moderate",
+  "context": " weaker statement than requiring $U$ to be an open subset in $\\R \\times X$. In our case, the map $F(\\lambda,u)$ is defined only in $U$ (and not in the whole $X$), and then condition (C2) does not make sense.",
+  "true_token": " However",
+  "top5": [
+   {
+    "token": "\n",
+    "p": 0.328
+   },
+   {
+    "token": " In",
+    "p": 0.067
+   },
+   {
+    "token": " The",
+    "p": 0.052
+   },
+   {
+    "token": " We",
+    "p": 0.045
+   },
+   {
+    "token": " It",
+    "p": 0.036
+   }
+  ],
+  "loss_nats": 3.95,
+  "true_rank": 9,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_109_269",
+  "stratum": "wrong_moderate",
+  "context": " by the National Abortion Federation (NAF), incidents of the more disastrous forms of violence (such as murder, attempted murder, bombing and arson) have greatly decreased since 1994, the year the Freedom of Access to Clinic Entrances act was put on the books.  The Clinton administration prosecuted",
+  "true_token": " 17",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.24
+   },
+   {
+    "token": " a",
+    "p": 0.044
+   },
+   {
+    "token": " many",
+    "p": 0.04
+   },
+   {
+    "token": " more",
+    "p": 0.033
+   },
+   {
+    "token": " most",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 7.19,
+  "true_rank": 113,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_275_223",
+  "stratum": "catastrophic",
+  "context": " in the bladder at the first control. Therefore, we decided that the BCG therapy might be the real reason for regressing the dermatosis. Although its exact mechanism of action is still unclear, complementary effect on the immune response have been shown in some studies.[@bib5] Thus, the BCG therapy might",
+  "true_token": " somehow",
+  "top5": [
+   {
+    "token": " be",
+    "p": 0.549
+   },
+   {
+    "token": " have",
+    "p": 0.094
+   },
+   {
+    "token": " not",
+    "p": 0.062
+   },
+   {
+    "token": " help",
+    "p": 0.025
+   },
+   {
+    "token": " induce",
+    "p": 0.019
+   }
+  ],
+  "loss_nats": 8.88,
+  "true_rank": 193,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_265_119",
+  "stratum": "catastrophic",
+  "context": "; in gels, e.g. hydrophobically modified hectorites as available, for example, with the trade name Bentone Gel from Rheox and Elementis Specialties, and in sticks, thickeners such as fatty alcohols and/or waxes.\nIn commercial water-free",
+  "true_token": " antip",
+  "top5": [
+   {
+    "token": " suspensions",
+    "p": 0.105
+   },
+   {
+    "token": " products",
+    "p": 0.076
+   },
+   {
+    "token": " compositions",
+    "p": 0.05
+   },
+   {
+    "token": " formulations",
+    "p": 0.035
+   },
+   {
+    "token": " deterg",
+    "p": 0.033
+   }
+  ],
+  "loss_nats": 9.05,
+  "true_rank": 719,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_0_415",
+  "stratum": "near_miss",
+  "context": " to maintaining proper function. When physically interacting with an external target, the mechanical energy applied by the organism can be transferred to the target as several types of output energy, such as target deformation, target fracture, or as a transfer of momentum. The particular function being performed will dictate which of these results is",
+  "true_token": " most",
+  "top5": [
+   {
+    "token": " best",
+    "p": 0.271
+   },
+   {
+    "token": " most",
+    "p": 0.175
+   },
+   {
+    "token": " to",
+    "p": 0.074
+   },
+   {
+    "token": " the",
+    "p": 0.056
+   },
+   {
+    "token": " achieved",
+    "p": 0.023
+   }
+  ],
+  "loss_nats": 1.74,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_158_339",
+  "stratum": "confident_correct",
+  "context": " disappointed. We are happy to be with you. You can contact us easily. We are ready to serve you 24 hours a day. <a href=\"https://www.gclub-bet.com/gclub-online\" rel=\"nofollow\">จีคลับ</",
+  "true_token": "a",
+  "top5": [
+   {
+    "token": "a",
+    "p": 1.0
+   },
+   {
+    "token": "A",
+    "p": 0.0
+   },
+   {
+    "token": "i",
+    "p": 0.0
+   },
+   {
+    "token": "h",
+    "p": 0.0
+   },
+   {
+    "token": "an",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.0,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_378_193",
+  "stratum": "wrong_moderate",
+  "context": "95B2, 0xB0366463, 0xB0360009, 0xB0390009,\n0xA0680009, 0x4F124F26, 0xD1734F02, 0x94A43145,\n0x4609060A, 0x46094",
+  "true_token": "609",
+  "top5": [
+   {
+    "token": "60",
+    "p": 0.112
+   },
+   {
+    "token": "B",
+    "p": 0.078
+   },
+   {
+    "token": "F",
+    "p": 0.053
+   },
+   {
+    "token": "A",
+    "p": 0.038
+   },
+   {
+    "token": "D",
+    "p": 0.028
+   }
+  ],
+  "loss_nats": 7.27,
+  "true_rank": 139,
+  "bigram_seen_in_context": false
+ }
+]

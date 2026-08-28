@@ -1,0 +1,1304 @@
+[
+ {
+  "id": "near_miss_14_86",
+  "stratum": "near_miss",
+  "context": " including circuitry for adjusting comparator speed/propagation delay and comparator power consumption according to external system needs.\nHigh speed (i.e., low signal propagation delay) of a comparator in a system may need to be adjusted according to the present operation requirements of the system. For example, the error comparator",
+  "true_token": " of",
+  "top5": [
+   {
+    "token": " may",
+    "p": 0.53
+   },
+   {
+    "token": " can",
+    "p": 0.032
+   },
+   {
+    "token": " is",
+    "p": 0.028
+   },
+   {
+    "token": " in",
+    "p": 0.027
+   },
+   {
+    "token": " of",
+    "p": 0.019
+   }
+  ],
+  "loss_nats": 3.95,
+  "true_rank": 5,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_60_119",
+  "stratum": "wrong_moderate",
+  "context": "\n\nThis should work, I did the same hing for both my King Hsss and my Roboto.\n\nI've noticed on both of my Robotos, which I haven't swapped, that there is a slight gap in one of the bicep/shoulder connections",
+  "true_token": " when",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.389
+   },
+   {
+    "token": ",",
+    "p": 0.244
+   },
+   {
+    "token": " (",
+    "p": 0.056
+   },
+   {
+    "token": " that",
+    "p": 0.031
+   },
+   {
+    "token": " between",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 5.65,
+  "true_rank": 25,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_19_379",
+  "stratum": "catastrophic",
+  "context": "\">typename</span> valType&gt;\n<a name=\"l00057\"></a>00057         valType <a class=\"code\" href=\"a00173.html#ga9c434945769e1c9cf1f7f08fcec",
+  "true_token": "521",
+  "top5": [
+   {
+    "token": "\">",
+    "p": 0.175
+   },
+   {
+    "token": "8",
+    "p": 0.064
+   },
+   {
+    "token": "6",
+    "p": 0.055
+   },
+   {
+    "token": "9",
+    "p": 0.054
+   },
+   {
+    "token": "5",
+    "p": 0.054
+   }
+  ],
+  "loss_nats": 9.85,
+  "true_rank": 974,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_184_353",
+  "stratum": "wrong_moderate",
+  "context": " (German secret Service). (...) The BND men were in charge of selecting recruits for the KLA command structure from the 500,000 Kosovars in Albania.\" Former senior adviser to the German parliament Matthias Küntzel tried to prove later on that German secret diplomacy had been",
+  "true_token": " instrumental",
+  "top5": [
+   {
+    "token": " successful",
+    "p": 0.057
+   },
+   {
+    "token": " a",
+    "p": 0.042
+   },
+   {
+    "token": " in",
+    "p": 0.029
+   },
+   {
+    "token": " involved",
+    "p": 0.024
+   },
+   {
+    "token": " \"",
+    "p": 0.02
+   }
+  ],
+  "loss_nats": 5.74,
+  "true_rank": 46,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_354_134",
+  "stratum": "catastrophic",
+  "context": "aving description above, if we define a phase as a fixed-point for the renormalization-group (RG) flow [see eg. Ref. 1], then we arrive at a more precise definition for a crossover. Crossover happens when more than one critical fixed-point appear in the phase diagram [",
+  "true_token": "Ref",
+  "top5": [
+   {
+    "token": "see",
+    "p": 0.486
+   },
+   {
+    "token": "e",
+    "p": 0.065
+   },
+   {
+    "token": "as",
+    "p": 0.042
+   },
+   {
+    "token": "cf",
+    "p": 0.041
+   },
+   {
+    "token": "for",
+    "p": 0.031
+   }
+  ],
+  "loss_nats": 8.46,
+  "true_rank": 182,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_194_130",
+  "stratum": "near_miss",
+  "context": "IC now appeals, seeking judgment as a matter of law with respect to liability on all causes of action and with respect to FCA damages. Alternatively, it urges us to vacate the district court's judgment and remand for a new trial on all claims. In support, SAIC reasserts each of",
+  "true_token": " the",
+  "top5": [
+   {
+    "token": " its",
+    "p": 0.486
+   },
+   {
+    "token": " the",
+    "p": 0.283
+   },
+   {
+    "token": " these",
+    "p": 0.103
+   },
+   {
+    "token": " those",
+    "p": 0.03
+   },
+   {
+    "token": " his",
+    "p": 0.016
+   }
+  ],
+  "loss_nats": 1.26,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_120_289",
+  "stratum": "confident_correct",
+  "context": "\n        <briefdescription>\n<para>Destructor for <ref refid=\"class_project_manager\" kindref=\"compound\">ProjectManager</ref>. </para>        </briefdescription>\n        <detaileddescription>\n        </detaileddescription>\n        ",
+  "true_token": "<",
+  "top5": [
+   {
+    "token": "<",
+    "p": 0.989
+   },
+   {
+    "token": "</",
+    "p": 0.007
+   },
+   {
+    "token": "\n",
+    "p": 0.002
+   },
+   {
+    "token": "<!--",
+    "p": 0.001
+   },
+   {
+    "token": "...",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.01,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "near_miss_155_225",
+  "stratum": "near_miss",
+  "context": ".\n\nStars earned can be spent on Upgrades. Each upgrade requires between 1 and 4 stars and have a permanent effect on towers and spells. Upgrades can be bought and reset at any point during the game, allowing you to pick and choose the best upgrades for each level until you have",
+  "true_token": " enough",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.123
+   },
+   {
+    "token": " the",
+    "p": 0.076
+   },
+   {
+    "token": " enough",
+    "p": 0.061
+   },
+   {
+    "token": " completed",
+    "p": 0.049
+   },
+   {
+    "token": " reached",
+    "p": 0.046
+   }
+  ],
+  "loss_nats": 2.8,
+  "true_rank": 3,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_243_257",
+  "stratum": "near_miss",
+  "context": "\\[finiteAbgroups\\].\n\nFree (commutative) group and abelianization\n-------------------------------------------\n\nThe basic notions recalled in this subsection may be found for instance in [@BouAlg].\n\nLet $G$ be a group. For any elements $g,h\\in G$,",
+  "true_token": " the",
+  "top5": [
+   {
+    "token": " we",
+    "p": 0.385
+   },
+   {
+    "token": " let",
+    "p": 0.135
+   },
+   {
+    "token": " the",
+    "p": 0.091
+   },
+   {
+    "token": " there",
+    "p": 0.079
+   },
+   {
+    "token": " $",
+    "p": 0.072
+   }
+  ],
+  "loss_nats": 2.4,
+  "true_rank": 3,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_22_165",
+  "stratum": "wrong_moderate",
+  "context": " only use validated, publicly accessible data. For example, we use the results generated by farms in the test farm network organized by the Federal Ministry for Agriculture. Every year this resource documents the differences in yields between conventional and organically operating farms. Never before have such comprehensive sets of data on yield differences in",
+  "true_token": " agriculture",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.106
+   },
+   {
+    "token": " yields",
+    "p": 0.05
+   },
+   {
+    "token": " different",
+    "p": 0.044
+   },
+   {
+    "token": " crop",
+    "p": 0.031
+   },
+   {
+    "token": " organic",
+    "p": 0.031
+   }
+  ],
+  "loss_nats": 5.92,
+  "true_rank": 47,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_273_128",
+  "stratum": "catastrophic",
+  "context": ".\n\nRupert needs\n\nto take Mendelsome to dinner and have some lively entertainment and a few camera.\nI propose increasing the fees isp charge to customers so all papers, music, video and everyone else that takes him to dinner gets a cut.\n\nRe: Sometimes",
+  "true_token": " works",
+  "top5": [
+   {
+    "token": " I",
+    "p": 0.139
+   },
+   {
+    "token": " a",
+    "p": 0.068
+   },
+   {
+    "token": " the",
+    "p": 0.067
+   },
+   {
+    "token": " you",
+    "p": 0.062
+   },
+   {
+    "token": ",",
+    "p": 0.057
+   }
+  ],
+  "loss_nats": 8.92,
+  "true_rank": 442,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_180_330",
+  "stratum": "hesitant_correct",
+  "context": " Advanced > Content > Enable JavaScript.\nYou may also want to consider enabling Preferences > Webpages > Opera Turbo if you haven't already; it loads web content on Opera's server, sends it to you in compressed format, and Opera decompresses it for you locally. Not ideal for dynamic",
+  "true_token": " web",
+  "top5": [
+   {
+    "token": " web",
+    "p": 0.179
+   },
+   {
+    "token": " content",
+    "p": 0.158
+   },
+   {
+    "token": " websites",
+    "p": 0.058
+   },
+   {
+    "token": " sites",
+    "p": 0.048
+   },
+   {
+    "token": " site",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 1.72,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_90_368",
+  "stratum": "wrong_moderate",
+  "context": "IV by virus isolation and parvovirus was isolated from one herd. Dr. Van Alstine, however, did *537 not disclose which cell line produced these results. Id. In the end, Dr. Van Alstine concluded that, inter alia, since swine influenza was detected frequently among",
+  "true_token": " infected",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.21
+   },
+   {
+    "token": " pigs",
+    "p": 0.095
+   },
+   {
+    "token": " swine",
+    "p": 0.059
+   },
+   {
+    "token": " pig",
+    "p": 0.028
+   },
+   {
+    "token": " animals",
+    "p": 0.021
+   }
+  ],
+  "loss_nats": 4.59,
+  "true_rank": 14,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_205_449",
+  "stratum": "catastrophic",
+  "context": ")\nMangalam Veettil Manaseswari Gupta (1995)\nAvittam thorunnal arogya sriman (1995)\nMimics Action 500 (1995)\nNirnayam (1995)\nThacholi Vargheese",
+  "true_token": " Che",
+  "top5": [
+   {
+    "token": " (",
+    "p": 0.62
+   },
+   {
+    "token": "i",
+    "p": 0.014
+   },
+   {
+    "token": "a",
+    "p": 0.012
+   },
+   {
+    "token": " K",
+    "p": 0.012
+   },
+   {
+    "token": "an",
+    "p": 0.01
+   }
+  ],
+  "loss_nats": 8.84,
+  "true_rank": 337,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_379_298",
+  "stratum": "near_miss",
+  "context": " three states use the average-number approach.\nAt the beginning of the preceding year, X Corp. had an actual fleet size of 800 cars. During the summer high-season, its fleet size went up to 1,000 cars. Then, at the end of the preceding year, X Corp",
+  "true_token": ".'",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.94
+   },
+   {
+    "token": ".'",
+    "p": 0.038
+   },
+   {
+    "token": ".,",
+    "p": 0.016
+   },
+   {
+    "token": ".’",
+    "p": 0.001
+   },
+   {
+    "token": ".(",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 3.26,
+  "true_rank": 2,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "near_miss_252_451",
+  "stratum": "near_miss",
+  "context": "\n            $route['path'] = reset($pathElements);\n\n            foreach ($route['operations'] as $realOperation) {\n                $carry[] = [\n                    'id' => (string)Uuid::generate(4),\n                    'method' => $realOperation",
+  "true_token": "['",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.436
+   },
+   {
+    "token": "->",
+    "p": 0.321
+   },
+   {
+    "token": "\n",
+    "p": 0.131
+   },
+   {
+    "token": "['",
+    "p": 0.054
+   },
+   {
+    "token": ".",
+    "p": 0.02
+   }
+  ],
+  "loss_nats": 2.93,
+  "true_rank": 4,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_305_222",
+  "stratum": "wrong_moderate",
+  "context": ", Individually; LUIS HAWKINS, Individually;\nCHARLES BRANDON MOORE, Individually; KARL WINTER, Individually;\nGPCH-GP, INCORPORATED, A Delaware Corporation, doing business as\nGarden Park",
+  "true_token": " Medical",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.104
+   },
+   {
+    "token": "way",
+    "p": 0.038
+   },
+   {
+    "token": " Company",
+    "p": 0.034
+   },
+   {
+    "token": " &",
+    "p": 0.025
+   },
+   {
+    "token": " Enterprises",
+    "p": 0.023
+   }
+  ],
+  "loss_nats": 7.18,
+  "true_rank": 171,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_398_238",
+  "stratum": "hesitant_correct",
+  "context": "Zv.UNITED STATES.\nNo. 02-10996.\nSupreme Court of United States.\nOctober 6, 2003.\n\n1\nAppeal from the C. A. 9th Cir.\n\n\n2\nCertiorari denied. Reported below: 49 Fed. Appx.",
+  "true_token": " 7",
+  "top5": [
+   {
+    "token": " 7",
+    "p": 0.069
+   },
+   {
+    "token": " 8",
+    "p": 0.034
+   },
+   {
+    "token": " 6",
+    "p": 0.03
+   },
+   {
+    "token": " 5",
+    "p": 0.029
+   },
+   {
+    "token": " 9",
+    "p": 0.023
+   }
+  ],
+  "loss_nats": 2.67,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_123_330",
+  "stratum": "confident_correct",
+  "context": " & I. H. Stairs (San Francisco: Astronomical Society of the Pacific), 357–370\n\nvan Kerkwijk, M. H., Bergeron, P., & Kulkarni, S. R. 1996, ApJ, 467, L89",
+  "true_token": "\n",
+  "top5": [
+   {
+    "token": "\n",
+    "p": 0.935
+   },
+   {
+    "token": " van",
+    "p": 0.046
+   },
+   {
+    "token": " Van",
+    "p": 0.005
+   },
+   {
+    "token": " (",
+    "p": 0.002
+   },
+   {
+    "token": ",",
+    "p": 0.001
+   }
+  ],
+  "loss_nats": 0.07,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_107_498",
+  "stratum": "wrong_moderate",
+  "context": " commits ahead of its followers, so should only be used for disaster\n// recovery into a fresh cluster, and should not be used in normal operations.\nfunc (r *Raft) Restore(meta *SnapshotMeta, reader io.Reader, timeout time.Duration) error {\n\t",
+  "true_token": "metrics",
+  "top5": [
+   {
+    "token": "if",
+    "p": 0.182
+   },
+   {
+    "token": "r",
+    "p": 0.122
+   },
+   {
+    "token": "//",
+    "p": 0.098
+   },
+   {
+    "token": "return",
+    "p": 0.09
+   },
+   {
+    "token": "err",
+    "p": 0.027
+   }
+  ],
+  "loss_nats": 6.66,
+  "true_rank": 74,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_323_373",
+  "stratum": "near_miss",
+  "context": " with the nurses!\n\nseems like another hospital chain where the bottom line supercedes patient care.\n\nsutter hides health costs\n\nlegislation seeks to remove gag clauses\n\nblasted in 2004 for operating some of the region's highest-cost hospitals, the sutter health",
+  "true_token": " system",
+  "top5": [
+   {
+    "token": " department",
+    "p": 0.089
+   },
+   {
+    "token": " ministry",
+    "p": 0.068
+   },
+   {
+    "token": " care",
+    "p": 0.056
+   },
+   {
+    "token": " industry",
+    "p": 0.04
+   },
+   {
+    "token": " system",
+    "p": 0.036
+   }
+  ],
+  "loss_nats": 3.31,
+  "true_rank": 5,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_80_170",
+  "stratum": "wrong_moderate",
+  "context": " or omission to be in the scope of a governmental office or employment in order to give rise to liability on the part of the United States. See Somerset Seafood Co. v. United States, 4 Cir., 1951, 193 F.2d 631.\nDefendant next urges that the nuclear experiments",
+  "true_token": " are",
+  "top5": [
+   {
+    "token": " performed",
+    "p": 0.095
+   },
+   {
+    "token": " which",
+    "p": 0.084
+   },
+   {
+    "token": " conducted",
+    "p": 0.065
+   },
+   {
+    "token": " in",
+    "p": 0.059
+   },
+   {
+    "token": " and",
+    "p": 0.044
+   }
+  ],
+  "loss_nats": 3.29,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_364_279",
+  "stratum": "catastrophic",
+  "context": " by far is not only a powerhouse, it is efficient, and reliable. Best amp I've purchased yet!\n\nDatum plaatsing: 2018-02-01\n\nRated 5 van de\n5 door\nEbooo uit\nGreat amp that puts out power in small",
+  "true_token": " foot",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.061
+   },
+   {
+    "token": " areas",
+    "p": 0.042
+   },
+   {
+    "token": " amounts",
+    "p": 0.037
+   },
+   {
+    "token": " groups",
+    "p": 0.034
+   },
+   {
+    "token": " room",
+    "p": 0.032
+   }
+  ],
+  "loss_nats": 9.52,
+  "true_rank": 996,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_81_374",
+  "stratum": "catastrophic",
+  "context": " to retrieve Tree pointer\n\n<|endoftext|>A user may populate an electronic calendar with appointments that take place at different locations. The electronic calendar may be, for example, a Microsoft Outlook calendar, and may be manually programmed to include a date and time of appointments and locations associated with the appointments.<|endoftext|>The HeartFull",
+  "true_token": " Conne",
+  "top5": [
+   {
+    "token": " of",
+    "p": 0.176
+   },
+   {
+    "token": "\n",
+    "p": 0.093
+   },
+   {
+    "token": " is",
+    "p": 0.028
+   },
+   {
+    "token": " (",
+    "p": 0.025
+   },
+   {
+    "token": "-",
+    "p": 0.022
+   }
+  ],
+  "loss_nats": 10.34,
+  "true_rank": 2314,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_136_81",
+  "stratum": "catastrophic",
+  "context": " you see, which you don’t recognize one thing, you may best writing companies want to request ones educator for that details. The copy writers often get the most important notion inside the undertaking and also grow them.\n\nPolygamy should be prohibited.\n\nSpecial text messaging from skilled",
+  "true_token": " Origin",
+  "top5": [
+   {
+    "token": " writers",
+    "p": 0.136
+   },
+   {
+    "token": " professionals",
+    "p": 0.073
+   },
+   {
+    "token": " people",
+    "p": 0.031
+   },
+   {
+    "token": " workers",
+    "p": 0.025
+   },
+   {
+    "token": " and",
+    "p": 0.02
+   }
+  ],
+  "loss_nats": 16.91,
+  "true_rank": 30074,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_33_486",
+  "stratum": "wrong_moderate",
+  "context": " group displayed significant elaborations of cartilage and bone at the limb terminus. The appearance and subsequent modification of these tissues suggest that some capacity for limb regeneration exists innately in the young rat and can be more readily evoked than has been recognized heretofore. It is concluded that extant and forthcoming reports of electrically stimulated skeletal",
+  "true_token": " tissue",
+  "top5": [
+   {
+    "token": " regeneration",
+    "p": 0.39
+   },
+   {
+    "token": " muscle",
+    "p": 0.24
+   },
+   {
+    "token": " and",
+    "p": 0.06
+   },
+   {
+    "token": " regener",
+    "p": 0.041
+   },
+   {
+    "token": " regenerative",
+    "p": 0.027
+   }
+  ],
+  "loss_nats": 3.98,
+  "true_rank": 7,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_301_309",
+  "stratum": "confident_correct",
+  "context": "oligomers\" solution; Lambert et al., [@B33]).\n\nFor AFM analyses, some drops of the solution were deposited on a freshly cleaved mica substrate. After an incubation of 2 min, samples were washed with ultrapure water and dried for 30 min in a vacuum desic",
+  "true_token": "c",
+  "top5": [
+   {
+    "token": "c",
+    "p": 0.909
+   },
+   {
+    "token": "cation",
+    "p": 0.03
+   },
+   {
+    "token": "cler",
+    "p": 0.006
+   },
+   {
+    "token": "l",
+    "p": 0.005
+   },
+   {
+    "token": "cy",
+    "p": 0.005
+   }
+  ],
+  "loss_nats": 0.09,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_48_439",
+  "stratum": "hesitant_correct",
+  "context": " with the red circle on PD0. Similarly, the blue square, red circle, red square, and blue circle were presented sequentially to chicks that were trained with the blue square. This order of image presentation represented the matched (same as the training image), new (both shape and color different from the",
+  "true_token": " training",
+  "top5": [
+   {
+    "token": " training",
+    "p": 0.117
+   },
+   {
+    "token": " original",
+    "p": 0.101
+   },
+   {
+    "token": " previous",
+    "p": 0.047
+   },
+   {
+    "token": " red",
+    "p": 0.033
+   },
+   {
+    "token": " other",
+    "p": 0.029
+   }
+  ],
+  "loss_nats": 2.15,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_92_119",
+  "stratum": "wrong_moderate",
+  "context": " a variable that could be of precious value in cardioprotection studies.\n\nThe main goal of the present study was to develop a kinetic model allowing the estimation of the total amount of necrosis biomarkers (CK, CK-MB, cTnI) released during myocardial ischemia-reperfusion injury",
+  "true_token": " from",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.315
+   },
+   {
+    "token": " in",
+    "p": 0.166
+   },
+   {
+    "token": " (",
+    "p": 0.142
+   },
+   {
+    "token": ",",
+    "p": 0.084
+   },
+   {
+    "token": " and",
+    "p": 0.08
+   }
+  ],
+  "loss_nats": 5.21,
+  "true_rank": 15,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_328_461",
+  "stratum": "wrong_moderate",
+  "context": " of services, (ix) construction delays of new or expansion of existing customer support centers, (x) difficulties or delays in implementing SYKES' bundled service offerings, (xi) failure to achieve sales, marketing and other objectives, (xii) variations in the terms and the elements of services offered",
+  "true_token": " under",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.462
+   },
+   {
+    "token": " by",
+    "p": 0.154
+   },
+   {
+    "token": " to",
+    "p": 0.064
+   },
+   {
+    "token": " and",
+    "p": 0.064
+   },
+   {
+    "token": ".",
+    "p": 0.042
+   }
+  ],
+  "loss_nats": 5.14,
+  "true_rank": 13,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_373_81",
+  "stratum": "confident_correct",
+  "context": "geq  t_{f,1-\\frac{\\alpha}{2}} -\\sqrt{n}\\lambda)+\\text{Pr}(\\hat\\tau_p^*\\leq  -t_{f,1-\\frac{\\alpha}{2}} -\\sqrt{n}\\lambda) \\approx  \\text{Pr",
+  "true_token": "}(\\",
+  "top5": [
+   {
+    "token": "}(\\",
+    "p": 0.871
+   },
+   {
+    "token": "}(",
+    "p": 0.095
+   },
+   {
+    "token": "}",
+    "p": 0.011
+   },
+   {
+    "token": "}\\",
+    "p": 0.008
+   },
+   {
+    "token": "}_",
+    "p": 0.003
+   }
+  ],
+  "loss_nats": 0.14,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_257_130",
+  "stratum": "catastrophic",
+  "context": " Louis Requa announced he was also recently asked to serve as grand marshall of the annual Loggerodeo Parade in July.\n\nHe said he was surprised by the city award and by the honor of being asked to serve as grand marshal, as well as in early February receiving the first",
+  "true_token": " Hammer",
+  "top5": [
+   {
+    "token": " ever",
+    "p": 0.161
+   },
+   {
+    "token": " prize",
+    "p": 0.092
+   },
+   {
+    "token": " of",
+    "p": 0.051
+   },
+   {
+    "token": " award",
+    "p": 0.033
+   },
+   {
+    "token": " grand",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 12.88,
+  "true_rank": 8745,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_70_349",
+  "stratum": "near_miss",
+  "context": " experience, whether it’s through front-line jobs or volunteering, and attend networking events. Schools often host or sponsor these, and students should be attending them all.\n\nThis is a really fun industry, and with so many sectors and positions available, I really believe that there is something",
+  "true_token": " for",
+  "top5": [
+   {
+    "token": " that",
+    "p": 0.085
+   },
+   {
+    "token": " to",
+    "p": 0.083
+   },
+   {
+    "token": " special",
+    "p": 0.081
+   },
+   {
+    "token": " for",
+    "p": 0.069
+   },
+   {
+    "token": " unique",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 2.68,
+  "true_rank": 4,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_238_481",
+  "stratum": "catastrophic",
+  "context": " the president,' he said.) He is relaxed about the job of politics. He is the only president of the United States - real or prospective - that I've seen in months.\"\n\nPresident Barack Obama is taking his cues from the shrill primary campaigning of the GOP. (photo: Jewel",
+  "true_token": " Sam",
+  "top5": [
+   {
+    "token": "ry",
+    "p": 0.071
+   },
+   {
+    "token": ")",
+    "p": 0.058
+   },
+   {
+    "token": "/",
+    "p": 0.036
+   },
+   {
+    "token": "ers",
+    "p": 0.032
+   },
+   {
+    "token": " of",
+    "p": 0.028
+   }
+  ],
+  "loss_nats": 10.57,
+  "true_rank": 2928,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_259_279",
+  "stratum": "near_miss",
+  "context": " overproduction {#Sec2}\n=================\n\nNO is believed to play duel role in cell function, either detrimental or protective. NO regulation plays a critical role in cell function, especially in endothelial cells. NO may regulate the normal vascular tone and the repression of NO may cause proatherogenic situation",
+  "true_token": " \\[[@",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.319
+   },
+   {
+    "token": ",",
+    "p": 0.154
+   },
+   {
+    "token": " in",
+    "p": 0.138
+   },
+   {
+    "token": " \\[[@",
+    "p": 0.128
+   },
+   {
+    "token": " and",
+    "p": 0.08
+   }
+  ],
+  "loss_nats": 2.06,
+  "true_rank": 4,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_311_362",
+  "stratum": "wrong_moderate",
+  "context": " reason CIV6 still says \"no suitable location\".\nCan't wonders be built where roads are, or is there something else I am missing?\n\nA:\n\nWonders and districts can only be built on tiles that your city owns, through natural growth or purchasing. If another city",
+  "true_token": " in",
+  "top5": [
+   {
+    "token": " owns",
+    "p": 0.156
+   },
+   {
+    "token": " is",
+    "p": 0.155
+   },
+   {
+    "token": " has",
+    "p": 0.145
+   },
+   {
+    "token": " can",
+    "p": 0.042
+   },
+   {
+    "token": " or",
+    "p": 0.039
+   }
+  ],
+  "loss_nats": 4.82,
+  "true_rank": 17,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_60_91",
+  "stratum": "hesitant_correct",
+  "context": " from the microwave - 3 minutes on high, just microwave the cup and water not the arms)\n\n(Cold water from the facet)\n\nThis should work, I did the same hing for both my King Hsss and my Roboto.\n\nI've noticed on both of my",
+  "true_token": " Rob",
+  "top5": [
+   {
+    "token": " Rob",
+    "p": 0.02
+   },
+   {
+    "token": " King",
+    "p": 0.019
+   },
+   {
+    "token": " other",
+    "p": 0.012
+   },
+   {
+    "token": " knees",
+    "p": 0.011
+   },
+   {
+    "token": " R",
+    "p": 0.008
+   }
+  ],
+  "loss_nats": 3.91,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "confident_correct_51_429",
+  "stratum": "confident_correct",
+  "context": "\nnamespace TestForEachAsync\n{\n    public class To\n    {\n        public int Id { get; set; }\n        public Guid Guid { get; set; }\n    }\n}\n\nDbContext\nusing Microsoft.EntityFrameworkCore;\n\nnamespace TestFor",
+  "true_token": "Each",
+  "top5": [
+   {
+    "token": "Each",
+    "p": 0.973
+   },
+   {
+    "token": "One",
+    "p": 0.005
+   },
+   {
+    "token": "All",
+    "p": 0.004
+   },
+   {
+    "token": "Every",
+    "p": 0.002
+   },
+   {
+    "token": "Any",
+    "p": 0.001
+   }
+  ],
+  "loss_nats": 0.03,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_379_496",
+  "stratum": "wrong_moderate",
+  "context": " a particular jurisdiction's road network. The apportionment of registration fees is intended to compensate for the cost of road wear a rental fleet causes in the jurisdictions in which it operates. See IRP § 1116 cmt., reprinted in AR at 284. As such, the apportionment to which",
+  "true_token": " a",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.375
+   },
+   {
+    "token": " X",
+    "p": 0.086
+   },
+   {
+    "token": " registration",
+    "p": 0.036
+   },
+   {
+    "token": " Washington",
+    "p": 0.025
+   },
+   {
+    "token": " is",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 4.27,
+  "true_rank": 8,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_150_327",
+  "stratum": "catastrophic",
+  "context": " the gel composition is preferably an agarose gel composition. The elongated molecules became fixed as the agarose.\nIn a second embodiment, the single nucleic acid molecules are elongated and fixed in a controllable manner directly onto a solid, planar surface. This solid, planar surface contains a positive charge density which has been",
+  "true_token": " controll",
+  "top5": [
+   {
+    "token": " determined",
+    "p": 0.043
+   },
+   {
+    "token": " used",
+    "p": 0.028
+   },
+   {
+    "token": " measured",
+    "p": 0.026
+   },
+   {
+    "token": " termed",
+    "p": 0.019
+   },
+   {
+    "token": " called",
+    "p": 0.016
+   }
+  ],
+  "loss_nats": 8.62,
+  "true_rank": 587,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_92_484",
+  "stratum": "wrong_moderate",
+  "context": "0--46.5\\]37.4 \\[30.5--45.7\\]Body weight (kg)75 \\[67--84\\]76 \\[70--83\\]Height (cm)171 \\[165--176\\]170 \\[166--175\\]Glycemia (g/L)1.",
+  "true_token": "31",
+  "top5": [
+   {
+    "token": "9",
+    "p": 0.052
+   },
+   {
+    "token": "5",
+    "p": 0.05
+   },
+   {
+    "token": "3",
+    "p": 0.047
+   },
+   {
+    "token": "7",
+    "p": 0.046
+   },
+   {
+    "token": "8",
+    "p": 0.046
+   }
+  ],
+  "loss_nats": 5.48,
+  "true_rank": 72,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_74_367",
+  "stratum": "confident_correct",
+  "context": " = s0;\n            s0 = peg$c0;\n          }\n        } else {\n          peg$currPos = s0;\n          s0 = peg$c0;\n        }\n      } else {\n        peg$currPos = s0;",
+  "true_token": "\n",
+  "top5": [
+   {
+    "token": "\n",
+    "p": 0.993
+   },
+   {
+    "token": "\n\n",
+    "p": 0.005
+   },
+   {
+    "token": " //",
+    "p": 0.001
+   },
+   {
+    "token": "  ",
+    "p": 0.0
+   },
+   {
+    "token": " \n",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.01,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ }
+]

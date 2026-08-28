@@ -1,0 +1,308 @@
+[
+ {
+  "id": "wrong_moderate_368_52",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "topic", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific",
+  "note": "' basis' (\"eliminated on the basis of...\") is idiomatic academic phrasing; true continuation instead sets up an unseen 'on the one hand ... other hand' hedge with no local cue."
+ },
+ {
+  "id": "wrong_moderate_366_420",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic", "format"],
+  "failure_needs": "other",
+  "domain": "news",
+  "note": "Top-1 ' closures' is just a different tokenization of the same concept as true 'clos'+'ing' ('closing'); the model got the topic and meaning right, only the subword split differs."
+ },
+ {
+  "id": "near_miss_186_233",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "catastrophic_31_52",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "prose_nonfiction",
+  "note": "Same source document as catastrophic_31_258 later in this batch (Mahdi/Messiah physiognomy prophecy text). 'around the age of 38' and 'around 38' are equally natural phrasings; the exact number is essentially arbitrary."
+ },
+ {
+  "id": "near_miss_325_116",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "code",
+  "note": "Model invents plausible-looking Java identifier suffixes ('und', 'ench') rather than the real JUnit API method 'runBare'."
+ },
+ {
+  "id": "near_miss_303_385",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "confident_correct_278_148",
+  "why_right": "copy_from_context",
+  "domain": "code",
+  "note": "Four near-identical repeated CSS selector lines already establish the comma pattern; trivial to copy."
+ },
+ {
+  "id": "confident_correct_1_221",
+  "why_right": "formulaic_ngram",
+  "domain": "code"
+ },
+ {
+  "id": "confident_correct_263_257",
+  "why_right": "formulaic_ngram",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "near_miss_218_511",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "legal_boilerplate",
+  "note": "'sentenced' (top-1, p=.114) and 'convicted' (true, p=.113) are essentially tied in probability, matching genuine narrative ambiguity."
+ },
+ {
+  "id": "catastrophic_108_317",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_396_369",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific",
+  "note": "'at the discretion of [the treating physician]' is stock phrasing in clinical-methods sections; model defaults to generic 'provided'."
+ },
+ {
+  "id": "catastrophic_205_264",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "non_english",
+  "note": "Continuing a transliterated Malayalam film title letter-by-letter; model's guesses are plausible characters with no real basis for the specific spelling."
+ },
+ {
+  "id": "confident_correct_196_219",
+  "why_right": "format_structure",
+  "domain": "code"
+ },
+ {
+  "id": "catastrophic_96_155",
+  "plausibility": "grammatical_only",
+  "aspects_right": [],
+  "failure_needs": "unpredictable",
+  "domain": "prose_nonfiction",
+  "note": "Model assumes 'Gaz' is an unfinished word and guesses common completions (Gazprom, Gazelle, Gazette, Gaza) — but 'Gaz' was actually a complete word and the true next token starts a new word (' Cup'). A token-boundary misread as much as a knowledge gap."
+ },
+ {
+  "id": "confident_correct_157_305",
+  "why_right": "copy_from_context",
+  "domain": "math_or_formula",
+  "note": "The '_\\' subscript pattern (as in E_\\mathrm{kin}, \\Delta E_\\mathrm{grav}) already appears twice earlier in the same context."
+ },
+ {
+  "id": "wrong_moderate_253_94",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "prose_fiction",
+  "note": "True token opens a quoted phrase (likely a song/instrument name) — a comedic period-piece reveal with no way to anticipate it from context."
+ },
+ {
+  "id": "catastrophic_31_258",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "local_context",
+  "domain": "prose_nonfiction",
+  "note": "Same source document as catastrophic_31_52 above. Model keeps predicting more color adjectives instead of recognizing that '(i.e., a ___)' calls for the noun restating 'black spot' — i.e., 'mole'."
+ },
+ {
+  "id": "near_miss_202_282",
+  "plausibility": "equally_good",
+  "aspects_right": ["topic", "format"],
+  "failure_needs": "local_context",
+  "domain": "prose_fiction"
+ },
+ {
+  "id": "hesitant_correct_236_59",
+  "why_right": "syntax_forced",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "confident_correct_277_378",
+  "why_right": "syntax_forced",
+  "domain": "code"
+ },
+ {
+  "id": "catastrophic_227_88",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific",
+  "note": "True answer 'groups' likely refers to CUDA's specific 'Cooperative Groups' feature — niche terminology a 67M model is unlikely to have absorbed well."
+ },
+ {
+  "id": "near_miss_111_371",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum",
+  "note": "Source text is low-quality auto-generated SEO spam ('Homes For Sale In New Ct' with no space) — the ground truth itself is barely grammatical."
+ },
+ {
+  "id": "wrong_moderate_336_228",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_385_438",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos"],
+  "failure_needs": "long_range_context",
+  "domain": "prose_nonfiction",
+  "note": "True token echoes 'specialized manufacturing processes' from roughly 355 tokens earlier in the same document (see wrong_moderate_385_83 in this same batch) — well beyond the 60-token visible window."
+ },
+ {
+  "id": "near_miss_206_117",
+  "plausibility": "equally_good",
+  "aspects_right": ["format"],
+  "failure_needs": "copying_missed",
+  "domain": "math_or_formula",
+  "note": "Model correctly copies the '_'-subscript convention from S_1, S_2 earlier in context, but misses that this particular index is \\ell (visible a few tokens earlier as 'j=2,\\ldots,\\ell'), not a plain digit."
+ },
+ {
+  "id": "wrong_moderate_28_185",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "wrong_moderate_107_76",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "code",
+  "note": "Model pattern-matches the 3x-repeated 'shutdown'-family identifiers just above and guesses another 'shut*' token, missing the real Hashicorp Raft call 'r.setState(...)'."
+ },
+ {
+  "id": "catastrophic_244_47",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "format_structure",
+  "domain": "prose_nonfiction",
+  "note": "Old cookbook register omits 'of' between quantity and ingredient ('3½ lb. red currants'); model expects modern 'lb. of ...' phrasing."
+ },
+ {
+  "id": "wrong_moderate_244_241",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "prose_nonfiction",
+  "note": "Same recipe document as catastrophic_244_47. 'milk, cream, or custard' is the idiomatic closing triplet; model guesses sugar/butter instead."
+ },
+ {
+  "id": "wrong_moderate_354_393",
+  "plausibility": "equally_good",
+  "aspects_right": [],
+  "failure_needs": "format_structure",
+  "domain": "technical_scientific",
+  "note": "Model strongly prefers a bare newline over ' This' — very plausible given arXiv-derived text is often hard-wrapped mid-paragraph in the Pile."
+ },
+ {
+  "id": "wrong_moderate_385_83",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "local_context",
+  "domain": "prose_nonfiction",
+  "note": "Same document as wrong_moderate_385_438 — this is where 'specialized manufacturing processes' is first introduced, later echoed far outside any 60-token window."
+ },
+ {
+  "id": "catastrophic_271_154",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "code"
+ },
+ {
+  "id": "wrong_moderate_169_433",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "table_or_list"
+ },
+ {
+  "id": "wrong_moderate_172_127",
+  "plausibility": "plausible",
+  "aspects_right": [],
+  "failure_needs": "world_knowledge",
+  "domain": "code",
+  "note": "True continuation is the standard COM 'DISPID' parameter type in IDispatch::GetIDsOfNames — a specific, well-known Win32 API signature."
+ },
+ {
+  "id": "catastrophic_37_136",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum",
+  "note": "Loss is a batch-high 16.34, but top-1 ' delete' / ' remove' are arguably better completions than the actual corpus text, which reads like a scraping artifact (missing period/line-break before 'This', likely from stripped HTML)."
+ },
+ {
+  "id": "hesitant_correct_110_495",
+  "why_right": "semantic_inference",
+  "domain": "technical_scientific",
+  "note": "Near-tied with ' antibodies' (p=.189); getting it right required treating the marker list as a complete noun phrase, typical of dense figure-caption style."
+ },
+ {
+  "id": "catastrophic_214_484",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "pos"],
+  "failure_needs": "world_knowledge",
+  "domain": "web_or_forum",
+  "note": "'in the X camp' is a fixed idiom; model's alternatives (section/column/line) are generic nouns lacking the idiomatic sense."
+ },
+ {
+  "id": "catastrophic_111_482",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "legal_boilerplate",
+  "note": "Right after an <|endoftext|> boundary into a new patent document; 'toner image'/'toner cartridge' (model's top guesses) are at least as common in patent boilerplate as the true 'toner density'."
+ },
+ {
+  "id": "wrong_moderate_227_337",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["format"],
+  "failure_needs": "arithmetic_or_counting",
+  "domain": "math_or_formula",
+  "note": "The matrix's nonzero entries are secretly numbered 1..8 in reading order; model falls back to the 'sparse matrix = mostly zeros' prior instead of tracking the count."
+ },
+ {
+  "id": "wrong_moderate_275_179",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "semantic_field"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "catastrophic_368_336",
+  "plausibility": "broken",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific",
+  "note": "Model's top-1 ('V', p=.899) would repeat the identical compound name 'zVAD-fmk' right after 'and', which is incoherent; true answer is a second, different caspase inhibitor — a copy-bias failure, same family as near_miss_325_116."
+ }
+]

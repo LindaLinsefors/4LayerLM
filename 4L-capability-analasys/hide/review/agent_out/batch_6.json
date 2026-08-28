@@ -1,0 +1,286 @@
+[
+ {
+  "id": "catastrophic_244_214",
+  "plausibility": "plausible",
+  "aspects_right": ["format"],
+  "failure_needs": "world_knowledge",
+  "domain": "prose_nonfiction",
+  "note": "Model's '\\n' guess tracks the document's mid-sentence line-wrap pattern (this OCR'd text wraps arbitrarily at ~60 chars) rather than content; true continuation is formulaic recipe phrasing ('Wet the mould...') requiring familiarity with Victorian cookbook conventions."
+ },
+ {
+  "id": "confident_correct_117_393",
+  "why_right": "format_structure",
+  "domain": "table_or_list"
+ },
+ {
+  "id": "near_miss_11_74",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_31_415",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "prose_nonfiction",
+  "note": "'deprived of life' (model's guess) is arguably more natural standalone English than the actual continuation, which sets up an unusual compound construction ('deprived of and denied/prevented from...')."
+ },
+ {
+  "id": "near_miss_70_410",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "near_miss_225_380",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "news"
+ },
+ {
+  "id": "wrong_moderate_168_69",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "pos"],
+  "failure_needs": "world_knowledge",
+  "domain": "prose_nonfiction",
+  "note": "Model nails the productive '(word)-' + capitalized-ethnonym template after 'pre-' but fills it with the globally most frequent completion ('Columb' -> pre-Columbian), which is topically nonsensical for Bronze Age Anatolia -- surface pattern-completion without topical grounding."
+ },
+ {
+  "id": "confident_correct_166_197",
+  "why_right": "copy_from_context",
+  "domain": "code"
+ },
+ {
+  "id": "wrong_moderate_177_226",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "copying_missed",
+  "domain": "technical_scientific",
+  "note": "'ions' already appeared twice earlier in the visible context; the model defaults to the generic filler 'the' instead of re-using the salient noun."
+ },
+ {
+  "id": "wrong_moderate_75_171",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "near_miss_391_201",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "topic", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "catastrophic_56_166",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific",
+  "note": "'compared to those obtained by other methods' is itself a completely natural sentence; the high loss is purely because the true text inserts an extra adjective ('published') before the noun the model already predicted -- a token-level miss, not an incoherent guess."
+ },
+ {
+  "id": "near_miss_386_336",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "copying_missed",
+  "domain": "web_or_forum",
+  "note": "bigram_seen_in_context is flagged true but I could not locate 'web page' verbatim earlier in the visible text -- possibly a labeling artifact; judged from the text as given."
+ },
+ {
+  "id": "confident_correct_314_103",
+  "why_right": "syntax_forced",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "confident_correct_153_421",
+  "why_right": "format_structure",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "wrong_moderate_192_445",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "semantic_field", "topic", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific",
+  "note": "Model's 'B' guess (spelling out 'Bare Lymphocyte Syndrome') and the true 'M' (likely 'MHC class II deficiency') are two equally standard ways papers gloss a disease acronym in parentheses."
+ },
+ {
+  "id": "confident_correct_90_163",
+  "why_right": "copy_from_context",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "wrong_moderate_90_420",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "topic"],
+  "failure_needs": "local_context",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "hesitant_correct_344_367",
+  "why_right": "syntax_forced",
+  "domain": "prose_fiction",
+  "note": "Second-choice completion 'ignom-inal' isn't a real English word, suggesting the model's subword spelling model is only approximate even where top-1 is right."
+ },
+ {
+  "id": "wrong_moderate_370_301",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "legal_boilerplate",
+  "note": "This is verbatim GPL v3 preamble text ('restrict development and use of software'), one of the most-duplicated documents in any code-heavy pretraining corpus. The model ranks the true word only 10th -- i.e. it hasn't strongly memorized this specific clause despite the license's ubiquity."
+ },
+ {
+  "id": "wrong_moderate_302_137",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "math_or_formula",
+  "note": "The blank is an arbitrary operand inside a synthetic arithmetic expression, not the final computed answer; the model's near-uniform probabilities across digits (.039/.036/.035/.034/.034) look like well-calibrated uncertainty rather than a reasoning failure."
+ },
+ {
+  "id": "confident_correct_327_373",
+  "why_right": "syntax_forced",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "wrong_moderate_302_356",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "confident_correct_137_127",
+  "why_right": "formulaic_ngram",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "confident_correct_368_293",
+  "why_right": "other",
+  "domain": "technical_scientific",
+  "note": "Requires a memorized biomedical fact (MAb 9.2.27 binds the antigen MCSP) rather than anything inferable from local syntax -- closer to world-knowledge lookup than contextual inference."
+ },
+ {
+  "id": "confident_correct_164_44",
+  "why_right": "format_structure",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "confident_correct_159_229",
+  "why_right": "formulaic_ngram",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_200_497",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "prose_fiction"
+ },
+ {
+  "id": "near_miss_246_432",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "legal_boilerplate",
+  "note": "bigram_seen_in_context is flagged true but 'body' does not appear to occur anywhere in the visible 60-token context -- possibly a labeling artifact worth spot-checking in the pipeline."
+ },
+ {
+  "id": "wrong_moderate_57_331",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos", "topic", "format"],
+  "failure_needs": "copying_missed",
+  "domain": "code",
+  "note": "'stream' was already established two lines earlier ('WEAK, stream delegate'); the model instead reaches for the generic Objective-C idiom 'called on a thread', missing the locally-specific term."
+ },
+ {
+  "id": "wrong_moderate_80_357",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["topic", "format"],
+  "failure_needs": "syntax",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "near_miss_341_341",
+  "plausibility": "equally_good",
+  "aspects_right": ["topic", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "wrong_moderate_367_374",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "catastrophic_69_207",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum",
+  "note": "Right at a <|endoftext|> boundary -- only ~5 tokens into a brand-new, topically unrelated document. This is the 'cold-open' regime: the true continuation is essentially unpredictable from visible context, so the large loss reflects document-boundary entropy rather than a model deficiency."
+ },
+ {
+  "id": "wrong_moderate_298_336",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case", "topic"],
+  "failure_needs": "local_context",
+  "domain": "legal_boilerplate",
+  "note": "The preceding sentences define judicial estoppel in terms of 'a party who...'; the true word 'parties' directly echoes that earlier definition, so this is a paraphrase-recall miss rather than a topic miss."
+ },
+ {
+  "id": "near_miss_223_174",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "code",
+  "note": "Top guesses ('=', ',', '):') all treat 'attr' as a complete, terminated parameter name rather than the start of 'attrname' -- a subword identifier-boundary miss that would require having memorized this exact pytest source line."
+ },
+ {
+  "id": "wrong_moderate_149_136",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["format"],
+  "failure_needs": "local_context",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "wrong_moderate_165_416",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "confident_correct_155_317",
+  "why_right": "syntax_forced",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "hesitant_correct_161_205",
+  "why_right": "formulaic_ngram",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "near_miss_3_395",
+  "plausibility": "equally_good",
+  "aspects_right": ["topic"],
+  "failure_needs": "unpredictable",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "near_miss_260_82",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific"
+ }
+]

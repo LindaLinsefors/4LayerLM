@@ -1,0 +1,299 @@
+[
+ {
+  "id": "wrong_moderate_178_303",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "local_context",
+  "domain": "non_english",
+  "note": "Dutch 'horen' is ambiguous between 'to hear' (favors 'dat') and 'horen bij' = 'to belong' (favors 'wel'); model's top1 'de' fits neither reading well, but 'dat' (rank in top5) shows it partly considered the hear-reading. Local context (sovereignty/legal status of bases) favors the belong-reading."
+ },
+ {
+  "id": "near_miss_51_101",
+  "plausibility": "broken",
+  "aspects_right": ["spacing"],
+  "failure_needs": "copying_missed",
+  "domain": "code",
+  "note": "Top1 'hib' would spell 'Toshib' inside the quoted table name -- looks like a spurious 'Toshiba' association overriding the obvious quote-closing pattern already demonstrated by \"Froms\"."
+ },
+ {
+  "id": "catastrophic_58_414",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "topic"],
+  "failure_needs": "local_context",
+  "domain": "prose_fiction"
+ },
+ {
+  "id": "wrong_moderate_391_90",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic", "format"],
+  "failure_needs": "local_context",
+  "domain": "legal_boilerplate",
+  "note": "'critical dimension' is an extremely common fixed term in lithography/semiconductor text (probably reinforced by 'critical dimension production tools' earlier in the same passage); the model over-generalized that collocation instead of reading 'critical' as modifying 'tools' again."
+ },
+ {
+  "id": "near_miss_121_502",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "wrong_moderate_386_158",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "near_miss_363_416",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "format", "topic"],
+  "failure_needs": "local_context",
+  "domain": "web_or_forum",
+  "note": "IRC log with two alternating speakers ('mason', 'DaSkreech'); model guessed the conversation would revert to the first speaker rather than the second speaker continuing -- a turn-taking tracking miss, not a language failure."
+ },
+ {
+  "id": "near_miss_30_353",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "local_context",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_73_468",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "local_context",
+  "domain": "news"
+ },
+ {
+  "id": "confident_correct_68_168",
+  "why_right": "copy_from_context",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_43_54",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_112_363",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "news"
+ },
+ {
+  "id": "wrong_moderate_324_496",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "copying_missed",
+  "domain": "technical_scientific",
+  "note": "The '\\\\' line-break convention is used three times in the visible context (after the address, after the country, after the email); the model ended with '.' instead of continuing the established LaTeX line-break pattern that was literally shown repeatedly."
+ },
+ {
+  "id": "confident_correct_393_505",
+  "why_right": "format_structure",
+  "domain": "table_or_list"
+ },
+ {
+  "id": "near_miss_338_437",
+  "plausibility": "equally_good",
+  "aspects_right": ["topic"],
+  "failure_needs": "unpredictable",
+  "domain": "prose_nonfiction"
+ },
+ {
+  "id": "wrong_moderate_37_305",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "other",
+  "note": "Tabletop RPG (D&D-style) rules text; 'can'/'need'/'may' are near-interchangeable ways to phrase the same rule constraint without more context."
+ },
+ {
+  "id": "confident_correct_0_153",
+  "why_right": "formulaic_ngram",
+  "domain": "technical_scientific",
+  "note": "'Srs2' is a specific, extremely well-known yeast helicase gene name that almost always appears as one fixed token pair; the bigram_seen_in_context=true flag looks inconsistent with the visible 60-token window (no earlier 'Srs2' appears there), possibly reflecting text outside the shown window."
+ },
+ {
+  "id": "near_miss_291_339",
+  "plausibility": "broken",
+  "aspects_right": [],
+  "failure_needs": "syntax",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "wrong_moderate_264_392",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "confident_correct_395_102",
+  "why_right": "copy_from_context",
+  "domain": "code"
+ },
+ {
+  "id": "catastrophic_28_453",
+  "plausibility": "equally_good",
+  "aspects_right": ["format"],
+  "failure_needs": "world_knowledge",
+  "domain": "prose_nonfiction",
+  "note": "Model puts 0.29 on a bare paragraph-break newline and stacks 'The'/'It'/'In' next -- a very reasonable guess that a Wikipedia-style paragraph ends here; it simply has no way to know the specific fact (an Industrial-Revolution-era detail about the village) that comes next."
+ },
+ {
+  "id": "wrong_moderate_205_68",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "table_or_list",
+  "note": "Same source document as catastrophic_205_56 (a Malayalam/Tamil filmography list); both failures are essentially arbitrary proper-noun spelling/content that isn't recoverable from context."
+ },
+ {
+  "id": "near_miss_211_341",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic", "format"],
+  "failure_needs": "local_context",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "confident_correct_117_480",
+  "why_right": "format_structure",
+  "domain": "table_or_list"
+ },
+ {
+  "id": "wrong_moderate_330_228",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "confident_correct_318_433",
+  "why_right": "copy_from_context",
+  "domain": "code"
+ },
+ {
+  "id": "wrong_moderate_354_395",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic", "format"],
+  "failure_needs": "syntax",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "catastrophic_205_56",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "table_or_list",
+  "note": "Same document as wrong_moderate_205_68 (earlier position); the true continuation 'Miss Anitha Menon' is an arbitrary film title, but interestingly that exact phrase later appears as *visible context* in the other example from this same document."
+ },
+ {
+  "id": "wrong_moderate_150_240",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "semantic_field", "topic", "format"],
+  "failure_needs": "syntax",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "wrong_moderate_355_61",
+  "plausibility": "plausible",
+  "aspects_right": ["format"],
+  "failure_needs": "world_knowledge",
+  "domain": "code",
+  "note": "The two preceding DTD entities ('Datetime', 'Script') are both single-word names, so the model reasonably (but wrongly) treated 'Style' as a complete entity name too; the real HTML4 DTD entity is '%StyleSheet', which requires knowing this specific schema rather than just pattern-matching the local 2-shot template."
+ },
+ {
+  "id": "wrong_moderate_283_151",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic", "format"],
+  "failure_needs": "local_context",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "catastrophic_195_233",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "pos"],
+  "failure_needs": "local_context",
+  "domain": "non_english"
+ },
+ {
+  "id": "near_miss_2_301",
+  "plausibility": "equally_good",
+  "aspects_right": ["format"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific",
+  "note": "Model puts 0.36 on <|endoftext|> -- the highest EOS probability in this batch -- after a sentence that reads like a natural abstract-ending summary claim ('...in approximately 75% of cases.'). Reasonable structural guess; document just happens to continue."
+ },
+ {
+  "id": "hesitant_correct_289_317",
+  "why_right": "formulaic_ngram",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "wrong_moderate_125_407",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "math_or_formula"
+ },
+ {
+  "id": "wrong_moderate_396_221",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos", "topic", "format"],
+  "failure_needs": "format_structure",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "near_miss_33_148",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic", "format"],
+  "failure_needs": "copying_missed",
+  "domain": "technical_scientific",
+  "note": "'conjunctival tissue' appears verbatim near the start of this same context; the model ranked 'tissue' 3rd behind 'cells'/'epithelium' instead of reusing the term already established."
+ },
+ {
+  "id": "catastrophic_160_299",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "wrong_moderate_16_455",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "topic", "format"],
+  "failure_needs": "format_structure",
+  "domain": "legal_boilerplate",
+  "note": "Patent claim language strongly conditions on repeating reference numerals ('containers 140' appeared earlier); the model's 0.72 on ' 140' shows it learned this citation convention well, it just misjudged that this particular mention wouldn't re-cite the number."
+ },
+ {
+  "id": "wrong_moderate_47_506",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic", "format"],
+  "failure_needs": "copying_missed",
+  "domain": "web_or_forum",
+  "note": "The true token 'launch' is literally the first word of the post's own title ('Launch interactive ssh from nodejs'), visible at the very start of this same 60-token context -- a clean missed long-distance copy."
+ },
+ {
+  "id": "wrong_moderate_381_81",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "topic"],
+  "failure_needs": "long_range_context",
+  "domain": "news",
+  "note": "This is a tabloid headline-roundup restating the same news ('Roy Hodgson has warned...') under a second outlet's headline; model's rank-2 guess is literally 'warned', showing it partly tracked the paraphrase relationship even though top1 ('been') did not."
+ },
+ {
+  "id": "catastrophic_75_360",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "syntax",
+  "domain": "technical_scientific",
+  "note": "true_rank 3589 is likely inflated by tokenization: 'sizeable' probably splits as ' size' + 'able', an unusual completion after 'produce' that a bare-noun-expecting model would never rank highly -- more a tokenization/rare-split artifact than a reasoning failure."
+ }
+]

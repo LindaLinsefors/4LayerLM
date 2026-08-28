@@ -1,0 +1,1304 @@
+[
+ {
+  "id": "wrong_moderate_368_52",
+  "stratum": "wrong_moderate",
+  "context": "R2 triggers potent induction of apoptosis. Notably, TRAIL/TRAIL-R interaction also triggers dephosphorylation of the STAT family, which may contribute to sensitization of cells to apoptosis \\[[@B33],[@B34]\\]. Thus, melanoma cells are eliminated on the",
+  "true_token": " one",
+  "top5": [
+   {
+    "token": " basis",
+    "p": 0.303
+   },
+   {
+    "token": " cell",
+    "p": 0.072
+   },
+   {
+    "token": " activation",
+    "p": 0.03
+   },
+   {
+    "token": " surface",
+    "p": 0.024
+   },
+   {
+    "token": " tumor",
+    "p": 0.021
+   }
+  ],
+  "loss_nats": 5.06,
+  "true_rank": 11,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_366_420",
+  "stratum": "wrong_moderate",
+  "context": ", because there are too few trucks coming into the facility right now.\n\nBarlow said 20 employees are expected to be recalled next week and the remainder should be recalled within three weeks.\n\nWhat is a WARN Notice?\n\nA federally-mandated announcement of possible or definite plant",
+  "true_token": " clos",
+  "top5": [
+   {
+    "token": " closures",
+    "p": 0.236
+   },
+   {
+    "token": " closure",
+    "p": 0.071
+   },
+   {
+    "token": " shutdown",
+    "p": 0.056
+   },
+   {
+    "token": "-",
+    "p": 0.052
+   },
+   {
+    "token": " work",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 5.62,
+  "true_rank": 30,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_186_233",
+  "stratum": "near_miss",
+  "context": " conformational ensemble) was probed by DOSY-based measurements of the hydrodynamic radius. Normalized to dioxan, the hydrodynamic radius dropped from 42 Å at pH 6 to 27 Å at pH 2. Furthermore, this compaction was independently verified by SOFAST-HSQC experiments under saturation of aliphatic",
+  "true_token": " side",
+  "top5": [
+   {
+    "token": " and",
+    "p": 0.08
+   },
+   {
+    "token": " groups",
+    "p": 0.076
+   },
+   {
+    "token": " protons",
+    "p": 0.069
+   },
+   {
+    "token": " side",
+    "p": 0.047
+   },
+   {
+    "token": " carbon",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 3.05,
+  "true_rank": 4,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_31_52",
+  "stratum": "catastrophic",
+  "context": " author Benjamin Creme claimed that the Maitreya (i.e., the Messiah) would return to Earth earlier than 2025 and that he materialized physically in early 1977. Islamic tradition states that the Messiah will be a young man, possibly around",
+  "true_token": " 38",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.221
+   },
+   {
+    "token": " 20",
+    "p": 0.114
+   },
+   {
+    "token": " 30",
+    "p": 0.049
+   },
+   {
+    "token": " 40",
+    "p": 0.032
+   },
+   {
+    "token": " 50",
+    "p": 0.031
+   }
+  ],
+  "loss_nats": 8.52,
+  "true_rank": 194,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_325_116",
+  "stratum": "near_miss",
+  "context": "legatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat junit.framework.TestCase.runTest(TestCase.java:176)\n\tat junit.framework.TestCase.runB",
+  "true_token": "are",
+  "top5": [
+   {
+    "token": "und",
+    "p": 0.173
+   },
+   {
+    "token": "ench",
+    "p": 0.172
+   },
+   {
+    "token": "ail",
+    "p": 0.05
+   },
+   {
+    "token": "ind",
+    "p": 0.03
+   },
+   {
+    "token": "are",
+    "p": 0.028
+   }
+  ],
+  "loss_nats": 3.57,
+  "true_rank": 5,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_303_385",
+  "stratum": "near_miss",
+  "context": " that presents the details of a single entity (EntityX) and one that allows the user to view a list of all EntityXs.\nUsing MVP, is it better to have an EntityXController with two methods (View and List, for example) that use the appropriate View and List views",
+  "true_token": ",",
+  "top5": [
+   {
+    "token": "?",
+    "p": 0.377
+   },
+   {
+    "token": " to",
+    "p": 0.148
+   },
+   {
+    "token": " for",
+    "p": 0.061
+   },
+   {
+    "token": " (",
+    "p": 0.061
+   },
+   {
+    "token": ",",
+    "p": 0.052
+   }
+  ],
+  "loss_nats": 2.95,
+  "true_rank": 5,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_278_148",
+  "stratum": "confident_correct",
+  "context": " table tr td span.active:active:hover,\n.datepicker table tr td span.active:hover:active:hover,\n.datepicker table tr td span.active.disabled:active:hover,\n.datepicker table tr td span.active.disabled:hover:active:hover",
+  "true_token": ",",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.813
+   },
+   {
+    "token": ":",
+    "p": 0.128
+   },
+   {
+    "token": " {",
+    "p": 0.045
+   },
+   {
+    "token": ".",
+    "p": 0.009
+   },
+   {
+    "token": "{",
+    "p": 0.001
+   }
+  ],
+  "loss_nats": 0.21,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "confident_correct_1_221",
+  "stratum": "confident_correct",
+  "context": "compute.SnapshotsClient\", \"CreateOrUpdate\", err.Error())\n\t}\n\n\treq, err := client.CreateOrUpdatePreparer(ctx, resourceGroupName, snapshotName, snapshot)\n\tif err != nil {\n\t\terr = autorest.NewErrorWith",
+  "true_token": "Error",
+  "top5": [
+   {
+    "token": "Error",
+    "p": 0.952
+   },
+   {
+    "token": "Context",
+    "p": 0.023
+   },
+   {
+    "token": "Code",
+    "p": 0.003
+   },
+   {
+    "token": "Result",
+    "p": 0.002
+   },
+   {
+    "token": "Err",
+    "p": 0.001
+   }
+  ],
+  "loss_nats": 0.05,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_263_257",
+  "stratum": "confident_correct",
+  "context": " prescribed doses in some countries.[@dky119-B18] Bruyndonckx *et al.*[@dky119-B6] further showed that the average content of an antibiotic original package in European countries has significantly increased over time, with substantial differences between countries and antibiotic subgroups, except",
+  "true_token": " for",
+  "top5": [
+   {
+    "token": " for",
+    "p": 0.813
+   },
+   {
+    "token": " in",
+    "p": 0.081
+   },
+   {
+    "token": " that",
+    "p": 0.022
+   },
+   {
+    "token": " the",
+    "p": 0.009
+   },
+   {
+    "token": " where",
+    "p": 0.007
+   }
+  ],
+  "loss_nats": 0.21,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_218_511",
+  "stratum": "near_miss",
+  "context": " disposition.         We adopt the\n\nprocedural history of these cases as set forth by the PCRA court.3 PCRA Ct.\n\nOp., 3/24/15, at 1-2.       At 1175-2008, following a jury trial, Appellant was\n\n",
+  "true_token": "conv",
+  "top5": [
+   {
+    "token": "sent",
+    "p": 0.114
+   },
+   {
+    "token": "conv",
+    "p": 0.113
+   },
+   {
+    "token": "ordered",
+    "p": 0.051
+   },
+   {
+    "token": "required",
+    "p": 0.041
+   },
+   {
+    "token": "appointed",
+    "p": 0.038
+   }
+  ],
+  "loss_nats": 2.18,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_108_317",
+  "stratum": "catastrophic",
+  "context": " diabetes), further treatments (e.g. head and neck radiation), further factors (e.g. smoking) and existence of former osteonecrosis/present osteonecrosis. Next to this, the patients need to be compliant with an appropriate motivation for oral hygiene and the necessary skills to",
+  "true_token": " transfer",
+  "top5": [
+   {
+    "token": " perform",
+    "p": 0.047
+   },
+   {
+    "token": " prevent",
+    "p": 0.044
+   },
+   {
+    "token": " take",
+    "p": 0.034
+   },
+   {
+    "token": " avoid",
+    "p": 0.033
+   },
+   {
+    "token": " maintain",
+    "p": 0.032
+   }
+  ],
+  "loss_nats": 8.74,
+  "true_rank": 416,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_396_369",
+  "stratum": "wrong_moderate",
+  "context": " who received CPR for out-of-hospital or in-hospital cardiac arrest for any cause, were eligible for study entry. For the purpose of this study, CPR was defined as at least one cycle of chest compression and ventilation in patients with signs and/or symptoms of cardiac arrest. Patient care was",
+  "true_token": " at",
+  "top5": [
+   {
+    "token": " provided",
+    "p": 0.115
+   },
+   {
+    "token": " not",
+    "p": 0.062
+   },
+   {
+    "token": " based",
+    "p": 0.05
+   },
+   {
+    "token": " managed",
+    "p": 0.035
+   },
+   {
+    "token": " divided",
+    "p": 0.033
+   }
+  ],
+  "loss_nats": 6.04,
+  "true_rank": 79,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_205_264",
+  "stratum": "catastrophic",
+  "context": "inam (1994)\nThenmaavin Kompathu (1994)\nMoonnaam Loka Pattaalam(1994)\n(The Porter) (1994)\nMaanathe Kottaaram (1994)\nPaalayam (1994)\nNjaan Kode",
+  "true_token": "esh",
+  "top5": [
+   {
+    "token": "v",
+    "p": 0.067
+   },
+   {
+    "token": " (",
+    "p": 0.062
+   },
+   {
+    "token": "k",
+    "p": 0.061
+   },
+   {
+    "token": "h",
+    "p": 0.051
+   },
+   {
+    "token": "y",
+    "p": 0.045
+   }
+  ],
+  "loss_nats": 9.05,
+  "true_rank": 540,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_196_219",
+  "stratum": "confident_correct",
+  "context": "\"instruction_addr\": 904265792,\n                            \"object_addr\": 904237056,\n                            \"object_name\": \"libdispatch.dylib\",\n                            \"symbol_addr\": 904265700,\n                            \"symbol_name",
+  "true_token": "\":",
+  "top5": [
+   {
+    "token": "\":",
+    "p": 1.0
+   },
+   {
+    "token": "_",
+    "p": 0.0
+   },
+   {
+    "token": "\"",
+    "p": 0.0
+   },
+   {
+    "token": ".",
+    "p": 0.0
+   },
+   {
+    "token": "\":\"",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.0,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_96_155",
+  "stratum": "catastrophic",
+  "context": " system.  The club currently plays in Division 6 A Stockholm, which is the eight tier of Swedish football. They play their home matches at the Edsbergs Sportfalt in Sollentuna.\n\nIn January 2011, the club reached their first title success when they lifted the Gaz",
+  "true_token": " Cup",
+  "top5": [
+   {
+    "token": "prom",
+    "p": 0.138
+   },
+   {
+    "token": "elle",
+    "p": 0.109
+   },
+   {
+    "token": "ette",
+    "p": 0.1
+   },
+   {
+    "token": "za",
+    "p": 0.073
+   },
+   {
+    "token": "eta",
+    "p": 0.065
+   }
+  ],
+  "loss_nats": 10.2,
+  "true_rank": 908,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_157_305",
+  "stratum": "confident_correct",
+  "context": " a fraction of the gravitational energy $E_\\mathrm{kin}\\simeq f_\\mathrm{ej} \\Delta E_\\mathrm{grav}$ if acceleration is complete. As explained, the isotropic equivalent energy that could be radiated as gamma-rays by such an ejecta can be estimated by $$E",
+  "true_token": "_\\",
+  "top5": [
+   {
+    "token": "_\\",
+    "p": 0.905
+   },
+   {
+    "token": "_{\\",
+    "p": 0.051
+   },
+   {
+    "token": "_",
+    "p": 0.023
+   },
+   {
+    "token": "_{",
+    "p": 0.004
+   },
+   {
+    "token": "\\",
+    "p": 0.003
+   }
+  ],
+  "loss_nats": 0.1,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_253_94",
+  "stratum": "wrong_moderate",
+  "context": "neighbors here? Said you kept them awake Sunday nights with your unholy\norgies, didn't they?\"\n\n\"Yes. But I said if they were going to kick on that score I would get\nout an injunction against that girl of theirs that is always trying to\nplay",
+  "true_token": " '",
+  "top5": [
+   {
+    "token": " with",
+    "p": 0.092
+   },
+   {
+    "token": " the",
+    "p": 0.083
+   },
+   {
+    "token": " a",
+    "p": 0.071
+   },
+   {
+    "token": ".",
+    "p": 0.064
+   },
+   {
+    "token": " her",
+    "p": 0.048
+   }
+  ],
+  "loss_nats": 5.37,
+  "true_rank": 33,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_31_258",
+  "stratum": "catastrophic",
+  "context": " and reddish dusky complexion. He will have a high forehead and a long, thin, curved nose. His forehead will be broad and his nose will be high. His face will shine like a star and he will have a black spot on his left cheek (i.e., a",
+  "true_token": " mole",
+  "top5": [
+   {
+    "token": " black",
+    "p": 0.096
+   },
+   {
+    "token": " white",
+    "p": 0.034
+   },
+   {
+    "token": " red",
+    "p": 0.023
+   },
+   {
+    "token": " star",
+    "p": 0.022
+   },
+   {
+    "token": " dark",
+    "p": 0.021
+   }
+  ],
+  "loss_nats": 8.21,
+  "true_rank": 455,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_202_282",
+  "stratum": "near_miss",
+  "context": " and fairy figure of the early dead.\n\nHis pale face was propped on his hand, and there in the silent watches of the moon-lighted midnight, he held communion with God and his own darkened spirit.\n\n“What hast thou wrought for Right and Truth,For God",
+  "true_token": " and",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.175
+   },
+   {
+    "token": "’",
+    "p": 0.165
+   },
+   {
+    "token": " and",
+    "p": 0.143
+   },
+   {
+    "token": " alone",
+    "p": 0.037
+   },
+   {
+    "token": " is",
+    "p": 0.035
+   }
+  ],
+  "loss_nats": 1.94,
+  "true_rank": 3,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "hesitant_correct_236_59",
+  "stratum": "hesitant_correct",
+  "context": ":ATP:50497], and show the connection between our approach and the framework used for the corresponding (alternative) modelling in [@CleavelandH89].\n\nIntuitively, must testing relates processes based on the traces that do not lead to divergent states ([*i.e.*]{}, states",
+  "true_token": " that",
+  "top5": [
+   {
+    "token": " that",
+    "p": 0.284
+   },
+   {
+    "token": " with",
+    "p": 0.244
+   },
+   {
+    "token": " which",
+    "p": 0.062
+   },
+   {
+    "token": " in",
+    "p": 0.045
+   },
+   {
+    "token": " of",
+    "p": 0.038
+   }
+  ],
+  "loss_nats": 1.26,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_277_378",
+  "stratum": "confident_correct",
+  "context": " the only remaining presidential candidate incumbent SeppBlatter <a href=\"http://lao-cloud.com/forum/topic/17977\"><strong>http://lao-cloud.com/forum/topic/17977</strong></a> was re elected on Wednesday..<br",
+  "true_token": " />",
+  "top5": [
+   {
+    "token": " />",
+    "p": 0.912
+   },
+   {
+    "token": " /><",
+    "p": 0.082
+   },
+   {
+    "token": " /></",
+    "p": 0.003
+   },
+   {
+    "token": ">",
+    "p": 0.002
+   },
+   {
+    "token": "/>",
+    "p": 0.001
+   }
+  ],
+  "loss_nats": 0.09,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_227_88",
+  "stratum": "catastrophic",
+  "context": " speed is that all threads in a warp should access contiguous, 128-byte aligned locations.\n\nCUDA is an abstract general purpose parallel computing architecture, programming model, and programming environment designed for Nvidia’s GPUs [@Farber2011]. It is based on a few key concepts such as",
+  "true_token": " groups",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.116
+   },
+   {
+    "token": " memory",
+    "p": 0.072
+   },
+   {
+    "token": ":",
+    "p": 0.035
+   },
+   {
+    "token": " “",
+    "p": 0.035
+   },
+   {
+    "token": " parallel",
+    "p": 0.031
+   }
+  ],
+  "loss_nats": 11.94,
+  "true_rank": 5276,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_111_371",
+  "stratum": "near_miss",
+  "context": " and get influenced to beautify your residence.\n\nIf the link is shattered or the image not entirely on Homes For Sale In New Ctyou can contact us to get pictures that look for\nWe provide imageHomes For Sale In New Ct is comparable, because our website concentrate on this category",
+  "true_token": ",",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.283
+   },
+   {
+    "token": ",",
+    "p": 0.176
+   },
+   {
+    "token": " and",
+    "p": 0.135
+   },
+   {
+    "token": " of",
+    "p": 0.06
+   },
+   {
+    "token": "\n",
+    "p": 0.039
+   }
+  ],
+  "loss_nats": 1.74,
+  "true_rank": 2,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_336_228",
+  "stratum": "wrong_moderate",
+  "context": " made (e.g. by measuring morphological traits or by sequencing DNA) and which is placed as a terminal node in a phylogeny.\n\nIn the course of a phyloinformatic analysis, data and metadata are collected or generated, transformed, filtered, analyzed and summarized before they can be",
+  "true_token": " interpreted",
+  "top5": [
+   {
+    "token": " used",
+    "p": 0.238
+   },
+   {
+    "token": " analyzed",
+    "p": 0.037
+   },
+   {
+    "token": " transferred",
+    "p": 0.019
+   },
+   {
+    "token": " compared",
+    "p": 0.017
+   },
+   {
+    "token": " further",
+    "p": 0.017
+   }
+  ],
+  "loss_nats": 5.23,
+  "true_rank": 31,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_385_438",
+  "stratum": "wrong_moderate",
+  "context": " metros areas, even more so than jobs requiring greater knowledge or cognitive skills.\n\nThis unique study helps deepen our understanding of cities as cauldrons of human interaction, as mobilizers of face-to-face contact and serendipitous interaction, as opposed to containers of",
+  "true_token": " specialized",
+  "top5": [
+   {
+    "token": " human",
+    "p": 0.048
+   },
+   {
+    "token": " water",
+    "p": 0.019
+   },
+   {
+    "token": " the",
+    "p": 0.017
+   },
+   {
+    "token": " work",
+    "p": 0.014
+   },
+   {
+    "token": " physical",
+    "p": 0.014
+   }
+  ],
+  "loss_nats": 7.28,
+  "true_rank": 214,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "near_miss_206_117",
+  "stratum": "near_miss",
+  "context": "ldots, \\ell$. Then for any $i\\in S_1$ we have $i\\notin S_j$ for $j=2,\\ldots, \\ell$. Thus ${\\cal F}_i = \\{S_1\\backslash \\{i\\}, S_2,\\ldots, S",
+  "true_token": "_\\",
+  "top5": [
+   {
+    "token": "_",
+    "p": 0.752
+   },
+   {
+    "token": "_{",
+    "p": 0.199
+   },
+   {
+    "token": "_{\\",
+    "p": 0.024
+   },
+   {
+    "token": "_\\",
+    "p": 0.009
+   },
+   {
+    "token": "'_",
+    "p": 0.003
+   }
+  ],
+  "loss_nats": 4.74,
+  "true_rank": 4,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_28_185",
+  "stratum": "wrong_moderate",
+  "context": "amification does not have to be complicated, but even the simplest of games have mechanics that need to be understood. The best way to figure out why a game is so effective is to start playing the game, and then see how you can use the concepts in your everyday life. Also, remember that",
+  "true_token": " not",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.136
+   },
+   {
+    "token": " you",
+    "p": 0.065
+   },
+   {
+    "token": " a",
+    "p": 0.053
+   },
+   {
+    "token": " there",
+    "p": 0.046
+   },
+   {
+    "token": " it",
+    "p": 0.042
+   }
+  ],
+  "loss_nats": 4.83,
+  "true_rank": 21,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_107_76",
+  "stratum": "wrong_moderate",
+  "context": "Raft) Shutdown() Future {\n\tr.shutdownLock.Lock()\n\tdefer r.shutdownLock.Unlock()\n\n\tif !r.shutdown {\n\t\tclose(r.shutdownCh)\n\t\tr.shutdown = true\n\t\tr.",
+  "true_token": "set",
+  "top5": [
+   {
+    "token": "shut",
+    "p": 0.655
+   },
+   {
+    "token": "close",
+    "p": 0.017
+   },
+   {
+    "token": "wait",
+    "p": 0.011
+   },
+   {
+    "token": "stop",
+    "p": 0.01
+   },
+   {
+    "token": "cancel",
+    "p": 0.01
+   }
+  ],
+  "loss_nats": 5.48,
+  "true_rank": 14,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_244_47",
+  "stratum": "catastrophic",
+  "context": " made with rice, nudels, or sago. It should turn out of\nthe mould in a jelly, but not too stiff.\n\nGrütze.--(_a_) As made in Hamburg and Norway, 3½ lb.",
+  "true_token": " red",
+  "top5": [
+   {
+    "token": " of",
+    "p": 0.188
+   },
+   {
+    "token": " eggs",
+    "p": 0.064
+   },
+   {
+    "token": "\n",
+    "p": 0.026
+   },
+   {
+    "token": " (",
+    "p": 0.026
+   },
+   {
+    "token": " in",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 8.18,
+  "true_rank": 339,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_244_241",
+  "stratum": "wrong_moderate",
+  "context": "ieve; make this juice quite boil; add\n¾ lb. sago well soaked in water; let it boil ¼ hour, stirring it all\nthe time. Wet a mould with cold water, pour in, and when cold turn\nit out. To be eaten with milk, cream, or",
+  "true_token": " cust",
+  "top5": [
+   {
+    "token": " sugar",
+    "p": 0.091
+   },
+   {
+    "token": " butter",
+    "p": 0.088
+   },
+   {
+    "token": " cream",
+    "p": 0.074
+   },
+   {
+    "token": " milk",
+    "p": 0.034
+   },
+   {
+    "token": " a",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 5.66,
+  "true_rank": 43,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_354_393",
+  "stratum": "wrong_moderate",
+  "context": " by an Ising-type fixed-point (marked with ‘I’ in the figure), while its critical behavior for $ D < 0 $ is determined by an XY-type fixed-point. These are two radically different phases (and universality classes), and correspond to disparate ground-states.",
+  "true_token": " This",
+  "top5": [
+   {
+    "token": "\n",
+    "p": 0.493
+   },
+   {
+    "token": " The",
+    "p": 0.087
+   },
+   {
+    "token": " In",
+    "p": 0.069
+   },
+   {
+    "token": " For",
+    "p": 0.045
+   },
+   {
+    "token": " As",
+    "p": 0.018
+   }
+  ],
+  "loss_nats": 4.29,
+  "true_rank": 7,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_385_83",
+  "stratum": "wrong_moderate",
+  "context": "perhaps a tribute to clothes, shoe, and rope manufacturing). Among the least-used verbs are “teach,” “conduct,” and “rule.” In this early period, cities were centers of specialized manufacturing processes, while more dynamic jobs were often centered in rural areas. By 2000, the pattern is",
+  "true_token": " reversed",
+  "top5": [
+   {
+    "token": " now",
+    "p": 0.098
+   },
+   {
+    "token": " still",
+    "p": 0.09
+   },
+   {
+    "token": " more",
+    "p": 0.033
+   },
+   {
+    "token": " becoming",
+    "p": 0.029
+   },
+   {
+    "token": " changing",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 4.55,
+  "true_rank": 11,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_271_154",
+  "stratum": "catastrophic",
+  "context": "23325)\n    at debugCheckAndUpdateNode (core.js:23959)\n    at debugCheckDirectivesFn (core.js:23919)\n    at Object.eval [as updateDirectives] (HomeTabPage_Host.ngfactory.js? [",
+  "true_token": "sm",
+  "top5": [
+   {
+    "token": "as",
+    "p": 0.167
+   },
+   {
+    "token": "1",
+    "p": 0.049
+   },
+   {
+    "token": "async",
+    "p": 0.045
+   },
+   {
+    "token": ":",
+    "p": 0.028
+   },
+   {
+    "token": "js",
+    "p": 0.019
+   }
+  ],
+  "loss_nats": 10.3,
+  "true_rank": 1629,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_169_433",
+  "stratum": "wrong_moderate",
+  "context": " think of it or what you add to make this dip your own. My son always adds hot sauce to the chili salsa mixture. There really are so many options!\n\nIngredients for Our Favorite Dip\n\ncream cheese\n\nsalsa\n\ncanned chili\n\n",
+  "true_token": "sh",
+  "top5": [
+   {
+    "token": "c",
+    "p": 0.067
+   },
+   {
+    "token": "1",
+    "p": 0.066
+   },
+   {
+    "token": "s",
+    "p": 0.042
+   },
+   {
+    "token": "salt",
+    "p": 0.03
+   },
+   {
+    "token": "fresh",
+    "p": 0.027
+   }
+  ],
+  "loss_nats": 6.91,
+  "true_rank": 140,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_172_127",
+  "stratum": "wrong_moderate",
+  "context": "InfoOfGuid(lcid, iid, pptinfo);\n}\n\nSTDMETHODIMP COleDispatchImpl::GetIDsOfNames(\n\tREFIID riid, LPOLESTR* rgszNames, UINT cNames, LCID lcid,",
+  "true_token": " DIS",
+  "top5": [
+   {
+    "token": "\n",
+    "p": 0.525
+   },
+   {
+    "token": " L",
+    "p": 0.064
+   },
+   {
+    "token": " UINT",
+    "p": 0.06
+   },
+   {
+    "token": " const",
+    "p": 0.019
+   },
+   {
+    "token": " I",
+    "p": 0.018
+   }
+  ],
+  "loss_nats": 6.4,
+  "true_rank": 42,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_37_136",
+  "stratum": "catastrophic",
+  "context": " a directory being listed that I don't want. It points to an old branch.\nRight-click menu does not have a remove/delete option and the del key does nothing for folders evidently.\nHow can I remove this folder from explorer?\n\nA:\n\nYou just can't",
+  "true_token": " This",
+  "top5": [
+   {
+    "token": " delete",
+    "p": 0.269
+   },
+   {
+    "token": " do",
+    "p": 0.146
+   },
+   {
+    "token": " remove",
+    "p": 0.083
+   },
+   {
+    "token": " use",
+    "p": 0.083
+   },
+   {
+    "token": ".",
+    "p": 0.08
+   }
+  ],
+  "loss_nats": 16.34,
+  "true_rank": 7417,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_110_495",
+  "stratum": "hesitant_correct",
+  "context": " 1%.\n\n![CMV-specific CD4+ T cells are highly cytotoxic directly *ex vivo*.\\\nPBMCs were stained with LIVE/DEAD fixable dye, before staining with HLA class II tetramer followed by anti-CD3, CD4 and CX3CR1",
+  "true_token": ".",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.231
+   },
+   {
+    "token": " antibodies",
+    "p": 0.189
+   },
+   {
+    "token": " (",
+    "p": 0.071
+   },
+   {
+    "token": " antibody",
+    "p": 0.066
+   },
+   {
+    "token": ",",
+    "p": 0.026
+   }
+  ],
+  "loss_nats": 1.47,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_214_484",
+  "stratum": "catastrophic",
+  "context": "-foil hatted idiot.\n\nMarchas, I hold both--about 70% silver in fiat terms. But I keep a 5 oz silver bar on my desk at home to fondle, not a gold one.\n\nCount me in the Willie/Rickards/ShadowStats",
+  "true_token": " camp",
+  "top5": [
+   {
+    "token": " section",
+    "p": 0.115
+   },
+   {
+    "token": ".",
+    "p": 0.105
+   },
+   {
+    "token": " column",
+    "p": 0.085
+   },
+   {
+    "token": " line",
+    "p": 0.04
+   },
+   {
+    "token": "/",
+    "p": 0.034
+   }
+  ],
+  "loss_nats": 8.15,
+  "true_rank": 310,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_111_482",
+  "stratum": "catastrophic",
+  "context": " still have a great day for new fresh inspiration today. don't forget to tell / spread design ideas from our website to your friends, relatives or families near you so they also feel the same with you.<|endoftext|>1. Field of the Invention\nThe present invention relates to a developing device including a toner",
+  "true_token": " density",
+  "top5": [
+   {
+    "token": " image",
+    "p": 0.144
+   },
+   {
+    "token": " cartridge",
+    "p": 0.101
+   },
+   {
+    "token": " and",
+    "p": 0.064
+   },
+   {
+    "token": " for",
+    "p": 0.055
+   },
+   {
+    "token": ",",
+    "p": 0.053
+   }
+  ],
+  "loss_nats": 9.23,
+  "true_rank": 425,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_227_337",
+  "stratum": "wrong_moderate",
+  "context": "$$\\hat M = \\left[\n \\begin{array}{ccccc}\n   1 & 0 & 0 & 2 & 0 \\\\\n   0 & 3 & 0 & 0 & 4 \\\\\n   0 & 0 & 5 & 0 & 6 \\\\\n   0 & 0 & 7 &",
+  "true_token": " 8",
+  "top5": [
+   {
+    "token": " 0",
+    "p": 0.54
+   },
+   {
+    "token": " 1",
+    "p": 0.152
+   },
+   {
+    "token": " 2",
+    "p": 0.06
+   },
+   {
+    "token": " 4",
+    "p": 0.055
+   },
+   {
+    "token": " 3",
+    "p": 0.051
+   }
+  ],
+  "loss_nats": 4.55,
+  "true_rank": 10,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_275_179",
+  "stratum": "wrong_moderate",
+  "context": " the BCG therapy treated the skin lesions. In the literature, Cohen et al.[@bib3] suggested that after the treatment of the malignancy, the related dermatosis should be regressed. However, we found a recurrent tumor in the bladder at the first control. Therefore, we decided that the BCG therapy",
+  "true_token": " might",
+  "top5": [
+   {
+    "token": " should",
+    "p": 0.3
+   },
+   {
+    "token": " was",
+    "p": 0.267
+   },
+   {
+    "token": " could",
+    "p": 0.083
+   },
+   {
+    "token": " did",
+    "p": 0.03
+   },
+   {
+    "token": " is",
+    "p": 0.027
+   }
+  ],
+  "loss_nats": 3.68,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_368_336",
+  "stratum": "catastrophic",
+  "context": ".2.27 is a murine IgG2a with high binding affinity for human MCSP \\[[@B10]\\]. TRAIL-neutralizing mAb 2E5 was purchased from Alexis (10P\\'s, Breda, The Netherlands). Caspase inhibitors zVAD-fmk and z",
+  "true_token": "LE",
+  "top5": [
+   {
+    "token": "V",
+    "p": 0.899
+   },
+   {
+    "token": "R",
+    "p": 0.004
+   },
+   {
+    "token": "-",
+    "p": 0.004
+   },
+   {
+    "token": "B",
+    "p": 0.004
+   },
+   {
+    "token": "D",
+    "p": 0.003
+   }
+  ],
+  "loss_nats": 9.76,
+  "true_rank": 211,
+  "bigram_seen_in_context": false
+ }
+]

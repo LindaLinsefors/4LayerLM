@@ -1,0 +1,1335 @@
+[
+ {
+  "id": "near_miss_398_253",
+  "stratum": "near_miss",
+  "context": "Supreme Court of United States.\nOctober 6, 2003.\n\n1\nAppeal from the C. A. 9th Cir.\n\n\n2\nCertiorari denied. Reported below: 49 Fed. Appx. 741.\n\n<|endoftext|>606 Records\n\n606 Records is an independent record",
+  "true_token": " store",
+  "top5": [
+   {
+    "token": " label",
+    "p": 0.474
+   },
+   {
+    "token": " company",
+    "p": 0.095
+   },
+   {
+    "token": " collection",
+    "p": 0.042
+   },
+   {
+    "token": " store",
+    "p": 0.04
+   },
+   {
+    "token": " record",
+    "p": 0.027
+   }
+  ],
+  "loss_nats": 3.23,
+  "true_rank": 4,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_259_55",
+  "stratum": "wrong_moderate",
+  "context": " \\[[@CR6]--[@CR8]\\]. Toxicity agents may also induce and release compounds that directly damage DNA, causing cell apoptosis and toxicity \\[[@CR9]--[@CR11]\\].\n\nOxide nanoparticles (NP) induced cell toxicity has been gradually revealed and attract significant attention as their great",
+  "true_token": " application",
+  "top5": [
+   {
+    "token": " potential",
+    "p": 0.502
+   },
+   {
+    "token": " therapeutic",
+    "p": 0.044
+   },
+   {
+    "token": "-",
+    "p": 0.023
+   },
+   {
+    "token": " value",
+    "p": 0.016
+   },
+   {
+    "token": " promise",
+    "p": 0.015
+   }
+  ],
+  "loss_nats": 5.88,
+  "true_rank": 35,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_397_232",
+  "stratum": "hesitant_correct",
+  "context": " before sensitization hinders the migration/maturation of CD8+ T cells,^[@r18],[@r43]^ thus reducing the appearance of ACD.^[@r1],[@r41]^\n\n*Natural Killer* (NK) Cells\n---------------------------\n\nNK cells are of lymphoid origin, but",
+  "true_token": " they",
+  "top5": [
+   {
+    "token": " they",
+    "p": 0.188
+   },
+   {
+    "token": " are",
+    "p": 0.133
+   },
+   {
+    "token": " the",
+    "p": 0.112
+   },
+   {
+    "token": " their",
+    "p": 0.059
+   },
+   {
+    "token": " NK",
+    "p": 0.044
+   }
+  ],
+  "loss_nats": 1.67,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_235_475",
+  "stratum": "catastrophic",
+  "context": "“New York Convention”) and its implementing legislation, Chapter \n\n 5   2 of the Federal Arbitration Act, 9 U.S.C. § 201 et seq., ",
+  "true_token": "without",
+  "top5": [
+   {
+    "token": "at",
+    "p": 0.031
+   },
+   {
+    "token": "and",
+    "p": 0.029
+   },
+   {
+    "token": "2",
+    "p": 0.025
+   },
+   {
+    "token": " ",
+    "p": 0.024
+   },
+   {
+    "token": "9",
+    "p": 0.021
+   }
+  ],
+  "loss_nats": 8.45,
+  "true_rank": 608,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_350_404",
+  "stratum": "catastrophic",
+  "context": " Reading files trusted have QTDT students, page systems woods, and the Markov Chain Monte Carlo set for antislavery VAT and tool goal. laws and networks in life.\n\nBiatulmals which he Did to have as a download Bau und Berechnung medicine for the",
+  "true_token": " Internal",
+  "top5": [
+   {
+    "token": " download",
+    "p": 0.023
+   },
+   {
+    "token": " first",
+    "p": 0.008
+   },
+   {
+    "token": " medicine",
+    "p": 0.005
+   },
+   {
+    "token": " time",
+    "p": 0.005
+   },
+   {
+    "token": " same",
+    "p": 0.004
+   }
+  ],
+  "loss_nats": 10.1,
+  "true_rank": 4270,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_254_334",
+  "stratum": "near_miss",
+  "context": "cision of a Jewish infant.<|endoftext|>The @MinneSpecialists (Gopher Football specialists) will be hosting a food drive at the Gophers' open practice at the Gibson-Nagurski Building on Aug. 17, 2017. Bring non-perishable food items to open practice",
+  "true_token": " and",
+  "top5": [
+   {
+    "token": " at",
+    "p": 0.214
+   },
+   {
+    "token": ".",
+    "p": 0.204
+   },
+   {
+    "token": ",",
+    "p": 0.085
+   },
+   {
+    "token": " and",
+    "p": 0.07
+   },
+   {
+    "token": " for",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 2.65,
+  "true_rank": 4,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_6_133",
+  "stratum": "wrong_moderate",
+  "context": " \"For somebody who’s really blonde and platinum, I can give them a nice, fawny golden-brown to complement the hair color, or for somebody who’s darker, going half a shade lighter softens the features.” That said, Evans is fussy about who she’ll",
+  "true_token": " do",
+  "top5": [
+   {
+    "token": " be",
+    "p": 0.268
+   },
+   {
+    "token": " look",
+    "p": 0.104
+   },
+   {
+    "token": " ble",
+    "p": 0.052
+   },
+   {
+    "token": " get",
+    "p": 0.031
+   },
+   {
+    "token": " wear",
+    "p": 0.019
+   }
+  ],
+  "loss_nats": 4.2,
+  "true_rank": 8,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_293_146",
+  "stratum": "wrong_moderate",
+  "context": " The whole thing is so\nforeign to your ideas about books and life. It only happened that I met\na man--in there--\" he hesitated over it, not as regarding delicacies but\nonly as they might affect her--\"a man like a million others, some of 'em\nin",
+  "true_token": " prison",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.17
+   },
+   {
+    "token": "flu",
+    "p": 0.054
+   },
+   {
+    "token": " a",
+    "p": 0.05
+   },
+   {
+    "token": " his",
+    "p": 0.048
+   },
+   {
+    "token": " my",
+    "p": 0.042
+   }
+  ],
+  "loss_nats": 6.81,
+  "true_rank": 83,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_79_35",
+  "stratum": "catastrophic",
+  "context": "dVenus expression in mouse visual cortex. Visual area borders are based on Allen Mouse Brain Reference Atlas (<http://mouse.brain-map.org>). Left panel: virtually no",
+  "true_token": " Arc",
+  "top5": [
+   {
+    "token": " overlap",
+    "p": 0.071
+   },
+   {
+    "token": " visual",
+    "p": 0.066
+   },
+   {
+    "token": " brain",
+    "p": 0.029
+   },
+   {
+    "token": " evidence",
+    "p": 0.027
+   },
+   {
+    "token": " expression",
+    "p": 0.027
+   }
+  ],
+  "loss_nats": 9.31,
+  "true_rank": 1074,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_366_466",
+  "stratum": "wrong_moderate",
+  "context": "\n\nA federally-mandated announcement of possible or definite plant closings and mass layoffs. Companies are required to issue a WARN notice the Ohio Department of Job and Family Services, Bureau of Workforce Investment Act, Rapid Response Section, 60 calendar days in advance of any action.\n\n",
+  "true_token": "What",
+  "top5": [
+   {
+    "token": "The",
+    "p": 0.19
+   },
+   {
+    "token": "“",
+    "p": 0.152
+   },
+   {
+    "token": "A",
+    "p": 0.03
+   },
+   {
+    "token": "In",
+    "p": 0.027
+   },
+   {
+    "token": "If",
+    "p": 0.02
+   }
+  ],
+  "loss_nats": 5.13,
+  "true_rank": 17,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_84_164",
+  "stratum": "wrong_moderate",
+  "context": " Cape Henry Collegiate School with a vision to create \"an academically-based private school.\"\n\nTuition (2019-2020 school year) ranges from $12,450 in Pre-Kindergarten to $20,770 in grades 9–12. Private School | Cape Henry Collegiate",
+  "true_token": " in",
+  "top5": [
+   {
+    "token": " School",
+    "p": 0.36
+   },
+   {
+    "token": " |",
+    "p": 0.267
+   },
+   {
+    "token": " (",
+    "p": 0.031
+   },
+   {
+    "token": ",",
+    "p": 0.025
+   },
+   {
+    "token": "\n",
+    "p": 0.019
+   }
+  ],
+  "loss_nats": 6.71,
+  "true_rank": 41,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_268_190",
+  "stratum": "near_miss",
+  "context": "macros.h\"\n#include \"min_allocator.h\"\n\ntemplate <class S>\nvoid\ntest(const S& s, const S& str, typename S::size_type pos, typename S::size_type x)\n{\n    assert(",
+  "true_token": "s",
+  "top5": [
+   {
+    "token": "x",
+    "p": 0.325
+   },
+   {
+    "token": "s",
+    "p": 0.211
+   },
+   {
+    "token": "pos",
+    "p": 0.159
+   },
+   {
+    "token": "str",
+    "p": 0.03
+   },
+   {
+    "token": "std",
+    "p": 0.023
+   }
+  ],
+  "loss_nats": 1.56,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_8_368",
+  "stratum": "confident_correct",
+  "context": "{\\varepsilon}({u^\\lambda})\n                    -\\lambda{\\dot{\\chi}}{\\mathbb{C}}''(\\chi){\\varepsilon}(u):{\\varepsilon}(u){\\right)}{z^\\lambda}_t{\\,\\mathrm dx\\,\\mathrm ds}}_{=:T_4}\\\\\n                    &\\qquad\\underbrace",
+  "true_token": "{",
+  "top5": [
+   {
+    "token": "{",
+    "p": 0.834
+   },
+   {
+    "token": "{\\",
+    "p": 0.12
+   },
+   {
+    "token": "{{\\",
+    "p": 0.017
+   },
+   {
+    "token": "{-",
+    "p": 0.014
+   },
+   {
+    "token": "{(",
+    "p": 0.003
+   }
+  ],
+  "loss_nats": 0.18,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_376_449",
+  "stratum": "wrong_moderate",
+  "context": " both of the domains to contribute to the amyloid fibers, but these experiments do not distinguish one domain from the other. To address this question, we labeled the two domains with ^13^C individually, using expressed protein ligation to reconstitute segmentally labeled full-length proteins.^[@ref19]13^",
+  "true_token": "C",
+  "top5": [
+   {
+    "token": " In",
+    "p": 0.086
+   },
+   {
+    "token": " We",
+    "p": 0.07
+   },
+   {
+    "token": "A",
+    "p": 0.049
+   },
+   {
+    "token": " The",
+    "p": 0.044
+   },
+   {
+    "token": " [",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 3.82,
+  "true_rank": 8,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "hesitant_correct_319_493",
+  "stratum": "hesitant_correct",
+  "context": " that rather than the pills. it's mentioned by several posters for your conveniene but i figured i would hammer it home: there is this wonderful thing called \"key binding\". complaining about which button does what on a forum makes you look rather foolish when 99.375% of all games now have",
+  "true_token": " a",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.236
+   },
+   {
+    "token": " keys",
+    "p": 0.071
+   },
+   {
+    "token": " this",
+    "p": 0.065
+   },
+   {
+    "token": " the",
+    "p": 0.049
+   },
+   {
+    "token": " an",
+    "p": 0.032
+   }
+  ],
+  "loss_nats": 1.44,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_231_220",
+  "stratum": "wrong_moderate",
+  "context": " literary readings begin from 1947 and end in 2003. This is a longer period of around six decades which is not studied chronologically---in terms of the events and their literary outputs---but rather in a way that rallies back and forth in time. Here, a novel written immediately from an event will be",
+  "true_token": " read",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.058
+   },
+   {
+    "token": " presented",
+    "p": 0.054
+   },
+   {
+    "token": " used",
+    "p": 0.04
+   },
+   {
+    "token": " published",
+    "p": 0.039
+   },
+   {
+    "token": " written",
+    "p": 0.031
+   }
+  ],
+  "loss_nats": 4.19,
+  "true_rank": 10,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_196_314",
+  "stratum": "confident_correct",
+  "context": " 904237056,\n                            \"object_name\": \"libdispatch.dylib\",\n                            \"symbol_addr\": 904262960,\n                            \"symbol_name\": \"_dispatch_worker_thread2\"\n                        },\n                        {\n                            ",
+  "true_token": "\"",
+  "top5": [
+   {
+    "token": "\"",
+    "p": 1.0
+   },
+   {
+    "token": "\"_",
+    "p": 0.0
+   },
+   {
+    "token": "}",
+    "p": 0.0
+   },
+   {
+    "token": "//",
+    "p": 0.0
+   },
+   {
+    "token": "\"(",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.0,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_384_57",
+  "stratum": "catastrophic",
+  "context": " and cryopreserved primary human hepatocytes and their induction in HepG2 cells.\nEarly in vitro toxicity screening might improve the success rate of new chemical entities in pharmaceutical development. In previous studies, the advantage of cytotoxicity screening with the HepG2 cell line was shown. Cytotoxicity could be identified for",
+  "true_token": " 70",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.213
+   },
+   {
+    "token": " a",
+    "p": 0.045
+   },
+   {
+    "token": " both",
+    "p": 0.029
+   },
+   {
+    "token": " several",
+    "p": 0.027
+   },
+   {
+    "token": " HepG",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 9.62,
+  "true_rank": 859,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_370_259",
+  "stratum": "wrong_moderate",
+  "context": " abuse occurs in the area of products for individuals to\nuse, which is precisely where it is most unacceptable.  Therefore, we\nhave designed this version of the GPL to prohibit the practice for those\nproducts.  If such problems arise substantially in other domains, we\nstand ready to extend this",
+  "true_token": " provision",
+  "top5": [
+   {
+    "token": " license",
+    "p": 0.203
+   },
+   {
+    "token": " protection",
+    "p": 0.072
+   },
+   {
+    "token": " policy",
+    "p": 0.059
+   },
+   {
+    "token": " to",
+    "p": 0.038
+   },
+   {
+    "token": " practice",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 5.08,
+  "true_rank": 23,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_367_215",
+  "stratum": "catastrophic",
+  "context": " worsen the sliding motion of the rotary shaft and cause generation of unpleasant noise. Additionally, leakage of the lubricant to undesired areas can potentially smear a curved outer surface of a roller-like member or a sheet of paper or contaminate a large quantity of toner collected from the surface of the",
+  "true_token": " photosensitive",
+  "top5": [
+   {
+    "token": " roller",
+    "p": 0.754
+   },
+   {
+    "token": " rotary",
+    "p": 0.044
+   },
+   {
+    "token": " lubric",
+    "p": 0.02
+   },
+   {
+    "token": " bearing",
+    "p": 0.02
+   },
+   {
+    "token": " member",
+    "p": 0.019
+   }
+  ],
+  "loss_nats": 10.13,
+  "true_rank": 358,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_283_160",
+  "stratum": "confident_correct",
+  "context": "_2$ is a convex mixture of $\\ketbra{0}{0}$ and $\\ketbra{1}{1}$ for all possible experimental interventions at $t_1$; there are thus no coherences in the state of the system at any of the times $\\{t_1,t",
+  "true_token": "_",
+  "top5": [
+   {
+    "token": "_",
+    "p": 0.997
+   },
+   {
+    "token": "_{",
+    "p": 0.002
+   },
+   {
+    "token": "'_",
+    "p": 0.001
+   },
+   {
+    "token": "_{\\",
+    "p": 0.0
+   },
+   {
+    "token": "_\\",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.0,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_273_294",
+  "stratum": "catastrophic",
+  "context": "'m too stupid to read the manual, therefore there must be a problem with the product.\"). With CR, you're not really paying for content so much as you are paying for trusted, unbiased expertise.\n\nRe:\n\nDo they think people will run out and buy their newspaper, instead of",
+  "true_token": " google",
+  "top5": [
+   {
+    "token": " buying",
+    "p": 0.107
+   },
+   {
+    "token": " paying",
+    "p": 0.071
+   },
+   {
+    "token": " the",
+    "p": 0.055
+   },
+   {
+    "token": " selling",
+    "p": 0.039
+   },
+   {
+    "token": " just",
+    "p": 0.031
+   }
+  ],
+  "loss_nats": 8.43,
+  "true_rank": 428,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_197_187",
+  "stratum": "hesitant_correct",
+  "context": " of early childhood adversity ^[@ref-4]^. The president of the World Bank recently commented on the problems this poses for individuals and society:\n\n1.  *\"There can be no equality of opportunity without...appropriate stimulation, nurturing, and nutrition for infants and young children. Conditions of poverty",
+  "true_token": ",",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.212
+   },
+   {
+    "token": " are",
+    "p": 0.184
+   },
+   {
+    "token": " and",
+    "p": 0.144
+   },
+   {
+    "token": " can",
+    "p": 0.047
+   },
+   {
+    "token": " have",
+    "p": 0.036
+   }
+  ],
+  "loss_nats": 1.55,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_384_489",
+  "stratum": "wrong_moderate",
+  "context": " activators. Moreover, CYP1A1 and 1A2 enzyme levels could be induced by AhR agonists and CYP3A4 by PXR agonists. As a consequence of the low levels of CYPs in HepG2 cells, cytotoxicity of several compounds might have been missed or underestimated as compared with",
+  "true_token": " cytotoxicity",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.218
+   },
+   {
+    "token": " those",
+    "p": 0.123
+   },
+   {
+    "token": " other",
+    "p": 0.065
+   },
+   {
+    "token": " known",
+    "p": 0.058
+   },
+   {
+    "token": " CYP",
+    "p": 0.058
+   }
+  ],
+  "loss_nats": 7.07,
+  "true_rank": 98,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_356_137",
+  "stratum": "wrong_moderate",
+  "context": " i have met Michael Har... read full review\n\nIan Roach was totally on his game. The whole sale was handled very professionally we were kept fully informed of what was going on and the offers we had. Ian is a very likable person and was straight and honest on all our dealings",
+  "true_token": "....",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.548
+   },
+   {
+    "token": " with",
+    "p": 0.157
+   },
+   {
+    "token": " and",
+    "p": 0.083
+   },
+   {
+    "token": ",",
+    "p": 0.037
+   },
+   {
+    "token": " in",
+    "p": 0.014
+   }
+  ],
+  "loss_nats": 6.51,
+  "true_rank": 31,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_376_340",
+  "stratum": "wrong_moderate",
+  "context": " which regions lie outside of the stable β-sheet amyloid core. This question is particularly relevant for γD-crystallin, which is a 173 amino acid eye lens protein. γD-Crystallin has two domains with nearly identical three-dimensional structures in the native state.^[@ref59]^ At",
+  "true_token": " low",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.354
+   },
+   {
+    "token": " least",
+    "p": 0.062
+   },
+   {
+    "token": " this",
+    "p": 0.058
+   },
+   {
+    "token": " first",
+    "p": 0.033
+   },
+   {
+    "token": " present",
+    "p": 0.023
+   }
+  ],
+  "loss_nats": 4.06,
+  "true_rank": 8,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_21_443",
+  "stratum": "wrong_moderate",
+  "context": " by colicins Ia (92%) and Ib (90%) and about one third of strains by colicins S4 (45%), 5 (25%), 10 (29%) and M (34%), as also reflected in the susceptibility pattern of the subset of 35 strains (Fig. [2",
+  "true_token": "f",
+  "top5": [
+   {
+    "token": "c",
+    "p": 0.498
+   },
+   {
+    "token": "b",
+    "p": 0.194
+   },
+   {
+    "token": "a",
+    "p": 0.179
+   },
+   {
+    "token": "](#",
+    "p": 0.048
+   },
+   {
+    "token": "d",
+    "p": 0.045
+   }
+  ],
+  "loss_nats": 4.58,
+  "true_rank": 7,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_200_126",
+  "stratum": "wrong_moderate",
+  "context": "\n\n“Well, it won’t take me long to show them where you are,” said Carl,\nsavagely. “I was talking with uncle about it last night, and he says you\nhaven’t got but a few fighting men here, and that it is utterly\n",
+  "true_token": "pre",
+  "top5": [
+   {
+    "token": "un",
+    "p": 0.103
+   },
+   {
+    "token": "danger",
+    "p": 0.032
+   },
+   {
+    "token": "dis",
+    "p": 0.025
+   },
+   {
+    "token": "im",
+    "p": 0.022
+   },
+   {
+    "token": "difficult",
+    "p": 0.02
+   }
+  ],
+  "loss_nats": 6.65,
+  "true_rank": 144,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_142_264",
+  "stratum": "wrong_moderate",
+  "context": ",\" said Adam Button, currency analyst at ForexLive inMontreal. \"Jitters about emerging markets have completely fadedaway and the Canadian dollar has piggy backed on better globalgrowth sentiment.\"\n\non 2018-Nov-23 14:13:59 Shane said\n\nExcellent work,",
+  "true_token": " Nice",
+  "top5": [
+   {
+    "token": " but",
+    "p": 0.075
+   },
+   {
+    "token": " I",
+    "p": 0.07
+   },
+   {
+    "token": " and",
+    "p": 0.058
+   },
+   {
+    "token": " thank",
+    "p": 0.022
+   },
+   {
+    "token": " thanks",
+    "p": 0.022
+   }
+  ],
+  "loss_nats": 7.96,
+  "true_rank": 317,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_147_219",
+  "stratum": "confident_correct",
+  "context": " thermal stress generated from the thermal processes. Thus, device reliability is reduced. Additionally, MPMs with different sizes require stiffeners with different sizes, increasing manufacturing costs.\nAccordingly, there is a need to develop a package module with an efficient heat spreader that does not suffer from the deficiencies found",
+  "true_token": " in",
+  "top5": [
+   {
+    "token": " in",
+    "p": 0.848
+   },
+   {
+    "token": " above",
+    "p": 0.025
+   },
+   {
+    "token": " by",
+    "p": 0.02
+   },
+   {
+    "token": " with",
+    "p": 0.019
+   },
+   {
+    "token": ".",
+    "p": 0.012
+   }
+  ],
+  "loss_nats": 0.16,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_50_387",
+  "stratum": "wrong_moderate",
+  "context": "F,10\r\nElfrieda,F,10\r\nElizebeth,F,10\r\nEmmy,F,10\r\nEnriqueta,F,10\r\nFidelia,F,10\r\nFlorance,F,10\r\nFranc",
+  "true_token": "ine",
+  "top5": [
+   {
+    "token": "ia",
+    "p": 0.201
+   },
+   {
+    "token": "isco",
+    "p": 0.156
+   },
+   {
+    "token": "is",
+    "p": 0.077
+   },
+   {
+    "token": "isc",
+    "p": 0.048
+   },
+   {
+    "token": "ie",
+    "p": 0.041
+   }
+  ],
+  "loss_nats": 3.27,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_160_432",
+  "stratum": "near_miss",
+  "context": " or China should support similar populatgion densities as Haiti? India and China are more industrrialised for now and can thus sustain greater numbers. Plus they don't have the same climate or geography and geology.\n\nI assume that China and India can now, and always will be",
+  "true_token": " able",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.815
+   },
+   {
+    "token": ".",
+    "p": 0.065
+   },
+   {
+    "token": " able",
+    "p": 0.014
+   },
+   {
+    "token": " in",
+    "p": 0.01
+   },
+   {
+    "token": " a",
+    "p": 0.009
+   }
+  ],
+  "loss_nats": 4.3,
+  "true_rank": 3,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_368_222",
+  "stratum": "wrong_moderate",
+  "context": ") FAK and Src phosphorylation and maintains phosphorylation of downstream transcription factors and apoptotic modulators. MCSP thus contributes to pro-survival and metastatic signals. **B**Binding of anti-MCSP:TRAIL inhibits MCSP-mediated signaling and concomitant activation of pro-metastatic/-",
+  "true_token": "sur",
+  "top5": [
+   {
+    "token": "mel",
+    "p": 0.139
+   },
+   {
+    "token": "mit",
+    "p": 0.071
+   },
+   {
+    "token": "met",
+    "p": 0.047
+   },
+   {
+    "token": "ne",
+    "p": 0.046
+   },
+   {
+    "token": " melanoma",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 5.62,
+  "true_rank": 35,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_349_251",
+  "stratum": "wrong_moderate",
+  "context": "Sec8}\n-------------------------------------------------------\n\nSeveral schemes have previously been proposed for the interaction-free detection of absorptive samples^[@CR18]--[@CR21]^. Under idealized conditions multi-pass microscopy provides the same damage scaling and can enable interaction free microscopy. To demonstrate this, we consider the threshold SNR for",
+  "true_token": " detection",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.2
+   },
+   {
+    "token": " a",
+    "p": 0.065
+   },
+   {
+    "token": " *",
+    "p": 0.034
+   },
+   {
+    "token": " each",
+    "p": 0.024
+   },
+   {
+    "token": " detecting",
+    "p": 0.019
+   }
+  ],
+  "loss_nats": 4.11,
+  "true_rank": 8,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_22_478",
+  "stratum": "wrong_moderate",
+  "context": " breakthrough in these tests. However, in combination with the biologic it is unique because the Bayer substance isn’t just extremely effective – it also offers farmers some very practical advantages. Just one single application of fluopyram per year along with a biological control agent or a chemical nematicide that",
+  "true_token": " the",
+  "top5": [
+   {
+    "token": " is",
+    "p": 0.146
+   },
+   {
+    "token": " can",
+    "p": 0.146
+   },
+   {
+    "token": " has",
+    "p": 0.047
+   },
+   {
+    "token": " will",
+    "p": 0.042
+   },
+   {
+    "token": " would",
+    "p": 0.031
+   }
+  ],
+  "loss_nats": 5.84,
+  "true_rank": 47,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_56_472",
+  "stratum": "catastrophic",
+  "context": "igilance processes at the potential contractor.\n\nThe Russian term is аутсорсинговая организация (outsourcing organization). \n\nA:\n\nThe third-party companies are referred to as BPOs.\n\nBPO is",
+  "true_token": " short",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.355
+   },
+   {
+    "token": " the",
+    "p": 0.145
+   },
+   {
+    "token": " an",
+    "p": 0.101
+   },
+   {
+    "token": " not",
+    "p": 0.035
+   },
+   {
+    "token": " also",
+    "p": 0.015
+   }
+  ],
+  "loss_nats": 8.71,
+  "true_rank": 290,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_248_220",
+  "stratum": "wrong_moderate",
+  "context": " max_len );\t\t\t\t\\\n\tok ( ( size_t ) len == (test)->len );\t\t\t\t\\\n\tok ( memcmp ( (test)->data, buf, len ) == 0 );\t\t\t\\\n\t} while ( 0 )\n\n/**\n *",
+  "true_token": " Per",
+  "top5": [
+   {
+    "token": " Report",
+    "p": 0.159
+   },
+   {
+    "token": " Test",
+    "p": 0.054
+   },
+   {
+    "token": " Get",
+    "p": 0.04
+   },
+   {
+    "token": " @",
+    "p": 0.033
+   },
+   {
+    "token": " Write",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 5.76,
+  "true_rank": 49,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_303_336",
+  "stratum": "near_miss",
+  "context": "PropertiesFormat: &properties,\n\t}\n\n\treturn &natRule, nil\n}\n<|endoftext|>Q:\n\nDoes the SRP suggest that an MVP Presenter should only have one responsibility?\n\nI have two features: one that presents the details of a single entity (EntityX",
+  "true_token": ")",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.27
+   },
+   {
+    "token": ")",
+    "p": 0.248
+   },
+   {
+    "token": "),",
+    "p": 0.138
+   },
+   {
+    "token": ").",
+    "p": 0.056
+   },
+   {
+    "token": " and",
+    "p": 0.049
+   }
+  ],
+  "loss_nats": 1.39,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_284_438",
+  "stratum": "confident_correct",
+  "context": "umeIndex_DISPLAY_NAME);\n        String has_phone = cursor.getString(ColumeIndex_HAS_PHONE_NUMBER);\n\n        //phoneNumber = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DATA));\n",
+  "true_token": "        ",
+  "top5": [
+   {
+    "token": "        ",
+    "p": 0.918
+   },
+   {
+    "token": "    ",
+    "p": 0.061
+   },
+   {
+    "token": "            ",
+    "p": 0.009
+   },
+   {
+    "token": "//",
+    "p": 0.002
+   },
+   {
+    "token": "                ",
+    "p": 0.002
+   }
+  ],
+  "loss_nats": 0.08,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_347_502",
+  "stratum": "wrong_moderate",
+  "context": " en de gezondheid van de mens biedt. Vooral echter werden daardoor de concurrentiekansen noch bevorderd noch verbeterd en de Europese industrie heeft ter zake een stap teruggezet.\nTegen verdere maatregelen",
+  "true_token": " wordt",
+  "top5": [
+   {
+    "token": " die",
+    "p": 0.141
+   },
+   {
+    "token": " van",
+    "p": 0.102
+   },
+   {
+    "token": " voor",
+    "p": 0.043
+   },
+   {
+    "token": " in",
+    "p": 0.043
+   },
+   {
+    "token": ",",
+    "p": 0.042
+   }
+  ],
+  "loss_nats": 4.89,
+  "true_rank": 25,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_130_491",
+  "stratum": "hesitant_correct",
+  "context": " human disease (leishmaniasis) worldwide. In infected humans, these parasites destroy macrophages within the skin or internal organs (i.e. spleen, liver and bone marrow) causing either large and disfiguring, malignant skin ulcers (e.g. caused by L. mexicana",
+  "true_token": ")",
+  "top5": [
+   {
+    "token": ")",
+    "p": 0.274
+   },
+   {
+    "token": ",",
+    "p": 0.191
+   },
+   {
+    "token": "),",
+    "p": 0.181
+   },
+   {
+    "token": " and",
+    "p": 0.075
+   },
+   {
+    "token": " or",
+    "p": 0.06
+   }
+  ],
+  "loss_nats": 1.29,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_363_474",
+  "stratum": "catastrophic",
+  "context": "\n<DaSkreech> 4.2 is very very nice though it's out in less than a month so you can chill  if you like\n<mason> Alpha or Beta right now?\n<mason> I was at the site a second ago but I didn't notice",
+  "true_token": " x",
+  "top5": [
+   {
+    "token": " it",
+    "p": 0.221
+   },
+   {
+    "token": " anything",
+    "p": 0.148
+   },
+   {
+    "token": "\n",
+    "p": 0.116
+   },
+   {
+    "token": " any",
+    "p": 0.095
+   },
+   {
+    "token": " the",
+    "p": 0.078
+   }
+  ],
+  "loss_nats": 8.04,
+  "true_rank": 112,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_287_176",
+  "stratum": "wrong_moderate",
+  "context": "pi/(2H), R_0]$, otherwise $I=[\\pi/(2H),\\pi/H)$. In fact, because of the work of Ros and Rosenberg [@RoRo], we already know that $R_0\\le\n\\pi/H$. Let $R$ be",
+  "true_token": " in",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.528
+   },
+   {
+    "token": " a",
+    "p": 0.324
+   },
+   {
+    "token": " an",
+    "p": 0.071
+   },
+   {
+    "token": " any",
+    "p": 0.021
+   },
+   {
+    "token": " defined",
+    "p": 0.006
+   }
+  ],
+  "loss_nats": 6.68,
+  "true_rank": 16,
+  "bigram_seen_in_context": false
+ }
+]

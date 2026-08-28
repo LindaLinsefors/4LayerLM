@@ -1,0 +1,744 @@
+{
+ "cos_v_pc1_v_vcov": 0.9832216501235962,
+ "anisotropy": {
+  "raw alive rows": 0.26178982448265975,
+  "centered alive rows": -0.0001787178843453865
+ },
+ "pc1": {
+  "spearman_freq_residual_norm": 0.22541134663702678,
+  "corr_logfreq_residual_norm": 0.26758757568042785,
+  "cv_freq_decodability": 0.2759694406340524,
+  "anisotropy_processed": -0.00018716949140013217,
+  "spearman_freq_removed_proj": 0.7751052313648351,
+  "kmeans_opt_split": {
+   "cluster 0": {
+    "n": 341,
+    "median_freq": 764.0,
+    "suffix_frac": 0.1348973607038123,
+    "examples": [
+     ".",
+     ",",
+     "the",
+     "a",
+     "\"",
+     "and",
+     "to",
+     "he"
+    ]
+   },
+   "cluster 1": {
+    "n": 415,
+    "median_freq": 480.0,
+    "suffix_frac": 0.01927710843373494,
+    "examples": [
+     "was",
+     "felt",
+     "had",
+     "said",
+     "could",
+     "found",
+     "were",
+     "would"
+    ]
+   },
+   "cluster 2": {
+    "n": 331,
+    "median_freq": 217.0,
+    "suffix_frac": 0.11178247734138973,
+    "examples": [
+     "eyes",
+     "flowers",
+     "map",
+     "door",
+     "star",
+     "stone",
+     "book",
+     "hand"
+    ]
+   },
+   "cluster 3": {
+    "n": 251,
+    "median_freq": 320.0,
+    "suffix_frac": 0.0796812749003984,
+    "examples": [
+     "day",
+     "stars",
+     "sky",
+     "night",
+     "world",
+     "air",
+     "sun",
+     "tree"
+    ]
+   },
+   "cluster 4": {
+    "n": 572,
+    "median_freq": 134.0,
+    "suffix_frac": 0.10139860139860139,
+    "examples": [
+     "t",
+     "set",
+     "breath",
+     "part",
+     "spark",
+     "shadow",
+     "side",
+     "head"
+    ]
+   },
+   "cluster 5": {
+    "n": 198,
+    "median_freq": 319.0,
+    "suffix_frac": 0.04040404040404041,
+    "examples": [
+     "girl",
+     "boy",
+     "mia",
+     "leo",
+     "friends",
+     "alex",
+     "kim",
+     "samuel"
+    ]
+   },
+   "cluster 6": {
+    "n": 315,
+    "median_freq": 310.0,
+    "suffix_frac": 0.08571428571428572,
+    "examples": [
+     "heart",
+     "joy",
+     "treasure",
+     "time",
+     "light",
+     "stories",
+     "dreams",
+     "love"
+    ]
+   },
+   "cluster 7": {
+    "n": 342,
+    "median_freq": 305.5,
+    "suffix_frac": 0.04093567251461988,
+    "examples": [
+     "be",
+     "find",
+     "help",
+     "will",
+     "are",
+     "do",
+     "see",
+     "let"
+    ]
+   },
+   "cluster 8": {
+    "n": 211,
+    "median_freq": 261.0,
+    "suffix_frac": 0.07109004739336493,
+    "examples": [
+     "feeling",
+     "knowing",
+     "ready",
+     "sharing",
+     "being",
+     "looking",
+     "thinking",
+     "laughing"
+    ]
+   },
+   "cluster 9": {
+    "n": 431,
+    "median_freq": 189.0,
+    "suffix_frac": 0.9489559164733179,
+    "examples": [
+     "##s",
+     "##ing",
+     "##ed",
+     "##e",
+     "##n",
+     "##d",
+     "##t",
+     "##y"
+    ]
+   },
+   "cluster 10": {
+    "n": 295,
+    "median_freq": 312.0,
+    "suffix_frac": 0.04406779661016949,
+    "examples": [
+     "old",
+     "small",
+     "bright",
+     "lost",
+     "big",
+     "new",
+     "dark",
+     "strange"
+    ]
+   }
+  }
+ },
+ "vcov": {
+  "spearman_freq_residual_norm": 0.2237856058763786,
+  "corr_logfreq_residual_norm": 0.25811046172696545,
+  "cv_freq_decodability": -0.34264597966471716,
+  "anisotropy_processed": -0.0001864441143412033,
+  "spearman_freq_removed_proj": 0.7997880620883785,
+  "kmeans_opt_split": {
+   "cluster 0": {
+    "n": 62,
+    "median_freq": 300.5,
+    "suffix_frac": 0.0,
+    "examples": [
+     "stories",
+     "dreams",
+     "memories",
+     "secrets",
+     "things",
+     "adventures",
+     "tales",
+     "fears"
+    ]
+   },
+   "cluster 1": {
+    "n": 111,
+    "median_freq": 168.0,
+    "suffix_frac": 0.04504504504504504,
+    "examples": [
+     "still",
+     "pull",
+     "gone",
+     "rush",
+     "fade",
+     "spread",
+     "fall",
+     "move"
+    ]
+   },
+   "cluster 2": {
+    "n": 55,
+    "median_freq": 208.0,
+    "suffix_frac": 0.05454545454545454,
+    "examples": [
+     "ship",
+     "boat",
+     "swam",
+     "racing",
+     "race",
+     "run",
+     "climb",
+     "sailed"
+    ]
+   },
+   "cluster 3": {
+    "n": 102,
+    "median_freq": 180.0,
+    "suffix_frac": 0.12745098039215685,
+    "examples": [
+     "lost",
+     "alone",
+     "sad",
+     "scared",
+     "sadness",
+     "lonely",
+     "pain",
+     "wrong"
+    ]
+   },
+   "cluster 4": {
+    "n": 110,
+    "median_freq": 156.5,
+    "suffix_frac": 0.01818181818181818,
+    "examples": [
+     "always",
+     "finally",
+     "work",
+     "free",
+     "open",
+     "thank",
+     "win",
+     "act"
+    ]
+   },
+   "cluster 5": {
+    "n": 83,
+    "median_freq": 102.0,
+    "suffix_frac": 1.0,
+    "examples": [
+     "##ed",
+     "##led",
+     "##ched",
+     "##ted",
+     "##ked",
+     "##ened",
+     "##ged",
+     "##red"
+    ]
+   },
+   "cluster 6": {
+    "n": 90,
+    "median_freq": 202.0,
+    "suffix_frac": 0.1,
+    "examples": [
+     "heart",
+     "eyes",
+     "voice",
+     "smile",
+     "breath",
+     "face",
+     "hand",
+     "hearts"
+    ]
+   },
+   "cluster 7": {
+    "n": 125,
+    "median_freq": 359.0,
+    "suffix_frac": 0.072,
+    "examples": [
+     "world",
+     "tree",
+     "home",
+     "garden",
+     "place",
+     "forest",
+     "city",
+     "village"
+    ]
+   },
+   "cluster 8": {
+    "n": 53,
+    "median_freq": 219.0,
+    "suffix_frac": 0.09433962264150944,
+    "examples": [
+     "gold",
+     "food",
+     "treasures",
+     "games",
+     "candy",
+     "toys",
+     "seeds",
+     "jewels"
+    ]
+   },
+   "cluster 9": {
+    "n": 82,
+    "median_freq": 744.0,
+    "suffix_frac": 0.0,
+    "examples": [
+     "he",
+     "she",
+     "girl",
+     "boy",
+     "mia",
+     "leo",
+     "alex",
+     "kim"
+    ]
+   },
+   "cluster 10": {
+    "n": 244,
+    "median_freq": 226.5,
+    "suffix_frac": 0.9754098360655737,
+    "examples": [
+     ".",
+     ",",
+     "##e",
+     "##n",
+     "##d",
+     "##t",
+     "##er",
+     "-"
+    ]
+   },
+   "cluster 11": {
+    "n": 150,
+    "median_freq": 959.5,
+    "suffix_frac": 0.06666666666666667,
+    "examples": [
+     "and",
+     "to",
+     "in",
+     "with",
+     "but",
+     "as",
+     "for",
+     "on"
+    ]
+   },
+   "cluster 12": {
+    "n": 83,
+    "median_freq": 181.0,
+    "suffix_frac": 0.012048192771084338,
+    "examples": [
+     "feeling",
+     "fear",
+     "excited",
+     "curious",
+     "shook",
+     "worried",
+     "surprised",
+     "curiosity"
+    ]
+   },
+   "cluster 13": {
+    "n": 136,
+    "median_freq": 595.0,
+    "suffix_frac": 0.0,
+    "examples": [
+     "be",
+     "find",
+     "help",
+     "do",
+     "see",
+     "let",
+     "have",
+     "make"
+    ]
+   },
+   "cluster 14": {
+    "n": 128,
+    "median_freq": 297.5,
+    "suffix_frac": 0.0390625,
+    "examples": [
+     "big",
+     "more",
+     "new",
+     "brave",
+     "happy",
+     "full",
+     "fun",
+     "own"
+    ]
+   },
+   "cluster 15": {
+    "n": 52,
+    "median_freq": 211.5,
+    "suffix_frac": 0.019230769230769232,
+    "examples": [
+     "flew",
+     "jumped",
+     "flying",
+     "fly",
+     "landed",
+     "floated",
+     "rolled",
+     "soared"
+    ]
+   },
+   "cluster 16": {
+    "n": 120,
+    "median_freq": 292.0,
+    "suffix_frac": 0.06666666666666667,
+    "examples": [
+     "joy",
+     "love",
+     "laughter",
+     "magic",
+     "hope",
+     "adventure",
+     "life",
+     "friendship"
+    ]
+   },
+   "cluster 17": {
+    "n": 79,
+    "median_freq": 310.0,
+    "suffix_frac": 0.012658227848101266,
+    "examples": [
+     "said",
+     "thought",
+     "smiled",
+     "asked",
+     "laughed",
+     "shouted",
+     "told",
+     "whispered"
+    ]
+   },
+   "cluster 18": {
+    "n": 64,
+    "median_freq": 319.0,
+    "suffix_frac": 0.046875,
+    "examples": [
+     "fish",
+     "giant",
+     "bird",
+     "dragon",
+     "creature",
+     "owl",
+     "robot",
+     "turtle"
+    ]
+   },
+   "cluster 19": {
+    "n": 88,
+    "median_freq": 642.0,
+    "suffix_frac": 0.2840909090909091,
+    "examples": [
+     "the",
+     "a",
+     "her",
+     "it",
+     "that",
+     "his",
+     "their",
+     "you"
+    ]
+   },
+   "cluster 20": {
+    "n": 115,
+    "median_freq": 554.0,
+    "suffix_frac": 0.017391304347826087,
+    "examples": [
+     "looked",
+     "began",
+     "decided",
+     "took",
+     "walked",
+     "turned",
+     "sat",
+     "stood"
+    ]
+   },
+   "cluster 21": {
+    "n": 108,
+    "median_freq": 594.5,
+    "suffix_frac": 0.0,
+    "examples": [
+     "felt",
+     "had",
+     "found",
+     "saw",
+     "made",
+     "named",
+     "wanted",
+     "learned"
+    ]
+   },
+   "cluster 22": {
+    "n": 95,
+    "median_freq": 213.0,
+    "suffix_frac": 0.021052631578947368,
+    "examples": [
+     "star",
+     "stone",
+     "book",
+     "box",
+     "rock",
+     "mirror",
+     "ball",
+     "crystal"
+    ]
+   },
+   "cluster 23": {
+    "n": 88,
+    "median_freq": 168.5,
+    "suffix_frac": 0.13636363636363635,
+    "examples": [
+     "day",
+     "time",
+     "night",
+     "days",
+     "first",
+     "end",
+     "last",
+     "morning"
+    ]
+   },
+   "cluster 24": {
+    "n": 151,
+    "median_freq": 303.0,
+    "suffix_frac": 0.006622516556291391,
+    "examples": [
+     "knowing",
+     "ready",
+     "sharing",
+     "being",
+     "looking",
+     "thinking",
+     "laughing",
+     "making"
+    ]
+   },
+   "cluster 25": {
+    "n": 78,
+    "median_freq": 237.5,
+    "suffix_frac": 0.08974358974358974,
+    "examples": [
+     "stars",
+     "flowers",
+     "water",
+     "trees",
+     "clouds",
+     "ground",
+     "leaves",
+     "waves"
+    ]
+   },
+   "cluster 26": {
+    "n": 83,
+    "median_freq": 263.0,
+    "suffix_frac": 0.03614457831325301,
+    "examples": [
+     "were",
+     "filled",
+     "danced",
+     "seemed",
+     "sparkled",
+     "shining",
+     "spark",
+     "echoed"
+    ]
+   },
+   "cluster 27": {
+    "n": 76,
+    "median_freq": 356.0,
+    "suffix_frac": 0.05263157894736842,
+    "examples": [
+     "light",
+     "sky",
+     "air",
+     "sun",
+     "shadows",
+     "wind",
+     "storm",
+     "weight"
+    ]
+   },
+   "cluster 28": {
+    "n": 125,
+    "median_freq": 171.0,
+    "suffix_frac": 0.992,
+    "examples": [
+     "##ing",
+     "##y",
+     "##ly",
+     "past",
+     "##ion",
+     "##ness",
+     "##ic",
+     "##ation"
+    ]
+   },
+   "cluster 29": {
+    "n": 234,
+    "median_freq": 196.5,
+    "suffix_frac": 0.008547008547008548,
+    "examples": [
+     "t",
+     "bo",
+     "m",
+     "st",
+     "sc",
+     "car",
+     "gl",
+     "cr"
+    ]
+   },
+   "cluster 30": {
+    "n": 116,
+    "median_freq": 304.5,
+    "suffix_frac": 0.02586206896551724,
+    "examples": [
+     "old",
+     "small",
+     "bright",
+     "dark",
+     "strange",
+     "deep",
+     "hidden",
+     "little"
+    ]
+   },
+   "cluster 31": {
+    "n": 127,
+    "median_freq": 327.0,
+    "suffix_frac": 0.14173228346456693,
+    "examples": [
+     "\"",
+     "of",
+     "was",
+     "!",
+     "i",
+     "?",
+     "'",
+     "could"
+    ]
+   },
+   "cluster 32": {
+    "n": 36,
+    "median_freq": 195.0,
+    "suffix_frac": 0.027777777777777776,
+    "examples": [
+     "grew",
+     "flower",
+     "grow",
+     "bloomed",
+     "rose",
+     "plant",
+     "growing",
+     "bloom"
+    ]
+   },
+   "cluster 33": {
+    "n": 53,
+    "median_freq": 251.0,
+    "suffix_frac": 0.018867924528301886,
+    "examples": [
+     "colors",
+     "words",
+     "letter",
+     "art",
+     "letters",
+     "painting",
+     "paint",
+     "paper"
+    ]
+   },
+   "cluster 34": {
+    "n": 100,
+    "median_freq": 313.0,
+    "suffix_frac": 0.07,
+    "examples": [
+     "treasure",
+     "moment",
+     "way",
+     "map",
+     "story",
+     "door",
+     "dream",
+     "wish"
+    ]
+   },
+   "cluster 35": {
+    "n": 100,
+    "median_freq": 150.0,
+    "suffix_frac": 0.47,
+    "examples": [
+     "they",
+     "##s",
+     "friends",
+     "people",
+     "others",
+     "##es",
+     "creatures",
+     "children"
+    ]
+   }
+  }
+ },
+ "ari_pc1_vs_vcov": {
+  "kmeans_opt": 0.3111609165222007,
+  "kmeans_fine": 0.5027645677833246,
+  "ward_fine": 0.42984455279235745,
+  "spectral_fine": 0.8109626757717963,
+  "gmm_fine": 0.5065198927961313,
+  "gmm_bic": 0.29724715028814525,
+  "hdbscan_192d": 0.8010876652955033,
+  "hdbscan_tsne": 0.17771907194885242
+ },
+ "knn10_overlap": {
+  "mean": 0.9445705024311184,
+  "frac_ge_half": 1.0
+ }
+}

@@ -1,0 +1,322 @@
+[
+ {
+  "id": "wrong_moderate_103_107",
+  "plausibility": "plausible",
+  "aspects_right": ["pos", "spacing", "semantic_field", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific",
+  "note": "Top1 'mouth' is a body-part guess in the right anatomical register; the model's own 2nd-place guess 'anterior' is the exact antonym of the true 'posterior' - it found the right conceptual category (directional term) without the right direction."
+ },
+ {
+  "id": "near_miss_17_117",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "local_context",
+  "domain": "technical_scientific",
+  "note": "Top1 ' fol' would repeat 'folate' a second time, breaking the 'not only X ... but also Y' contrast structure - a repetition tic rather than tracking of the enumerative syntax."
+ },
+ {
+  "id": "catastrophic_162_479",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing"],
+  "failure_needs": "long_range_context",
+  "domain": "technical_scientific",
+  "note": "Top1 'the' is the generic high-frequency default after 'of'; true 'various' calls back to 'all the pollutants ... mixed together' from ~50 tokens earlier in the same quote."
+ },
+ {
+  "id": "catastrophic_37_65",
+  "plausibility": "equally_good",
+  "aspects_right": [],
+  "failure_needs": "world_knowledge",
+  "domain": "web_or_forum",
+  "note": "Model's '?' plausibly ends the question at a completely natural point ('...from vscode?'); true 'Explorer' names a specific VS Code UI panel. High loss here overstates the actual quality gap."
+ },
+ {
+  "id": "wrong_moderate_210_422",
+  "plausibility": "plausible",
+  "aspects_right": ["pos", "spacing", "semantic_field", "topic"],
+  "failure_needs": "local_context",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_246_47",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "copying_missed",
+  "domain": "legal_boilerplate",
+  "note": "True surname 'Henry' coincidentally echoes 'Deborah C M Henry' named just above (likely an unrelated concatenated document); model's flat, low-confidence top5 (all <=2%) shows appropriate uncertainty for what is essentially an arbitrary proper noun."
+ },
+ {
+  "id": "confident_correct_241_185",
+  "why_right": "format_structure",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "confident_correct_227_455",
+  "why_right": "copy_from_context",
+  "domain": "math_or_formula",
+  "note": "Exact repeated LaTeX spacing token ';\\;' has occurred many times already in the visible matrix listing - direct pattern copying."
+ },
+ {
+  "id": "wrong_moderate_189_506",
+  "plausibility": "grammatical_only",
+  "aspects_right": [],
+  "failure_needs": "format_structure",
+  "domain": "non_english",
+  "note": "Informal Spanish forum post that never uses standard sentence punctuation; true continuation is a bare line break, but the model defaults to inserting a comma/period, missing the document's terse register."
+ },
+ {
+  "id": "wrong_moderate_163_229",
+  "plausibility": "equally_good",
+  "aspects_right": ["pos", "spacing", "topic"],
+  "failure_needs": "local_context",
+  "domain": "web_or_forum",
+  "note": "'The best thing to do' and 'the best thing for X' are both extremely common collocations here - a near coin-flip."
+ },
+ {
+  "id": "wrong_moderate_198_445",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field", "topic", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific",
+  "note": "Model repeats the exact phrase 'performed experiments' from the immediately preceding clause about a different pair of co-authors, missing that author-contribution statements typically assign each group a distinct task (here, bioinformatics)."
+ },
+ {
+  "id": "wrong_moderate_91_498",
+  "plausibility": "equally_good",
+  "aspects_right": ["topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "table_or_list",
+  "note": "Model over-applies the 'each abbreviation definition ends in a period' pattern established by the 3 preceding table-legend entries (0.776 on '.'); this entry (Ziehl-Neelsen staining) happens to run longer."
+ },
+ {
+  "id": "near_miss_218_185",
+  "plausibility": "plausible",
+  "aspects_right": ["format"],
+  "failure_needs": "format_structure",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "near_miss_171_475",
+  "plausibility": "plausible",
+  "aspects_right": ["format", "pos"],
+  "failure_needs": "long_range_context",
+  "domain": "math_or_formula",
+  "note": "Lambda was explicitly introduced twice earlier in the same sentence ('$\\lambda \\in [0,\\lambda^*]$'); top1 'bar' ignores this recency cue for another common LaTeX macro."
+ },
+ {
+  "id": "near_miss_372_315",
+  "plausibility": "plausible",
+  "aspects_right": ["pos", "semantic_field", "topic"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "catastrophic_288_93",
+  "plausibility": "equally_good",
+  "aspects_right": ["pos", "spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "legal_boilerplate",
+  "note": "'In fact' is an excellent generic continuation; true token opens an unpredictable case-citation proper name - a clean example of irreducible loss rather than model weakness (true_rank 3109, loss 11.35)."
+ },
+ {
+  "id": "wrong_moderate_5_351",
+  "plausibility": "broken",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "world_knowledge",
+  "domain": "web_or_forum",
+  "note": "True token completes the brand abbreviation 'YSL' (Yves Saint Laurent), fitting the perfume-shopping context; top1 'UM' forms no coherent word or brand fitting 'it has Y___'."
+ },
+ {
+  "id": "confident_correct_337_289",
+  "why_right": "copy_from_context",
+  "domain": "technical_scientific",
+  "note": "The 'Hep' morpheme already appears in nearby cell-line names (HepaRG, HepG2) - continuing to 'Heps' mirrors that established naming pattern."
+ },
+ {
+  "id": "near_miss_108_411",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "semantic_field", "topic"],
+  "failure_needs": "local_context",
+  "domain": "technical_scientific",
+  "note": "'No consensus' and 'no clear consensus' are near-synonymous here - a genuinely close call."
+ },
+ {
+  "id": "confident_correct_215_266",
+  "why_right": "copy_from_context",
+  "domain": "code",
+  "note": "'x' was already used as the aes() mapping variable earlier in the same ggplot call."
+ },
+ {
+  "id": "confident_correct_77_436",
+  "why_right": "formulaic_ngram",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_369_270",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "pos", "semantic_field", "format"],
+  "failure_needs": "copying_missed",
+  "domain": "code",
+  "note": "'Object' (the true continuation) was literally used as a type name two lines earlier ('Object obj1 = ServerUtilities...') - a clear missed copy opportunity."
+ },
+ {
+  "id": "wrong_moderate_56_460",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "topic"],
+  "failure_needs": "local_context",
+  "domain": "web_or_forum",
+  "note": "The whole post is about what to call these companies, so 'referred to as' is the natural payoff; model instead guesses generic modifiers."
+ },
+ {
+  "id": "hesitant_correct_210_146",
+  "why_right": "formulaic_ngram",
+  "domain": "technical_scientific",
+  "note": "Extremely flat top5 (13.3% down to 3.6%) shows genuine uncertainty among several near-synonyms despite landing on the right one."
+ },
+ {
+  "id": "wrong_moderate_358_131",
+  "plausibility": "plausible",
+  "aspects_right": ["pos", "spacing"],
+  "failure_needs": "world_knowledge",
+  "domain": "news"
+ },
+ {
+  "id": "near_miss_124_462",
+  "plausibility": "equally_good",
+  "aspects_right": ["pos", "spacing", "semantic_field", "topic"],
+  "failure_needs": "other",
+  "domain": "technical_scientific",
+  "note": "'To emphasize the importance' and 'to emphasize the fact' are both top-tier common collocations here - essentially a stylistic coin flip."
+ },
+ {
+  "id": "wrong_moderate_302_146",
+  "plausibility": "plausible",
+  "aspects_right": ["format"],
+  "failure_needs": "unpredictable",
+  "domain": "math_or_formula",
+  "note": "Synthetic algorithmically-generated arithmetic problem set (DeepMind-Mathematics-style); the exact operand is an arbitrary random number, but the model correctly continues the nested-parens-with-negative-number style established by the preceding problems."
+ },
+ {
+  "id": "near_miss_103_189",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific",
+  "note": "Model assigns 19.6% to <|endoftext|>, showing it also weighs the possibility this concludes the abstract at what reads like a natural closing statement."
+ },
+ {
+  "id": "wrong_moderate_357_426",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["pos", "spacing"],
+  "failure_needs": "syntax",
+  "domain": "technical_scientific",
+  "note": "The model's OTHER top5 candidates ('would' 14.7%, 'may' 8.3%, 'could' 6.6%) correctly recognize the if/then conditional needs a modal verb; it just ranked the ill-fitting 'were' highest."
+ },
+ {
+  "id": "catastrophic_382_188",
+  "plausibility": "plausible",
+  "aspects_right": [],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_223_481",
+  "plausibility": "plausible",
+  "aspects_right": ["format"],
+  "failure_needs": "local_context",
+  "domain": "code",
+  "note": "Model's 4th-place guess (a bare quote \"'\") shows partial recognition that a string literal might start here, but it doesn't combine that with the %-format-string idiom the true token begins."
+ },
+ {
+  "id": "near_miss_268_210",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "format"],
+  "failure_needs": "other",
+  "domain": "code",
+  "note": "== vs != right after an assert that used == is a near coin-flip without more surrounding code; model anchors on the repeated operator."
+ },
+ {
+  "id": "catastrophic_114_327",
+  "plausibility": "equally_good",
+  "aspects_right": ["format"],
+  "failure_needs": "format_structure",
+  "domain": "technical_scientific",
+  "note": "Model's 2nd-place guess '(' (33.7%) reflects the extremely standard '(DSM-IV)' parenthetical citation convention; 'IV' even appears in its top5, showing partial recognition of the expected edition-number citation."
+ },
+ {
+  "id": "near_miss_156_473",
+  "plausibility": "plausible",
+  "aspects_right": [],
+  "failure_needs": "format_structure",
+  "domain": "technical_scientific",
+  "note": "Model assigns highest probability to ending the document right after a summary-sounding sentence; true text continues into what's likely a Conclusions section, standard in structured medical abstracts."
+ },
+ {
+  "id": "wrong_moderate_199_251",
+  "plausibility": "plausible",
+  "aspects_right": ["pos", "spacing"],
+  "failure_needs": "local_context",
+  "domain": "news",
+  "note": "The quote's rhetorical build (defending struggling people) strongly primes 'deserves' for a human reader; model defaults to a generic copula instead."
+ },
+ {
+  "id": "catastrophic_134_66",
+  "plausibility": "equally_good",
+  "aspects_right": [],
+  "failure_needs": "format_structure",
+  "domain": "technical_scientific",
+  "note": "True token is a markdown italics marker opening a gene-name mention, not a semantic word; the identical asterisk-wrapped gene-name pattern already appears twice in the visible context, so a format-aware model could have caught it - instead it produces a strong semantic completion ('injury'/'rupture', nearly tied at ~27% each) ignoring formatting."
+ },
+ {
+  "id": "hesitant_correct_390_98",
+  "why_right": "semantic_inference",
+  "domain": "news",
+  "note": "'.' barely edges out ' of' (27.1% vs 18.3%) - judging the sentence as already complete requires basic closure sense, not a forced grammatical slot."
+ },
+ {
+  "id": "wrong_moderate_203_371",
+  "plausibility": "equally_good",
+  "aspects_right": ["format"],
+  "failure_needs": "format_structure",
+  "domain": "table_or_list",
+  "note": "Top1 '\\n' (71%) strongly matches the exact reference-entry-ending pattern demonstrated twice already; this entry unusually breaks format by continuing as a bare domain name 'Illumina.com' instead of a bracketed URL."
+ },
+ {
+  "id": "wrong_moderate_28_93",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "local_context",
+  "domain": "web_or_forum",
+  "note": "Model's 2nd-place guess ' said' (10.2%) reflects the common transition 'Having said that,' - also a very plausible continuation."
+ },
+ {
+  "id": "near_miss_320_309",
+  "plausibility": "plausible",
+  "aspects_right": ["format"],
+  "failure_needs": "copying_missed",
+  "domain": "web_or_forum",
+  "note": "The correct next speaker 'ricotz' was directly addressed one line earlier ('<Sweet5hark> ricotz: ...'); model's 2nd-ranked guess ('ric', 26.1%) nearly catches this copy cue, just short of top1's 27.5%."
+ },
+ {
+  "id": "wrong_moderate_60_37",
+  "plausibility": "plausible",
+  "aspects_right": [],
+  "failure_needs": "local_context",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "wrong_moderate_357_231",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "world_knowledge",
+  "domain": "technical_scientific",
+  "note": "Model's 2nd/4th-ranked guesses ('sex' 10.4%, 'health' 3.8%) show it recognizes the classic confounder-list genre (age, sex, general health); it just needed the intervening adjective 'general' before the noun 'health' it already anticipated."
+ },
+ {
+  "id": "hesitant_correct_71_367",
+  "why_right": "copy_from_context",
+  "domain": "technical_scientific",
+  "note": "Mirrors the parallel sentence structure two clauses earlier ('patients who were treated by oncologists were significantly more likely...')."
+ }
+]

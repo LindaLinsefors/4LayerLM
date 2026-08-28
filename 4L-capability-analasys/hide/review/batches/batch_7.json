@@ -1,0 +1,1304 @@
+[
+ {
+  "id": "wrong_moderate_60_33",
+  "stratum": "wrong_moderate",
+  "context": " does anyone have any advice???\n\nHeat up the bicep, but make the shoulder is cool/cold:\n\n(Hot Water in the cup from the",
+  "true_token": " microwave",
+  "top5": [
+   {
+    "token": " bottom",
+    "p": 0.153
+   },
+   {
+    "token": " top",
+    "p": 0.053
+   },
+   {
+    "token": " cup",
+    "p": 0.034
+   },
+   {
+    "token": " left",
+    "p": 0.027
+   },
+   {
+    "token": " side",
+    "p": 0.02
+   }
+  ],
+  "loss_nats": 5.71,
+  "true_rank": 32,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_386_346",
+  "stratum": "wrong_moderate",
+  "context": "blueiris feed.\n\nYou can also use something else than chromium. I was initially using mplayer to play the Blue Iris stream on a headless OPiZero, but I figured chromium is better since I can easily create the web page.\n\ntvpip_familyroom_",
+  "true_token": "switch",
+  "top5": [
+   {
+    "token": "h",
+    "p": 0.016
+   },
+   {
+    "token": "1",
+    "p": 0.015
+   },
+   {
+    "token": "v",
+    "p": 0.012
+   },
+   {
+    "token": "t",
+    "p": 0.012
+   },
+   {
+    "token": "name",
+    "p": 0.012
+   }
+  ],
+  "loss_nats": 7.88,
+  "true_rank": 498,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_96_486",
+  "stratum": "wrong_moderate",
+  "context": "\nExternal links \n FC Sparta – Official Website\n\nFootnotes\n\nCategory:Football clubs in Stockholm\nCategory:Football clubs in Sweden<|endoftext|>The Radio Station of RNIB\n\nWe're Europe's first radio station broadcasting to a blind and partially sighted audience, offering everything from your",
+  "true_token": " daily",
+  "top5": [
+   {
+    "token": " favorite",
+    "p": 0.067
+   },
+   {
+    "token": " radio",
+    "p": 0.046
+   },
+   {
+    "token": " favourite",
+    "p": 0.044
+   },
+   {
+    "token": " TV",
+    "p": 0.033
+   },
+   {
+    "token": " own",
+    "p": 0.031
+   }
+  ],
+  "loss_nats": 5.02,
+  "true_rank": 18,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_249_401",
+  "stratum": "wrong_moderate",
+  "context": "undhedssystem, har vi imidlertid brug for sundhedspersonale, personer der er veluddannede, engagerede og som helliger sig plejen af deres medmennesker. Sundhedspersonalet danner rygraden i",
+  "true_token": " v",
+  "top5": [
+   {
+    "token": " den",
+    "p": 0.06
+   },
+   {
+    "token": " de",
+    "p": 0.059
+   },
+   {
+    "token": " for",
+    "p": 0.043
+   },
+   {
+    "token": " land",
+    "p": 0.029
+   },
+   {
+    "token": " EU",
+    "p": 0.027
+   }
+  ],
+  "loss_nats": 4.36,
+  "true_rank": 11,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_164_329",
+  "stratum": "wrong_moderate",
+  "context": "\nH. J. G. L. M., [Gieles]{} M., [Bastian]{} N., [Baumgardt]{} H., [Kharchenko]{} N. V., [Portegies Zwart]{} S., 2005, ,",
+  "true_token": " 441",
+  "top5": [
+   {
+    "token": " 6",
+    "p": 0.13
+   },
+   {
+    "token": " 435",
+    "p": 0.101
+   },
+   {
+    "token": " 437",
+    "p": 0.043
+   },
+   {
+    "token": " 432",
+    "p": 0.029
+   },
+   {
+    "token": " 436",
+    "p": 0.029
+   }
+  ],
+  "loss_nats": 3.63,
+  "true_rank": 8,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_198_437",
+  "stratum": "confident_correct",
+  "context": ". A. Swaroop (NEI) and his colleagues for fruitful discussion. Dr. Koseki and Dr. Furukawa for providing mice.\n\n**Author Contributions** K.U., T.I., H.K. and Y.B. performed experiments. K.",
+  "true_token": "U",
+  "top5": [
+   {
+    "token": "U",
+    "p": 0.945
+   },
+   {
+    "token": "B",
+    "p": 0.006
+   },
+   {
+    "token": "A",
+    "p": 0.006
+   },
+   {
+    "token": "W",
+    "p": 0.004
+   },
+   {
+    "token": "J",
+    "p": 0.004
+   }
+  ],
+  "loss_nats": 0.06,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "confident_correct_388_237",
+  "stratum": "confident_correct",
+  "context": " addDiagrams(int index,\r\n     * com.topcoder.uml.modelmanager.Collection_Diagram_ diagrams) method with\r\n     * invalid int index, IndexOutOfBoundsException should be thrown.\r\n     */\r\n    public void testAddDiagrams",
+  "true_token": "2",
+  "top5": [
+   {
+    "token": "2",
+    "p": 0.823
+   },
+   {
+    "token": "3",
+    "p": 0.06
+   },
+   {
+    "token": "1",
+    "p": 0.045
+   },
+   {
+    "token": "(",
+    "p": 0.026
+   },
+   {
+    "token": "_",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 0.19,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "catastrophic_136_46",
+  "stratum": "catastrophic",
+  "context": " outstanding Final Modify:\n\nYou can examine the project plus catch the principle understanding of your composition. When you see, which you don’t recognize one thing, you may best writing companies want to request ones educator for that",
+  "true_token": " details",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.241
+   },
+   {
+    "token": " particular",
+    "p": 0.046
+   },
+   {
+    "token": " purpose",
+    "p": 0.041
+   },
+   {
+    "token": ",",
+    "p": 0.026
+   },
+   {
+    "token": " kind",
+    "p": 0.022
+   }
+  ],
+  "loss_nats": 10.01,
+  "true_rank": 1214,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_296_262",
+  "stratum": "catastrophic",
+  "context": " MySQL and PHP due to restrictions. I could use MS-Access which is installed in every client but I found the developement with sqlite and batch-files (dos) easier since I don't like to use GUI and I don't know VBA. My preferred working environment (for programming) is",
+  "true_token": " dos",
+  "top5": [
+   {
+    "token": " SQL",
+    "p": 0.186
+   },
+   {
+    "token": " Windows",
+    "p": 0.149
+   },
+   {
+    "token": " MS",
+    "p": 0.054
+   },
+   {
+    "token": " Microsoft",
+    "p": 0.027
+   },
+   {
+    "token": " MySQL",
+    "p": 0.026
+   }
+  ],
+  "loss_nats": 13.03,
+  "true_rank": 5781,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_343_491",
+  "stratum": "near_miss",
+  "context": " \"cold\" plasma can be applied onto living tissue. In in vitro studies on cell culture, it could be demonstrated that this new plasma possesses excellent antiseptic properties. We perform a risk assessment concerning the in vivo application of a \"cold\" plasma jet on patients and volunteers. Two potential risk factors",
+  "true_token": ",",
+  "top5": [
+   {
+    "token": " for",
+    "p": 0.314
+   },
+   {
+    "token": " are",
+    "p": 0.166
+   },
+   {
+    "token": " were",
+    "p": 0.136
+   },
+   {
+    "token": ",",
+    "p": 0.052
+   },
+   {
+    "token": " have",
+    "p": 0.039
+   }
+  ],
+  "loss_nats": 2.96,
+  "true_rank": 4,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_312_294",
+  "stratum": "catastrophic",
+  "context": "utedness of which must be pretty amazing (posting incomplete requests will net you a stack trace that also reveals the supplier, who shall go unnamed here). Below, I’ve posted a C# class that will do the right thing. Note the gotcha that HttpWebRequest will not absorb cookies",
+  "true_token": " received",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.186
+   },
+   {
+    "token": ",",
+    "p": 0.183
+   },
+   {
+    "token": " and",
+    "p": 0.067
+   },
+   {
+    "token": " from",
+    "p": 0.064
+   },
+   {
+    "token": " (",
+    "p": 0.05
+   }
+  ],
+  "loss_nats": 8.83,
+  "true_rank": 171,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_247_61",
+  "stratum": "wrong_moderate",
+  "context": " v. Agurs, supra. The omitted material must be evaluated in the context of the record as a whole. Where there is no reasonable doubt as to guilt even when the additional evidence is considered, a new trial is not required. If some doubt as to the validity of the judgment already exists,",
+  "true_token": " additional",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.343
+   },
+   {
+    "token": " then",
+    "p": 0.147
+   },
+   {
+    "token": " it",
+    "p": 0.12
+   },
+   {
+    "token": " we",
+    "p": 0.043
+   },
+   {
+    "token": " there",
+    "p": 0.042
+   }
+  ],
+  "loss_nats": 6.74,
+  "true_rank": 37,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_351_219",
+  "stratum": "catastrophic",
+  "context": " web site hosting the service , add the following node in the  section.\n<system.serviceModel> \n<services> \n  <!-- The name of the service --> \n  <service name=\"NorthwindService\"> \n    <!-- you can leave the address blank or specify your end point",
+  "true_token": " URI",
+  "top5": [
+   {
+    "token": " for",
+    "p": 0.118
+   },
+   {
+    "token": " to",
+    "p": 0.094
+   },
+   {
+    "token": ".",
+    "p": 0.077
+   },
+   {
+    "token": " -->",
+    "p": 0.062
+   },
+   {
+    "token": " in",
+    "p": 0.046
+   }
+  ],
+  "loss_nats": 8.94,
+  "true_rank": 251,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_240_176",
+  "stratum": "wrong_moderate",
+  "context": " minLength_)\n\t\t\t\t\tRAPIDJSON_INVALID_KEYWORD_RETURN(GetMinLengthString());\n\t\t\t\tif (count > maxLength_)\n\t\t\t\t\tRAPIDJSON_INVALID_KEYWORD_RETURN(GetMaxLengthString());\n\t\t\t}\n\t\t}\n\n\t\tif (",
+  "true_token": "pattern",
+  "top5": [
+   {
+    "token": "str",
+    "p": 0.171
+   },
+   {
+    "token": "length",
+    "p": 0.166
+   },
+   {
+    "token": "count",
+    "p": 0.081
+   },
+   {
+    "token": "string",
+    "p": 0.032
+   },
+   {
+    "token": "max",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 7.02,
+  "true_rank": 96,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_206_256",
+  "stratum": "wrong_moderate",
+  "context": "\n\n\\[lemma2\\] Let $S\\in{\\cal F}_{\\Delta}$ be arbitrary. For any $i\\in S$, $S$ is minimal in ${\\cal F}_i$. Also if $S\\backslash\\{i\\}\\subset S'\\backslash\\{i\\}$ for distinct $S",
+  "true_token": ",",
+  "top5": [
+   {
+    "token": "'\\",
+    "p": 0.176
+   },
+   {
+    "token": "$,",
+    "p": 0.162
+   },
+   {
+    "token": "_",
+    "p": 0.162
+   },
+   {
+    "token": "\\",
+    "p": 0.121
+   },
+   {
+    "token": "$",
+    "p": 0.103
+   }
+  ],
+  "loss_nats": 3.66,
+  "true_rank": 8,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_265_355",
+  "stratum": "wrong_moderate",
+  "context": " WO 98/17238 A1, disclose sticks, in particular antiperspirant sticks, in the form of solid water-in-oil emulsions with a water content of 30-85 wt. %, which are emulsified with the aid of an alkyl-modified polyether of the",
+  "true_token": " general",
+  "top5": [
+   {
+    "token": " IN",
+    "p": 0.219
+   },
+   {
+    "token": " formula",
+    "p": 0.072
+   },
+   {
+    "token": " type",
+    "p": 0.064
+   },
+   {
+    "token": " invention",
+    "p": 0.037
+   },
+   {
+    "token": " poly",
+    "p": 0.018
+   }
+  ],
+  "loss_nats": 5.61,
+  "true_rank": 22,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_66_76",
+  "stratum": "hesitant_correct",
+  "context": "ter Hamiltonian for neutral lattice bosons in a synthetic magnetic fields has been experimentally implemented [@Aidelsburger2013; @Miyake2013]; with two spin components, the system is time-reversal symmetric, yielding the neutral analog of the spin-Hall effect [@Goldman2010].",
+  "true_token": " The",
+  "top5": [
+   {
+    "token": " The",
+    "p": 0.266
+   },
+   {
+    "token": "\n",
+    "p": 0.178
+   },
+   {
+    "token": " In",
+    "p": 0.102
+   },
+   {
+    "token": " This",
+    "p": 0.027
+   },
+   {
+    "token": " A",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 1.32,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_314_188",
+  "stratum": "wrong_moderate",
+  "context": " signing guys because they knew Torre would just play Miguel Cairo/etc. But it’s just speculation.\n\nEd\n\nSure he can. But he’d have to be really damn sure it was the right move to do it.\n\nGirardi’s response right now",
+  "true_token": " would",
+  "top5": [
+   {
+    "token": " is",
+    "p": 0.264
+   },
+   {
+    "token": ".",
+    "p": 0.156
+   },
+   {
+    "token": ":",
+    "p": 0.089
+   },
+   {
+    "token": ",",
+    "p": 0.084
+   },
+   {
+    "token": " to",
+    "p": 0.052
+   }
+  ],
+  "loss_nats": 5.15,
+  "true_rank": 18,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_297_489",
+  "stratum": "confident_correct",
+  "context": " (excess oxygen), NifL forms a binary complex with NifA that inhibits its activity, irrespective of the nitrogen status. Upon a shift to reducing conditions (low oxygen), NifL controls NifA activity according to the nitrogen status as signalled by the PII protein, Gl",
+  "true_token": "n",
+  "top5": [
+   {
+    "token": "n",
+    "p": 0.996
+   },
+   {
+    "token": "N",
+    "p": 0.001
+   },
+   {
+    "token": "p",
+    "p": 0.0
+   },
+   {
+    "token": "x",
+    "p": 0.0
+   },
+   {
+    "token": "t",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.0,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_11_34",
+  "stratum": "wrong_moderate",
+  "context": ", 2017, and 2018. Most samples are generated using the [MadGraph]{.smallcaps} 5_a[mc\\@nlo]{.smallcaps} 2.2.2 (",
+  "true_token": "2",
+  "top5": [
+   {
+    "token": "Mad",
+    "p": 0.055
+   },
+   {
+    "token": "v",
+    "p": 0.045
+   },
+   {
+    "token": "version",
+    "p": 0.037
+   },
+   {
+    "token": "M",
+    "p": 0.029
+   },
+   {
+    "token": "see",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 5.36,
+  "true_rank": 28,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_164_53",
+  "stratum": "near_miss",
+  "context": "Baumgardt]{} H., [Athanassoula]{} E., [Lamers]{} H. J. G. L. M., [Sipior]{} M., [Leenaarts]{} J., 2006, , 371, 7",
+  "true_token": "93",
+  "top5": [
+   {
+    "token": "87",
+    "p": 0.025
+   },
+   {
+    "token": "93",
+    "p": 0.024
+   },
+   {
+    "token": "91",
+    "p": 0.023
+   },
+   {
+    "token": "89",
+    "p": 0.022
+   },
+   {
+    "token": "97",
+    "p": 0.02
+   }
+  ],
+  "loss_nats": 3.73,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_37_426",
+  "stratum": "wrong_moderate",
+  "context": " Wizard and Druid player in the party began thinking this over. Wild Shape only requires that the druid has seen the animal before, but Polymorph has no such restriction.\nThe DM has been enforcing the \"must have seen it before\" rule on the Druid's wild shapes, but",
+  "true_token": " now",
+  "top5": [
+   {
+    "token": " it",
+    "p": 0.14
+   },
+   {
+    "token": " Pol",
+    "p": 0.124
+   },
+   {
+    "token": " the",
+    "p": 0.104
+   },
+   {
+    "token": " this",
+    "p": 0.06
+   },
+   {
+    "token": " they",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 3.71,
+  "true_rank": 9,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_214_372",
+  "stratum": "wrong_moderate",
+  "context": " but I am only predicting financial turmoil throughout sept-oct. Nasty stuff likely comes later. I could be wrong, just like my good friend Bo, but I'll own up to it. TPTB are certainly powerful.\n\n121, I tried to stake out reasonable ground. Silver has",
+  "true_token": " more",
+  "top5": [
+   {
+    "token": " been",
+    "p": 0.227
+   },
+   {
+    "token": " a",
+    "p": 0.11
+   },
+   {
+    "token": " always",
+    "p": 0.023
+   },
+   {
+    "token": " the",
+    "p": 0.017
+   },
+   {
+    "token": " never",
+    "p": 0.015
+   }
+  ],
+  "loss_nats": 4.87,
+  "true_rank": 16,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_140_68",
+  "stratum": "wrong_moderate",
+  "context": " <- strftime(x, \"%Y\")\n  a1()$qrt <- quarter(x, with_year = FALSE, fiscal_start = 01)\n\n  #subsetting data to display sales reps that hold a quota \n\n  newdata <- a1()[grepl(\"Y\",",
+  "true_token": " a",
+  "top5": [
+   {
+    "token": " \"",
+    "p": 0.233
+   },
+   {
+    "token": " $",
+    "p": 0.032
+   },
+   {
+    "token": " by",
+    "p": 0.031
+   },
+   {
+    "token": " sum",
+    "p": 0.02
+   },
+   {
+    "token": " as",
+    "p": 0.015
+   }
+  ],
+  "loss_nats": 4.34,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_133_385",
+  "stratum": "hesitant_correct",
+  "context": "abel.&nbsp;The European Union are certainly not shy about associating themselves with the symbolism of the Tower of Babel. In 2004 there was a project entitled the 'European Babel Tower'. On <a href=\"http://ec.europa.eu/education/language/label",
+  "true_token": "/",
+  "top5": [
+   {
+    "token": "/",
+    "p": 0.288
+   },
+   {
+    "token": "ing",
+    "p": 0.135
+   },
+   {
+    "token": "-",
+    "p": 0.096
+   },
+   {
+    "token": ".",
+    "p": 0.089
+   },
+   {
+    "token": "_",
+    "p": 0.057
+   }
+  ],
+  "loss_nats": 1.25,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_300_131",
+  "stratum": "hesitant_correct",
+  "context": " interpretation of data, or writing the manuscript.\n\nAvailability of data and materials {#FPar2}\n==================================\n\nAll data generated or analysed during this study are included in this published article and its Additional files.\n\nAV conceptualized the review, conducted the initial search of the literature, and",
+  "true_token": " drafted",
+  "top5": [
+   {
+    "token": " drafted",
+    "p": 0.237
+   },
+   {
+    "token": " wrote",
+    "p": 0.102
+   },
+   {
+    "token": " revised",
+    "p": 0.066
+   },
+   {
+    "token": " reviewed",
+    "p": 0.055
+   },
+   {
+    "token": " performed",
+    "p": 0.035
+   }
+  ],
+  "loss_nats": 1.44,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_227_468",
+  "stratum": "hesitant_correct",
+  "context": " 6 \\;\\; 7 \\;\\; 8 \\;\\; 9 \\;\\; 10 \\; \\right], \\\\\n\\texttt{ColInd} &=& \\left[\\; 0 \\;\\; 3 \\;\\; 1 \\;\\; 4 \\;\\; 2 \\;\\; 4 \\;\\; 2 \\;\\; 3 \\;\\; 4 \\;\\; 4  \\;",
+  "true_token": " \\",
+  "top5": [
+   {
+    "token": " \\",
+    "p": 0.248
+   },
+   {
+    "token": " 3",
+    "p": 0.12
+   },
+   {
+    "token": " 4",
+    "p": 0.105
+   },
+   {
+    "token": " 5",
+    "p": 0.104
+   },
+   {
+    "token": " 2",
+    "p": 0.09
+   }
+  ],
+  "loss_nats": 1.39,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_358_158",
+  "stratum": "hesitant_correct",
+  "context": " earlier, been pointing out were able to use new technology to police dissent.\n\nTaking the Fight to Rotavirus\n\nYeah, you'd have to give him this one.\n\nViva la (Nonviolent) Revolución\n\nIsn't this the same as the people power one",
+  "true_token": "?",
+  "top5": [
+   {
+    "token": "?",
+    "p": 0.155
+   },
+   {
+    "token": ",",
+    "p": 0.092
+   },
+   {
+    "token": ".",
+    "p": 0.065
+   },
+   {
+    "token": " has",
+    "p": 0.035
+   },
+   {
+    "token": " can",
+    "p": 0.035
+   }
+  ],
+  "loss_nats": 1.86,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_281_255",
+  "stratum": "confident_correct",
+  "context": " 'csv2dict':\n                data = {x[0]: list(x[1:]) for x in zip(*data)}\n            else:\n                if isinstance(self.data.get('expr'), int):\n                    return [d[self.data['expr']]",
+  "true_token": " for",
+  "top5": [
+   {
+    "token": " for",
+    "p": 0.957
+   },
+   {
+    "token": "](",
+    "p": 0.014
+   },
+   {
+    "token": " if",
+    "p": 0.007
+   },
+   {
+    "token": "for",
+    "p": 0.005
+   },
+   {
+    "token": "][",
+    "p": 0.003
+   }
+  ],
+  "loss_nats": 0.04,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_36_386",
+  "stratum": "near_miss",
+  "context": " {{Move this \"elseif\" to the same line as the previous closing curly brace.}}\n//^^^^^^\n}\nelseif ($b) { // Noncompliant\n}\n<|endoftext|>Q:\n\nPython to print string from substring from list\n\nI am a newbie",
+  "true_token": " to",
+  "top5": [
+   {
+    "token": " in",
+    "p": 0.325
+   },
+   {
+    "token": " to",
+    "p": 0.271
+   },
+   {
+    "token": " and",
+    "p": 0.074
+   },
+   {
+    "token": " with",
+    "p": 0.034
+   },
+   {
+    "token": ",",
+    "p": 0.03
+   }
+  ],
+  "loss_nats": 1.31,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_259_62",
+  "stratum": "near_miss",
+  "context": "]--[@CR8]\\]. Toxicity agents may also induce and release compounds that directly damage DNA, causing cell apoptosis and toxicity \\[[@CR9]--[@CR11]\\].\n\nOxide nanoparticles (NP) induced cell toxicity has been gradually revealed and attract significant attention as their great application in medicine. Nanoparticles",
+  "true_token": " are",
+  "top5": [
+   {
+    "token": " have",
+    "p": 0.187
+   },
+   {
+    "token": " are",
+    "p": 0.14
+   },
+   {
+    "token": " (",
+    "p": 0.127
+   },
+   {
+    "token": " can",
+    "p": 0.058
+   },
+   {
+    "token": ",",
+    "p": 0.037
+   }
+  ],
+  "loss_nats": 1.97,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_333_285",
+  "stratum": "wrong_moderate",
+  "context": "Underlying the STEP Act was the Legislature's recognition that `California is in a state of crisis which has been caused by violent street gangs whose members threaten, terrorize, and commit a multitude of crimes against the peaceful citizens of their neighborhoods.' (Pen.Code, § 186.21.) The",
+  "true_token": " act",
+  "top5": [
+   {
+    "token": " ST",
+    "p": 0.361
+   },
+   {
+    "token": " Legislature",
+    "p": 0.095
+   },
+   {
+    "token": " St",
+    "p": 0.036
+   },
+   {
+    "token": " statute",
+    "p": 0.026
+   },
+   {
+    "token": " Street",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 4.12,
+  "true_rank": 7,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_315_164",
+  "stratum": "hesitant_correct",
+  "context": " of ever varying novelty--has it lost any of its charms since I saw\nyou last?\"\n\n\"By no means,\" replied Tallyho; \"for although many of them are grown\nfamiliar to me, and many are also calculated to excite painful feelings,\nI am",
+  "true_token": " not",
+  "top5": [
+   {
+    "token": " not",
+    "p": 0.113
+   },
+   {
+    "token": " sure",
+    "p": 0.077
+   },
+   {
+    "token": " very",
+    "p": 0.025
+   },
+   {
+    "token": " glad",
+    "p": 0.025
+   },
+   {
+    "token": " still",
+    "p": 0.023
+   }
+  ],
+  "loss_nats": 2.18,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_132_148",
+  "stratum": "hesitant_correct",
+  "context": " modus ponens, and then instantiate the universal $y$ (to the same arbitrary $a$).   After that your proof continues as you wanted.\n$$\\def\\fitch#1#2{\\begin{array}{|l}#1\\\\\\hline #2\\end{array}}\\",
+  "true_token": "f",
+  "top5": [
+   {
+    "token": "f",
+    "p": 0.242
+   },
+   {
+    "token": "def",
+    "p": 0.185
+   },
+   {
+    "token": "begin",
+    "p": 0.058
+   },
+   {
+    "token": "fi",
+    "p": 0.056
+   },
+   {
+    "token": "end",
+    "p": 0.034
+   }
+  ],
+  "loss_nats": 1.42,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_292_248",
+  "stratum": "wrong_moderate",
+  "context": " a section $X \\subseteq \\AA^2$ of the algebraic quotient $\\AA^2 \\to \\AA^2 / {\\C^+}$ such that $f$ induces a birational morphism $X \\to f(X)$.\n\nBy [@FaMa1978Quasi-affine",
+  "true_token": "-",
+  "top5": [
+   {
+    "token": "],",
+    "p": 0.134
+   },
+   {
+    "token": " Proposition",
+    "p": 0.092
+   },
+   {
+    "token": " Lemma",
+    "p": 0.075
+   },
+   {
+    "token": " Theorem",
+    "p": 0.075
+   },
+   {
+    "token": " Prop",
+    "p": 0.057
+   }
+  ],
+  "loss_nats": 3.24,
+  "true_rank": 7,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_318_269",
+  "stratum": "confident_correct",
+  "context": "  'EXT_shader_texture_lod',\n  'EXT_texture_filter_anisotropic',\n  'OES_element_index_uint',\n  'OES_standard_derivatives',\n  'OES_texture_float',\n  '",
+  "true_token": "O",
+  "top5": [
+   {
+    "token": "O",
+    "p": 0.818
+   },
+   {
+    "token": "OS",
+    "p": 0.011
+   },
+   {
+    "token": "OM",
+    "p": 0.007
+   },
+   {
+    "token": "EXT",
+    "p": 0.006
+   },
+   {
+    "token": "E",
+    "p": 0.005
+   }
+  ],
+  "loss_nats": 0.2,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_344_205",
+  "stratum": "wrong_moderate",
+  "context": " guiltless wife. That\npromise has been kept till now. I am that daughter. The name I bear,\nand the name which I gave to my niece, are not ours, save as we may\nindirectly claim them through alliances centuries ago. I have never\nmarried",
+  "true_token": ".",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.199
+   },
+   {
+    "token": ",",
+    "p": 0.094
+   },
+   {
+    "token": " her",
+    "p": 0.05
+   },
+   {
+    "token": " any",
+    "p": 0.047
+   },
+   {
+    "token": " to",
+    "p": 0.043
+   }
+  ],
+  "loss_nats": 4.31,
+  "true_rank": 18,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_76_425",
+  "stratum": "hesitant_correct",
+  "context": " Skeletor's actions - you do not have anything that diminishes the character in any way. If you chose to belief that the demon is responsible for everything bad in Skeletor or that it is Skeletor's driving force ... well, that's anther story. But why pick the",
+  "true_token": " one",
+  "top5": [
+   {
+    "token": " one",
+    "p": 0.091
+   },
+   {
+    "token": " other",
+    "p": 0.062
+   },
+   {
+    "token": " demon",
+    "p": 0.036
+   },
+   {
+    "token": " right",
+    "p": 0.026
+   },
+   {
+    "token": " character",
+    "p": 0.021
+   }
+  ],
+  "loss_nats": 2.4,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_322_63",
+  "stratum": "catastrophic",
+  "context": " 0.01). Perineal T-TOT showed safe and effective results similar to conventional bulbourethral transobturator male slings without obstructive symptoms despite maximal tension was used. Anyway longer prospective follow up is needed to determine the long-term efficacy of this procedure and the effective preservation",
+  "true_token": " from",
+  "top5": [
+   {
+    "token": " of",
+    "p": 0.715
+   },
+   {
+    "token": " and",
+    "p": 0.052
+   },
+   {
+    "token": " rate",
+    "p": 0.036
+   },
+   {
+    "token": " rates",
+    "p": 0.016
+   },
+   {
+    "token": " technique",
+    "p": 0.012
+   }
+  ],
+  "loss_nats": 8.1,
+  "true_rank": 73,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_305_211",
+  "stratum": "catastrophic",
+  "context": "ividually;\nBURNELL DEDEAUX, Individually; LUIS HAWKINS, Individually;\nCHARLES BRANDON MOORE, Individually; KARL WINTER, Individually;\nGPCH-GP, INCORPORATED,",
+  "true_token": " A",
+  "top5": [
+   {
+    "token": " Ind",
+    "p": 0.774
+   },
+   {
+    "token": " and",
+    "p": 0.061
+   },
+   {
+    "token": " P",
+    "p": 0.01
+   },
+   {
+    "token": "\n",
+    "p": 0.009
+   },
+   {
+    "token": "\n\n",
+    "p": 0.008
+   }
+  ],
+  "loss_nats": 9.1,
+  "true_rank": 181,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_174_239",
+  "stratum": "wrong_moderate",
+  "context": "\" case (the filing of creditors' claims was not required). (ECF Doc. # 20.) The discharge order was served on creditors, and the accompanying certificate of service listed E-Loan as one of the parties that was served with notice of the discharge. (See id.) The form",
+  "true_token": " order",
+  "top5": [
+   {
+    "token": " of",
+    "p": 0.462
+   },
+   {
+    "token": " and",
+    "p": 0.043
+   },
+   {
+    "token": " was",
+    "p": 0.038
+   },
+   {
+    "token": " filed",
+    "p": 0.026
+   },
+   {
+    "token": " for",
+    "p": 0.025
+   }
+  ],
+  "loss_nats": 5.53,
+  "true_rank": 22,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_8_415",
+  "stratum": "near_miss",
+  "context": "}}_{=:T_4}\\\\\n                    &\\qquad\\underbrace{-\\int_0^t\\int_\\Omega\\frac12{\\left(}{\\mathbb{C}}'(\\chi){\\varepsilon}({u^\\lambda}):{\\varepsilon}({u^\\lambda})-{\\mathbb{C}}'(\\chi){\\",
+  "true_token": "varepsilon",
+  "top5": [
+   {
+    "token": "right",
+    "p": 0.618
+   },
+   {
+    "token": "varepsilon",
+    "p": 0.348
+   },
+   {
+    "token": "left",
+    "p": 0.003
+   },
+   {
+    "token": "mathrm",
+    "p": 0.003
+   },
+   {
+    "token": "partial",
+    "p": 0.002
+   }
+  ],
+  "loss_nats": 1.06,
+  "true_rank": 2,
+  "bigram_seen_in_context": true
+ }
+]

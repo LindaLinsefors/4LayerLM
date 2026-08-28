@@ -1,0 +1,1304 @@
+[
+ {
+  "id": "catastrophic_244_214",
+  "stratum": "catastrophic",
+  "context": ". red currants, ½ lb. raspberries, boiled in 1½ pint water;\nwhen quite soft pass through a sieve; make this juice quite boil; add\n¾ lb. sago well soaked in water; let it boil ¼ hour, stirring it all\nthe time.",
+  "true_token": " Wet",
+  "top5": [
+   {
+    "token": "\n",
+    "p": 0.289
+   },
+   {
+    "token": " When",
+    "p": 0.05
+   },
+   {
+    "token": " If",
+    "p": 0.042
+   },
+   {
+    "token": "\n\n",
+    "p": 0.038
+   },
+   {
+    "token": " Stir",
+    "p": 0.026
+   }
+  ],
+  "loss_nats": 11.14,
+  "true_rank": 1375,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_117_393",
+  "stratum": "confident_correct",
+  "context": "         *Per capita* ^¶^   24-h recall     Total intake^§^   Urinary sodium^‡^\n  ------------------------ -------------- ------------------ --------------- ----------------- -------------------\n  Detection threshold                                                                           \n   Total sample            0.16 (0",
+  "true_token": ".",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.998
+   },
+   {
+    "token": "--",
+    "p": 0.001
+   },
+   {
+    "token": ")",
+    "p": 0.0
+   },
+   {
+    "token": ",",
+    "p": 0.0
+   },
+   {
+    "token": "%)",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.0,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "near_miss_11_74",
+  "stratum": "near_miss",
+  "context": "]{.smallcaps} 5_a[mc\\@nlo]{.smallcaps} 2.2.2 (2.4.2) program \\[[@CR28]\\] at NLO for 2016 samples (2017 and 2018 samples) with at most two additional partons in the matrix element calculations. In particular,",
+  "true_token": " the",
+  "top5": [
+   {
+    "token": " we",
+    "p": 0.256
+   },
+   {
+    "token": " the",
+    "p": 0.254
+   },
+   {
+    "token": " for",
+    "p": 0.038
+   },
+   {
+    "token": " a",
+    "p": 0.028
+   },
+   {
+    "token": " in",
+    "p": 0.022
+   }
+  ],
+  "loss_nats": 1.37,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_31_415",
+  "stratum": "wrong_moderate",
+  "context": " in one place for too long. Coincidentally, Jesus was homeless nomad, traveling from one place to the other. g) Political Persecuted: In Islam, Sadir al-Sayrafi states that the Mahdi (i.e., the Messiah) will be deprived of",
+  "true_token": " and",
+  "top5": [
+   {
+    "token": " life",
+    "p": 0.157
+   },
+   {
+    "token": " his",
+    "p": 0.156
+   },
+   {
+    "token": " the",
+    "p": 0.113
+   },
+   {
+    "token": " all",
+    "p": 0.06
+   },
+   {
+    "token": " a",
+    "p": 0.052
+   }
+  ],
+  "loss_nats": 7.77,
+  "true_rank": 162,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_70_410",
+  "stratum": "near_miss",
+  "context": " everyone in tourism.\n\nJody Young, Industry and Community Services Manager\n\nFigure 13.11 Jody Young\n\nJody works for Tourism Vancouver Island. She holds a bachelor of tourism management from Vancouver Island University (2008). Jody says:\n\nAfter graduation, it took",
+  "true_token": " a",
+  "top5": [
+   {
+    "token": " me",
+    "p": 0.348
+   },
+   {
+    "token": " her",
+    "p": 0.164
+   },
+   {
+    "token": " a",
+    "p": 0.089
+   },
+   {
+    "token": " us",
+    "p": 0.03
+   },
+   {
+    "token": " two",
+    "p": 0.019
+   }
+  ],
+  "loss_nats": 2.42,
+  "true_rank": 3,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_225_380",
+  "stratum": "near_miss",
+  "context": ".\n\nBarry was a marabout, or important Islamic religious leader, in the 19th century who helped to spread Islam among the animists of central Mali. One of his descendants, Bologo Amadou Barry, confirmed to The Associated Press that the site had been partially destroyed",
+  "true_token": " in",
+  "top5": [
+   {
+    "token": " by",
+    "p": 0.384
+   },
+   {
+    "token": " in",
+    "p": 0.154
+   },
+   {
+    "token": ".",
+    "p": 0.089
+   },
+   {
+    "token": ",",
+    "p": 0.081
+   },
+   {
+    "token": " and",
+    "p": 0.058
+   }
+  ],
+  "loss_nats": 1.87,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_168_69",
+  "stratum": "wrong_moderate",
+  "context": " mid-18th centuries BC, Assyria established trade outposts in Hatti, such as at Hattum and Zalpa.\n\nScholars have long assumed that the predominant population of the region of Anatolia \"in the third millennium [BC] was an indigenous pre-",
+  "true_token": "In",
+  "top5": [
+   {
+    "token": "Columb",
+    "p": 0.088
+   },
+   {
+    "token": "colon",
+    "p": 0.058
+   },
+   {
+    "token": "Christian",
+    "p": 0.034
+   },
+   {
+    "token": "Roman",
+    "p": 0.026
+   },
+   {
+    "token": "Islam",
+    "p": 0.022
+   }
+  ],
+  "loss_nats": 6.88,
+  "true_rank": 137,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_166_197",
+  "stratum": "confident_correct",
+  "context": "\n\t\tsnprintf(filename, size, \"%s\", dso->long_name);\n\t\tbreak;\n\n\tdefault:\n\tcase DSO_BINARY_TYPE__KALLSYMS:\n\tcase DSO_BINARY_TYPE__GUEST_KALL",
+  "true_token": "SY",
+  "top5": [
+   {
+    "token": "SY",
+    "p": 0.938
+   },
+   {
+    "token": "_",
+    "p": 0.005
+   },
+   {
+    "token": "S",
+    "p": 0.004
+   },
+   {
+    "token": "Y",
+    "p": 0.003
+   },
+   {
+    "token": "AS",
+    "p": 0.002
+   }
+  ],
+  "loss_nats": 0.06,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_177_226",
+  "stratum": "wrong_moderate",
+  "context": " the range that calculated values of *R* ~o~, *B* and of the RMSD should occur within, based on ions showing similar crystal-chemical behavior as well as for all ions considered. We experimented with fixing both *R* ~o~ and *B*, and found that",
+  "true_token": " ions",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.32
+   },
+   {
+    "token": " *",
+    "p": 0.103
+   },
+   {
+    "token": " it",
+    "p": 0.041
+   },
+   {
+    "token": ",",
+    "p": 0.033
+   },
+   {
+    "token": " all",
+    "p": 0.029
+   }
+  ],
+  "loss_nats": 6.6,
+  "true_rank": 56,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_75_171",
+  "stratum": "wrong_moderate",
+  "context": " contained in Fig. \\[fig:coppnsea\\]. For all nucleon emission angles considered, a wide $\\Delta$ resonant structure is visible in the cross section. Surprisingly, the resonant behaviour is not pronounced for the polarization observables. This confirms the conclusion that the asymmetry is extremely sensitive to the interference",
+  "true_token": " terms",
+  "top5": [
+   {
+    "token": " of",
+    "p": 0.214
+   },
+   {
+    "token": " between",
+    "p": 0.171
+   },
+   {
+    "token": " effects",
+    "p": 0.13
+   },
+   {
+    "token": " with",
+    "p": 0.06
+   },
+   {
+    "token": " from",
+    "p": 0.046
+   }
+  ],
+  "loss_nats": 3.9,
+  "true_rank": 10,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_391_201",
+  "stratum": "near_miss",
+  "context": " production tools is not feasible.\nImprovement for isolation of vibration frequency transmitted though building structure is needed for better production yield rate. It must be economical, schedule driven and with minimal weight for ease of material handling and installation.\nIn light of the above, a further need exists for providing a",
+  "true_token": " method",
+  "top5": [
+   {
+    "token": " new",
+    "p": 0.15
+   },
+   {
+    "token": " method",
+    "p": 0.05
+   },
+   {
+    "token": " reliable",
+    "p": 0.03
+   },
+   {
+    "token": " more",
+    "p": 0.027
+   },
+   {
+    "token": " low",
+    "p": 0.026
+   }
+  ],
+  "loss_nats": 2.99,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_56_166",
+  "stratum": "catastrophic",
+  "context": " curves, based on a local regression algorithm, is presented. The main advantage of this method is that can be easily implemented as a computer algorithm and used for a fully automatic detection of the contact points in the approach force curves on living cells. The estimated contact points have been compared to those obtained by other",
+  "true_token": " published",
+  "top5": [
+   {
+    "token": " methods",
+    "p": 0.494
+   },
+   {
+    "token": " automatic",
+    "p": 0.08
+   },
+   {
+    "token": " techniques",
+    "p": 0.054
+   },
+   {
+    "token": " automated",
+    "p": 0.046
+   },
+   {
+    "token": " algorithms",
+    "p": 0.046
+   }
+  ],
+  "loss_nats": 8.04,
+  "true_rank": 129,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_386_336",
+  "stratum": "near_miss",
+  "context": ". You can always just use your webcam/blueiris feed.\n\nYou can also use something else than chromium. I was initially using mplayer to play the Blue Iris stream on a headless OPiZero, but I figured chromium is better since I can easily create the web",
+  "true_token": " page",
+  "top5": [
+   {
+    "token": " app",
+    "p": 0.297
+   },
+   {
+    "token": "cam",
+    "p": 0.134
+   },
+   {
+    "token": "app",
+    "p": 0.068
+   },
+   {
+    "token": " page",
+    "p": 0.029
+   },
+   {
+    "token": " application",
+    "p": 0.024
+   }
+  ],
+  "loss_nats": 3.54,
+  "true_rank": 4,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "confident_correct_314_103",
+  "stratum": "confident_correct",
+  "context": ".\n\npat\n\nYeah but I think that was more over the course of the season a la the Circle of Trust®™ bullpen management etc. etc.\n\nChris\n\nI actually think it was related to the Lofton/Bernie as CF issue.\n\nhttp",
+  "true_token": "://",
+  "top5": [
+   {
+    "token": "://",
+    "p": 0.997
+   },
+   {
+    "token": "\n",
+    "p": 0.001
+   },
+   {
+    "token": ":/",
+    "p": 0.0
+   },
+   {
+    "token": "d",
+    "p": 0.0
+   },
+   {
+    "token": ":",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.0,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_153_421",
+  "stratum": "confident_correct",
+  "context": " claim falls.\nSections 205 through 209 are the civil enforcement provisions for the Act. Sections 205[3] and 206 makes common carriers liable for damages sustained by any person as a consequence of the carrier's actions in violation of the Act.[4] Sections 208[5] and 209[6",
+  "true_token": "]",
+  "top5": [
+   {
+    "token": "]",
+    "p": 0.905
+   },
+   {
+    "token": "][",
+    "p": 0.056
+   },
+   {
+    "token": "],",
+    "p": 0.026
+   },
+   {
+    "token": "]*",
+    "p": 0.004
+   },
+   {
+    "token": "]]",
+    "p": 0.002
+   }
+  ],
+  "loss_nats": 0.1,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_192_445",
+  "stratum": "wrong_moderate",
+  "context": " RFX-deficient cells [@pgen.1000058-Masternak2]--[@pgen.1000058-Beresford1]. Like defects in CIITA, mutations in the *RFX5*, *RFXAP* and *RFXANK* genes give rise to the BLS disease (",
+  "true_token": "M",
+  "top5": [
+   {
+    "token": "B",
+    "p": 0.142
+   },
+   {
+    "token": "see",
+    "p": 0.029
+   },
+   {
+    "token": "m",
+    "p": 0.019
+   },
+   {
+    "token": "i",
+    "p": 0.016
+   },
+   {
+    "token": "e",
+    "p": 0.016
+   }
+  ],
+  "loss_nats": 5.07,
+  "true_rank": 17,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_90_163",
+  "stratum": "confident_correct",
+  "context": "I. Mystery Swine Disease meeting in 1990. Dr. Van Alstine reported that he found a three to four fold increase in swine influenza virus (SIV) titers on several farms effected by PRRS. Pl. Exh. 26 (Van Alstine at 55). Dr. Van",
+  "true_token": " Al",
+  "top5": [
+   {
+    "token": " Al",
+    "p": 0.987
+   },
+   {
+    "token": "Al",
+    "p": 0.003
+   },
+   {
+    "token": " al",
+    "p": 0.001
+   },
+   {
+    "token": " A",
+    "p": 0.0
+   },
+   {
+    "token": "al",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.01,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_90_420",
+  "stratum": "wrong_moderate",
+  "context": ", since swine influenza was detected frequently among infected herds, \"swine influenza virus remains as one of the prime suspects for at least one of the causes of Mystery Pig Disease in Wabash County, Indiana.\" Pl. Exh. 26 (Van Alstine at 58).\nThe expert testimony",
+  "true_token": " discussed",
+  "top5": [
+   {
+    "token": " of",
+    "p": 0.241
+   },
+   {
+    "token": " presented",
+    "p": 0.072
+   },
+   {
+    "token": " was",
+    "p": 0.061
+   },
+   {
+    "token": " in",
+    "p": 0.048
+   },
+   {
+    "token": " at",
+    "p": 0.036
+   }
+  ],
+  "loss_nats": 4.74,
+  "true_rank": 18,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_344_367",
+  "stratum": "hesitant_correct",
+  "context": " one? The man who knows\nher secret, and will guard it; the man who, caring little for other\neducation, has helped to instil into her spotless childhood so steadfast\na love of truth, so exquisite a pride of honour, that did she know such\nignom",
+  "true_token": "iny",
+  "top5": [
+   {
+    "token": "iny",
+    "p": 0.286
+   },
+   {
+    "token": "inal",
+    "p": 0.22
+   },
+   {
+    "token": "ments",
+    "p": 0.068
+   },
+   {
+    "token": "ancy",
+    "p": 0.062
+   },
+   {
+    "token": "ms",
+    "p": 0.029
+   }
+  ],
+  "loss_nats": 1.25,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_370_301",
+  "stratum": "wrong_moderate",
+  "context": ".  If such problems arise substantially in other domains, we\nstand ready to extend this provision to those domains in future versions\nof the GPL, as needed to protect the freedom of users.\n\n  Finally, every program is threatened constantly by software patents.\nStates should not allow patents to restrict",
+  "true_token": " development",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.219
+   },
+   {
+    "token": " access",
+    "p": 0.141
+   },
+   {
+    "token": " users",
+    "p": 0.088
+   },
+   {
+    "token": " use",
+    "p": 0.068
+   },
+   {
+    "token": " their",
+    "p": 0.051
+   }
+  ],
+  "loss_nats": 4.22,
+  "true_rank": 10,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_302_137",
+  "stratum": "wrong_moderate",
+  "context": "21 - -4 - 8.\n16/3\nEvaluate (2*(-2)/40)/(604/1510).\n-1/4\nCalculate 5/(1800/(-192))*(-125)/60.\n10/9\nWhat is the value of -5*14/70*",
+  "true_token": "6",
+  "top5": [
+   {
+    "token": "2",
+    "p": 0.039
+   },
+   {
+    "token": "10",
+    "p": 0.036
+   },
+   {
+    "token": "4",
+    "p": 0.035
+   },
+   {
+    "token": "5",
+    "p": 0.034
+   },
+   {
+    "token": "3",
+    "p": 0.034
+   }
+  ],
+  "loss_nats": 3.66,
+  "true_rank": 7,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_327_373",
+  "stratum": "confident_correct",
+  "context": "ial work on the history of Polish stately homes in the Kresy region of the Polish Second Republic, pre-war Poland, by Roman Aftanazy, 1st edition 1986, 2nd edition 1993, among other works.\n\nActivities in Belarus\nAndrew Ciechan",
+  "true_token": "ow",
+  "top5": [
+   {
+    "token": "ow",
+    "p": 0.87
+   },
+   {
+    "token": "owski",
+    "p": 0.128
+   },
+   {
+    "token": "ów",
+    "p": 0.001
+   },
+   {
+    "token": "owa",
+    "p": 0.0
+   },
+   {
+    "token": "ows",
+    "p": 0.0
+   }
+  ],
+  "loss_nats": 0.14,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_302_356",
+  "stratum": "wrong_moderate",
+  "context": "276/330*15 - 12\n6/11\nCalculate (-1)/14*7*(-136)/238.\n2/7\nCalculate ((-14 - -14)*2/4)/(-4).\n0\nWhat is the value of ((-14)/49 + 160/(-35) +",
+  "true_token": " 4",
+  "top5": [
+   {
+    "token": " -",
+    "p": 0.349
+   },
+   {
+    "token": " 2",
+    "p": 0.063
+   },
+   {
+    "token": " 1",
+    "p": 0.062
+   },
+   {
+    "token": " (-",
+    "p": 0.055
+   },
+   {
+    "token": " 3",
+    "p": 0.049
+   }
+  ],
+  "loss_nats": 3.06,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_137_127",
+  "stratum": "confident_correct",
+  "context": "25%. Piriformis syndrome is one of the differential diagnoses of low back/buttock pain with Sciatica. Individuals of all activity levels can be affected.\n\nJesse Cannone, CFT, CPRS, MFT. Jesse is the co-founder and visionary CEO",
+  "true_token": " of",
+  "top5": [
+   {
+    "token": " of",
+    "p": 0.943
+   },
+   {
+    "token": ".",
+    "p": 0.018
+   },
+   {
+    "token": ",",
+    "p": 0.011
+   },
+   {
+    "token": " and",
+    "p": 0.01
+   },
+   {
+    "token": " at",
+    "p": 0.004
+   }
+  ],
+  "loss_nats": 0.06,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_368_293",
+  "stratum": "confident_correct",
+  "context": " via binding of the TRAIL moiety to TRAILR.](1476-4598-9-301-6){#F6}\n\nMethods\n=======\n\nReagents\n--------\n\nMAb 9.2.27 is a murine IgG2a with high binding affinity for human MC",
+  "true_token": "SP",
+  "top5": [
+   {
+    "token": "SP",
+    "p": 0.816
+   },
+   {
+    "token": "sp",
+    "p": 0.042
+   },
+   {
+    "token": "-",
+    "p": 0.025
+   },
+   {
+    "token": "1",
+    "p": 0.012
+   },
+   {
+    "token": "Ps",
+    "p": 0.012
+   }
+  ],
+  "loss_nats": 0.2,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "confident_correct_164_44",
+  "stratum": "confident_correct",
+  "context": "Baumgardt]{} H., [Athanassoula]{} E., [Lamers]{} H. J. G. L. M., [Sipior]{} M., [Leenaarts",
+  "true_token": "]{}",
+  "top5": [
+   {
+    "token": "]{}",
+    "p": 0.975
+   },
+   {
+    "token": "-",
+    "p": 0.007
+   },
+   {
+    "token": "]{},",
+    "p": 0.006
+   },
+   {
+    "token": " ",
+    "p": 0.002
+   },
+   {
+    "token": "]{}.",
+    "p": 0.001
+   }
+  ],
+  "loss_nats": 0.03,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_159_229",
+  "stratum": "confident_correct",
+  "context": " give a complete axiomatization even if the logic is complete. It follows immediately from the Godel incompleteness result that a (recursive) set of sentences which provides a categorical characterization need not provide a complete axiomatization. Moreover, in such cases, it follows that there are infinitely",
+  "true_token": " many",
+  "top5": [
+   {
+    "token": " many",
+    "p": 0.846
+   },
+   {
+    "token": " more",
+    "p": 0.019
+   },
+   {
+    "token": " complete",
+    "p": 0.01
+   },
+   {
+    "token": " recursive",
+    "p": 0.009
+   },
+   {
+    "token": " few",
+    "p": 0.008
+   }
+  ],
+  "loss_nats": 0.17,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_200_497",
+  "stratum": "wrong_moderate",
+  "context": " of Mr. Smith—a crusty old bachelor who had always taken a deep\ninterest in Leon. He was Union to the backbone, and if he could have had\nhis way he would have made short work with all such fellows as Carl\nSwayne. He was sitting out on the",
+  "true_token": " porch",
+  "top5": [
+   {
+    "token": " road",
+    "p": 0.068
+   },
+   {
+    "token": " edge",
+    "p": 0.043
+   },
+   {
+    "token": " side",
+    "p": 0.038
+   },
+   {
+    "token": " hill",
+    "p": 0.03
+   },
+   {
+    "token": " grass",
+    "p": 0.023
+   }
+  ],
+  "loss_nats": 4.17,
+  "true_rank": 9,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_246_432",
+  "stratum": "near_miss",
+  "context": ", a species may be removed from a fluid by passing the fluid through pores that block the passage of the species (e.g., filtration). In other cases, a species may be removed or reacted to form another species (e.g., in heterogeneous catalysis) and/or combine with the",
+  "true_token": " body",
+  "top5": [
+   {
+    "token": " fluid",
+    "p": 0.373
+   },
+   {
+    "token": " other",
+    "p": 0.077
+   },
+   {
+    "token": " species",
+    "p": 0.052
+   },
+   {
+    "token": " body",
+    "p": 0.04
+   },
+   {
+    "token": " remaining",
+    "p": 0.033
+   }
+  ],
+  "loss_nats": 3.23,
+  "true_rank": 4,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_57_331",
+  "stratum": "wrong_moderate",
+  "context": " arrayIndex_;       // Index in the array of the current NSData.\n  long long dataOffset_; // Offset in the current NSData we are processing.\n\n  id delegate_;          // WEAK, stream delegate, defaults to self\n\n  // Since various undocumented methods get called on a",
+  "true_token": " stream",
+  "top5": [
+   {
+    "token": " thread",
+    "p": 0.101
+   },
+   {
+    "token": " single",
+    "p": 0.065
+   },
+   {
+    "token": " different",
+    "p": 0.055
+   },
+   {
+    "token": " subclass",
+    "p": 0.044
+   },
+   {
+    "token": " non",
+    "p": 0.036
+   }
+  ],
+  "loss_nats": 3.89,
+  "true_rank": 11,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_80_357",
+  "stratum": "wrong_moderate",
+  "context": ", let us say, an outbreak of foot-and-mouth disease.\" 73 S.Ct. at page 972. There is a vast difference between these situations and those involving damage caused by explosion. As to the latter, liability not only is recognized as between individuals but in Utah and other states",
+  "true_token": " a",
+  "top5": [
+   {
+    "token": ".",
+    "p": 0.304
+   },
+   {
+    "token": ",",
+    "p": 0.184
+   },
+   {
+    "token": " as",
+    "p": 0.076
+   },
+   {
+    "token": " and",
+    "p": 0.05
+   },
+   {
+    "token": " where",
+    "p": 0.049
+   }
+  ],
+  "loss_nats": 5.51,
+  "true_rank": 22,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_341_341",
+  "stratum": "near_miss",
+  "context": " comprises a polymer/onium salt mixture. Byway of example, the polymer block may comprise a polyaniline polymer doped with a triphenylsufonium salt. The method may further comprise providing a low dielectric constant (low k) nanopore/nanofoam dielectric material adjacent the wire ends",
+  "true_token": ".",
+  "top5": [
+   {
+    "token": " of",
+    "p": 0.238
+   },
+   {
+    "token": ".",
+    "p": 0.237
+   },
+   {
+    "token": " to",
+    "p": 0.134
+   },
+   {
+    "token": " and",
+    "p": 0.077
+   },
+   {
+    "token": ",",
+    "p": 0.065
+   }
+  ],
+  "loss_nats": 1.44,
+  "true_rank": 2,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "wrong_moderate_367_374",
+  "stratum": "wrong_moderate",
+  "context": " and partially burned particulate matter (e.g. unburned powder) emanating along a longitudinal axis extending out from the muzzle of the gun barrel. As a projectile exits from the muzzle, the hot gases rapidly expand outwardly into the surrounding air, mixing with the surrounding air and",
+  "true_token": " forming",
+  "top5": [
+   {
+    "token": " releasing",
+    "p": 0.08
+   },
+   {
+    "token": " ign",
+    "p": 0.071
+   },
+   {
+    "token": " then",
+    "p": 0.028
+   },
+   {
+    "token": " causing",
+    "p": 0.026
+   },
+   {
+    "token": " burning",
+    "p": 0.022
+   }
+  ],
+  "loss_nats": 4.75,
+  "true_rank": 19,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "catastrophic_69_207",
+  "stratum": "catastrophic",
+  "context": " in the Rain\" was released only in the UK\n\nReferences \n\nDiscography\nCategory:Film and television discographies\nCategory:Discographies of American artists\nCategory:Pop music discographies\nCategory:The Partridge Family albums<|endoftext|>Q:\n\nTaking multivitamin tablets without",
+  "true_token": " workout",
+  "top5": [
+   {
+    "token": " a",
+    "p": 0.056
+   },
+   {
+    "token": " vitamin",
+    "p": 0.033
+   },
+   {
+    "token": " using",
+    "p": 0.031
+   },
+   {
+    "token": " the",
+    "p": 0.023
+   },
+   {
+    "token": " any",
+    "p": 0.018
+   }
+  ],
+  "loss_nats": 11.35,
+  "true_rank": 5632,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_298_336",
+  "stratum": "wrong_moderate",
+  "context": " of judicial estoppel, a party who has stated an oath in a prior proceeding, \"as in a pleading,\" that a given fact is true, may not be allowed to deny the same fact in a subsequent action. In that case, the court indicated that one of the rule's purposes is to prevent",
+  "true_token": " parties",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.259
+   },
+   {
+    "token": " a",
+    "p": 0.194
+   },
+   {
+    "token": " an",
+    "p": 0.062
+   },
+   {
+    "token": " fraud",
+    "p": 0.06
+   },
+   {
+    "token": " \"",
+    "p": 0.019
+   }
+  ],
+  "loss_nats": 4.03,
+  "true_rank": 6,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_223_174",
+  "stratum": "near_miss",
+  "context": "\"):\n        oldmod.__dict__.update(d)\n    mod = ApiModule(pkgname, exportdefs, implprefix=pkgname, attr=d)\n    sys.modules[pkgname]  = mod\n\ndef importobj(modpath, attr",
+  "true_token": "name",
+  "top5": [
+   {
+    "token": "=",
+    "p": 0.282
+   },
+   {
+    "token": ",",
+    "p": 0.229
+   },
+   {
+    "token": "):",
+    "p": 0.22
+   },
+   {
+    "token": "path",
+    "p": 0.043
+   },
+   {
+    "token": "name",
+    "p": 0.041
+   }
+  ],
+  "loss_nats": 3.19,
+  "true_rank": 5,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_149_136",
+  "stratum": "wrong_moderate",
+  "context": "blue',\n  },\n});\n\nI put in logs to the console that get called every time the navigator's renderScene function is called, and when the master component initially mounts. Inspecting my output on the console, here's what I get:\nOn app startup:\n",
+  "true_token": "render",
+  "top5": [
+   {
+    "token": "\n",
+    "p": 0.292
+   },
+   {
+    "token": "  ",
+    "p": 0.081
+   },
+   {
+    "token": "    ",
+    "p": 0.049
+   },
+   {
+    "token": "[",
+    "p": 0.037
+   },
+   {
+    "token": "<",
+    "p": 0.034
+   }
+  ],
+  "loss_nats": 4.97,
+  "true_rank": 16,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "wrong_moderate_165_416",
+  "stratum": "wrong_moderate",
+  "context": "s P_0{\\mathsf{G}}\\right)$$\n\nwith the following globular structure. $$\\begin{tikzcd}[column sep=4.0cm,row sep=large]\n            p_1p_2 & \\ar[l, bend left=45, \"{\\",
+  "true_token": "big",
+  "top5": [
+   {
+    "token": "mathsf",
+    "p": 0.376
+   },
+   {
+    "token": "mathrm",
+    "p": 0.085
+   },
+   {
+    "token": "scriptstyle",
+    "p": 0.033
+   },
+   {
+    "token": "mathb",
+    "p": 0.025
+   },
+   {
+    "token": "text",
+    "p": 0.017
+   }
+  ],
+  "loss_nats": 6.62,
+  "true_rank": 86,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "confident_correct_155_317",
+  "stratum": "confident_correct",
+  "context": " Artillery), and for the two spells (Rain of Fire and Call Reinforcements).\n\nAn in-game encyclopedia records all new information as it is revealed in the game, such as tower and enemy statistics. It also has several basic Tips and Tricks and a link to Strategy Gu",
+  "true_token": "ides",
+  "top5": [
+   {
+    "token": "ides",
+    "p": 0.873
+   },
+   {
+    "token": "ided",
+    "p": 0.043
+   },
+   {
+    "token": "ys",
+    "p": 0.043
+   },
+   {
+    "token": "ests",
+    "p": 0.012
+   },
+   {
+    "token": "iding",
+    "p": 0.007
+   }
+  ],
+  "loss_nats": 0.14,
+  "true_rank": 1,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "hesitant_correct_161_205",
+  "stratum": "hesitant_correct",
+  "context": "“The test of a leading question is whether it suggests or indicates the particular\nanswer desired.”). Thus, the district court did not abuse its discretion in overruling\nWright’s objection.\n\n       Wright also objected to questions asked to clarify T.L.C.’s testimony as to",
+  "true_token": " the",
+  "top5": [
+   {
+    "token": " the",
+    "p": 0.233
+   },
+   {
+    "token": " whether",
+    "p": 0.186
+   },
+   {
+    "token": " what",
+    "p": 0.106
+   },
+   {
+    "token": " how",
+    "p": 0.069
+   },
+   {
+    "token": " why",
+    "p": 0.068
+   }
+  ],
+  "loss_nats": 1.46,
+  "true_rank": 1,
+  "bigram_seen_in_context": true
+ },
+ {
+  "id": "near_miss_3_395",
+  "stratum": "near_miss",
+  "context": " in a laboratory setting. The study did not include women with breast cancer. Before supporters of evidence-based medicine can be persuaded to accept homeopathy as a treatment for breast cancer, many more studies would need to be conclusive.\n\nAlthough classical homeopaths themselves might treat a woman with breast cancer",
+  "true_token": " with",
+  "top5": [
+   {
+    "token": ",",
+    "p": 0.652
+   },
+   {
+    "token": " with",
+    "p": 0.045
+   },
+   {
+    "token": " for",
+    "p": 0.035
+   },
+   {
+    "token": " as",
+    "p": 0.025
+   },
+   {
+    "token": " who",
+    "p": 0.023
+   }
+  ],
+  "loss_nats": 3.1,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ },
+ {
+  "id": "near_miss_260_82",
+  "stratum": "near_miss",
+  "context": " packets but they do cause $J$ to be computed on a finer frequency mesh, as required.\n\nAccuracy of the calculations\n----------------------------\n\nThe number of energy packets used in each simulation is chosen in order that the Monte Carlo noise in the estimators is $< 10$ per cent.",
+  "true_token": " This",
+  "top5": [
+   {
+    "token": " The",
+    "p": 0.264
+   },
+   {
+    "token": " This",
+    "p": 0.093
+   },
+   {
+    "token": " For",
+    "p": 0.088
+   },
+   {
+    "token": " We",
+    "p": 0.06
+   },
+   {
+    "token": " In",
+    "p": 0.057
+   }
+  ],
+  "loss_nats": 2.38,
+  "true_rank": 2,
+  "bigram_seen_in_context": false
+ }
+]

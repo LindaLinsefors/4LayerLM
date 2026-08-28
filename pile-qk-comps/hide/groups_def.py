@@ -1,0 +1,66 @@
+"""Semantic grouping of alive q/k components by autointerp label.
+
+Hand-grouped by Claude from the interp.db labels (2026-08-28). Every alive
+component of each matrix appears in exactly one group; groups of size 1 are
+listed in the report but get no grid plots.
+"""
+
+# {module: [(slug, title, [component ids])]}
+GROUPS: dict[str, list[tuple[str, str, list[int]]]] = {
+    "h.0.attn.k_proj": [
+        ("eot-doc-boundary", "End-of-text & document boundaries",
+         [18, 126, 139, 184, 193, 203, 235, 305, 306, 337, 374, 378, 421, 457, 503]),
+        ("question-qa", "Question markers & Q&A structure",
+         [26, 28, 64, 67, 77, 109, 128, 149, 234, 291, 301, 311, 315, 366, 445, 471, 490, 508]),
+        ("answers", "Answer markers", [191, 205, 443]),
+        ("of", "Preposition 'of'", [9, 141]),
+        ("function-words", "Prepositions & function words", [90, 91, 266, 375]),
+        ("determiners", "Determiners / 'the'", [273, 353, 498]),
+        ("comparatives", "Comparative & quantifier language",
+         [116, 274, 295, 377, 414, 504]),
+        ("negation", "Negation", [45, 369, 381, 433]),
+        ("code", "Code keywords & control flow", [37, 53, 55, 79, 85, 215, 302, 442]),
+        ("math", "Math & LaTeX notation",
+         [13, 20, 187, 192, 200, 294, 298, 406, 415, 461]),
+        ("markup", "Markup & formatting", [73, 76, 110, 125, 308, 365, 463, 494]),
+        ("headers", "Section headers & structural metadata",
+         [65, 232, 287, 288, 335, 336, 371]),
+        ("crossref", "Cross-references & navigation", [152, 210, 263, 275, 409, 475]),
+        ("punct", "Punctuation & delimiters",
+         [92, 97, 238, 257, 319, 332, 403, 404, 413, 419, 431, 465]),
+        ("nonascii", "Special characters & non-ASCII", [100, 127, 243]),
+        ("names", "Proper names", [331, 452]),
+        ("numeric", "Numbers & citations", [7, 14, 31, 201]),
+        ("urls", "URLs", [161, 196, 460]),
+        ("apostrophe", "Apostrophes & contractions", [72, 286]),
+        ("dense-suppressors", "Dense always-on suppressors", [29, 309]),
+        ("misc", "Ungrouped singletons", [299, 349, 389, 410]),
+    ],
+    "h.0.attn.q_proj": [
+        ("articles", "Articles (definite & indefinite)", [38, 67, 154, 212, 270, 345]),
+        ("prepositions", "Prepositions & relational words", [16, 104, 374, 413, 417]),
+        ("comparatives", "Comparative, limiting & hedging constructions",
+         [7, 49, 99, 112, 128, 171, 208, 245, 311, 321, 393, 421, 491]),
+        ("negation", "Negation & exclusion phrases", [87, 103]),
+        ("transitions", "Transitions & discourse markers",
+         [20, 56, 77, 89, 175, 200, 230, 315]),
+        ("question-qa", "Question / Q&A structure", [68, 117, 124, 155, 222, 278, 463]),
+        ("doc-meta", "Document boundaries & metadata",
+         [83, 106, 225, 228, 273, 282, 325, 381, 382]),
+        ("newlines", "Newlines & line boundaries", [46, 378]),
+        ("quotes", "Quotation marks & quoted text", [251, 371, 406, 483]),
+        ("lists", "Lists & enumeration", [1, 136, 283]),
+        ("hyphens", "Hyphens & dashes", [64, 120, 122, 170, 397]),
+        ("markup", "Markup & formatting boundaries", [21, 33, 164, 189]),
+        ("punct", "Punctuation & structural delimiters",
+         [53, 146, 158, 184, 309, 387, 429, 465]),
+        ("math-code", "Math, LaTeX & code notation",
+         [10, 18, 31, 126, 150, 153, 243, 301, 319, 341, 395, 442, 455, 493, 497]),
+        ("citations", "Citations & references", [5, 73, 143, 169, 187, 242]),
+        ("crossref", "Cross-references & navigation", [220, 265]),
+        ("academic", "Academic / technical vocabulary", [241, 268, 504]),
+        ("urls", "URLs & file paths", [44, 214, 470]),
+        ("numbers", "Numbers", [78, 464]),
+        ("misc", "Ungrouped singletons", [28, 42, 347, 412]),
+    ],
+}

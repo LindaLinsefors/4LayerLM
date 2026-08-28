@@ -1,0 +1,303 @@
+[
+ {
+  "id": "near_miss_14_86",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "topic", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "legal_boilerplate",
+  "note": "Patent boilerplate: 'may' is an extremely strong generic prior after describing an adjustable property; 'of' needs a specific downstream referent (e.g. 'of the present embodiment') that isn't signaled locally."
+ },
+ {
+  "id": "wrong_moderate_60_119",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "topic", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum",
+  "note": "Forum text about customized Masters-of-the-Universe figures (King Hsss, Roboto are real MOTU characters); ending the sentence with a period is just as natural as continuing with a 'when' clause."
+ },
+ {
+  "id": "catastrophic_19_379",
+  "plausibility": "broken",
+  "aspects_right": ["topic"],
+  "failure_needs": "unpredictable",
+  "domain": "code",
+  "note": "This is a Doxygen-generated anchor hash (looks like a truncated MD5-style fragment id); the true '521' is essentially arbitrary hex data, so the loss reflects inherent unpredictability rather than a comprehension gap."
+ },
+ {
+  "id": "wrong_moderate_184_353",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "long_range_context",
+  "domain": "news"
+ },
+ {
+  "id": "catastrophic_354_134",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "semantic_field", "topic", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific",
+  "note": "Model's 'see' exactly reproduces the bracket-citation pattern used earlier in the same sentence ('[see eg. Ref. 1]') -- good local-pattern use that just doesn't match this citation's more abbreviated style."
+ },
+ {
+  "id": "near_miss_194_130",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "topic", "format"],
+  "failure_needs": "local_context",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "confident_correct_120_289",
+  "why_right": "format_structure",
+  "domain": "code"
+ },
+ {
+  "id": "near_miss_155_225",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "topic"],
+  "failure_needs": "long_range_context",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "near_miss_243_257",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "topic", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "math_or_formula",
+  "note": "'we have' is the single most common formulaic proof-opening in math writing; the true continuation ('the') is equally standard, so this is essentially a coin-flip between two academic-writing formulas."
+ },
+ {
+  "id": "wrong_moderate_22_165",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "copying_missed",
+  "domain": "prose_nonfiction",
+  "note": "'Agriculture' literally appeared earlier as 'Federal Ministry for Agriculture' (~30 tokens back, different case) -- a missed copy-forward opportunity."
+ },
+ {
+  "id": "catastrophic_273_128",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum",
+  "note": "Source text is unusually incoherent (garbled names, disjointed sentences) -- plausibly low-quality/scrambled scraped content, making this hard independent of model skill."
+ },
+ {
+  "id": "hesitant_correct_180_330",
+  "why_right": "formulaic_ngram",
+  "domain": "technical_scientific",
+  "note": "Strong competition with 'content' (0.158) shows genuine uncertainty between two idiomatic completions of 'dynamic ___.'"
+ },
+ {
+  "id": "wrong_moderate_90_368",
+  "plausibility": "grammatical_only",
+  "aspects_right": ["spacing", "case"],
+  "failure_needs": "local_context",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "catastrophic_205_449",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "table_or_list",
+  "note": "Model's '(' is a strong statistical bet on the rigid 'Title (Year)' pattern established by all 4 preceding list lines; it just doesn't know this particular title ('Thacholi Vargheese Chekavar') is multi-word."
+ },
+ {
+  "id": "near_miss_379_298",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing"],
+  "failure_needs": "copying_missed",
+  "domain": "legal_boilerplate",
+  "note": "bigram_seen_in_context flags an earlier occurrence of this exact closing-punctuation pattern (likely within a quoted example block) that the model should have copied forward."
+ },
+ {
+  "id": "near_miss_252_451",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "code"
+ },
+ {
+  "id": "wrong_moderate_305_222",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "legal_boilerplate",
+  "note": "'GPCH' in the case caption plausibly abbreviates 'Garden Park [...]' -- matches a real hospital, Garden Park Medical Center (Gulfport, MS) -- but the specific brand-name suffix isn't inferable from the text alone."
+ },
+ {
+  "id": "hesitant_correct_398_238",
+  "why_right": "other",
+  "domain": "legal_boilerplate",
+  "note": "Near-uniform probability across digits 5-9 (0.02-0.07) -- essentially a low-confidence, lucky guess on an arbitrary citation number, not real understanding."
+ },
+ {
+  "id": "confident_correct_123_330",
+  "why_right": "format_structure",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_107_498",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "code",
+  "note": "Recognizable as HashiCorp's Raft library source; the real convention (opening the method with a metrics. call) is house style baked into training data that the model doesn't reproduce, defaulting instead to the generic Go 'if err' idiom."
+ },
+ {
+  "id": "near_miss_323_373",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "long_range_context",
+  "domain": "web_or_forum",
+  "note": "'Sutter Health' is a real hospital corporation; earlier text calls it 'another hospital chain,' cueing 'system,' while the model's 'department'/'ministry' guesses read like generic government-health-agency phrasing -- missing that this is a private company name."
+ },
+ {
+  "id": "wrong_moderate_80_170",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "catastrophic_364_279",
+  "plausibility": "broken",
+  "aspects_right": ["spacing"],
+  "failure_needs": "world_knowledge",
+  "domain": "web_or_forum",
+  "note": "Interesting code-switch: the review platform's Dutch UI strings ('Datum plaatsing', 'van de... door... uit') are interleaved with the English review text; true token is part of the idiom 'small footprint.'"
+ },
+ {
+  "id": "catastrophic_81_374",
+  "plausibility": "broken",
+  "aspects_right": [],
+  "failure_needs": "unpredictable",
+  "domain": "other",
+  "note": "This token lands right after a <|endoftext|> boundary, two tokens into a brand-new document -- a cold-open case where the true continuation (a proper name, no leading space) is unpredictable; the model also gets the spacing wrong, treating 'HeartFull' as a complete word."
+ },
+ {
+  "id": "catastrophic_136_81",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "pos", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum",
+  "note": "Passage reads like spun SEO spam (note the jarring non-sequitur 'Polygamy should be prohibited.' dropped into text about ghostwriting); true 'Origin' is bizarre and essentially unpredictable, while the model's 'writers' sensibly continues the established 'copy writers' theme -- arguably the better completion."
+ },
+ {
+  "id": "wrong_moderate_33_486",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "long_range_context",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "confident_correct_301_309",
+  "why_right": "other",
+  "domain": "technical_scientific",
+  "note": "Near-deterministic spelling completion of a technical term ('desiccator')."
+ },
+ {
+  "id": "hesitant_correct_48_439",
+  "why_right": "copy_from_context",
+  "domain": "technical_scientific",
+  "note": "Mirrors the parallel phrase 'matched (same as the training image)' earlier in the same sentence -- a clean parallel-structure copy."
+ },
+ {
+  "id": "wrong_moderate_92_119",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_328_461",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "confident_correct_373_81",
+  "why_right": "copy_from_context",
+  "domain": "math_or_formula",
+  "note": "Exact repeat of the LaTeX macro pattern ('\\text{Pr}(\\...') used twice earlier in the same expression."
+ },
+ {
+  "id": "catastrophic_257_130",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing"],
+  "failure_needs": "unpredictable",
+  "domain": "news",
+  "note": "True rank 8745 -- an obscure local award name ('Hammer' [Award]), essentially unrecoverable without specific local-news knowledge."
+ },
+ {
+  "id": "near_miss_70_349",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "topic"],
+  "failure_needs": "unpredictable",
+  "domain": "web_or_forum"
+ },
+ {
+  "id": "catastrophic_238_481",
+  "plausibility": "broken",
+  "aspects_right": [],
+  "failure_needs": "world_knowledge",
+  "domain": "news",
+  "note": "'(photo: Jewel' is very likely the AFP credit 'Jewel Samad', a frequently-credited real photographer; the model instead treats 'Jewel' as a common noun and heads toward 'Jewelry' -- format cues (photo credit -> proper name) missed for a much higher-frequency wordpiece."
+ },
+ {
+  "id": "near_miss_259_279",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "format_structure",
+  "domain": "technical_scientific"
+ },
+ {
+  "id": "wrong_moderate_311_362",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "topic", "format"],
+  "failure_needs": "world_knowledge",
+  "domain": "web_or_forum",
+  "note": "Model's 'owns' directly echoes 'tiles that your city owns' from one sentence earlier -- good local copying, just the wrong construction (true continues with a proximity clause reflecting a specific Civ 6 mechanic)."
+ },
+ {
+  "id": "hesitant_correct_60_91",
+  "why_right": "copy_from_context",
+  "domain": "web_or_forum",
+  "note": "Extremely low top-1 probability (0.02) despite being correct -- 'Roboto' (a real Masters-of-the-Universe figure name) was established earlier ('my King Hsss and my Roboto'), so the model arguably should be far more confident here."
+ },
+ {
+  "id": "confident_correct_51_429",
+  "why_right": "copy_from_context",
+  "domain": "code",
+  "note": "Literal repeat of the namespace name seen ~30 tokens earlier ('namespace TestForEachAsync')."
+ },
+ {
+  "id": "wrong_moderate_379_496",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "case", "pos", "topic", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "legal_boilerplate"
+ },
+ {
+  "id": "catastrophic_150_327",
+  "plausibility": "plausible",
+  "aspects_right": ["spacing", "case", "pos", "semantic_field", "topic"],
+  "failure_needs": "local_context",
+  "domain": "legal_boilerplate",
+  "note": "Ties back to 'fixed in a controllable manner' ~20 tokens earlier -- right at the local/long-range boundary."
+ },
+ {
+  "id": "wrong_moderate_92_484",
+  "plausibility": "equally_good",
+  "aspects_right": ["spacing", "format"],
+  "failure_needs": "unpredictable",
+  "domain": "table_or_list",
+  "note": "Mangled PDF-table extraction (values run together, e.g. '165--176]170...'); the target is an arbitrary measured statistic, inherently unpredictable as a single digit-guess."
+ },
+ {
+  "id": "confident_correct_74_367",
+  "why_right": "syntax_forced",
+  "domain": "code"
+ }
+]
