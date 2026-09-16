@@ -21,13 +21,18 @@ L0.Attn.q:28
 L0.Attn.q:16
 - density 6.1%
 
-L0.Att.q:20, 21, 33, 56, 64, 83, 104, 120, 146, 154, 158, 170, 184, 228, 230, 241, 273, 283, 309, 315, 387, 397, (413), 497, (505)
+L0.Att.q:1, 20, 21, 33, 56, 64, 83, 104, 120, 146, 154, 158, 170, 184, 228, 230, 241, 273, 283, 309, 315, 387, 397, (413), 497, (505)
 - Fires in both directions on a bunch of things
 - Causali imponrtant only for 
         "hyphen separating hacker news title and username"
+- Somewhat related 18, 268
+
+
 - 413 
    - has low causal imporance.
    - fires stronger of ' of' than on ' -', but less causla imporrance on ' of'.
+
+
 
 
 L0.Attn.q:38, 212, 270, 345

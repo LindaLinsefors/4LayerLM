@@ -1,7 +1,7 @@
 """Load the target models and their VPD decompositions (standalone, Python 3.11 OK).
 
 Reads everything directly from the local prev_paper/models/ folder; no param_decomp import
-needed. (The param-decomp-vpd library + its 3.13 venv are only required for the
+needed. (The prev_paper/param-decomp-vpd library + its 3.13 venv are only required for the
 decomposition *machinery* — masked forward passes, the causal-importance
 function — not for loading.)
 
@@ -77,6 +77,7 @@ def _load_target_model(target_dir: Path, checkpoint_name: str) -> LlamaSimpleMLP
     with open(target_dir / "model_config.yaml") as f:
         config_dict = yaml.safe_load(f)
     config_dict.setdefault("model_type", "LlamaSimpleMLP")
+    config_dict.setdefault("flash_attention", False)  # absent from the sink-model configs
     model = LlamaSimpleMLP(LlamaSimpleMLPConfig(**config_dict))
 
     checkpoint = target_dir / checkpoint_name
@@ -157,6 +158,45 @@ def load_simple_2l():
         SIMPLE_2L / "vpd_decomposition_s-eab2ace8" / "model_400000.pth"
     )
     return model, parameter_components, NoSpecialTokens(load_tokenizer("simple_2l"))
+
+
+SINK_MODELS_DIR = Path(__file__).parent / "sink-models" / "pretrain_cache"
+FITTED_ROPE = Path(__file__).parent / "sink-models" / "hide" / "cache" / "fitted_freqs_avg.npz"
+
+
+def load_sink(seed: int = 45, corrected_rope: bool = True):
+    """Load one of the attention-sink target models (see models_and_decomps.md):
+    "sink seed 45" = t-87f91319 or "sink seed 46" = t-75f6c439. Same architecture
+    as pile_4l except an untied lm_head and one learned zero-value sink logit
+    per head (h.<l>.attn.sinks). Tokenizer is the same GPT-NeoX one as pile_4l.
+
+    RoPE gotcha (discovered 2026-09-15, full story in sink-models/rope_report.md):
+    the recorded rotary_base 10000 does NOT match how these models were trained —
+    with it, NLL on Pile rows is ~8.1 (vs the runs' logged val_loss 2.65), degrading
+    with position; the official JAX sink loader (PR #1002) has the same defect.
+    The actual training-time per-plane RoPE frequencies were recovered numerically
+    (sink-models/hide/fit_rope_freqs.py; ~theta 1.6e6-ish non-geometric spectrum,
+    cross-validated across the two seeds) and are installed into the rotary
+    sin/cos buffers by default. Pass corrected_rope=False for the (broken)
+    as-configured forward.
+
+    Returns (model, tokenizer) — no ParameterComponents: the sink decompositions
+    (C/D/E) are JAX/Orbax-only and are not loadable here.
+    """
+    import numpy as np
+
+    run = {45: "t-87f91319", 46: "t-75f6c439"}[seed]
+    model = _load_target_model(SINK_MODELS_DIR / f"spd-{run}", "model_step_100000.safetensors")
+    if corrected_rope:
+        inv_freq = torch.tensor(np.exp(np.load(FITTED_ROPE)["log_inv_freq"]),
+                                dtype=torch.float32)  # (64,)
+        pos = torch.arange(model.config.n_ctx, dtype=torch.float32)
+        angles = pos[:, None] * inv_freq[None, :]
+        emb = torch.cat([angles, angles], dim=-1)  # (n_ctx, 128), rotate-half layout
+        for block in model.h:
+            block.attn.rotary_sin.copy_(emb.sin())
+            block.attn.rotary_cos.copy_(emb.cos())
+    return model, load_tokenizer("pile_4l")
 
 
 def load(model_name: str):

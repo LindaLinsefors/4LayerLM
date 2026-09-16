@@ -1,6 +1,6 @@
 """Standalone LlamaSimpleMLP definition, runnable on Python 3.11.
 
-Adapted from param-decomp-vpd/param_decomp/pretrain/models/llama_simple_mlp.py
+Adapted from prev_paper/param-decomp-vpd/param_decomp/pretrain/models/llama_simple_mlp.py
 (the code that trained the models), with the library dependencies removed and
 training-only methods dropped. The forward pass is unchanged, including the
 NewGELU (tanh-approximation) nonlinearity.
@@ -34,6 +34,9 @@ class LlamaSimpleMLPConfig:
     use_grouped_query_attention: bool
     flash_attention: bool
     rms_norm_eps: float
+    # sink-models additions (defaults reproduce the original architecture)
+    attention_sinks: bool = False    # one learned zero-value sink logit per head
+    tie_word_embeddings: bool = True
 
 
 class CausalSelfAttention(nn.Module):
@@ -59,6 +62,10 @@ class CausalSelfAttention(nn.Module):
             config.n_embd, self.n_key_value_heads * self.head_dim, bias=config.attn_bias
         )
         self.o_proj = nn.Linear(config.n_embd, config.n_embd, bias=config.attn_bias)
+
+        self.attention_sinks = config.attention_sinks
+        if self.attention_sinks:
+            self.sinks = nn.Parameter(torch.zeros(config.n_head))
 
         self.register_buffer(
             "bias",
@@ -121,7 +128,16 @@ class CausalSelfAttention(nn.Module):
             k = k.repeat_interleave(self.repeat_kv_heads, dim=1)
             v = v.repeat_interleave(self.repeat_kv_heads, dim=1)
 
-        if self.flash_attention:
+        if self.attention_sinks:
+            # GPT-OSS sink equation: append each head's learned scalar to every
+            # query's key logits, softmax over keys plus that slot, discard the
+            # sink probability — the missing mass is attention paid to zero.
+            att = (q @ k.transpose(-2, -1)) * (1.0 / math.sqrt(k.size(-1)))
+            att = att.masked_fill(self.bias[:, :, :T, :T] == 0, float("-inf"))
+            sink = self.sinks.view(1, -1, 1, 1).expand(B, -1, T, 1)
+            att = F.softmax(torch.cat([att, sink.to(att.dtype)], dim=-1), dim=-1)
+            y = att[..., :-1] @ v
+        elif self.flash_attention:
             y = F.scaled_dot_product_attention(q, k, v, dropout_p=0.0, is_causal=True)
         else:
             att = (q @ k.transpose(-2, -1)) * (1.0 / math.sqrt(k.size(-1)))
@@ -192,7 +208,8 @@ class LlamaSimpleMLP(nn.Module):
         self.h = nn.ModuleList(Block(config) for _ in range(config.n_layer))
         self.ln_f = LlamaRMSNorm(config.n_embd, eps=config.rms_norm_eps)
         self.lm_head = nn.Linear(config.n_embd, config.vocab_size, bias=False)
-        self.wte.weight = self.lm_head.weight  # tied embedding/unembedding
+        if config.tie_word_embeddings:
+            self.wte.weight = self.lm_head.weight  # tied embedding/unembedding
 
     def forward(self, idx: Tensor) -> Tensor:
         """Token ids (batch, pos) -> logits (batch, pos, vocab)."""

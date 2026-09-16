@@ -48,7 +48,7 @@ def compute() -> dict[str, np.ndarray]:
     two marginals E[c,p] (key "<mod>") and E[c,h] (key "<mod>|head"), cached."""
     if ENERGY_NPZ.exists():
         cached = dict(np.load(ENERGY_NPZ))
-        if any(k.endswith("|V") for k in cached):
+        if any(k.endswith("|U") for k in cached):
             return cached
     sys.path.insert(0, str(ROOT))
     from load import PILE_4L, ParameterComponents
@@ -64,6 +64,7 @@ def compute() -> dict[str, np.ndarray]:
         energies[mod] = hp.sum(axis=1)
         energies[mod + "|head"] = hp.sum(axis=2)
         energies[mod + "|V"] = comps[mod].V.double().numpy().T   # (C, d_in) read-in vectors
+        energies[mod + "|U"] = U                        # (C, d_out) write vectors
     np.savez_compressed(ENERGY_NPZ, **energies)
     return energies
 

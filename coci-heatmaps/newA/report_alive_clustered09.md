@@ -1,0 +1,207 @@
+# newA (`p-8383f5e5`) — CI co-activation, alive components, co-CI>0.9 clusters
+
+Decomposition **newA = `p-8383f5e5`** (800k-step JAX decomposition of the pile_4l target, ImportanceMinimalityLoss frequency coeff 6.6e-5; see CLAUDE.md "New 800k-step decompositions"). Heatmaps of **Pearson r of per-token causal importance** (clip(preact, 0, 1) = lower_leaky, continuous sampling) between every pair of a matrix's subcomponents, over the 4,000 cached Pile rows (2.05M tokens) — the same co-CI measure and threshold-rule clusters as the old decomposition's [report_alive_clustered09.md](../old/report_alive_clustered09.md): **(1)** two components with co-CI r > 0.9 are in the same cluster (pairs processed in descending r, chains allowed); **(2)** a component does not join a cluster if it has r ≤ 0.0 (or undefined r) with any existing member — such joins are skipped (count noted per matrix when > 0). Clusters are placed by descending mean member CI (singletons land where the plain mean-CI sort would put them), members within a cluster by descending mean CI. **Black outlines** mark multi-member clusters on the diagonal. **Gray** = zero CI variance in the sample (r undefined).
+
+No harvest DB exists for the new runs, so mean CI is the **sample mean over the same 2.05M tokens** and alive is the proxy **sample mean CI > 1e-6**.
+
+Each matrix shows **three heatmaps in the same cluster order**: co-CI r, then the **absolute cosine similarity between the components' write vectors |cos(U_a, U_b)|** (U = the output (d_out) factor of the rank-one subcomponent V_c U_c^T) and **between their read-in vectors |cos(V_a, V_b)|** (V = the input (d_in) factor). Absolute value because a component's sign is gauge ((V_c, U_c) -> (-V_c, -U_c) is the same component); Reds, 0 -> 1; random baseline E|cos| = sqrt(2/(pi d)) ~= 0.03 for d = 768, 0.014 for d = 3072.
+
+### Layer 0
+
+#### h.0.attn.q_proj — 195 components, 5 clusters with ≥ 2 members (largest 2)
+
+![h.0.attn.q_proj](../hide/figures/newA/alive_clustered09/h0_attn_q_proj.png)
+
+![h.0.attn.q_proj cosU](../hide/figures/newA/alive_clustered09/h0_attn_q_proj_cosU.png)
+
+![h.0.attn.q_proj cosV](../hide/figures/newA/alive_clustered09/h0_attn_q_proj_cosV.png)
+
+#### h.0.attn.k_proj — 250 components, 17 clusters with ≥ 2 members (largest 6)
+
+![h.0.attn.k_proj](../hide/figures/newA/alive_clustered09/h0_attn_k_proj.png)
+
+![h.0.attn.k_proj cosU](../hide/figures/newA/alive_clustered09/h0_attn_k_proj_cosU.png)
+
+![h.0.attn.k_proj cosV](../hide/figures/newA/alive_clustered09/h0_attn_k_proj_cosV.png)
+
+#### h.0.attn.v_proj — 452 components, 21 clusters with ≥ 2 members (largest 7)
+
+![h.0.attn.v_proj](../hide/figures/newA/alive_clustered09/h0_attn_v_proj.png)
+
+![h.0.attn.v_proj cosU](../hide/figures/newA/alive_clustered09/h0_attn_v_proj_cosU.png)
+
+![h.0.attn.v_proj cosV](../hide/figures/newA/alive_clustered09/h0_attn_v_proj_cosV.png)
+
+#### h.0.attn.o_proj — 435 components, 20 clusters with ≥ 2 members (largest 5)
+
+![h.0.attn.o_proj](../hide/figures/newA/alive_clustered09/h0_attn_o_proj.png)
+
+![h.0.attn.o_proj cosU](../hide/figures/newA/alive_clustered09/h0_attn_o_proj_cosU.png)
+
+![h.0.attn.o_proj cosV](../hide/figures/newA/alive_clustered09/h0_attn_o_proj_cosV.png)
+
+#### h.0.mlp.c_fc — 1741 components, 54 clusters with ≥ 2 members (largest 11)
+
+![h.0.mlp.c_fc](../hide/figures/newA/alive_clustered09/h0_mlp_c_fc.png)
+
+![h.0.mlp.c_fc cosU](../hide/figures/newA/alive_clustered09/h0_mlp_c_fc_cosU.png)
+
+![h.0.mlp.c_fc cosV](../hide/figures/newA/alive_clustered09/h0_mlp_c_fc_cosV.png)
+
+#### h.0.mlp.down_proj — 1858 components, 50 clusters with ≥ 2 members (largest 11)
+
+![h.0.mlp.down_proj](../hide/figures/newA/alive_clustered09/h0_mlp_down_proj.png)
+
+![h.0.mlp.down_proj cosU](../hide/figures/newA/alive_clustered09/h0_mlp_down_proj_cosU.png)
+
+![h.0.mlp.down_proj cosV](../hide/figures/newA/alive_clustered09/h0_mlp_down_proj_cosV.png)
+
+### Layer 1
+
+#### h.1.attn.q_proj — 44 components, 1 clusters with ≥ 2 members (largest 2)
+
+![h.1.attn.q_proj](../hide/figures/newA/alive_clustered09/h1_attn_q_proj.png)
+
+![h.1.attn.q_proj cosU](../hide/figures/newA/alive_clustered09/h1_attn_q_proj_cosU.png)
+
+![h.1.attn.q_proj cosV](../hide/figures/newA/alive_clustered09/h1_attn_q_proj_cosV.png)
+
+#### h.1.attn.k_proj — 81 components, 8 clusters with ≥ 2 members (largest 5)
+
+![h.1.attn.k_proj](../hide/figures/newA/alive_clustered09/h1_attn_k_proj.png)
+
+![h.1.attn.k_proj cosU](../hide/figures/newA/alive_clustered09/h1_attn_k_proj_cosU.png)
+
+![h.1.attn.k_proj cosV](../hide/figures/newA/alive_clustered09/h1_attn_k_proj_cosV.png)
+
+#### h.1.attn.v_proj — 301 components, 15 clusters with ≥ 2 members (largest 15)
+
+![h.1.attn.v_proj](../hide/figures/newA/alive_clustered09/h1_attn_v_proj.png)
+
+![h.1.attn.v_proj cosU](../hide/figures/newA/alive_clustered09/h1_attn_v_proj_cosU.png)
+
+![h.1.attn.v_proj cosV](../hide/figures/newA/alive_clustered09/h1_attn_v_proj_cosV.png)
+
+#### h.1.attn.o_proj — 230 components, 4 clusters with ≥ 2 members (largest 13)
+
+![h.1.attn.o_proj](../hide/figures/newA/alive_clustered09/h1_attn_o_proj.png)
+
+![h.1.attn.o_proj cosU](../hide/figures/newA/alive_clustered09/h1_attn_o_proj_cosU.png)
+
+![h.1.attn.o_proj cosV](../hide/figures/newA/alive_clustered09/h1_attn_o_proj_cosV.png)
+
+#### h.1.mlp.c_fc — 844 components, 10 clusters with ≥ 2 members (largest 16)
+
+![h.1.mlp.c_fc](../hide/figures/newA/alive_clustered09/h1_mlp_c_fc.png)
+
+![h.1.mlp.c_fc cosU](../hide/figures/newA/alive_clustered09/h1_mlp_c_fc_cosU.png)
+
+![h.1.mlp.c_fc cosV](../hide/figures/newA/alive_clustered09/h1_mlp_c_fc_cosV.png)
+
+#### h.1.mlp.down_proj — 1024 components, 13 clusters with ≥ 2 members (largest 8)
+
+![h.1.mlp.down_proj](../hide/figures/newA/alive_clustered09/h1_mlp_down_proj.png)
+
+![h.1.mlp.down_proj cosU](../hide/figures/newA/alive_clustered09/h1_mlp_down_proj_cosU.png)
+
+![h.1.mlp.down_proj cosV](../hide/figures/newA/alive_clustered09/h1_mlp_down_proj_cosV.png)
+
+### Layer 2
+
+#### h.2.attn.q_proj — 222 components, 5 clusters with ≥ 2 members (largest 4)
+
+![h.2.attn.q_proj](../hide/figures/newA/alive_clustered09/h2_attn_q_proj.png)
+
+![h.2.attn.q_proj cosU](../hide/figures/newA/alive_clustered09/h2_attn_q_proj_cosU.png)
+
+![h.2.attn.q_proj cosV](../hide/figures/newA/alive_clustered09/h2_attn_q_proj_cosV.png)
+
+#### h.2.attn.k_proj — 265 components, 9 clusters with ≥ 2 members (largest 27)
+
+![h.2.attn.k_proj](../hide/figures/newA/alive_clustered09/h2_attn_k_proj.png)
+
+![h.2.attn.k_proj cosU](../hide/figures/newA/alive_clustered09/h2_attn_k_proj_cosU.png)
+
+![h.2.attn.k_proj cosV](../hide/figures/newA/alive_clustered09/h2_attn_k_proj_cosV.png)
+
+#### h.2.attn.v_proj — 562 components, 5 clusters with ≥ 2 members (largest 14)
+
+![h.2.attn.v_proj](../hide/figures/newA/alive_clustered09/h2_attn_v_proj.png)
+
+![h.2.attn.v_proj cosU](../hide/figures/newA/alive_clustered09/h2_attn_v_proj_cosU.png)
+
+![h.2.attn.v_proj cosV](../hide/figures/newA/alive_clustered09/h2_attn_v_proj_cosV.png)
+
+#### h.2.attn.o_proj — 574 components, 3 clusters with ≥ 2 members (largest 2)
+
+![h.2.attn.o_proj](../hide/figures/newA/alive_clustered09/h2_attn_o_proj.png)
+
+![h.2.attn.o_proj cosU](../hide/figures/newA/alive_clustered09/h2_attn_o_proj_cosU.png)
+
+![h.2.attn.o_proj cosV](../hide/figures/newA/alive_clustered09/h2_attn_o_proj_cosV.png)
+
+#### h.2.mlp.c_fc — 1177 components, 11 clusters with ≥ 2 members (largest 5)
+
+![h.2.mlp.c_fc](../hide/figures/newA/alive_clustered09/h2_mlp_c_fc.png)
+
+![h.2.mlp.c_fc cosU](../hide/figures/newA/alive_clustered09/h2_mlp_c_fc_cosU.png)
+
+![h.2.mlp.c_fc cosV](../hide/figures/newA/alive_clustered09/h2_mlp_c_fc_cosV.png)
+
+#### h.2.mlp.down_proj — 1504 components, 2 clusters with ≥ 2 members (largest 2)
+
+![h.2.mlp.down_proj](../hide/figures/newA/alive_clustered09/h2_mlp_down_proj.png)
+
+![h.2.mlp.down_proj cosU](../hide/figures/newA/alive_clustered09/h2_mlp_down_proj_cosU.png)
+
+![h.2.mlp.down_proj cosV](../hide/figures/newA/alive_clustered09/h2_mlp_down_proj_cosV.png)
+
+### Layer 3
+
+#### h.3.attn.q_proj — 145 components, 0 clusters with ≥ 2 members (largest 1)
+
+![h.3.attn.q_proj](../hide/figures/newA/alive_clustered09/h3_attn_q_proj.png)
+
+![h.3.attn.q_proj cosU](../hide/figures/newA/alive_clustered09/h3_attn_q_proj_cosU.png)
+
+![h.3.attn.q_proj cosV](../hide/figures/newA/alive_clustered09/h3_attn_q_proj_cosV.png)
+
+#### h.3.attn.k_proj — 194 components, 7 clusters with ≥ 2 members (largest 41)
+
+![h.3.attn.k_proj](../hide/figures/newA/alive_clustered09/h3_attn_k_proj.png)
+
+![h.3.attn.k_proj cosU](../hide/figures/newA/alive_clustered09/h3_attn_k_proj_cosU.png)
+
+![h.3.attn.k_proj cosV](../hide/figures/newA/alive_clustered09/h3_attn_k_proj_cosV.png)
+
+#### h.3.attn.v_proj — 503 components, 4 clusters with ≥ 2 members (largest 53)
+
+![h.3.attn.v_proj](../hide/figures/newA/alive_clustered09/h3_attn_v_proj.png)
+
+![h.3.attn.v_proj cosU](../hide/figures/newA/alive_clustered09/h3_attn_v_proj_cosU.png)
+
+![h.3.attn.v_proj cosV](../hide/figures/newA/alive_clustered09/h3_attn_v_proj_cosV.png)
+
+#### h.3.attn.o_proj — 513 components, 3 clusters with ≥ 2 members (largest 12)
+
+![h.3.attn.o_proj](../hide/figures/newA/alive_clustered09/h3_attn_o_proj.png)
+
+![h.3.attn.o_proj cosU](../hide/figures/newA/alive_clustered09/h3_attn_o_proj_cosU.png)
+
+![h.3.attn.o_proj cosV](../hide/figures/newA/alive_clustered09/h3_attn_o_proj_cosV.png)
+
+#### h.3.mlp.c_fc — 1681 components, 9 clusters with ≥ 2 members (largest 4)
+
+![h.3.mlp.c_fc](../hide/figures/newA/alive_clustered09/h3_mlp_c_fc.png)
+
+![h.3.mlp.c_fc cosU](../hide/figures/newA/alive_clustered09/h3_mlp_c_fc_cosU.png)
+
+![h.3.mlp.c_fc cosV](../hide/figures/newA/alive_clustered09/h3_mlp_c_fc_cosV.png)
+
+#### h.3.mlp.down_proj — 2124 components, 2 clusters with ≥ 2 members (largest 10)
+
+![h.3.mlp.down_proj](../hide/figures/newA/alive_clustered09/h3_mlp_down_proj.png)
+
+![h.3.mlp.down_proj cosU](../hide/figures/newA/alive_clustered09/h3_mlp_down_proj_cosU.png)
+
+![h.3.mlp.down_proj cosV](../hide/figures/newA/alive_clustered09/h3_mlp_down_proj_cosV.png)

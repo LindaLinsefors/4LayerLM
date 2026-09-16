@@ -7,7 +7,7 @@ every "A:" colon position.  Checks whether high CI tracks the "A:" pattern
 or the end of the 512-token window.
 
 Run with the 3.13 venv:
-  param-decomp-vpd\\.venv\\Scripts\\python.exe pile-qk-comps/hide/ci_q68.py
+  prev_paper\\param-decomp-vpd\\.venv\\Scripts\\python.exe pile-qk-comps/hide/ci_q68.py
 """
 
 import sys

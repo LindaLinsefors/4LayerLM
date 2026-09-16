@@ -1,0 +1,43 @@
+data:
+  train:
+    kind: name
+    name: pile_neox_tok_512
+  eval:
+    kind: name
+    name: pile_neox_tok_512_val
+decomposition:
+  sites:
+    kind: simple_mlp
+    layers:
+      kind: all
+    cs:
+      q_proj: 768
+      k_proj: 768
+      v_proj: 768
+      o_proj: 768
+      c_fc: 3072
+      down_proj: 3072
+    initialization: neuron_aligned
+  ci:
+    type: chunkwise_transformer
+    blocks_per_chunk: 4
+    input_tap: all_block_resids
+    d_model: 2048
+    n_blocks: 8
+    attention:
+      kind: mha
+      n_heads: 16
+    ffn:
+      kind: gelu
+      hidden: 8192
+target:
+  attention_implementation: auto
+  weights_dtype: bfloat16
+  spec:
+    kind: pretrained
+    model_class: param_decomp.experiments.lm.pretrain.models.llama_simple_mlp.LlamaSimpleMLP
+    run_path: goodfire/spd/runs/t-75f6c439
+  output_edge:
+    kind: materialized
+pd:
+  seed: 0

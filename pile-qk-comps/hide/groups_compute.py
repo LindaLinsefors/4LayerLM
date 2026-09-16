@@ -12,7 +12,7 @@ Pearson r and co-firing stats are then exact functions of these.
 Output: cache/groups_stats.npz with keys "<mod>|{S1a,Ga,S1c,Gc,F,FF,idx}" + "T".
 
 Run with the 3.13 venv (GPU):
-  param-decomp-vpd\\.venv\\Scripts\\python.exe pile-qk-comps/hide/groups_compute.py
+  prev_paper\\param-decomp-vpd\\.venv\\Scripts\\python.exe pile-qk-comps/hide/groups_compute.py
 """
 
 import sys

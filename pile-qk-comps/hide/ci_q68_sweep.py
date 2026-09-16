@@ -8,7 +8,7 @@ position-dependent (e.g. only high near the end of the training chunk), the
 sweep would show it.
 
 Run with the 3.13 venv:
-  param-decomp-vpd\\.venv\\Scripts\\python.exe pile-qk-comps/hide/ci_q68_sweep.py
+  prev_paper\\param-decomp-vpd\\.venv\\Scripts\\python.exe pile-qk-comps/hide/ci_q68_sweep.py
 """
 
 import json

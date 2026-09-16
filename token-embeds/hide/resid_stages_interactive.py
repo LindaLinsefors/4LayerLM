@@ -17,7 +17,13 @@ each MLP sublayer, and after the final norm. For each stage:
 
 Sums are accumulated batchwise in projection space, so nothing large is cached.
 
+The pile_4l model gets a second variant with the attention-sink positions
+excluded from the statistics (every <|endoftext|> token and every position 0
+of the window — the massive-activation sites from endoftext-pos0/; the forward
+pass still runs on full rows, only the accumulation is masked).
+
 Outputs: token-embeds/resid_stages_interactive_{pile_4l,simple_2l}.html
+         token-embeds/resid_stages_interactive_pile_4l_no_sinks.html
 """
 
 import sys
@@ -39,6 +45,7 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 N_PILE_ROWS = 200
 N_SIMPLE_STORIES = 360
+EOS_ID = 0  # pile_4l <|endoftext|>
 
 
 def emb_pc_basis(name: str, emb: np.ndarray) -> np.ndarray:
@@ -61,10 +68,12 @@ def emb_pc_basis(name: str, emb: np.ndarray) -> np.ndarray:
     return (vt * np.where(alive_mean >= 0, 1.0, -1.0)[:, None]).T
 
 
-def stage_stats(model, rows: list[torch.Tensor], basis: np.ndarray, batch_size: int):
+def stage_stats(model, rows: list[torch.Tensor], basis: np.ndarray, batch_size: int,
+                exclude_sinks: bool = False):
     """Accumulate mean and variance of the residual stream along each
     embedding-PC direction, at every stage. Returns (stage_names, mean, var)
-    with mean/var of shape (n_stages, d)."""
+    with mean/var of shape (n_stages, d). With exclude_sinks, EOS tokens and
+    position 0 are left out of the sums (the forward pass is unchanged)."""
     model = model.to(DEVICE)
     n_layer = len(model.h)
     stages = (["after embedding"]
@@ -102,11 +111,16 @@ def stage_stats(model, rows: list[torch.Tensor], basis: np.ndarray, batch_size: 
                     hs.append(hs[-1] + caps[f"attn{l}"])   # after attention l
                     hs.append(caps[f"block{l}"])           # after MLP l (block output)
                 hs.append(caps["ln_f"])
+                keep = None
+                if exclude_sinks:
+                    keep = (batch != EOS_ID).flatten()
+                    keep[0::length] = False  # position 0 of each row
                 for si, h in enumerate(hs):
-                    p = (h.reshape(-1, d).float() @ V).double()
+                    h = h.reshape(-1, d)
+                    p = ((h[keep] if keep is not None else h).float() @ V).double()
                     s[si] += p.sum(dim=0).cpu().numpy()
                     q[si] += (p ** 2).sum(dim=0).cpu().numpy()
-                n += len(chunk) * length
+                n += int(keep.sum()) if keep is not None else len(chunk) * length
     for h in hooks:
         h.remove()
 
@@ -115,9 +129,10 @@ def stage_stats(model, rows: list[torch.Tensor], basis: np.ndarray, batch_size: 
     return stages, mean, var
 
 
-for name, loader, n_rows, batch_size in [
-    ("pile_4l", load_pile_4l, N_PILE_ROWS, 16),
-    ("simple_2l", load_simple_2l, N_SIMPLE_STORIES, 64),
+for name, loader, n_rows, batch_size, exclude_sinks in [
+    ("pile_4l", load_pile_4l, N_PILE_ROWS, 16, False),
+    ("pile_4l", load_pile_4l, N_PILE_ROWS, 16, True),
+    ("simple_2l", load_simple_2l, N_SIMPLE_STORIES, 64, False),
 ]:
     model, _, _ = loader()
     emb = model.wte.weight.detach().float().numpy()
@@ -131,11 +146,14 @@ for name, loader, n_rows, batch_size in [
                           map_location="cpu", weights_only=True)[:n_rows]
     rows = [r[:512] for r in rows]  # n_ctx = 512 (pile rows are 513, a few stories longer)
 
-    stages, mean, var = stage_stats(model, rows, basis, batch_size)
+    stages, mean, var = stage_stats(model, rows, basis, batch_size, exclude_sinks)
     del model
     d = mean.shape[1]
     pcs = np.arange(1, d + 1)
     n_tok = sum(len(r) for r in rows)
+    if exclude_sinks:
+        n_sink = sum((r[1:] == EOS_ID).sum().item() + 1 for r in rows)
+        n_tok -= n_sink
 
     colors = sample_colorscale("Turbo", np.linspace(0.08, 0.92, len(stages)))
     base = "frequent" if name == "pile_4l" else "alive"
@@ -172,14 +190,17 @@ for name, loader, n_rows, batch_size in [
     fig.update_yaxes(type="log", title_text="|mean projection|", row=2, col=1)
     fig.update_yaxes(title_text="mean projection", row=3, col=1)
     fig.update_xaxes(title_text=f"embedding principal component index ({base}-token PCA)", row=3, col=1)
+    sink_note = ("; <|endoftext|> and position-0 (attention-sink) positions excluded"
+                 if exclude_sinks else "")
     fig.update_layout(
         height=1200, template="plotly_white",
         title=f"{name} — residual stream by stage, in the {base}-token embedding-PCA basis "
-              f"({n_tok:,} training-data positions, d={d}; "
+              f"({n_tok:,} training-data positions{sink_note}, d={d}; "
               "drag to zoom, double-click to reset; legend toggles both panels)",
         legend=dict(groupclick="togglegroup"),
     )
 
-    out = HERE.parent / f"resid_stages_interactive_{name}.html"
+    suffix = "_no_sinks" if exclude_sinks else ""
+    out = HERE.parent / f"resid_stages_interactive_{name}{suffix}.html"
     fig.write_html(out, include_plotlyjs=True)
     print(f"saved {out}  ({out.stat().st_size / 1e6:.1f} MB)")

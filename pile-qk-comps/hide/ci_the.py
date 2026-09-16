@@ -8,7 +8,7 @@ of "the" within the visible document segment (rank restarts after EOS), and
 computes pairwise similarity (Pearson r over tokens) of |a_c| and CI patterns.
 
 Run with the 3.13 venv:
-  param-decomp-vpd\\.venv\\Scripts\\python.exe pile-qk-comps/hide/ci_the.py
+  prev_paper\\param-decomp-vpd\\.venv\\Scripts\\python.exe pile-qk-comps/hide/ci_the.py
 """
 
 import sys
