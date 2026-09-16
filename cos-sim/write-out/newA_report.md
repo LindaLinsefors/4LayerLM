@@ -262,3 +262,12 @@ alive components *within* that matrix (log count; dotted line = the analytic
 random-directions null in $d = 768$, scaled to the panel's pair count).
 
 ![within-matrix distributions](hide/figures/signed_newA/ucos_within_matrix.png)
+
+## Linear-scale versions
+
+The same distribution plots with a linear y axis (the log plots emphasize
+the tails; these show where the actual mass sits).
+
+![histogram linear](hide/figures/signed_newA/ucos_hist_linear.png)
+
+![within-matrix distributions linear](hide/figures/signed_newA/ucos_within_matrix_linear.png)

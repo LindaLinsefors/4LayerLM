@@ -219,29 +219,33 @@ def render(name):
     hist = z["hist_raw"]
     edges = np.linspace(-1, 1, 801)
     centers = 0.5 * (edges[:-1] + edges[1:])
-    fig, ax = plt.subplots(figsize=(7, 3.2))
-    ax.stairs(np.maximum(hist, 0.5), edges, fill=True, color=HUE, alpha=0.85,
-              label="observed")
     rand = n_pairs_tot * random_cos_pdf(centers) * (edges[1] - edges[0])
-    ax.plot(centers, np.maximum(rand, 1e-3), color=INK, lw=1.2, ls=":",
-            label=f"random directions in d={D}")
-    ax.legend(loc="upper right", fontsize=8, frameon=False)
-    ax.set_yscale("log")
-    ax.set_ylim(bottom=0.7)   # hide the 0.5 floor drawn in empty bins
-    for v, c, lab in ((THR, "#b0413e", f"cluster threshold +{THR}"),
-                      (NEG_THR, "#7a5195", f"negative tail < {NEG_THR}")):
-        ax.axvline(v, color=c, ls="--", lw=1)
-        ax.text(v + 0.01, 1e3, lab, color=c, fontsize=8)
-    ax.set_xlabel("cos(V_a, V_b)  (majority-positive-activation gauge)")
-    ax.set_ylabel("pair count (log)")
-    ax.set_title(f"Signed read-in cosines, all {n_pairs_tot/1e6:.1f}M pooled "
-                 f"pairs ({cfg['title']})")
-    ax.spines[["top", "right"]].set_visible(False)
-    ax.grid(axis="y", color="#eeeeee", lw=0.6)
-    ax.set_axisbelow(True)
-    fig.tight_layout()
-    fig.savefig(FIG / "vcos_hist.png", dpi=150)
-    plt.close(fig)
+    for logy, fname in ((True, "vcos_hist.png"), (False, "vcos_hist_linear.png")):
+        fig, ax = plt.subplots(figsize=(7, 3.2))
+        ax.stairs(np.maximum(hist, 0.5) if logy else hist, edges, fill=True,
+                  color=HUE, alpha=0.85, label="observed")
+        ax.plot(centers, np.maximum(rand, 1e-3) if logy else rand,
+                color=INK, lw=1.2, ls=":",
+                label=f"random directions in d={D}")
+        ax.legend(loc="upper right", fontsize=8, frameon=False)
+        if logy:
+            ax.set_yscale("log")
+            ax.set_ylim(bottom=0.7)   # hide the 0.5 floor drawn in empty bins
+        for v, c, lab in ((THR, "#b0413e", f"cluster threshold +{THR}"),
+                          (NEG_THR, "#7a5195", f"negative tail < {NEG_THR}")):
+            ax.axvline(v, color=c, ls="--", lw=1)
+            ax.text(v + 0.01, 0.8, lab, color=c, fontsize=8,
+                    transform=ax.get_xaxis_transform())
+        ax.set_xlabel("cos(V_a, V_b)  (majority-positive-activation gauge)")
+        ax.set_ylabel("pair count" + (" (log)" if logy else ""))
+        ax.set_title(f"Signed read-in cosines, all {n_pairs_tot/1e6:.1f}M pooled "
+                     f"pairs ({cfg['title']})")
+        ax.spines[["top", "right"]].set_visible(False)
+        ax.grid(axis="y", color="#eeeeee", lw=0.6)
+        ax.set_axisbelow(True)
+        fig.tight_layout()
+        fig.savefig(FIG / fname, dpi=150)
+        plt.close(fig)
 
     pm = P[P[:, 2] > THR]
     cnt = np.zeros((16, 16), int)
@@ -629,32 +633,37 @@ cos(U) is defined.
     # ---- within-matrix distributions --------------------------------------
     bins = np.linspace(-1, 1, 201)
     ctr = 0.5 * (bins[:-1] + bins[1:])
-    fig, axes = plt.subplots(4, 4, figsize=(13, 9.5), sharex=True)
-    for s in range(16):
-        ax = axes.flat[s]
-        X = Vn[site == s]
-        n = len(X)
-        nps = n * (n - 1) // 2
-        vals_s = (X @ X.T)[np.triu_indices(n, k=1)]
-        h = np.histogram(vals_s, bins=bins)[0]
-        ax.stairs(np.maximum(h, 0.5), bins, fill=True, color=HUE, alpha=0.85)
-        rnd = nps * random_cos_pdf(ctr) * (bins[1] - bins[0])
-        ax.plot(ctr, np.maximum(rnd, 1e-3), color=INK, lw=1.0, ls=":")
-        ax.set_yscale("log")
-        ax.set_ylim(bottom=0.7)
-        ax.set_title(f"{SHORT[s]}  (n = {n}, {nps / 1e3:.0f}k pairs)",
-                     fontsize=9)
-        ax.spines[["top", "right"]].set_visible(False)
-        ax.grid(axis="y", color="#eeeeee", lw=0.6)
-        ax.set_axisbelow(True)
-    fig.suptitle(f"Within-matrix signed cos(V), alive components "
-                 f"({cfg['title']}); dotted = random directions in d={D}",
-                 fontsize=11)
-    fig.supxlabel("cos(V_a, V_b)", fontsize=10)
-    fig.supylabel("pair count (log)", fontsize=10)
-    fig.tight_layout(rect=(0.01, 0.01, 1, 0.97))
-    fig.savefig(FIG / "vcos_within_matrix.png", dpi=150)
-    plt.close(fig)
+    for logy, fname in ((True, "vcos_within_matrix.png"),
+                        (False, "vcos_within_matrix_linear.png")):
+        fig, axes = plt.subplots(4, 4, figsize=(13, 9.5), sharex=True)
+        for s in range(16):
+            ax = axes.flat[s]
+            X = Vn[site == s]
+            n = len(X)
+            nps = n * (n - 1) // 2
+            vals_s = (X @ X.T)[np.triu_indices(n, k=1)]
+            h = np.histogram(vals_s, bins=bins)[0]
+            ax.stairs(np.maximum(h, 0.5) if logy else h, bins, fill=True,
+                      color=HUE, alpha=0.85)
+            rnd = nps * random_cos_pdf(ctr) * (bins[1] - bins[0])
+            ax.plot(ctr, np.maximum(rnd, 1e-3) if logy else rnd,
+                    color=INK, lw=1.0, ls=":")
+            if logy:
+                ax.set_yscale("log")
+                ax.set_ylim(bottom=0.7)
+            ax.set_title(f"{SHORT[s]}  (n = {n}, {nps / 1e3:.0f}k pairs)",
+                         fontsize=9)
+            ax.spines[["top", "right"]].set_visible(False)
+            ax.grid(axis="y", color="#eeeeee", lw=0.6)
+            ax.set_axisbelow(True)
+        fig.suptitle(f"Within-matrix signed cos(V), alive components "
+                     f"({cfg['title']}); dotted = random directions in d={D}",
+                     fontsize=11)
+        fig.supxlabel("cos(V_a, V_b)", fontsize=10)
+        fig.supylabel("pair count" + (" (log)" if logy else ""), fontsize=10)
+        fig.tight_layout(rect=(0.01, 0.01, 1, 0.97))
+        fig.savefig(FIG / fname, dpi=150)
+        plt.close(fig)
 
     L.append(f"""
 ## Within-matrix cosine distributions
@@ -664,6 +673,15 @@ alive components *within* that matrix (log count; dotted line = the analytic
 random-directions null in $d = {D}$, scaled to the panel's pair count).
 
 ![within-matrix distributions]({relfig}/vcos_within_matrix.png)
+
+## Linear-scale versions
+
+The same distribution plots with a linear y axis (the log plots emphasize
+the tails; these show where the actual mass sits).
+
+![histogram linear]({relfig}/vcos_hist_linear.png)
+
+![within-matrix distributions linear]({relfig}/vcos_within_matrix_linear.png)
 """)
 
     (ROOT / "cos-sim" / "read-in" / cfg["report"]).write_text(
