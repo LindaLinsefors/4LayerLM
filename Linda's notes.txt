@@ -66,3 +66,37 @@ L0.Attn.k
 
 L0.Attn.k:18
 - <|endoftext|>
+
+
+
+----------------------------------------------------------------------------
+
+h.1.Attn
+
+q:282 
+* Always on
+* Almost alwasys CI
+* Acts as a general bias for attention
+
+k:728, 346, 90 
+* Always on
+* Sometimes CI
+* Drives the induction head mechanism by supressing non-prev-tokens
+* 728 does induction in head 5
+* 346 does induction in head 2
+* 90  does induction in head 0
+
+heads 0,2,5 are induction heads
+
+head  1 is probably a general contex head
+* Imponrtant components
+    * q:282 (possitive) (alsways on)
+    * q:333 (possitive)
+    * q:25  (possitive)
+    * q:216 (negative)
+    * k:152
+
+
+k:152
+* On for a large number of tokens
+* Drives attention in head 1

@@ -29,6 +29,9 @@ hide/cache/* here for C/D/E (from sink_stats_modal.py + cross_all_modal.py +
 sink-models' pos_fires job).
 
 Usage: python compare-decomps/hide/build.py   (~15-25 min)
+       python compare-decomps/hide/build.py --html-only   (~5 min; rewrites
+       only ../compare_decomps.html, leaving hide/data/ untouched — for UI
+       changes that don't alter the heatmap blobs)
 """
 
 import base64
@@ -139,6 +142,56 @@ def match_perm(R, match_r):
     return np.concatenate([mi, ui]).astype(int), int(len(mi))
 
 
+R_EDGE, R_BLOCK = 0.9, 0.0
+
+
+def rule_clusters(Rf):
+    """Greedy threshold clustering (coci-heatmaps report_clustered09 rules):
+    pairs with r > R_EDGE chain into one cluster, processed in descending r;
+    a join is blocked if the newcomer has r <= R_BLOCK (or NaN) with any
+    existing member. Returns the multi-member clusters as index lists."""
+    n = Rf.shape[0]
+    Rf = np.nan_to_num(Rf.astype(np.float64), nan=0.0)
+    ii, jj = np.triu_indices(n, 1)
+    e = Rf[ii, jj] > R_EDGE
+    pairs = sorted(zip(Rf[ii[e], jj[e]], ii[e], jj[e]), reverse=True)
+    of: dict = {}
+    members: dict = {}
+    nxt = 0
+    for _, i, j in pairs:
+        a, b = of.get(int(i)), of.get(int(j))
+        if a is None and b is None:
+            members[nxt] = [int(i), int(j)]
+            of[int(i)] = of[int(j)] = nxt
+            nxt += 1
+        elif a == b:
+            continue
+        elif a is None or b is None:
+            k, new = (b, int(i)) if a is None else (a, int(j))
+            if Rf[new, members[k]].min() > R_BLOCK:
+                members[k].append(new)
+                of[new] = k
+        elif Rf[np.ix_(members[a], members[b])].min() > R_BLOCK:
+            for q in members[b]:
+                of[q] = a
+            members[a] += members.pop(b)
+    return [sorted(ms) for ms in members.values()]
+
+
+def cluster_perm(R, m):
+    """Cluster-order permutation of a CI-ordered same-decomposition r matrix
+    (m = mean CI in the same order): clusters placed by descending mean member
+    CI — singletons land where the plain mean-CI sort would put them — and
+    members within a cluster by descending mean CI."""
+    n = R.shape[0]
+    multi = [np.array(c) for c in rule_clusters(R)]
+    in_multi = {int(c) for cl in multi for c in cl}
+    clusters = ([c[np.argsort(-m[c], kind="stable")] for c in multi]
+                + [np.array([c]) for c in range(n) if c not in in_multi])
+    clusters.sort(key=lambda c: -m[c].mean())
+    return np.concatenate(clusters).astype(int)
+
+
 # ---------------------------- data plumbing ----------------------------------
 
 class Decomp:
@@ -214,6 +267,7 @@ def trio_pair_r(mod, a, b):
 
 
 def main() -> None:
+    html_only = "--html-only" in sys.argv[1:]
     tokenizer = load_tokenizer("pile_4l")
     labels = old_labels()
     d = {n: Decomp(n) for n in DEC}
@@ -262,8 +316,9 @@ def main() -> None:
         print(f"meta {n} done", flush=True)
 
     DATA_DIR.mkdir(exist_ok=True)
-    for f in DATA_DIR.glob("*.js"):
-        f.unlink()
+    if not html_only:
+        for f in DATA_DIR.glob("*.js"):
+            f.unlink()
     combos = {}
     has_cos = {}
     total_blob = 0
@@ -273,28 +328,26 @@ def main() -> None:
             has_cos[key] = TARGET[a] == TARGET[b]
             combos[key] = {}
             for mod in MODS:
+                parts = None
                 if a == b:
                     R = d[a].same_r(mod)
-                    n = R.shape[0]
-                    iu = np.triu_indices(n)
-                    parts = [q8(R[iu])]
-                    if has_cos[key]:
-                        for meas in ("U", "V"):
-                            X = d[a].signed_unit(mod, meas)[d[a].order_pos[mod]]
-                            parts.append(q8((X @ X.T)[iu]))
+                    dec_data[a][mod]["cl"] = cluster_perm(
+                        R, d[a].ci_sorted[mod]).tolist()
                     combos[key][mod] = {}
+                    if not html_only:
+                        iu = np.triu_indices(R.shape[0])
+                        parts = [q8(R[iu])]
+                        if has_cos[key]:
+                            for meas in ("U", "V"):
+                                X = d[a].signed_unit(mod, meas)[
+                                    d[a].order_pos[mod]]
+                                parts.append(q8((X @ X.T)[iu]))
                 else:
                     if a in TRIO and b in TRIO:
                         r_dump = trio_pair_r(mod, a, b)
                     else:
                         r_dump = cross12[f"{a}|{b}|{mod}|r"].astype(np.float32)
                     R = r_dump[d[a].order_pos[mod]][:, d[b].order_pos[mod]]
-                    parts = [q8(R)]
-                    if has_cos[key]:
-                        for meas in ("U", "V"):
-                            Y = d[a].signed_unit(mod, meas)[d[a].order_pos[mod]]
-                            X = d[b].signed_unit(mod, meas)[d[b].order_pos[mod]]
-                            parts.append(q8(Y @ X.T))
                     pf, _ = match_perm(R, -np.inf)
                     pft, mf = match_perm(R, MATCH_R)
                     pr, _ = match_perm(R.T, -np.inf)
@@ -304,12 +357,23 @@ def main() -> None:
                                 "matched": mf},
                         "rev": {"perm": pr.tolist(), "permT": prt.tolist(),
                                 "matched": mr}}
-                blob = zlib.compress(
-                    np.concatenate([p.ravel() for p in parts]).tobytes(), 9)
-                total_blob += len(blob)
-                b64 = base64.b64encode(blob).decode()
-                (DATA_DIR / f"{a}--{b}--{mod}.js").write_text(
-                    f'__reg("{key}|{mod}","{b64}");', encoding="ascii")
+                    if not html_only:
+                        parts = [q8(R)]
+                        if has_cos[key]:
+                            for meas in ("U", "V"):
+                                Y = d[a].signed_unit(mod, meas)[
+                                    d[a].order_pos[mod]]
+                                X = d[b].signed_unit(mod, meas)[
+                                    d[b].order_pos[mod]]
+                                parts.append(q8(Y @ X.T))
+                if parts is not None:
+                    blob = zlib.compress(
+                        np.concatenate([p.ravel() for p in parts]).tobytes(),
+                        9)
+                    total_blob += len(blob)
+                    b64 = base64.b64encode(blob).decode()
+                    (DATA_DIR / f"{a}--{b}--{mod}.js").write_text(
+                        f'__reg("{key}|{mod}","{b64}");', encoding="ascii")
             print(f"{key}: done ({total_blob / 1e6:.0f} MB so far)", flush=True)
 
     data = {"decs": DEC, "mods": MODS, "runid": RUN_ID, "target": TARGET,
@@ -363,7 +427,13 @@ CI&gt;0.1 tokens). Axes: y = descending mean CI; when the decompositions
 differ each x component sits at its best co-CI match's row (with the
 <b>match threshold</b> on, components with max r &lt; __MATCH_R__ go to a
 mean-CI-ordered right tail); same decomposition on both axes = both sorted by
-mean CI. Zoom by dragging, double-click to reset, shift-drag to pan; hover a
+mean CI. x = <b>same</b> mirrors the y-axis decomposition. The <b>cluster</b>
+checkbox reorders the y axis so components chaining at co-CI r &gt; 0.9
+(within the y decomposition) sit together — clusters placed by descending
+mean member CI, as in the coci-heatmaps clustered09 reports; with the same
+decomposition on both axes the x axis gets the identical order, otherwise the
+x components are re-matched against the clustered y order. Zoom by dragging,
+double-click to reset, shift-drag to pan; hover a
 cell for both components' details (newA/newB/C/D/E: top activating tokens;
 old: autointerp label). <b style="color:#00a300">Green edge ticks</b> mark
 pos-0 components (&gt; 50% of CI&gt;0.1 fires at chunk position 0). Values
@@ -380,6 +450,7 @@ quantized to steps of 1/127. Heatmap data loads on demand from
   <label id="l_cv"><input type="radio" name="meas" value="cv"> cos V (read-in)</label>
   <label><input type="checkbox" id="thresh" checked> match threshold
     (r ≥ __MATCH_R__; unmatched at right)</label>
+  <label><input type="checkbox" id="cluster"> cluster (co-CI &gt; 0.9)</label>
   <span id="matched" style="color:#666"></span>
 </div>
 <div id="plot"></div>
@@ -407,7 +478,8 @@ for (const mod of DATA.mods) {
 }
 for (const id of ["ydec", "xdec"]) {
   const sel = document.getElementById(id);
-  for (const n of DATA.decs) {
+  const names = id === "xdec" ? ["same"].concat(DATA.decs) : DATA.decs;
+  for (const n of names) {
     const o = document.createElement("option");
     o.value = o.textContent = n;
     sel.appendChild(o);
@@ -482,7 +554,8 @@ function ciVal(c, b, keyM, iy, ix) {
 
 async function render() {
   const Y = document.getElementById("ydec").value;
-  const X = document.getElementById("xdec").value;
+  const Xsel = document.getElementById("xdec").value;
+  const X = Xsel === "same" ? Y : Xsel;
   const mod = matSel.value;
   const co = comboOf(Y, X);
   const cosOK = DATA.cos[co.key];
@@ -504,44 +577,72 @@ async function render() {
                          : DATA.dec[co.P][mod].ids.length * c.nQ;
   const b = await getBufs(co.key, mod, nCells, cosOK ? 3 : 1);
   if (matSel.value !== mod || document.getElementById("ydec").value !== Y ||
-      document.getElementById("xdec").value !== X) return;  // stale render
+      document.getElementById("xdec").value !== Xsel) return;  // stale render
   const threshEl = document.getElementById("thresh");
   threshEl.disabled = co.same;
   const thr = threshEl.checked;
-  let perm, matched = null;
+  const clu = document.getElementById("cluster").checked;
+  const yperm = clu ? dy.cl : dy.ids.map((_, i) => i);
+  let xperm, matched = null;
   if (co.same) {
-    perm = dx.ids.map((_, j) => j);
-  } else {
+    xperm = yperm;
+  } else if (!clu) {
     const dir = DATA.combo[co.key][mod][co.trans ? "rev" : "fwd"];
-    perm = thr ? dir.permT : dir.perm;
+    xperm = thr ? dir.permT : dir.perm;
     if (thr) matched = dir.matched;
+  } else {
+    // re-derive the diagonal matching against the cluster-ordered y axis:
+    // each x component goes to its best co-CI y row's display position
+    // (same rule as the stored perms, computed from the quantized r blob)
+    const rank = new Array(ny);          // CI row index -> display position
+    yperm.forEach((k, p) => { rank[k] = p; });
+    const best = new Array(nx), bmax = new Array(nx);
+    for (let j = 0; j < nx; j++) {
+      let bi = 0, bv = -Infinity;
+      for (let i = 0; i < ny; i++) {
+        let q = c.trans ? b.r[j * c.nQ + i] : b.r[i * c.nQ + j];
+        if (q === -128) q = -127;      // NaN r: treat as -1 (as at build)
+        if (q > bv) { bv = q; bi = i; }
+      }
+      best[j] = bi; bmax[j] = bv / 127;
+    }
+    const mi = [], ui = [];
+    for (let j = 0; j < nx; j++)
+      (!thr || bmax[j] >= __MATCH_R__ ? mi : ui).push(j);
+    mi.sort((p, q) => rank[best[p]] - rank[best[q]] || p - q);
+    xperm = mi.concat(ui);
+    if (thr) matched = mi.length;
   }
   const m = MEAS[measure()], keyM = measure();
-  const x = perm.map(k => dx.ids[k]);
+  const x = xperm.map(k => dx.ids[k]);
+  const yIds = yperm.map(k => dy.ids[k]);
   const z = new Array(ny);
   for (let i = 0; i < ny; i++) {
-    const row = new Array(perm.length);
-    for (let j = 0; j < perm.length; j++) row[j] = ciVal(c, b, keyM, i, perm[j]);
+    const row = new Array(xperm.length);
+    for (let j = 0; j < xperm.length; j++)
+      row[j] = ciVal(c, b, keyM, yperm[i], xperm[j]);
     z[i] = row;
   }
   document.getElementById("matched").textContent =
     ny + " × " + nx + " alive components" +
     (matched !== null ? " (" + matched + " matched)" : "");
   const trace = {
-    type: "heatmap", z: z, x: x, y: dy.ids,
+    type: "heatmap", z: z, x: x, y: yIds,
     colorscale: m.colorscale, zmin: m.zmin, zmax: m.zmax,
     hovertemplate: Y + " :%{y} × " + X + " :%{x}<br>" + m.title +
                    " = %{z:.2f}<extra></extra>",
   };
-  const disp = new Array(perm.length);
-  perm.forEach((k, m_) => { disp[k] = m_; });
+  const xdisp = new Array(xperm.length);
+  xperm.forEach((k, m_) => { xdisp[k] = m_; });
+  const ydisp = new Array(ny);
+  yperm.forEach((k, m_) => { ydisp[k] = m_; });
   const P0 = {color: "#00a300", width: 2};
   const shapes = dy.p0.map(i => ({
     type: "line", xref: "paper", yref: "y",
-    x0: -0.012, x1: -0.002, y0: i, y1: i, line: P0,
+    x0: -0.012, x1: -0.002, y0: ydisp[i], y1: ydisp[i], line: P0,
   })).concat(dx.p0.map(k => ({
     type: "line", xref: "x", yref: "paper",
-    x0: disp[k], x1: disp[k], y0: 1.003, y1: 1.015, line: P0,
+    x0: xdisp[k], x1: xdisp[k], y0: 1.003, y1: 1.015, line: P0,
   })));
   const layout = {
     title: {text: Y + " × " + X + "   " + mod + " — " + m.title,
@@ -555,7 +656,7 @@ async function render() {
             type: "category", autorange: "reversed",
             showticklabels: ny <= 120, scaleanchor: "x"},
   };
-  cur = {c: c, b: b, Y: Y, X: X, dy: dy, dx: dx, perm: perm};
+  cur = {c: c, b: b, Y: Y, X: X, dy: dy, dx: dx};
   Plotly.react(plot, [trace], layout, {responsive: true});
   if (!hooked) {
     hooked = true;
@@ -583,6 +684,7 @@ matSel.addEventListener("change", render);
 document.getElementById("ydec").addEventListener("change", render);
 document.getElementById("xdec").addEventListener("change", render);
 document.getElementById("thresh").addEventListener("change", render);
+document.getElementById("cluster").addEventListener("change", render);
 for (const r of document.querySelectorAll('input[name="meas"]'))
   r.addEventListener("change", render);
 render();

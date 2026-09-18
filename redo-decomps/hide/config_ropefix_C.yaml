@@ -1,0 +1,212 @@
+# C-analogue decomposition of sink seed 45 (t-87f91319) with the CORRECTED RoPE.
+# Byte-faithful copy of sink-models/runs/p-d60af588/launch_config.yaml except:
+#   - run_name suffixed -ropefix
+#   - runtime.mesh flattened to replicate/fsdp/tp (public RuntimeConfig schema)
+#   - runtime.compilation_cache_dir -> /data/xla-cache (shared volume, survives containers)
+#   - target.output_edge removed (newer internal schema key; public commit rejects it,
+#     and materialized is the only behavior it implements anyway)
+#   - runtime.compiler_options tuned-v2 -> tuned-v1 (the internal tuned-v2 preset does
+#     not exist publicly; XLA-flag substrate knob, no algorithm effect per SPEC)
+#   - both muon optimizers get explicit `impl: stacked` (the batched, placement-aware
+#     Newton-Schulz; the public default `optax` is the single-device reference and
+#     crashes on sharded params -- ShardingTypeError in optax.contrib._muon)
+#   - runtime.remat_recon_forwards false -> true, remat_ci_fn false -> true, and
+#     launch_env allocator -> platform (the public jax 0.10 + tuned-v1 step peaks past
+#     the 0.92x80GB pool where the internal jax 0.11 + tuned-v2 run logged 39.7 GB/rank;
+#     remat + allocator are the documented memory knobs, substrate-only per SPEC)
+#   - wandb group/tags renamed (logs to Linda's default entity, project param-decomp)
+# The corrected RoPE itself is NOT a config field -- train_modal.py monkeypatches
+# param_decomp.targets.llama_simple_mlp.plain_rope_inv_freq with the fitted spectrum
+# (sink-models/hide/cache/fitted_freqs_avg.npz) before the target is built.
+run_name: pile4l-untied-sinks-ref6m-freq6p6em5-b256-100k-ropefix
+cadence:
+  train_log_every: 200
+  checkpointing:
+    kind: periodic
+    save_every: 5000
+    retention:
+      kind: keep_last
+      n: 2
+data:
+  train:
+    kind: name
+    name: pile_neox_tok_512
+  eval:
+    kind: name
+    name: pile_neox_tok_512_val
+eval:
+  batch_size: 128
+  every: 1000
+  metrics:
+  - n_batches_accum: 1
+    type: CIHistograms
+  - ci_alive_threshold: 0.0
+    type: ComponentActivationDensity
+  - ci_alive_threshold: 0.0
+    groups:
+      layer_0:
+      - h.0.*
+      layer_1:
+      - h.1.*
+      layer_2:
+      - h.2.*
+      layer_3:
+      - h.3.*
+      total:
+      - '*'
+    type: CI_L0
+  - rounding_threshold: 0.0
+    type: CEandKLLosses
+  - type: CIMeanPerComponent
+  # C's config carried hidden_acts_reconstruction with coeff 0.0 (disabled) on this
+  # eval-only metric; the public schema requires coeff > 0, so the dead block is dropped.
+  - init: random
+    source_shape: c
+    n_steps: 20
+    name: PGDReconLoss_20step
+    step_size: 0.1
+    type: PGDReconLoss
+  n_steps: 1
+  slow_every: 10000
+  slow_on_first_step: true
+decomposition:
+  sites:
+    kind: simple_mlp
+    layers:
+      kind: all
+    cs:
+      q_proj: 768
+      k_proj: 768
+      v_proj: 768
+      o_proj: 768
+      c_fc: 3072
+      down_proj: 3072
+    initialization: neuron_aligned
+  ci:
+    type: chunkwise_transformer
+    blocks_per_chunk: 4
+    input_tap: all_block_resids
+    d_model: 2048
+    n_blocks: 8
+    attention:
+      kind: mha
+      n_heads: 16
+    ffn:
+      kind: gelu
+      hidden: 8192
+pd:
+  seed: 0
+  batch_size: 256
+  steps: 100000
+  ci_fn_optimizer:
+    type: muon
+    impl: stacked
+    consistent_rms: 0.2
+    grad_clip_norm: 1.0
+    lr_schedule: &id001
+      max_val: 5.0e-05
+      points:
+      - at: 0.0
+        frac: 1.0
+      - at: 0.9
+        frac: 0.1
+        interp: cosine
+      - at: 1.0
+        frac: 0.1
+  components_optimizer:
+    type: muon
+    impl: stacked
+    consistent_rms: 0.2
+    grad_clip_norm: 1.0
+    lr_schedule: *id001
+  faithfulness_warmup_lr: 0.001
+  faithfulness_warmup_steps: 0
+  faithfulness_warmup_weight_decay: 0.0
+  loss_metrics:
+  - frequency:
+      coeff: 6.6e-05
+      reference_datapoint_count: 6553600
+      ema_halflife_steps: 200
+    coeff: 0.0002
+    type: ImportanceMinimalityLoss
+    gamma:
+      max_val: 1.0
+      points:
+      - at: 0.0
+        frac: 1.0
+      - at: 0.9
+        frac: 0.01
+      - at: 1.0
+        frac: 0.01
+  - type: NonlinearityLocalityLoss
+    coeff: 3.0e-05
+    relative_threshold:
+      max_val: 8.0
+      points:
+      - at: 0.0
+        frac: 1.0
+      - at: 1.0
+        frac: 0.25
+    unit_kind_coefficients:
+      neuron: 1.0
+      attention_head: 1.0
+  - type: MergedStochasticSubsetPPGDReconLoss
+    coeff: 1.0
+    adv_fraction: 0.5
+    n_warmup_steps: 2
+    routing:
+      type: uniform_k_subset
+    optimizer:
+      beta1: 0.01
+      beta2: 0.99
+      eps: 1.0e-08
+      lr_schedule:
+        max_val: 0.01
+        points:
+        - at: 0.0
+          frac: 0.0
+        - at: 0.025
+          frac: 1.0
+        - at: 1.0
+          frac: 1.0
+      type: adam
+    source_shape: bsc
+  - coeff: 1000.0
+    type: FaithfulnessLoss
+runtime:
+  compilation_cache_dir: /data/xla-cache
+  remat_recon_forwards: true
+  remat_ci_fn: true
+  launch_env:
+    # platform allocator: the BFC pool cannot fit the step (16 GiB over even with
+    # both remats); on-demand allocation does. NCCL cuMem/NVLS disabled: Modal
+    # containers forbid the fabric cuMem handles NCCL's registered-buffer paths
+    # want (ncclAlltoAll "unhandled system error" otherwise).
+    xla_python_client_allocator: platform
+    nccl_debug: INFO
+    env:
+      NCCL_CUMEM_ENABLE: "0"
+      NCCL_NVLS_ENABLE: "0"
+  sharding: owner
+  compiler_options: tuned-v1
+  replicate: 1
+  fsdp: 8
+  tp: 1
+target:
+  attention_implementation: auto
+  weights_dtype: bfloat16
+  spec:
+    kind: pretrained
+    model_class: param_decomp.experiments.lm.pretrain.models.llama_simple_mlp.LlamaSimpleMLP
+    run_path: goodfire/spd/runs/t-87f91319
+wandb:
+  entity: null
+  project: param-decomp
+  group: ropefix
+  tags:
+  - ropefix
+  - task-1423-redo
+  - ref6m
+  - freq6p6em5
+  - batch-256
+  - steps-100k
