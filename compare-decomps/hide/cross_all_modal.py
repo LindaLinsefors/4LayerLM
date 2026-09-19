@@ -22,6 +22,13 @@ Then: modal volume get vpd-4layer /cross_r_new12.npz compare-decomps/hide/cache/
 After verifying: modal run ... --stage cleanup
 Output npz keys: "<a>|<b>|<mod>|r" (n_alive_a x n_alive_b, float16; a before b
 in old,newA,newB,C,D,E order), plus "<name>|<mod>|S1"/"S2" (float64) and "T".
+
+F extension (2026-09-19, decomposition F = p-c45e0001, the corrected-RoPE
+re-decomposition of C's target t-87f91319): stage `dump-f` dumps F's alive CI
+(fitted-RoPE forward — F's training-time forward; needs /coci_F.npz from
+sink_stats_modal.py first), and stage `grams-f` streams all SEVEN dumps
+(re-run dumps-trio + dumps-sink first if /data/cross_ci was cleaned) to write
+the 6 F-pairs -> /cross_r_F.npz (keys "<a>|F|<mod>|r" + S1/S2 + "T").
 """
 
 import modal
@@ -54,7 +61,9 @@ gram_image = modal.Image.debian_slim(python_version="3.12").pip_install(
 DEC = ["old", "newA", "newB", "C", "D", "E"]
 NEW_RUNS = {"newA": ("p-8383f5e5", 800000), "newB": ("p-4d9a6a12", 800000)}
 SINK_RUNS = {"C": ("p-d60af588", 100000), "D": ("p-fecd6a6b", 100000),
-             "E": ("p-bd411e35", 100000)}
+             "E": ("p-bd411e35", 100000), "F": ("p-c45e0001", 100000)}
+FITTED_ROPE = {"F"}  # trained with the fitted corrected RoPE spectrum
+F_PAIRS = [(a, "F") for a in DEC]
 TRIO = {"old", "newA", "newB"}
 NEW_PAIRS = [(a, b) for i, a in enumerate(DEC) for b in DEC[i + 1:]
              if not (a in TRIO and b in TRIO)]
@@ -146,10 +155,28 @@ def _dump_jax(name: str) -> None:
     else:
         run, step_n = SINK_RUNS[name]
         root = Path("/data/sink-models")
+    if name in FITTED_ROPE:
+        # F was trained with this spectrum monkeypatched in — same patch here
+        from param_decomp.targets import llama_simple_mlp as lsm
+        lif = np.load("/data/fitted_freqs_avg.npz")["log_inv_freq"]
+        spec = jnp.asarray(np.exp(np.asarray(lif, np.float64)), jnp.float32)
+        lsm.plain_rope_inv_freq = lambda cfg: spec
     loaded = open_jax_run(root / "runs" / run, step=step_n, data_root=root)
     placed, ci_fn = loaded.placed, loaded.ci_fn
     keys = ci_fn.fn.capture_keys
     assert set(MODS) == set(ci_fn.fn.output_names)
+    if name in FITTED_ROPE:
+        # sanity: fitted spectrum ⇒ target NLL ~2.5; broken base-1e4 gives ~8
+        r8 = np.load("/data/pile_rows.npy")[:8]
+        with jax.set_mesh(loaded.mesh):
+            logits = np.asarray(placed.clean_forward(
+                jnp.asarray(r8), keys).output, np.float32)
+        mx = logits[:, :-1].max(-1, keepdims=True)
+        lse = np.log(np.exp(logits[:, :-1] - mx).sum(-1)) + mx[..., 0]
+        nll = float((lse - np.take_along_axis(
+            logits[:, :-1], r8[:, 1:, None], -1)[..., 0]).mean())
+        print(f"{name} target NLL (fitted RoPE): {nll:.3f}", flush=True)
+        assert nll < 4.0, f"RoPE patch did not take effect (NLL {nll:.2f})"
     alive = _alive(name)
     Path(DUMP).mkdir(exist_ok=True)
     print(f"{name} = {run}: {sum(len(v) for v in alive.values())} alive comps",
@@ -249,6 +276,70 @@ def grams() -> None:
     print(f"saved /data/cross_r_new12.npz ({time.time() - t0:.0f}s total)")
 
 
+@app.function(image=gram_image, gpu="A10G", volumes={"/data": vol},
+              timeout=7200, memory=65536)
+def grams_f() -> None:
+    """Stream all SEVEN dumps batch-aligned once; accumulate S1/S2 + the 6
+    F-pair Grams in float64 on GPU; write finished Pearson r (f16)."""
+    import time
+
+    import numpy as np
+    import torch
+
+    torch.backends.cuda.matmul.allow_tf32 = False
+    dec7 = DEC + ["F"]
+    alive = {n: _alive(n) for n in dec7}
+    n_of = {n: {m: len(alive[n][m]) for m in MODS} for n in dec7}
+    off = {n: np.concatenate([[0], np.cumsum([n_of[n][m] for m in MODS])])
+           for n in dec7}
+
+    S1 = {n: {m: torch.zeros(n_of[n][m], dtype=torch.float64, device="cuda")
+              for m in MODS} for n in dec7}
+    S2 = {n: {m: torch.zeros_like(S1[n][m]) for m in MODS} for n in dec7}
+    G = {(a, b): {m: torch.zeros(n_of[a][m], n_of[b][m],
+                                 dtype=torch.float64, device="cuda")
+                  for m in MODS} for a, b in F_PAIRS}
+    T = 0
+    t0 = time.time()
+    for b in range(NB):
+        series = {}
+        for n in dec7:
+            x = torch.from_numpy(
+                np.load(f"{DUMP}/{n}_b{b:03d}.npy")).cuda().float()
+            series[n] = {m: x[:, off[n][i]:off[n][i + 1]]
+                         for i, m in enumerate(MODS)}
+        T += next(iter(series["F"].values())).shape[0]
+        for n in dec7:
+            for m in MODS:
+                c = series[n][m]
+                S1[n][m] += c.sum(0).double()
+                S2[n][m] += (c * c).sum(0).double()
+        for a, bname in F_PAIRS:
+            for m in MODS:
+                G[(a, bname)][m] += (series[a][m].T @ series[bname][m]).double()
+        if b % 25 == 0:
+            print(f"batch {b + 1}/{NB}, {time.time() - t0:.0f}s", flush=True)
+
+    data = {"T": np.array(T)}
+    for n in dec7:
+        for m in MODS:
+            data[f"{n}|{m}|S1"] = S1[n][m].cpu().numpy()
+            data[f"{n}|{m}|S2"] = S2[n][m].cpu().numpy()
+    for a, bname in F_PAIRS:
+        for m in MODS:
+            mu_a = S1[a][m] / T
+            mu_b = S1[bname][m] / T
+            sd_a = torch.sqrt(torch.clamp(S2[a][m] / T - mu_a**2, min=0))
+            sd_b = torch.sqrt(torch.clamp(S2[bname][m] / T - mu_b**2, min=0))
+            r = (G[(a, bname)][m] / T - torch.outer(mu_a, mu_b)) \
+                / torch.outer(sd_a, sd_b)
+            r[~torch.isfinite(r)] = torch.nan
+            data[f"{a}|{bname}|{m}|r"] = r.cpu().numpy().astype(np.float16)
+    np.savez(f"/data/cross_r_F.npz", **data)
+    vol.commit()
+    print(f"saved /data/cross_r_F.npz ({time.time() - t0:.0f}s total)")
+
+
 @app.function(image=gram_image, volumes={"/data": vol}, timeout=3600)
 def cleanup() -> None:
     import shutil
@@ -268,8 +359,12 @@ def main(stage: str) -> None:
                 f.result()
     elif stage == "dumps-sink":
         list(dump_sink.map(["C", "D", "E"]))
+    elif stage == "dump-f":
+        dump_sink.remote("F")
     elif stage == "grams":
         grams.remote()
+    elif stage == "grams-f":
+        grams_f.remote()
     elif stage == "cleanup":
         cleanup.remote()
     else:

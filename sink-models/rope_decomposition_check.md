@@ -80,6 +80,80 @@ Unchanged from rope_report.md — the fitted spectrum (`hide/cache/fitted_freqs_
 - **No YaRN/NTK-family config can be the answer.** All standard schemes leave plane 0 unscaled: rotations of plane 0 in any original context ≫ β_fast, so the interpolation ramp is 1 there and $\omega_0 = 1$ exactly, for *every* (θ, factor, orig-ctx, β) combination. The fitted $\omega_0 \approx 1.48$ (both seeds independently, ±5%) is therefore structurally out of reach of that whole family — not a matter of untested parameter combinations. (Caveat: on integer positions any $\omega$ is observable only mod $2\pi$, and a temperature/mscale factor is outside the fit's model class; but no standard spectrum exceeds Nyquist, so aliasing shouldn't arise.)
 - **Leading hypothesis: trainable (learned) `inv_freq` in the internal pretrain attention.** It would explain a smooth non-geometric spectrum, $\omega_0 > 1$, and near-identical spectra across two seeds (same data → similar optimum), and it fits the schema observation in §2a (RoPE fields dropped from the recorded config). The public safetensors export contains no `inv_freq` tensor (39 tensors, checked) — but an export that assumes buffers-are-derivable would drop exactly that. Testable by asking the co-authors, or against the original pretrain checkpoints (not on WandB: the pretrain runs' artifacts hold only history parquets).
 
+## Appendix: the per-plane frequencies, documented vs recovered
+
+$\omega_p$ in rad/token; documented $= 10000^{-p/64}$ (identical for both models — the recorded `rotary_base`), recovered = the independent per-seed numeric fits (`hide/cache/fitted_freqs_{45,46}.npz`; `load_sink()` installs their average). The two fits agree to ±10% on planes 0–26 — the cross-validation. **Planes ≳ 27 rotate less than ~a radian within the 512-token context, so the fit cannot constrain them; those rows are noise, not recovered structure.** Note $\omega_0 \approx 1.48 > 1$ (impossible for every θ-based/YaRN/NTK convention) and the extra ≈3× drop between planes 21 and 22, where $\lambda = 2\pi/\omega$ crosses ≈ 500 tokens ≈ n_ctx.
+
+| plane p | documented 10⁴^(−p/64) | recovered seed 45 | recovered seed 46 |
+|---:|---:|---:|---:|
+| 0 | 1.000 | 1.543 | 1.413 |
+| 1 | 0.8660 | 1.092 | 1.021 |
+| 2 | 0.7499 | 0.7363 | 0.8371 |
+| 3 | 0.6494 | 0.6331 | 0.6801 |
+| 4 | 0.5623 | 0.4771 | 0.5374 |
+| 5 | 0.4870 | 0.4512 | 0.4409 |
+| 6 | 0.4217 | 0.3739 | 0.3733 |
+| 7 | 0.3652 | 0.2974 | 0.2991 |
+| 8 | 0.3162 | 0.2368 | 0.2508 |
+| 9 | 0.2738 | 0.2318 | 0.2163 |
+| 10 | 0.2371 | 0.1766 | 0.2036 |
+| 11 | 0.2054 | 0.1513 | 0.1600 |
+| 12 | 0.1778 | 0.1267 | 0.1326 |
+| 13 | 0.1540 | 0.1091 | 0.1018 |
+| 14 | 0.1334 | 0.0727 | 0.0873 |
+| 15 | 0.1155 | 0.0640 | 0.0653 |
+| 16 | 0.1000 | 0.0559 | 0.0566 |
+| 17 | 0.0866 | 0.0454 | 0.0441 |
+| 18 | 0.0750 | 0.0366 | 0.0351 |
+| 19 | 0.0649 | 0.0264 | 0.0263 |
+| 20 | 0.0562 | 0.0176 | 0.0165 |
+| 21 | 0.0487 | 0.0119 | 0.0160 |
+| 22 | 0.0422 | 0.00573 | 0.00527 |
+| 23 | 0.0365 | 0.00540 | 0.00516 |
+| 24 | 0.0316 | 0.00436 | 0.00414 |
+| 25 | 0.0274 | 0.00292 | 0.00285 |
+| 26 | 0.0237 | 0.00419 | 0.00395 |
+| — | — | *below here: unconstrained (noise)* | — |
+| 27 | 0.0205 | 0.00364 | 0.00068 |
+| 28 | 0.0178 | 0.00199 | 0.00160 |
+| 29 | 0.0154 | 0.00213 | 0.00418 |
+| 30 | 0.0133 | 0.00277 | 0.00195 |
+| 31 | 0.0115 | 0.00028 | 0.00240 |
+| 32 | 0.0100 | 0.00047 | 0.00128 |
+| 33 | 0.00866 | 0.00193 | 0.00167 |
+| 34 | 0.00750 | 0.00057 | 0.00072 |
+| 35 | 0.00649 | 0.00016 | 0.00152 |
+| 36 | 0.00562 | 0.00063 | 0.00038 |
+| 37 | 0.00487 | 0.00034 | 0.00056 |
+| 38 | 0.00422 | 0.00011 | 0.00011 |
+| 39 | 0.00365 | 0.00012 | 0.00135 |
+| 40 | 0.00316 | 0.00146 | 0.00012 |
+| 41 | 0.00274 | 0.00014 | 0.00020 |
+| 42 | 0.00237 | 0.00025 | 3.8e−05 |
+| 43 | 0.00205 | 0.00060 | 7.1e−05 |
+| 44 | 0.00178 | 8.4e−05 | 3.0e−05 |
+| 45 | 0.00154 | 3.8e−05 | 5.1e−05 |
+| 46 | 0.00133 | 9.4e−06 | 9.2e−05 |
+| 47 | 0.00115 | 4.4e−05 | 0.00015 |
+| 48 | 0.00100 | 2.3e−05 | 2.2e−05 |
+| 49 | 0.00087 | 9.5e−06 | 0.00011 |
+| 50 | 0.00075 | 8.3e−06 | 3.1e−05 |
+| 51 | 0.00065 | 1.7e−05 | 1.2e−05 |
+| 52 | 0.00056 | 2.6e−05 | 3.1e−05 |
+| 53 | 0.00049 | 4.1e−06 | 1.5e−05 |
+| 54 | 0.00042 | 8.1e−06 | 9.6e−05 |
+| 55 | 0.00037 | 1.8e−05 | 0.00053 |
+| 56 | 0.00032 | 3.7e−06 | 2.9e−06 |
+| 57 | 0.00027 | 5.6e−06 | 2.0e−06 |
+| 58 | 0.00024 | 1.9e−05 | 2.1e−06 |
+| 59 | 0.00021 | 1.1e−06 | 6.9e−05 |
+| 60 | 0.00018 | 3.0e−06 | 9.8e−06 |
+| 61 | 0.00015 | 8.4e−06 | 1.0e−05 |
+| 62 | 0.00013 | 0.00018 | 1.5e−06 |
+| 63 | 0.00012 | 3.1e−06 | 1.7e−06 |
+
+Reading guide: in the constrained region the recovered spectrum sits *above* documented at planes 0–1, then falls increasingly below — by plane 20 the true frequencies are ~3× slower than documented. (2026-09-18 live update: the trainable-inv_freq test pretrain `t-freqtest47` — `own-pretrain/` — has $\omega_0 = 1.44$ at 21% of training from a 1.0 init, converging on exactly this spectrum: the learned-inv_freq hypothesis of §4.)
+
 ## Files
 
 - `hide/verify_rope_fresh.py` — §1 re-verification (local GPU, ~2 min).

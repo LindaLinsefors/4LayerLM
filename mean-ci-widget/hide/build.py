@@ -25,8 +25,12 @@ Data sources
              see models_and_decomps.md): same data sources as newA/newB, from
              coci_{C,D,E}.npz + top_tokens_{C,D,E}.npz (both computed by
              coci-heatmaps/hide/coci_compute_sink_modal.py in one pass).
+- F (p-c45e0001, the corrected-RoPE re-decomposition of C's target
+             t-87f91319): same sources, from coci_F.npz + top_tokens_F.npz
+             (computed by components/hide/f_stats_modal.py under the fitted
+             training-time RoPE — no broken-RoPE caveat for F).
 
-Outputs ../mean_ci_{pile_4l,simple_2l,newA,newB,C,D,E}.html (self-contained,
+Outputs ../mean_ci_{pile_4l,simple_2l,newA,newB,C,D,E,F}.html (self-contained,
 plotly.js inlined). Extracted data cached in cache/data.json; site labels in
 cache/site_labels.json. Runs on the default Python 3.11 in ~10 s.
 """
@@ -215,12 +219,12 @@ def extract() -> dict:
             load_interp_labels(simple_dir / "autointerp" / "s-eab2ace8"
                                / "a-20260212_142914" / "interp.db"))
         changed = True
-    if not {"newA", "newB", "C", "D", "E"} <= data.keys():
+    if not {"newA", "newB", "C", "D", "E", "F"} <= data.keys():
         import sys
         sys.path.insert(0, str(ROOT))
         from load import load_tokenizer
         tokenizer = load_tokenizer("pile_4l")
-        for name in ("newA", "newB", "C", "D", "E"):
+        for name in ("newA", "newB", "C", "D", "E", "F"):
             if name not in data:
                 print(f"reading coci_{name}.npz + top_tokens_{name}.npz ...")
                 data[name] = build_new_data(
@@ -384,6 +388,12 @@ def main():
     write_html(
         "E", "E (decomposition p-bd411e35 of sink seed 46 t-75f6c439, seed 0)",
         new_sub, data)
+    write_html(
+        "F", "F (decomposition p-c45e0001 of sink seed 45 t-87f91319, "
+        "corrected RoPE)",
+        new_sub + " All F forwards use the fitted (training-time) RoPE "
+        "spectrum — unlike C/D/E there is no broken-RoPE caveat.",
+        data)
 
 
 if __name__ == "__main__":

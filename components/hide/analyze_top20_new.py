@@ -1,8 +1,9 @@
 """Per-component read-in analysis for the top-20 sample-mean-CI components of
 h.0.attn.q_proj and h.0.attn.k_proj of decompositions A, B (pile_4l target
-t-9d2b8f02) and D, E (sink targets t-87f91319 / t-75f6c439) — the
-analyze_top20_{C,old} analogue. Decompositions from argv (default all four):
-    python analyze_top20_new.py A B D E
+t-9d2b8f02), D, E (sink targets t-87f91319 / t-75f6c439) and F (p-c45e0001,
+corrected-RoPE re-decomposition of t-87f91319) — the analyze_top20_{C,old}
+analogue. Decompositions from argv (default all five):
+    python analyze_top20_new.py A B D E F
 
 Outputs ../<dec>/{v_dot_embeddings,v_dot_vs_ci}/<matrix>/<mean CI:.2f>-CI-<id>.png
 (same figure formats + dense labels as components/C, via labeling.py).
@@ -13,7 +14,9 @@ majority-positive-activation from the act_signs caches. Requires
 cache/ci_per_token_<dec>_<h0q|h0k>_top20.npz from ci_per_token_modal_{AB,DE}.py.
 
 ⚠ D/E CI values via the public JAX sink loader = broken RoPE (rope_report.md);
-token-identity-level statistics expected to survive qualitatively. A/B are clean.
+token-identity-level statistics expected to survive qualitatively. A/B are
+clean; F is clean too (its caches were computed under the fitted spectrum,
+which IS F's training-time forward).
 """
 import sys
 from pathlib import Path
@@ -50,6 +53,11 @@ DECS = {
               coci="compare-decomps/hide/cache/coci_E.npz",
               tt="mean-ci-widget/hide/cache/top_tokens_E.npz",
               target="sink-models/pretrain_cache/spd-t-75f6c439/model_step_100000.safetensors"),
+    "F": dict(uv="compare-decomps/hide/cache/uv_F.npz", alive_key=None,
+              signs="compare-decomps/hide/cache/act_signs_F.npz",
+              coci="coci-heatmaps/hide/cache/coci_F.npz",
+              tt="mean-ci-widget/hide/cache/top_tokens_F.npz",
+              target="sink-models/pretrain_cache/spd-t-87f91319/model_step_100000.safetensors"),
 }
 MODS = ("h.0.attn.q_proj", "h.0.attn.k_proj")
 BLUE, INK = "#3D6DE2", "#39485E"

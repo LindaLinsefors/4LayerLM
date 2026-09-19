@@ -48,3 +48,23 @@ key names), `metrics.json`, `config.json`. Sweep tables →
 
 Capacity prior: ~2 bits/param × ~3·10⁵ params vs 10 bits/fact ⇒ expect the
 memorization boundary somewhere around $2^{14}$–$2^{16}$ facts.
+
+## Results (2026-09-18 sweep, `hide/plot_capacity.py` → `capacity.png`)
+
+![capacity](capacity.png)
+
+| n facts | attn (307k) | twoemb (369k) | mix (280k) |
+|---|---|---|---|
+| ≤ 2¹⁵ | 100% (1k steps) | 100% (1k steps) | 100% (1k steps) |
+| 2¹⁶ = 65,536 | 100% (3k steps) | 100% (1.5k steps) | 100% (3.75k steps) |
+| 2¹⁷ = 131,072 | 52.3% | 64.4% | 48.0% |
+| 2¹⁸ = 262,144 | 11.6% | 32.3% | 23.3% |
+
+All three memorize $2^{16}$ facts perfectly and break between $2^{16}$ and
+$2^{17}$; the ordering at overload follows parameter count (twoemb > attn ≈ mix
+at 2¹⁷). Stored information $\mathrm{acc}\cdot n\cdot 10$ bits saturates at
+~0.63–0.85 Mbit ≈ **2.2–2.3 bits/param** (right panel) — matching the
+Allen-Zhu & Li 2 bits/param law. Exception: `attn` at 2¹⁸ stores only ~0.3 Mbit,
+less than it stored at 2¹⁷ — an optimization failure at overload rather than a
+capacity number (both 2¹⁷/2¹⁸ runs hit the 50k-step cap, and full-batch training
+at 12× overload is slow; twoemb/mix keep their stored bits flat at 2¹⁸).

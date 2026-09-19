@@ -1,0 +1,8 @@
+{
+    // LTeX+ re-checks a whole Markdown file on every change; with the huge,
+    // constantly machine-edited .md files in this repo its Java server was
+    // burning ~20% CPU (fan noise). "manual" = no automatic checking in this
+    // workspace; run "LTeX: Check Current Document" from the Command Palette
+    // when you want a file grammar-checked. Other workspaces are unaffected.
+    "ltex.checkFrequency": "manual"
+}

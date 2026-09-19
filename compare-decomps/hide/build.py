@@ -1,5 +1,5 @@
 """Build the compare-decomps widget: interactive co-CI / cos(U) / cos(V)
-heatmaps for ANY pair of the six decompositions
+heatmaps for ANY pair of the seven decompositions
 
   old  = s-55ea3f9b  (target t-9d2b8f02,  the paper's run)
   newA = p-8383f5e5  (target t-9d2b8f02,  800k steps)
@@ -7,6 +7,10 @@ heatmaps for ANY pair of the six decompositions
   C    = p-d60af588  (target t-87f91319,  attention-sink model, seed 0)
   D    = p-fecd6a6b  (target t-87f91319,  attention-sink model, seed 1)
   E    = p-bd411e35  (target t-75f6c439,  attention-sink model)
+  F    = p-c45e0001  (target t-87f91319,  C's recipe re-trained with the
+                      corrected/fitted RoPE forward — C decomposes the
+                      mis-loaded base-1e4 model, F the real sink LM; see
+                      sink-models/rope_decomposition_check.md)
 
 Same UI as coci-heatmaps' interactive_newA_newB.html (y/x decomposition
 dropdowns, matrix dropdown, measure radio, match-threshold checkbox, pos-0
@@ -54,11 +58,13 @@ DATA_DIR = HERE / "data"
 sys.path.insert(0, str(ROOT))
 from load import load_tokenizer  # noqa: E402
 
-DEC = ["old", "newA", "newB", "C", "D", "E"]
+DEC = ["old", "newA", "newB", "C", "D", "E", "F"]
 TARGET = {"old": "t-9d2b8f02", "newA": "t-9d2b8f02", "newB": "t-9d2b8f02",
-          "C": "t-87f91319", "D": "t-87f91319", "E": "t-75f6c439"}
+          "C": "t-87f91319", "D": "t-87f91319", "E": "t-75f6c439",
+          "F": "t-87f91319"}
 RUN_ID = {"old": "s-55ea3f9b", "newA": "p-8383f5e5", "newB": "p-4d9a6a12",
-          "C": "p-d60af588", "D": "p-fecd6a6b", "E": "p-bd411e35"}
+          "C": "p-d60af588", "D": "p-fecd6a6b", "E": "p-bd411e35",
+          "F": "p-c45e0001"}
 TRIO = {"old", "newA", "newB"}
 MODS = [f"h.{l}.{m}" for l in range(4)
         for m in ("attn.q_proj", "attn.k_proj", "attn.v_proj",
@@ -272,7 +278,8 @@ def main() -> None:
     labels = old_labels()
     d = {n: Decomp(n) for n in DEC}
     cross12 = np.load(CACHE / "cross_r_new12.npz")
-    tok_src = {n: np.load((CACHE if n in ("C", "D", "E") else MCW) /
+    crossF = np.load(CACHE / "cross_r_F.npz")
+    tok_src = {n: np.load((MCW if n in TRIO else CACHE) /
                           f"top_tokens_{n}.npz")
                for n in DEC if n != "old"}
 
@@ -346,7 +353,8 @@ def main() -> None:
                     if a in TRIO and b in TRIO:
                         r_dump = trio_pair_r(mod, a, b)
                     else:
-                        r_dump = cross12[f"{a}|{b}|{mod}|r"].astype(np.float32)
+                        src = crossF if b == "F" else cross12
+                        r_dump = src[f"{a}|{b}|{mod}|r"].astype(np.float32)
                     R = r_dump[d[a].order_pos[mod]][:, d[b].order_pos[mod]]
                     pf, _ = match_perm(R, -np.inf)
                     pft, mf = match_perm(R, MATCH_R)
@@ -395,7 +403,7 @@ PAGE = """<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>decomposition comparison — old/newA/newB/C/D/E</title>
+<title>decomposition comparison — old/newA/newB/C/D/E/F</title>
 <script>__PLOTLYJS__</script>
 <style>
   body { font-family: system-ui, sans-serif; margin: 14px 20px; color: #1a1a2e; }
@@ -413,12 +421,16 @@ PAGE = """<!DOCTYPE html>
 </style>
 </head>
 <body>
-<h2>Decomposition comparison — old / newA / newB / C / D / E</h2>
+<h2>Decomposition comparison — old / newA / newB / C / D / E / F</h2>
 <div class="sub">Pick a decomposition for each axis: <b>old</b> = s-55ea3f9b,
 <b>newA</b> = p-8383f5e5, <b>newB</b> = p-4d9a6a12 (all of pile_4l target
 t-9d2b8f02); <b>C</b> = p-d60af588 and <b>D</b> = p-fecd6a6b (attention-sink
 model t-87f91319, seeds 0/1); <b>E</b> = p-bd411e35 (attention-sink model
-t-75f6c439). <b>co-CI r</b> is available for every pair (all six are
+t-75f6c439); <b>F</b> = p-c45e0001 (C's recipe on the same t-87f91319
+weights, re-trained with the corrected/fitted RoPE forward — C decomposes the
+mis-loaded base-1e4 model, F the real sink LM; F's CI is likewise evaluated
+under its own fitted-RoPE forward). <b>co-CI r</b> is available for every
+pair (all seven are
 evaluated on the same 2.05M Pile tokens); <b>cos(U)/cos(V)</b> only when both
 axes decompose the SAME target model — across different models the factors
 live in unrelated bases. Cosines are signed (each component's (U, V) gauge

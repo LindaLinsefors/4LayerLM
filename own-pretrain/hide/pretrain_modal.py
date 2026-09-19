@@ -22,15 +22,37 @@ hypothesized internal behavior. This script only adds
 Config = param_decomp/pretrain/configs/pile_llama_simple_mlp-4L-768-untied-sinks.yaml
 (which matches the t-87f91319 WandB dump field-for-field), with seed 47,
 data_root /data/sink-models (volume vpd-4layer: datasets/pile_neox_tok_512{,_val}
-prestaged by redo-decomps/hide/prestage_data_modal.py), dp: null (one process,
+prestaged by sink-models/redo-decomps/hide/prestage_data_modal.py), dp: null (one process,
 8 local GPUs — initialize_topology(8, 8) would set up the identical (1,8,1) mesh
 without jax.distributed anyway), val_data: null exactly as the internal run
 (trainer semantics: val_loss from a reseeded schedule over the TRAIN shards).
 
 Run (PowerShell; always PYTHONUTF8=1 PYTHONIOENCODING=utf-8 for modal on Windows):
   modal run own-pretrain/hide/pretrain_modal.py --mode smoke      (~500 steps, 8xH100)
-  modal run --detach own-pretrain/hide/pretrain_modal.py --mode full   (100k steps, ~3-6 h)
-Relaunching `--mode full` resumes from the latest orbax checkpoint.
+  modal deploy own-pretrain/hide/pretrain_modal.py                (once, + after edits here)
+  modal run own-pretrain/hide/pretrain_modal.py --mode full       (100k steps, ~3-6 h)
+
+LAUNCH PATTERN CHANGE (2026-09-19, intentional -- do not "fix" back):
+  --mode full no longer trains inside this client. It .spawn()s `train` on the
+  DEPLOYED app and exits immediately; the run is fully server-side. The old
+  `modal run --detach ... --mode full` is DEPRECATED for this script: --detach
+  still leaves an attached local client, and its death killed two long runs
+  (~8 h JWT expiry `AuthError: Jwt is expired`, and session-cleanup teardown) --
+  see CLAUDE.md substrate-recipe item 5. Smoke mode stays attached on purpose
+  (you want to watch it). Notes:
+  * Deploy BEFORE the first full launch and after any edit to this file
+    (spawn runs the code as of the last `modal deploy`, not your working copy).
+  * Redeploying does NOT kill an in-flight run (it keeps its old version).
+  * Do NOT launch --mode full while a full run is already in flight: a second
+    container would resume from the same run dir and race the live one. Check
+    first: `modal app list` / the wandb run's `_step` still advancing.
+  * As of 2026-09-19 the app is ALREADY deployed and the live freqtest47 run
+    is a task on it (`modal app list`: own-pretrain-freqtest47, deployed,
+    1 task) -- respawned server-side this morning with an ad-hoc spawn before
+    this entrypoint existed. Leave it alone; if it dies, relaunch with
+    `--mode full` (which now does exactly that spawn).
+Relaunching `--mode full` (once no run is in flight) resumes from the latest
+orbax checkpoint.
 
 Monitor:
   wandb: Linda's default entity, project "param-decomp", group "own-pretrain",
@@ -206,6 +228,51 @@ def train(cfg_dict: dict, run_id: str) -> str:
     # ---- patch 3: fixed spd- cache prefix regardless of the wandb project name
     T._cache_dir = lambda cfg_, paths: Path(DATA_ROOT) / "pretrain_cache" / f"spd-{run_id}"
 
+    # ---- patch 4: sharding-correct resume. The public _restore_latest builds its
+    # abstract tree with to_shape_dtype_struct, which DROPS shardings -- orbax then
+    # restores rank-0 leaves onto GPU 0 while the live state is replicated across 8,
+    # and the jitted step refuses the mixed placement ("Received incompatible
+    # devices"). Re-place every restored leaf onto the reference leaf's sharding.
+    import equinox as eqx
+    import jax
+
+    orig_restore = T._restore_latest
+
+    def _describe_bad(tree) -> list:  # noqa: ANN001
+        bad = []
+        for i, leaf in enumerate(jax.tree.leaves(tree)):
+            if eqx.is_array(leaf) and hasattr(leaf, "devices") and len(leaf.devices()) < 8:
+                bad.append((i, str(leaf.shape), str(leaf.dtype), len(leaf.devices())))
+        return bad
+
+    def _restore_latest(mgr, reference):  # noqa: ANN001, ANN202
+        out = orig_restore(mgr, reference)
+        if out is None:
+            return None
+        state, step = out
+        print(f"patch4: single-device leaves BEFORE re-place: {_describe_bad(state)}",
+              flush=True)
+
+        def _fix(got, ref):  # noqa: ANN001, ANN202
+            if not eqx.is_array(ref):
+                return got
+            if hasattr(ref, "devices") and len(ref.devices()) >= 8:
+                return jax.device_put(got, ref.sharding)
+            # reference leaf is an UNCOMMITTED single-device array (fresh
+            # optimizer.init scalars, e.g. adam counts): a committed device_put
+            # would pin it and the jitted step refuses mixed commitments -- hand
+            # back host numpy so jit auto-places it exactly like a fresh init.
+            np_val = np.asarray(got)
+            return np_val
+
+        state = jax.tree.map(_fix, state, reference)
+        bad = _describe_bad(state)
+        print(f"patch4: committed single-device jax leaves AFTER fix: {bad}", flush=True)
+        assert not bad, f"resume re-placement failed to fix: {bad}"
+        return state, step
+
+    T._restore_latest = _restore_latest
+
     T._enable_compilation_cache(cfg.paths)
     t0 = time.time()
     T.train(cfg)
@@ -250,4 +317,18 @@ def main(mode: str = "smoke") -> None:
         print(train.remote(cfg, SMOKE_RUN_ID))
         return
     assert mode == "full", mode
-    print(train.remote(BASE_CFG, FULL_RUN_ID))
+    # Server-side launch (see docstring): spawn on the DEPLOYED app so no local
+    # client stays attached. train.spawn() here would NOT be safe -- under
+    # `modal run` the app is ephemeral and dies with this process.
+    try:
+        call = modal.Function.from_name(app.name, "train").spawn(BASE_CFG, FULL_RUN_ID)
+    except modal.exception.NotFoundError:
+        raise SystemExit(
+            f"app '{app.name}' is not deployed yet -- run:\n"
+            f"  modal deploy own-pretrain/hide/pretrain_modal.py\nthen retry --mode full."
+        )
+    print(f"spawned server-side; function call id: {call.object_id}")
+    print("This terminal/client may now close or die -- the run is unaffected.")
+    print(f"Monitor: wandb run {FULL_RUN_ID} (metric _step), or: modal app logs {app.name}")
+    print("Fetch the final summary later with:")
+    print(f"  python -c \"import modal; print(modal.FunctionCall.from_id('{call.object_id}').get())\"")

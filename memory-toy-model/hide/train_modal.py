@@ -35,7 +35,7 @@ import modal
 app = modal.App("memory-toy-train")
 
 image = modal.Image.debian_slim(python_version="3.11").pip_install(
-    "jax[cuda12]==0.6.2", "optax==0.2.4", "numpy", "safetensors"
+    "jax[cuda12]==0.6.2", "optax==0.2.4", "numpy", "safetensors", "wandb"
 )
 vol = modal.Volume.from_name("vpd-4layer")
 
@@ -48,7 +48,8 @@ WEIGHT_DECAY = 0.1
 INIT_SEED = 0
 
 
-@app.function(image=image, gpu="A10G", volumes={"/data": vol}, timeout=4 * 3600)
+@app.function(image=image, gpu="A10G", volumes={"/data": vol}, timeout=4 * 3600,
+              secrets=[modal.Secret.from_name("wandb")])
 def train(k: int, facts_bytes: bytes, arch: str = "attn", max_steps: int = MAX_STEPS) -> dict:
     import io
     import json
@@ -131,6 +132,12 @@ def train(k: int, facts_bytes: bytes, arch: str = "attn", max_steps: int = MAX_S
         nll = optax.softmax_cross_entropy_with_integer_labels(lg, t2)
         return (jnp.argmax(lg, -1) == t2).mean(), nll.mean()
 
+    import wandb
+
+    wandb.init(project="param-decomp", group="memory-toy-pretrain",
+               name=f"memtoy-{arch}-f2e{k}", config={"arch": arch, "k": k},
+               tags=[arch, f"k{k}"])
+
     metrics, perfect_streak, t_start = [], 0, time.time()
     n_steps = 0
     for i in range(max_steps):
@@ -140,6 +147,7 @@ def train(k: int, facts_bytes: bytes, arch: str = "attn", max_steps: int = MAX_S
             acc, nll = evaluate(params)
             acc, nll = float(acc), float(nll)
             metrics.append({"step": n_steps, "loss": float(loss), "acc": acc, "nll": nll})
+            wandb.log(metrics[-1], step=n_steps)
             perfect_streak = perfect_streak + 1 if acc == 1.0 else 0
             if perfect_streak >= STOP_EVALS:
                 break
@@ -176,6 +184,8 @@ def train(k: int, facts_bytes: bytes, arch: str = "attn", max_steps: int = MAX_S
         state["wte0.weight"] = params["wte0"]
     else:
         state["mix.weight"] = params["mix"]
+    wandb.summary.update(summary)
+    wandb.finish()
     save_file({n: np.asarray(v) for n, v in state.items()}, run_dir / "model_final.safetensors")
     (run_dir / "metrics.json").write_text(json.dumps(metrics))
     (run_dir / "config.json").write_text(json.dumps({

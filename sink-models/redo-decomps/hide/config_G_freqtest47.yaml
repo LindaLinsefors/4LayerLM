@@ -1,0 +1,218 @@
+# Decomposition "G" (p-47de0001): C's exact recipe applied to Linda's OWN model
+# t-freqtest47 (own-pretrain/), with the model's LEARNED RoPE spectrum installed at
+# build time (the safetensors export drops the trained inv_freq, so the launcher
+# monkeypatches plain_rope_inv_freq with the final row of inv_freq_trajectory.npz --
+# passed as the log_inv_freq argument by the wait_and_spawn_G waiter in
+# train_modal.py). Differences from config_ropefix_C.yaml: run_name, target
+# run_path -> goodfire/spd/runs/t-f4e40047 (hex-alias of spd-t-freqtest47 -- the
+# config parser requires x-<8hex> run ids; resolves to the volume's
+# pretrain_cache/spd-t-freqtest47/, no WandB fetch), and the winning memcpy
+# compiler-options dict written out explicitly (see MEMCPY_COMPILER_OPTIONS).
+# All substrate deviations from the original C run are documented in
+# config_ropefix_C.yaml's header and CLAUDE.md's Modal substrate recipe.
+run_name: pile4l-freqtest47-ref6m-freq6p6em5-b256-100k
+cadence:
+  train_log_every: 200
+  checkpointing:
+    kind: periodic
+    save_every: 5000
+    retention:
+      kind: keep_last
+      n: 2
+data:
+  train:
+    kind: name
+    name: pile_neox_tok_512
+  eval:
+    kind: name
+    name: pile_neox_tok_512_val
+eval:
+  batch_size: 128
+  every: 1000
+  metrics:
+  - n_batches_accum: 1
+    type: CIHistograms
+  - ci_alive_threshold: 0.0
+    type: ComponentActivationDensity
+  - ci_alive_threshold: 0.0
+    groups:
+      layer_0:
+      - h.0.*
+      layer_1:
+      - h.1.*
+      layer_2:
+      - h.2.*
+      layer_3:
+      - h.3.*
+      total:
+      - '*'
+    type: CI_L0
+  - rounding_threshold: 0.0
+    type: CEandKLLosses
+  - type: CIMeanPerComponent
+  # C's config carried hidden_acts_reconstruction with coeff 0.0 (disabled) on this
+  # eval-only metric; the public schema requires coeff > 0, so the dead block is dropped.
+  - init: random
+    source_shape: c
+    n_steps: 20
+    name: PGDReconLoss_20step
+    step_size: 0.1
+    type: PGDReconLoss
+  n_steps: 1
+  slow_every: 10000
+  slow_on_first_step: true
+decomposition:
+  sites:
+    kind: simple_mlp
+    layers:
+      kind: all
+    cs:
+      q_proj: 768
+      k_proj: 768
+      v_proj: 768
+      o_proj: 768
+      c_fc: 3072
+      down_proj: 3072
+    initialization: neuron_aligned
+  ci:
+    type: chunkwise_transformer
+    blocks_per_chunk: 4
+    input_tap: all_block_resids
+    d_model: 2048
+    n_blocks: 8
+    attention:
+      kind: mha
+      n_heads: 16
+    ffn:
+      kind: gelu
+      hidden: 8192
+pd:
+  seed: 0
+  batch_size: 256
+  steps: 100000
+  ci_fn_optimizer:
+    type: muon
+    impl: stacked
+    consistent_rms: 0.2
+    grad_clip_norm: 1.0
+    lr_schedule: &id001
+      max_val: 5.0e-05
+      points:
+      - at: 0.0
+        frac: 1.0
+      - at: 0.9
+        frac: 0.1
+        interp: cosine
+      - at: 1.0
+        frac: 0.1
+  components_optimizer:
+    type: muon
+    impl: stacked
+    consistent_rms: 0.2
+    grad_clip_norm: 1.0
+    lr_schedule: *id001
+  faithfulness_warmup_lr: 0.001
+  faithfulness_warmup_steps: 0
+  faithfulness_warmup_weight_decay: 0.0
+  loss_metrics:
+  - frequency:
+      coeff: 6.6e-05
+      reference_datapoint_count: 6553600
+      ema_halflife_steps: 200
+    coeff: 0.0002
+    type: ImportanceMinimalityLoss
+    gamma:
+      max_val: 1.0
+      points:
+      - at: 0.0
+        frac: 1.0
+      - at: 0.9
+        frac: 0.01
+      - at: 1.0
+        frac: 0.01
+  - type: NonlinearityLocalityLoss
+    coeff: 3.0e-05
+    relative_threshold:
+      max_val: 8.0
+      points:
+      - at: 0.0
+        frac: 1.0
+      - at: 1.0
+        frac: 0.25
+    unit_kind_coefficients:
+      neuron: 1.0
+      attention_head: 1.0
+  - type: MergedStochasticSubsetPPGDReconLoss
+    coeff: 1.0
+    adv_fraction: 0.5
+    n_warmup_steps: 2
+    routing:
+      type: uniform_k_subset
+    optimizer:
+      beta1: 0.01
+      beta2: 0.99
+      eps: 1.0e-08
+      lr_schedule:
+        max_val: 0.01
+        points:
+        - at: 0.0
+          frac: 0.0
+        - at: 0.025
+          frac: 1.0
+        - at: 1.0
+          frac: 1.0
+      type: adam
+    source_shape: bsc
+  - coeff: 1000.0
+    type: FaithfulnessLoss
+runtime:
+  compilation_cache_dir: /data/xla-cache
+  remat_recon_forwards: true
+  remat_ci_fn: true
+  launch_env:
+    # platform allocator: the BFC pool cannot fit the step (16 GiB over even with
+    # both remats); on-demand allocation does. NCCL cuMem/NVLS disabled: Modal
+    # containers forbid the fabric cuMem handles NCCL's registered-buffer paths
+    # want (ncclAlltoAll "unhandled system error" otherwise).
+    xla_python_client_allocator: platform
+    nccl_debug: INFO
+    env:
+      NCCL_CUMEM_ENABLE: "0"
+      NCCL_NVLS_ENABLE: "0"
+  sharding: owner
+  compiler_options:
+    xla_gpu_enable_latency_hiding_scheduler: true
+    xla_gpu_enable_triton_gemm: false
+    xla_gpu_enable_command_buffer: ""
+    xla_gpu_enable_highest_priority_async_stream: true
+    xla_gpu_all_reduce_combine_threshold_bytes: 1073741824
+    xla_gpu_all_gather_combine_threshold_bytes: 1073741824
+    xla_gpu_reduce_scatter_combine_threshold_bytes: 134217728
+    xla_gpu_enable_pipelined_all_gather: true
+    xla_gpu_enable_pipelined_reduce_scatter: true
+    xla_gpu_enable_pipelined_all_reduce: true
+    xla_gpu_enable_while_loop_double_buffering: true
+    xla_gpu_enable_all_gather_combine_by_dim: false
+    xla_gpu_enable_reduce_scatter_combine_by_dim: false
+    xla_gpu_use_memcpy_local_p2p: true
+  replicate: 1
+  fsdp: 8
+  tp: 1
+target:
+  attention_implementation: auto
+  weights_dtype: bfloat16
+  spec:
+    kind: pretrained
+    model_class: param_decomp.experiments.lm.pretrain.models.llama_simple_mlp.LlamaSimpleMLP
+    run_path: goodfire/spd/runs/t-f4e40047
+wandb:
+  entity: null
+  project: param-decomp
+  group: ropefix
+  tags:
+  - ropefix
+  - task-1423-redo
+  - ref6m
+  - freq6p6em5
+  - batch-256
+  - steps-100k
